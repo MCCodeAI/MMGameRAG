@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "property": "p1",
+        "value": 1,
+        "default_value": 1,
+        "mark": "testp1"
+    }
+]
