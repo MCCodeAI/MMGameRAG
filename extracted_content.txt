@@ -10,3 +10,6 @@
 本文由游民星空制作发布，未经允许禁止转载。
 更多相关资讯请关注：
 黑神话：悟空专区
+
+mid2L_tit_elements = tree.xpath('//div[@class="Mid2L_tit"]')
+mid2L_tit_text = mid2L_tit_elements[0].text_content() 
