@@ -13,3 +13,15 @@
 
 mid2L_tit_elements = tree.xpath('//div[@class="Mid2L_tit"]')
 mid2L_tit_text = mid2L_tit_elements[0].text_content() 
+
+
+# Load existing links from the JSON file
+def load_existing_links(filename="docs/links.json"):
+    """
+    Loads existing links from the specified JSON file.
+    If the file doesn't exist, it returns an empty list.
+    """
+    if os.path.exists(filename):
+        with open(filename, 'r', encoding="utf-8") as json_file:
+            return json.load(json_file)
+    return []
