@@ -1,10 +1,10 @@
 
 import streamlit as st
-
-from langchain_openai import ChatOpenAI
-# from langchain_community.chat_models import ChatOpenAI
+import time
 
 from mmgamerag import *
+
+
 
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
@@ -19,7 +19,8 @@ with st.sidebar:
         st.success("Chat cleared!")
 
 
-st.title("💬 MMGameRAG")
+
+st.title("MMGameRAG🐒🐵🙈🙉🙊🦍🦧⭐️🍌")
 st.caption("🚀 Multimodal Retrieval-Augmented Generation System for Game Walkthroughs")
 if "messages" not in st.session_state: # Initialize the chat, only run once
     # st.session_state["messages"] = [
@@ -27,14 +28,14 @@ if "messages" not in st.session_state: # Initialize the chat, only run once
     #     {"role": "assistant", "content": "How can I help you for Black Myth?"}
     #     ]
     st.session_state["messages"] = [
-        ("system", "我是一个图文并茂的多模态游戏攻略高手，帮助用户了解黑神话悟空。"),
+        ("system", "我是一个图文并茂的多模态游戏攻略高手，帮助用户了解《黑神话悟空》。"),
         ("assistant", "How can I help you for Black Myth?")
         ]
     
 
 
-for role, content in st.session_state["messages"]:
-    st.chat_message(role).write(content)
+for role, content in st.session_state["messages"]:  # Show all except the latest message
+    st.chat_message(role).markdown(content, unsafe_allow_html=True)
 
 if prompt := st.chat_input():
     # if not openai_api_key:
@@ -52,80 +53,42 @@ if prompt := st.chat_input():
     
     # client = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
     st.session_state["messages"].append(("user", prompt))
-    st.chat_message("user").write(prompt)
+    st.chat_message("user").markdown(prompt, unsafe_allow_html=True)
+
+
+    # # 创建占位符
+    # placeholder = st.empty()
+
+    # # 进行倒计时
+    # for seconds_remaining in range(10, 0, -1):
+    #     placeholder.markdown(f"**Countdown: {seconds_remaining} seconds remaining**", unsafe_allow_html=True)
+    #     time.sleep(1)
+
+    # # 倒计时结束后的消息
+    # placeholder.markdown("**Countdown complete!**", unsafe_allow_html=True)
+ 
+
 
     # response = client(st.session_state["messages"])
-    # response = llm_chatbot(prompt,st.session_state["messages"])
-    # print('\n---------\n')
-    # print(response + '\n---------\n')
-    # msg = response
-    # st.session_state["messages"].append(("assistant", msg))
-    # st.markdown(msg, unsafe_allow_html=True)
-    # st.chat_message("assistant").write(msg)
 
-    # image_url = "https://img1.gamersky.com/image2024/08/20240819_qy_372_15/image011_S.jpg"
-    # msg = f'<img src="{image_url}">'
-    # st.chat_message("assistant").write(msg, unsafe_allow_html=True)
+    response = llm_chatbot(prompt,st.session_state["messages"])
+    print('\n---------\n')
+    print(response + '\n---------\n')
+    msg = response
+    msg_base64 = msg_imgurl_to_base64(msg)
 
-    # # image_url = "https://img1.gamersky.com/upimg/pic/2024/09/22/small_202409220914312718.webp"
-    # image_url = "https://img1.gamersky.com/image2024/08/20240819_qy_372_15/image011_S.jpg"
-    # st.chat_message("assistant").markdown(f"![Image]({image_url})")
+    # print('\n-----msg_base64----\n')
+    # print(msg_base64 + '\n---------\n')
 
-    # image_url = "https://img1.gamersky.com/image2024/08/20240819_qy_372_15/image011_S.jpg"
-    # st.image(image_url, caption="GamerSky Image")
+    # st.chat_message("assistant").write_stream(llm_chatbot(prompt,st.session_state["messages"])) 
 
-    # cors_proxy_url = "https://cors-anywhere.herokuapp.com/"
-    # image_url = f"{cors_proxy_url}https://img1.gamersky.com/image2024/08/20240819_qy_372_15/image011_S.jpg"
-    # st.image(image_url)
+    st.chat_message("assistant").markdown(msg_base64, unsafe_allow_html=True) 
 
-    # display(Markdown(msg))
-    # st.chat_message("assistant").markdown(msg, unsafe_allow_html=True)
-
-    # image_url = "file://docs/rawdata/img/image011_S.jpg"
-    # st.markdown(f"![Image]({image_url})", unsafe_allow_html=True)
-
-    from PIL import Image
-    # 本地图片路径
-    image_path = "docs/rawdata/img/image011_S.jpg"  # 替换为你的本地图片路径
-
-    # 加载并显示本地图像
-    image = Image.open(image_path)
-    st.image(image, caption="Local Image", use_column_width=True)
-
-    # import streamlit as st
-    # import base64
-
-    # # 本地图片路径
-    # # image_path = "docs/rawdata/img/image011_S.jpg"  # 替换为你的本地图片路径
-
-    # # 将图像转换为 base64 编码
-    # with open(image_url, "rb") as image_file:
-    #     encoded_image = base64.b64encode(image_file.read()).decode()
-
-    # # 使用 Markdown 显示本地图像
-    # st.markdown(f'<img src="data:image/jpeg;base64,{encoded_image}" alt="Image" style="width:100%;">', unsafe_allow_html=True)
-
-    # import base64
-    # import urllib.request
-
-    # # 输入图片的 URL
-    # image_url = "https://img1.gamersky.com/image2024/08/20240819_qy_372_15/image011_S.jpg"
-
-    # # 从 URL 获取图像并转换为 Base64
-    # with urllib.request.urlopen(image_url) as response:
-    #     image_data = response.read()
-    #     image_base64 = base64.b64encode(image_data).decode()
-
-    # # 构造 HTML img 标签
-    # img_tag = f'<img src="data:image/jpeg;base64,{image_base64}" alt="Image">'
-    # st.markdown(img_tag, unsafe_allow_html=True)
+    st.session_state["messages"].append(("assistant", msg_base64))
+    
 
 
+   
 
-    # import streamlit as st
 
-    # # 输入图片的 URL
-    # image_url = "https://img1.gamersky.com/image2024/08/20240819_qy_372_15/image011_S.jpg"
-
-    # # 使用 st.image 显示图像
-    # st.image(image_url, caption="Image from URL", use_column_width=True)
+ 
