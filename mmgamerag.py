@@ -73,22 +73,9 @@ def llm_chatbot(userprompt, chathistory):
         
         return "\n".join(formatted_docs)  # Join all formatted documents into a single string
 
-    # Prompt for code generation
-    prompt_template = """你是《黑神话：悟空》这款游戏的AI助手，根据Question和Context专门为玩家提供详尽的游戏攻略并以Markdown的格式输出.请注意：
-    1. 在Image中找到与Question和Answer最相关的图像。每个Image都有Text before image，Image descriptioin和Text after image，可以用来判断这个Image应该被插入到与文本答案最匹配的上下文的哪个段落当中。格式如下：
-        
-        文本答案段落
-        <a href="图像1的Url" target="_blank">
-        <img src="图像1的Src">
-        </a>
-        文本答案段落
-        <a href="图像2的Url" target="_blank">
-        <img src="图像2的Src">
-        </a>
-        文本答案段落
-        ...
-
-    2. 在输出答案的最后，根据问题找到context中的最相关的几个参考文档，并列出Url链接，以供用户参考原始文档。
+# Prompt for game walk through text
+    prompt_template_text = """你是《黑神话：悟空》这款游戏的AI助手，根据Question和Context专门为玩家生成简明但完整的游戏攻略，请注意：
+    1. 在Answer的最后，根据问题找到context中的最相关的几个参考文档，并列出Url链接，以供用户参考原始文档。
 
     Question: 
     {question}
@@ -96,28 +83,64 @@ def llm_chatbot(userprompt, chathistory):
     Context: 
     {context}
 
+    Answer:
+    """
+
+    prompt_game_text = ChatPromptTemplate.from_template(prompt_template_text)
+
+    chain_game_text = (
+        prompt_game_text
+        | mmgamellm
+        | StrOutputParser()
+    )
+
+    gamer_question = userprompt
+    context_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question, k=10, filter={"type": "text"}))
+    # print("\n----------text--------------\n" + context_retrieval + "\n------------------------\n")
+    result_game_text = chain_game_text.invoke({
+        "question": gamer_question, 
+        "context": context_retrieval
+    })
+
+
+
+    # Prompt for game walk through text and embedded images
+    prompt_template_text_image = """你是《黑神话：悟空》这款游戏的AI助手，根据Question、Text_answer和Image专门为玩家生成详尽的图文并茂的游戏攻略.请注意：
+    1. 在Image中找到与Question和Text_answer相关的图像。每个Image都有Text before image，Image descriptioin和Text after image，根据这些内容将Image插入到文本答案中间以求与上下文连贯和逻辑缜密。格式如下：
+        
+        文本答案段落
+        <a href="图像1的Url" target="_blank"><img src="图像1的Src"></a>
+        文本答案段落
+        <a href="图像2的Url" target="_blank"><img src="图像2的Src"></a>
+        文本答案段落
+        ...
+
+    Question: 
+    {question}
+
+    Text_answer: 
+    {text_answer}
+
     Image:
     {image}
 
     Answer:
     """
 
-    prompt_code = ChatPromptTemplate.from_template(prompt_template)
+    prompt_game_text_image = ChatPromptTemplate.from_template(prompt_template_text_image)
 
-    chain = (
-        prompt_code
+    chain_game_text_image = (
+        prompt_game_text_image
         | mmgamellm
         | StrOutputParser()
     )
 
     gamer_question = userprompt
-    context_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question, k=5, filter={"type": "text"}))
-    # print(context_retrieval + "\n------------------------\n")
-    img_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question, k=5, filter={"type": "img"}))
-    # print(img_retrieval + "\n------------------------\n")
-    result = chain.invoke({
+    img_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question + '\n' + result_game_text, k=10, filter={"type": "img"}))
+    # print("\n-----------img-------------\n" + img_retrieval)
+    result_game_text_image = chain_game_text_image.invoke({
         "question": gamer_question, 
-        "context": context_retrieval,
+        "text_answer": result_game_text,
         "image": img_retrieval
     })
 
@@ -125,7 +148,7 @@ def llm_chatbot(userprompt, chathistory):
     # display(Markdown(result))
     # display(Image(url="http://img1.gamersky.com/image2024/08/20240819_qy_372_15/image001_S.jpg"))
     
-    return result
+    return result_game_text_image
 
 # Transfer image URL to base64, only for Gamerkey, because Streamlit can't display images from it.
 def msg_imgurl_to_base64(msg):

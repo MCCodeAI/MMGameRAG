@@ -53,7 +53,7 @@ if prompt := st.chat_input():
     
     # client = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
     st.session_state["messages"].append(("user", prompt))
-    st.chat_message("user").markdown(prompt, unsafe_allow_html=True)
+    st.chat_message("user").write(prompt, unsafe_allow_html=True)
 
 
     # # 创建占位符
@@ -82,7 +82,7 @@ if prompt := st.chat_input():
 
     # st.chat_message("assistant").write_stream(llm_chatbot(prompt,st.session_state["messages"])) 
 
-    st.chat_message("assistant").markdown(msg_base64, unsafe_allow_html=True) 
+    st.chat_message("assistant").write(msg_base64, unsafe_allow_html=True) 
 
     st.session_state["messages"].append(("assistant", msg_base64))
     
