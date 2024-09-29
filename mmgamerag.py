@@ -73,76 +73,123 @@ def llm_chatbot(userprompt, chathistory):
         
         return "\n".join(formatted_docs)  # Join all formatted documents into a single string
 
-# Prompt for game walk through text
-    prompt_template_text = """你是《黑神话：悟空》这款游戏的AI助手，根据Question和Context专门为玩家生成简明但完整的游戏攻略，请注意：
-    1. 在Answer的最后，根据问题找到context中的最相关的几个参考文档，并列出Url链接，以供用户参考原始文档。
+    generate_answer_w_text_then_img = False  # Generte answer with text only, then generate again with text and image, it takes more time.
+    if generate_answer_w_text_then_img == True:
 
-    Question: 
-    {question}
+        # Prompt for game walk through text first
+        prompt_template_text = """你是《黑神话：悟空》这款游戏的AI助手，根据Question和Context专门为玩家生成简明但完整的游戏攻略，请注意：
+        1. 在Answer的最后，根据问题找到Context中的最相关的几个参考文档，并列出Url链接，以供用户参考原始文档。
 
-    Context: 
-    {context}
+        Question: 
+        {question}
 
-    Answer:
-    """
+        Context: 
+        {context}
 
-    prompt_game_text = ChatPromptTemplate.from_template(prompt_template_text)
+        Answer:
+        """
 
-    chain_game_text = (
-        prompt_game_text
-        | mmgamellm
-        | StrOutputParser()
-    )
+        prompt_game_text = ChatPromptTemplate.from_template(prompt_template_text)
 
-    gamer_question = userprompt
-    context_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question, k=10, filter={"type": "text"}))
-    # print("\n----------text--------------\n" + context_retrieval + "\n------------------------\n")
-    result_game_text = chain_game_text.invoke({
-        "question": gamer_question, 
-        "context": context_retrieval
-    })
+        chain_game_text = (
+            prompt_game_text
+            | mmgamellm
+            | StrOutputParser()
+        )
+
+        gamer_question = userprompt
+        context_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question, k=10, filter={"type": "text"}))
+        # print("\n----------text--------------\n" + context_retrieval + "\n------------------------\n")
+        result_game_text = chain_game_text.invoke({
+            "question": gamer_question, 
+            "context": context_retrieval
+        })
 
 
 
-    # Prompt for game walk through text and embedded images
-    prompt_template_text_image = """你是《黑神话：悟空》这款游戏的AI助手，根据Question、Text_answer和Image专门为玩家生成详尽的图文并茂的游戏攻略.请注意：
-    1. 在Image中找到与Question和Text_answer相关的图像。每个Image都有Text before image，Image descriptioin和Text after image，根据这些内容将Image插入到文本答案中间以求与上下文连贯和逻辑缜密。格式如下：
+        # Prompt for game walk through text and then embedded images
+        prompt_template_text_image = """你是《黑神话：悟空》这款游戏的AI助手，根据Question、Text_answer和Image专门为玩家生成详尽的图文并茂的游戏攻略.请注意：
+        1. 在Image中找到与Question和Text_answer相关的图像。每个Image都有Text before image，Image descriptioin和Text after image，根据这些内容将Image插入到文本答案中间以求与上下文连贯和逻辑缜密。格式如下：
+            
+            文本答案段落
+            <a href="图像1的Url" target="_blank"><img src="图像1的Src"></a>
+            文本答案段落
+            <a href="图像2的Url" target="_blank"><img src="图像2的Src"></a>
+            文本答案段落
+            ...
+
+        Question: 
+        {question}
+
+        Text_answer: 
+        {text_answer}
+
+        Image:
+        {image}
+
+        Answer:
+        """
+
+        prompt_game_text_image = ChatPromptTemplate.from_template(prompt_template_text_image)
+
+        chain_game_text_image = (
+            prompt_game_text_image
+            | mmgamellm
+            | StrOutputParser()
+        )
+
+        gamer_question = userprompt
+        img_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question + '\n' + result_game_text, k=10, filter={"type": "img"}))
+        # print("\n-----------img-------------\n" + img_retrieval)
+        result_game_text_image = chain_game_text_image.invoke({
+            "question": gamer_question, 
+            "text_answer": result_game_text,
+            "image": img_retrieval
+        })
+    
+    else:
+        # Prompt for game walk through text and embedded images together
+        prompt_template_text_image_together = """你是《黑神话：悟空》这款游戏的AI助手，根据Question、Text_answer和Image专门为玩家生成详尽的图文并茂的游戏攻略.请注意：
+        1. 在Image中找到与Question和Context相关的图像。每个Image都有Text before image，Image descriptioin和Text after image的描述，根据这些内容将Image插入到文本答案中间，使每个Image与上下文连贯和逻辑缜密。格式如下：
+            
+            文本答案段落
+            <a href="图像1的Url" target="_blank"><img src="图像1的Src"></a>
+            文本答案段落
+            <a href="图像2的Url" target="_blank"><img src="图像2的Src"></a>
+            文本答案段落
+            ...
         
-        文本答案段落
-        <a href="图像1的Url" target="_blank"><img src="图像1的Src"></a>
-        文本答案段落
-        <a href="图像2的Url" target="_blank"><img src="图像2的Src"></a>
-        文本答案段落
-        ...
+        2. 在Answer的最后，根据问题找到Context中的最相关的几个参考文档，并列出Url链接，以供用户参考原始文档。
 
-    Question: 
-    {question}
+        Question: 
+        {question}
 
-    Text_answer: 
-    {text_answer}
+        Context: 
+        {context}
 
-    Image:
-    {image}
+        Image:
+        {image}
 
-    Answer:
-    """
+        Answer:
+        """
 
-    prompt_game_text_image = ChatPromptTemplate.from_template(prompt_template_text_image)
+        prompt_game_text_image = ChatPromptTemplate.from_template(prompt_template_text_image_together)
 
-    chain_game_text_image = (
-        prompt_game_text_image
-        | mmgamellm
-        | StrOutputParser()
-    )
+        chain_game_text_image_together = (
+            prompt_game_text_image
+            | mmgamellm
+            | StrOutputParser()
+        )
 
-    gamer_question = userprompt
-    img_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question + '\n' + result_game_text, k=10, filter={"type": "img"}))
-    # print("\n-----------img-------------\n" + img_retrieval)
-    result_game_text_image = chain_game_text_image.invoke({
-        "question": gamer_question, 
-        "text_answer": result_game_text,
-        "image": img_retrieval
-    })
+        gamer_question = userprompt
+        context_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question, k=10, filter={"type": "text"}))
+        img_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question, k=10, filter={"type": "img"}))
+        # print("\n-----------img-------------\n" + img_retrieval)
+        result_game_text_image = chain_game_text_image_together.invoke({
+            "question": gamer_question, 
+            "context": context_retrieval,
+            "image": img_retrieval
+        })
 
 
     # display(Markdown(result))
@@ -177,7 +224,7 @@ def msg_imgurl_to_base64(msg):
             # Use local image for quicker speed
             # Clean the URL to make it filename-safe
             filename_safe_url = src.replace(":", "=").replace("/", "|")
-            filename_safe_url = 'docs/rawdata/img/' + filename_safe_url + '.jpg'
+            filename_safe_url = 'docs/rawdata/img/' + filename_safe_url
             image_open = Image.open(filename_safe_url)
 
 

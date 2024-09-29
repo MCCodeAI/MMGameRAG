@@ -1,6 +1,7 @@
 
 import streamlit as st
 import time
+import random
 
 from mmgamerag import *
 
@@ -66,8 +67,21 @@ if prompt := st.chat_input():
 
     # # 倒计时结束后的消息
     # placeholder.markdown("**Countdown complete!**", unsafe_allow_html=True)
- 
+    
+    # 创建一个占位符
 
+    placeholder = st.empty()
+    gif_index = random.randint(0, 6)  # 随机选择从0到6的整数
+    gif_path = f"monkeying{gif_index}.gif"  # 生成对应的GIF文件路径
+    # 在占位符中显示文字
+    # placeholder.text("攻略搜索中...")
+    placeholder.image(f"docs/uidata/{gif_path}", caption="攻略搜索中...")
+
+
+    # # 等待2秒
+    # time.sleep(0.5)
+
+    
 
     # response = client(st.session_state["messages"])
 
@@ -83,6 +97,8 @@ if prompt := st.chat_input():
     # st.chat_message("assistant").write_stream(llm_chatbot(prompt,st.session_state["messages"])) 
 
     st.chat_message("assistant").write(msg_base64, unsafe_allow_html=True) 
+    # 清空占位符
+    placeholder.empty()
 
     st.session_state["messages"].append(("assistant", msg_base64))
     
