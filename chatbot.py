@@ -71,7 +71,7 @@ if prompt := st.chat_input():
     # 创建一个占位符
 
     placeholder = st.empty()
-    gif_index = random.randint(0, 6)  # 随机选择从0到6的整数
+    gif_index = random.randint(0, 1)  # 随机选择从0到1的整数
     gif_path = f"monkeying{gif_index}.gif"  # 生成对应的GIF文件路径
     # 在占位符中显示文字
     # placeholder.text("攻略搜索中...")

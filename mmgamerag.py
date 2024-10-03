@@ -150,7 +150,7 @@ def llm_chatbot(userprompt, chathistory):
     else:
         # Prompt for game walk through text and embedded images together
         prompt_template_text_image_together = """你是《黑神话：悟空》这款游戏的AI助手，根据Question、Text_answer和Image专门为玩家生成详尽的图文并茂的游戏攻略.请注意：
-        1. 在Image中找到与Question和Context相关的图像。每个Image都有Text before image，Image descriptioin和Text after image的描述，根据这些内容将Image插入到文本答案中间，使每个Image与上下文连贯和逻辑缜密。格式如下：
+        1. 在Image中找到与Question和Context相关的图像。每个Image都有content_before_image，image_description和content_after_image的描述。从这些内容可以得知这张图片在原文中的上下文以及上下图片是什么。根据这些内容将Image插入到你的答案中间，使每个Image与上下文和上下图片保持原文的前后因果等逻辑关系。格式如下：
             
             文本答案段落
             <a href="图像1的Url" target="_blank"><img src="图像1的Src"></a>
