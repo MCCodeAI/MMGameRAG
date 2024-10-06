@@ -5,7 +5,7 @@ import random
 
 from mmgamerag import *
 
-
+prompt=''
 
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
@@ -13,11 +13,15 @@ with st.sidebar:
     "[View the source code](https://github.com/MCCodeAI/MMGameRAG)"
     "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
     
+    st.markdown("---")
     if st.button("Clear Chat"):
         # Clear relevant session state variables here
         if 'messages' in st.session_state:
             del st.session_state['messages']
+            del st.session_state['question_list']
         st.success("Chat cleared!")
+
+
 
 
 
@@ -35,10 +39,13 @@ if "messages" not in st.session_state: # Initialize the chat, only run once
     
 
 
+
 for role, content in st.session_state["messages"]:  # Show all except the latest message
     st.chat_message(role).markdown(content, unsafe_allow_html=True)
 
+# if prompt:
 if prompt := st.chat_input():
+
     # if not openai_api_key:
     #     st.info("Please add your OpenAI API key to continue.")
     #     st.stop()
@@ -71,7 +78,7 @@ if prompt := st.chat_input():
     # 创建一个占位符
 
     placeholder = st.empty()
-    gif_index = random.randint(0, 1)  # 随机选择从0到1的整数
+    gif_index = random.randint(0, 0)  # 随机选择从0到1的整数
     gif_path = f"monkeying{gif_index}.gif"  # 生成对应的GIF文件路径
     # 在占位符中显示文字
     # placeholder.text("攻略搜索中...")
