@@ -18,7 +18,6 @@ with st.sidebar:
         # Clear relevant session state variables here
         if 'messages' in st.session_state:
             del st.session_state['messages']
-            del st.session_state['question_list']
         st.success("Chat cleared!")
 
 
