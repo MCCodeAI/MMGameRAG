@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+        <meta charset="utf-8"> 
+        <title>test4_force</title> 
+  </head> 
+  <body> 
+        <script src="JS/D3/d3.v7.js"></script>
+        <script>
+            // 设置SVG画布的高度和宽度
+            var height = window.innerHeight - 100;
+
+            var width = window.innerWidth - 100;
+
+            // 创建一个颜色比例尺，使用d3.schemeCategory10颜色方案
+            var colors = d3.scaleOrdinal(d3.schemeCategory10);
+
+            // 选择body元素，添加一个svg元素，并设置其宽度、高度和边框样式
+            var svg = d3.select("body").append("svg")
+         .attr("width", width)
+         .attr("height", height)
+         .style('border', '1px solid gray');
+
+         var data = {
+            nodes: [
+                { name: "can", group: 1, value: 97000 },
+                { name: "run on", group: 2, value: 35700 },
+                { name: "steam deck", group: 3, value: 27100 },
+                { name: "rog ally", group: 3, value: 2400 },
+                { name: "ps4", group: 3, value: 2400 },
+                { name: "gtx 1650", group: 3, value: 1900 },
+                { name: "ps5", group: 3, value: 1900 },
+                { name: "be", group: 1, value: 52600 },
+                { name: "play/played", group: 2, value: 40500 },
+                { name: "offline", group: 3, value: 14800 },
+                { name: "on keyboard and mouse", group: 3, value: 12100 },
+                { name: "on pc", group: 3, value: 4400 },
+                { name: "offline ps5", group: 3, value: 4400 },
+                { name: "on mac", group: 3, value: 2400 },
+                { name: "on ps4", group: 3, value: 2400 },
+                { name: "family shared", group: 3, value: 12100 },
+                { name: "cracked", group: 3, value: 2400 },
+                { name: "have", group: 1, value: 6300 },
+                { name: "multiple saves", group: 2, value: 4400 },
+                { name: "multiple save files", group: 2, value: 1900 }
+            ],
+            links: [
+                { source: 0, target: 1 },
+                { source: 1, target: 2 },
+                { source: 1, target: 3 },
+                { source: 1, target: 4 },
+                { source: 1, target: 5 },
+                { source: 1, target: 6 },
+                { source: 0, target: 7 },
+                { source: 7, target: 8 },
+                { source: 8, target: 9 },
+                { source: 8, target: 10 },
+                { source: 8, target: 11 },
+                { source: 8, target: 12 },
+                { source: 8, target: 13 },
+                { source: 8, target: 14 },
+                { source: 7, target: 15 },
+                { source: 7, target: 16 },
+                { source: 0, target: 17 },
+                { source: 17, target: 18 },
+                { source: 17, target: 19 }
+            ]
+            }
+
+            // 缩放圆形节点的半径
+            const rScale = d3.scaleLinear()
+              .domain([0, d3.max(data.nodes, d => d.value)])
+              .range([1, 100]);
+
+            // 创建一个力导向布局，并设置节点和边的属性
+            var simulation = d3.forceSimulation()
+           // 使用自定义的链接力函数，设置固定的距离
+         .force("link", customLinkForce(100))
+         .force("charge", d3.forceManyBody().strength(-1000))// strengthg改变中心力的强度
+         .force("collide", d3.forceCollide())
+         .force("x", d3.forceX())
+         .force("y", d3.forceY())
+         .force("center", d3.forceCenter(width / 2, height / 2));
+
+            // 自定义链接力函数，设置固定的距离
+            function customLinkForce(distance) {
+                return d3.forceLink()
+                  .id(function(d) { return d.index; })
+                  .distance(distance);
+            }
+
+            // 在SVG中创建表示边的线条元素
+            var links = svg.append("g")
+                .selectAll("line")
+                .data(data.links)
+                .enter()
+                .append("line")
+                .style("stroke", "#ccc")
+                .style("stroke-width", 2);
+
+            // 在SVG中创建表示节点的圆形元素
+            var nodes = svg.append("g")
+                .selectAll("circle")
+                .data(data.nodes)
+                .enter()
+                .append("circle")
+                .attr("r", d => rScale(d.value))
+                .style("fill", function(d, i) {
+                        // 为每个节点分配一种颜色
+                        return colors(i)
+                    });
+          // 添加文字元素
+          nodes.append("text")
+            .text(d => d.name)
+            .attr("text-anchor", "middle")
+            .attr("alignment-baseline", "middle")
+            .style("fill", "white")
+            .style("font-size", "12px");
+
+            // 更新力导向布局，使节点和边根据物理模拟进行移动
+            simulation.nodes(data.nodes)
+         .on("tick", ticked)
+         .force("link")
+         .links(data.links);
+
+            // 定义一个函数，在每次模拟迭代时更新节点和边的位置
+            function ticked() {
+            links.attr("x1", function(d) {
+                // 设置边的起始点x坐标为源节点的x坐标
+                return d.source.x;
+                })
+             .attr("y1", function(d) {
+                // 设置边的起始点y坐标为源节点的y坐标
+                return d.source.y;
+                })
+             .attr("x2", function(d) {
+                // 设置边的终点x坐标为目标节点的x坐标
+                return d.target.x;
+                })
+             .attr("y2", function(d) {
+                // 设置边的终点y坐标为目标节点的y坐标
+                return d.target.y;
+                });
+
+            nodes.attr("cx", function(d) {
+                // 设置节点的x坐标
+                return d.x;
+                })
+             .attr("cy", function(d) {
+                // 设置节点的y坐标
+                return d.y;
+                });
+            }
+
+            // 为节点添加拖拽功能
+            nodes.call(d3.drag()
+         .on("drag", dragged)
+         .on("end", dragended));
+
+            // 定义拖拽开始时的行为
+            function dragged(event, d) {
+            // 设置节点的固定x和y坐标为当前鼠标位置
+            d.fx = event.x;
+            d.fy = event.y;
+            // 增加模拟的活跃度，使其更快地收敛
+            simulation.alphaTarget(0.3).restart();
+            }
+
+            // 定义拖拽结束时的行为
+            function dragended(event, d) {
+            // 释放节点的固定x和y坐标，使其可以自由移动
+            d.fx = null;
+            d.fy = null;
+            }
+
+        </script> 
+    </body> 
+</html>
