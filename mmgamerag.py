@@ -42,7 +42,7 @@ def load_vectorstore():
 # LLM invoked as a chatbot
 def llm_chatbot(userprompt, chathistory):
     load_vectorstore() # Load the vectorstore for retrieval
-    mmgamellm = ChatOpenAI(name="MMGameRag", model_name="gpt-4o-mini", temperature=0.6, streaming=True)
+    mmgamellm = ChatOpenAI(name="MMGameRag", model_name="gpt-4o-mini", temperature=1, streaming=True)
 
     def format_docs(docs_with_scores):
         """
@@ -153,8 +153,8 @@ def llm_chatbot(userprompt, chathistory):
     
     else:
         # Prompt for game walk through text and embedded images together
-        prompt_template_text_image_together = """你是《黑神话：悟空》这款游戏的AI攻略助手，根据Question、Context和Retrieved_Image为玩家生成详尽的图文并茂的游戏攻略.请注意：
-        1. 在Retrieved_Image中找到与Question相关的所有images。每个image都包含有content_before_image，image_description和content_after_image的描述，分别代表image的上文、image自身的描述和image的下文内容。根据这些内容将这些images插入到答案中间使得逻辑连贯。格式如下（文本段落和image不一定是一一对应的关系）：
+        prompt_template_text_image_together = """你是《黑神话：悟空》这款游戏的AI攻略助手，根据Question、Context和Images为玩家生成详尽的图文并茂的游戏攻略.请注意：
+        1. 在Images中找到与Question相关的所有image，并按下面要求插入到答案中。每个image都包含有content_before_image，image_description和content_after_image的描述，分别代表image的上文、image自身的描述和image的下文内容。根据这些内容将这些images插入到答案中间使得逻辑连贯。格式如下（文本段落和image不一定是一一对应的关系）：
             
             文本段落
             <a href="Page Url" target="_blank">
@@ -175,7 +175,7 @@ def llm_chatbot(userprompt, chathistory):
         Context: 
         {context}
 
-        Retrieved_Image:
+        Images:
         {image}
 
         Answer:

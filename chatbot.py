@@ -2,6 +2,7 @@
 import streamlit as st
 import time
 import random
+from datetime import datetime
 
 from mmgamerag import *
 
@@ -74,15 +75,13 @@ if prompt := st.chat_input():
     # # 倒计时结束后的消息
     # placeholder.markdown("**Countdown complete!**", unsafe_allow_html=True)
     
-    # 创建一个占位符
 
     placeholder = st.empty()
     gif_index = random.randint(0, 0)  # 随机选择从0到1的整数
     gif_path = f"monkeying{gif_index}.gif"  # 生成对应的GIF文件路径
     # 在占位符中显示文字
     # placeholder.text("攻略搜索中...")
-    placeholder.image(f"docs/uidata/{gif_path}", caption="攻略搜索中...")
-
+    placeholder.image(f"uidata/{gif_path}", caption="攻略搜索中...")
 
     # # 等待2秒
     # time.sleep(0.5)
@@ -90,10 +89,14 @@ if prompt := st.chat_input():
     
 
     # response = client(st.session_state["messages"])
-
+    start_time = datetime.now()  # 记录开始时间
     response = llm_chatbot(prompt,st.session_state["messages"])
-    print('\n---------\n')
-    print(response + '\n---------\n')
+    end_time = datetime.now()  # 记录结束时间
+    execution_time = end_time - start_time
+    print(f"Time: {end_time}, llm Execution time: {execution_time} seconds")
+
+    # print('\n---------\n')
+    # print(response + '\n---------\n')
     msg = response
     msg_base64 = msg_imgurl_to_base64(msg)
 
