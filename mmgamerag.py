@@ -232,7 +232,7 @@ def msg_imgurl_to_base64(msg):
             # Use local image for quicker speed
             # Clean the URL to make it filename-safe
             filename_safe_url = src.replace(":", "=").replace("/", "|")
-            filename_safe_url = 'docs/rawdata/img/' + filename_safe_url
+            filename_safe_url = 'docs0/rawdata/img/' + filename_safe_url
             image_open = Image.open(filename_safe_url)
 
 
