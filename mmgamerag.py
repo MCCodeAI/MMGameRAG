@@ -250,3 +250,5 @@ def msg_imgurl_to_base64(msg):
 
     # Output the updated message after all replacements
     return msg_base64
+
+
