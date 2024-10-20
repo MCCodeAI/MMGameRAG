@@ -1,0 +1,235 @@
+Title: 
+城通网盘访问密码：419586 
+ 数字键 1 - 无敌模式/无视伤害判定
+ 数字键 2 - 无限生命
+ 数字键 3 - 无限法力
+ 数字键 4 - 无限气力
+ 数字键 5 - 无限棍势
+ 数字键 6 - 无限葫芦使用次数
+ 数字键 7 - 法术瞬间冷却
+ 数字键 8 - 变身瞬间冷却
+ 数字键 9 - 无限变身时间
+ 数字键 0 - 无限化身技元气
+ 数字键 . - 无限法宝元气
+ 数字键 + - 最高暴击率
+ 数字键 - - 最高韧性
+ 数字键 / - 防止异常状态
+ Ctrl+数字键 / - 灵蕴倍率
+ Ctrl+数字键 * - 经验倍率
+ Ctrl+数字键 + - 编辑根器点数
+ Ctrl+数字键 - - 100%掉宝率
+ Ctrl+数字键 1 - 超级伤害/一击必杀
+ Ctrl+数字键 2 - 伤害倍率
+ Ctrl+数字键 3 - 防御倍率
+ Ctrl+数字键 4 - 气力消耗倍率
+ Ctrl+数字键 5 - 设置游戏速度
+ Alt+数字键 1 - 编辑灵蕴
+ Alt+数字键 2 - 编辑点击物品数量
+ Alt+数字键 3 - 增加经验值
+ Alt+数字键 4 - 编辑灵光点
+ Alt+数字键 5 - 设置玩家速度
+ Alt+数字键 6 - 设置移动速度
+ Alt+数字键 7 - 设置跳跃高度
+ Shift+F1 - 编辑生命上限
+ Shift+F2 - 编辑法力上限
+ Shift+F3 - 编辑气力上限
+ Shift+F4 - 编辑攻击
+ Shift+F5 - 编辑防御
+ Shift+F6 - 编辑气力恢复
+ Shift+F7 - 编辑暴击率
+ Shift+F8 - 增加暴击伤害
+ Shift+F9 - 编辑伤害加成
+ Shift+F10 - 编辑伤害减免
+ Ctrl+F1 - 编辑寒冻耐性
+ Ctrl+F2 - 编辑火焚耐性
+ Ctrl+F3 - 编辑毒伤耐性
+ Ctrl+F4 - 编辑雷蛰耐性
+ By 风灵月影
+游戏视频 
+游戏图片 
+大图 
+PC游戏运行指南、常见问题百科 |
+缺少dll文件/配置不正确等错误解决方法 
+推荐下载 
+（通过魔方修改器下载） 
+(function ($) {
+   //获取游戏名字
+var GameName = $('.box_game .box_c .c_2 ul li.tit').text()
+    , matchGameName = "" || GameName
+    , mofangjiasuDownLink = "https://api.mofangjiasu.com/api/versionDownload?channel=mfym&type=0&apply_type=0"
+    , Btnlisttext = ['联通下载1', '电信下载1', '联通下载2', '电信下载2']
+    , mofangjiasuGetHits = 1532727;
+
+   if ($('#hot').attr('data-gamelib') == "1314156" || $('.YXXX').text().indexOf('黑神话悟空') != -1) {
+	mofangjiasuDownLink = "https://downfl.yz3l.com//download/20240828/FLiNG_Trainer_c56_.exe";
+        mofangjiasuGetHits = 1574530;
+	$('.YXSM_CJWT_DW span').html('通过风灵月影下载')
+}
+    $.each(Btnlisttext, function (index, item) {
+        var Dom = '<a class="down2  Steam countHit" data-itemid="' + mofangjiasuGetHits + '" data-hot="true"'
+        Dom += ' href="' + mofangjiasuDownLink + '"'
+        Dom += 'itemprop="downloadUrl" >' + item + '</a>'
+        $('.downLoadGame-2-Btn.dl_url').append(Dom)
+    })
+    $('.downLoadGame-2-Btn.dl_url').append('<div class="ad" style="background: url("https://imgf.gamersky.com/img/tqbc2010/xzggjb.png") no-repeat center; position: absolute;bottom: 5px;right: 11px;width: 24px;height: 13px;opacity: 0.5;"> </div>')
+})(jQuery); 
+本地下载 
+夸克网盘高速下载 
+城通网盘高速下载 
+同类手游推荐 
+ 命运-冠位指定
+ 泰坦之旅
+ 流星群侠传
+ 符石守护者
+ 地下城传说
+ 猎龙project
+ 武士崛起
+免责声明 
+本站下载资源全部转载自各大游戏论坛及游戏下载站，并全部为免费分享。若有侵权之处请速联系我们，将会在24小时内删除。 
+ 举报方式：
+在线举报 ，或在
+联系方式 中联系。
+资源安全说明： 
+本站资源不会集成任何流氓插件，但下载后仍请大家自行查杀以便决定是否使用。 
+资源纠错反馈： 
+若您下载的资源有问题，请到论坛的 
+资源反馈区 发帖告知，以便尽快解决。
+游民星空APP 
+随时掌握游戏情报 
+分享 
+ 新浪微博
+ QQ
+ 微信
+ 举报
+| 
+ 收藏
+| 
+(function(){
+    var myDate=new Date(),mytt=myDate.getFullYear()+''+(myDate.getMonth()+1)+''+myDate.getDate();
+    var urlTmp = window.location;
+    var urlTmpOri = urlTmp.host;
+    var urlTmpPath = urlTmp.pathname;
+    var urlTmpCale = urlTmpOri + urlTmpPath.replace(/_\d*/, '');
+    var thisPageUrl = urlTmp.protocol + '//' + urlTmpCale;
+    window._bd_share_config = {common: {bdUrl: thisPageUrl}, share: [{"tag" : "share_2","bdSize": 16 }]}
+    with(document) 0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//j.gamersky.com/static/api/js/share.js?cdnversion='+mytt];
+})(); 
+相关下载 
+游戏 
+《黑神话：悟空》像素版下载 
+《黑神话：悟空》官方中文版下载 
+工具 
+《黑神话：悟空》MOD管理器v3.041 
+《黑神话：悟空》C#mod加载器 
+《黑神话：悟空》v1.0.9.15179六十二项修改器 
+ 没有任何记录
+补丁 
+相关攻略 
+《黑神话悟空》图文攻略 支线、隐藏全探索 
+《黑神话：悟空》全BOSS打法指南 
+《黑神话：悟空》NPC支线任务攻略汇总 
+《黑神话：悟空》全地图一览及收集品位置 
+《黑神话：悟空》攻略路线推荐 简洁不剧透 
+《黑神话：悟空》全成就解锁指南 
+《黑神话：悟空》全武器图鉴及获取方法 
+《黑神话：悟空》珍玩图鉴及获取方法 
+《黑神话：悟空》全防具图鉴及获取方法 
+《黑神话：悟空》全泡酒物收集攻略 
+热门推荐攻略 
+《黑神话：悟空》珍玩全收集攻略 
+2024-09-30 
+《黑神话：悟空》第三回小西天剧情解析 
+2024-09-24 
+《黑神话：悟空》全章节BOSS位置分享 
+2024-09-23 
+常见问题 
+? 
+我要提问 
+《黑神话：悟空》Wegame版回档方法 
+《黑神话：悟空》存档同步错误解决方法 
+《黑神话：悟空》重置游戏成就方法 
+《黑神话：悟空》更新空间不足解决方法 
+《黑神话：悟空》八十一难不跳成就解决方法 
+黑神话悟空最新动态 
+《黑神话》预告登顶B站热门视频 官方播放量超270万 
+2023-12-08 
+《黑神话》主美前往德国：备战科隆展！ 
+2023-08-22 
+《黑神话》愿望单排Steam前50！销量或能破百万 
+2023-08-21 
+黑神话：悟空 
+游戏制作：Game Science 
+游戏发行：Game Science 
+游戏平台：PC/PS5/XSX 
+上市时间： 
+2024-08-20 
+游戏标签： 
+-- 
+想 玩 
+玩过 
+ 评分
+众评 
+专区 
+资讯 
+攻略 
+下载 
+图片 
+视频 
+官网 
+黑神话：悟空 
+游戏平台：PC/PS5/XSX 
+动作游戏 
+流程攻略 
+支线攻略 
+隐藏地图 
+四渎龙王攻略 
+BOSS打法 
+收集品 
+打坐蒲团 
+落伽香藤 
+三冬虫 
+虚空结 
+酒品 
+泡酒物 
+丹药 
+配方 
+材料 
+披挂 
+武器 
+防具 
+珍玩 
+法宝 
+精魄 
+葫芦 
+流派配装 
+技能加点 
+剧情解析 
+刷钱刷灵蕴 
+刷经验 
+视频解说 
+BUG问题解决 
+奖杯成就 
+新手攻略 
+PC 
+PS 
+Xbox 
+(function(){
+            function boxGame(jsUrl){
+                var clubRrc = '//j.gamersky.com/web2015/www/review/js/'+jsUrl+'?'+dateFtt({f:60});
+                with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src=clubRrc];
+            }
+            if (location.host == 'wap.gamersky.com') {
+                $(".box_game,.box_tag").remove();
+                $(".box_wap").show();
+                boxGame('wap_zhongping.js');
+            } else {
+                $(".box_wap").remove();
+                $(".box_game").show();
+                boxGame('pc_zhongping.js');
+            }
+        })(); 
+系列游戏 
+ 黑神话悟空
+玩家点评 
+我要点评 
+查看更多精彩点评 
