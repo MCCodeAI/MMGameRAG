@@ -2,6 +2,8 @@ import logging
 import os
 from datetime import date
 
+
+
 logger = None  # Global variable to store the logger instance
 
 def setup_logger(directory_name):
@@ -38,7 +40,7 @@ def setup_logger(directory_name):
 
     return logger
 
-def log_message(message, caller="Default"):
+def log_message(message, caller="Default", printinfo=False):
     """
     Logs the provided message with the caller information, including process name and ID.
     """
@@ -50,3 +52,5 @@ def log_message(message, caller="Default"):
     logger = setup_logger(directory_name)
     # Use the 'extra' argument to provide the 'caller' field
     logger.info(message, extra={'caller': caller})
+    if printinfo:
+        print(message)

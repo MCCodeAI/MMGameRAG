@@ -1,67 +1,634 @@
-from dotenv import load_dotenv,find_dotenv
-from langchain_openai import ChatOpenAI 
-import multiprocessing
-import time
-import sys
 import os
+import sys
+import time
+import multiprocessing
+from dotenv import load_dotenv, find_dotenv
+from langchain_openai import ChatOpenAI
+from tqdm import tqdm
+from urllib.parse import urljoin
+import urllib.request
+from lxml import html, etree
+import requests
+import json
 
-load_dotenv(find_dotenv()) 
+from userlib.user_input import *
+from userlib.user_logger import log_message
 
-# Import all functions and variables from logger
-from userlib.user_logger import *
+# Load environment variables
+load_dotenv(find_dotenv())
 
-def call_openai_api(prompt):
+
+class WebScraper:
     """
-    Function to call OpenAI API with the given prompt
+    Class for web scraping tasks, including crawling, cleaning, and saving content.
+    """
+
+    def __init__(self, url):
+        """
+        Initialize the web scraper with the target URL.
+        """
+        self.url = url
+
+    # Base64 encode the image
+    def get_base64_encoded_image(self, image_url):
+        """
+        Fetches the image from the given URL and returns its Base64 encoded string.
+        """
+        return ''  # Temporarily returning an empty string for base64
+
+    # Save content to file, for back up only, structured data is saved in JSON file.
+    def save_content_to_file(self, content, filename):
+        """
+        Saves the provided content to a file.
+        """
+        with open(filename, "w", encoding="utf-8") as file:
+            file.write(content)
+        log_message(f"Content successfully saved to {filename}")
+
+    def save_image_to_file(self, img_src):
+        """
+        Save the image from the provided URL to a specified directory with a safe filename.
+        
+        Parameters:
+        img_src (str): The URL of the image to be saved.
+        """
+        # Clean the URL to make it filename-safe
+        filename_safe_url = img_src.replace(":", "=").replace("/", "|")
+        
+        # Specify the save path
+        save_directory = "quicksearch_cache/rawdata/img"
+        os.makedirs(save_directory, exist_ok=True)
+
+        # Define the filename
+        filename = os.path.join(save_directory, f"{filename_safe_url}")
+        
+        # Download and save the image
+        urllib.request.urlretrieve(img_src, filename)
+        log_message(f"Image saved as: {filename}")
+
+
+    # Save content to JSON file in a specified format
+    def save_data_json_with_format(self, content, filename):
+        """
+        Saves the provided content to a JSON file with specified indentation format.
+        Ensures the content is appended correctly to an existing JSON array.
+        """
+        # Check if the file exists and load its content if it does
+        if os.path.exists(filename):
+            with open(filename, 'r', encoding="utf-8") as json_file:
+                try:
+                    existing_data = json.load(json_file)
+                except json.JSONDecodeError:
+                    existing_data = []
+        else:
+            existing_data = []
+        
+        # Append new content to the existing data
+        existing_data.extend(content)
+        
+        # Save the updated data back to the file
+        with open(filename, 'w', encoding="utf-8") as json_file:
+            json.dump(existing_data, json_file, indent=4, ensure_ascii=False)
+        
+        log_message(f"JSON content successfully saved to {filename}")   
+
+    
+
+    # Extract text and images from the part with class="Mid2L_con" and save to docs first, then JSON. n means how many lines of text was stored before and after each image.
+    def extract_text_and_images(self, currenturl, tree, n=20):
+        """
+        Extracts text and images from the part of the webpage with class="Mid2L_con", 
+        and splits into two parts: one with text only, and one with text + images.
+        Saves content to files first in 'docs', then processes and saves image metadata to JSON files.
+        """
+        
+        if tree:
+
+            # Extract the page title
+            # title = tree.xpath('//title/text()') # regular title
+            # if title:
+            #     title_text = title[0].strip()
+            # else:
+            #     title_text = 'No Title'
+            
+            title_text = ''
+            # Extract title with detailed data and author info, such as "2023-08-21 14:06:02 来源：游民星空 作者：LIN木木 编辑：LIN木木　浏览：17536"
+            mid2L_tit_elements = tree.xpath('//div[@class="Mid2L_tit"]')
+            if mid2L_tit_elements:
+                title_text = mid2L_tit_elements[0].text_content()           
+                # Remove leading and trailing whitespace and empty lines in the middle
+                lines = [line.strip() for line in title_text.splitlines() if line.strip()] 
+                title_text = "\n".join(lines)
+
+            # Extract the part of the page with class="Mid2L_con"
+            mid2l_con = tree.xpath('//div[@class="Mid2L_con"]')
+
+            # Clean the URL to make it filename-safe
+            filename_safe_url = currenturl.replace(":", "=").replace("/", "|")
+
+            if mid2l_con:
+                text_content_list = [f"Title: {title_text}"]
+                text_with_images_list = [f"Title: {title_text}"]
+                txt_data_list = []
+                stop_extraction = False
+
+                # First pass: gather all text and image elements
+                for element in mid2l_con[0].iter():
+                    if stop_extraction:
+                        break
+
+                    # If it's a text node, extract the text and tail
+                    if element.text and isinstance(element.tag, str):
+                        text = element.text.strip()
+                    else:
+                        text = ""
+
+                    # Also check the 'tail' for text outside the tag
+                    if element.tail:
+                        tail_text = element.tail.strip()
+                    else:
+                        tail_text = ""
+
+                    # Combine text and tail_text
+                    combined_text = text + " " + tail_text if text or tail_text else ""
+
+                    # Append the combined text to the list if it's not empty and does not contain certain phrases
+                    if combined_text:
+                        # Check if the combined text starts with "本文由游民星空"
+                        if combined_text.startswith("本文由游民星空"):
+                            stop_extraction = True
+                        else:
+                            # Check if combined_text contains any of the unwanted phrases
+                            unwanted_phrases = [
+                                "更多相关内容请关注",
+                                "责任编辑",
+                                "友情提示：",
+                                "本文是否解决了您的问题",
+                                "已解决",
+                                "未解决",
+                                "黑神话：悟空专区",
+                                "上一页",
+                                "下一页"
+                            ]
+                            if not any(phrase in combined_text for phrase in unwanted_phrases):
+                                text_content_list.append(combined_text)
+                                text_with_images_list.append(combined_text)
+
+
+                    # If it's an <img> tag
+                    if element.tag == 'img' and not stop_extraction:
+                        img_src = element.get('src')
+                        img_data_src = element.get('data-src', img_src)  # Use data-src if available, otherwise fallback to src
+                        img_alt = element.get('alt', '')
+                        img_title = element.get('title', '')
+                        img_width = element.get('width', '')
+                        img_height = element.get('height', '')
+
+                        # Convert relative paths to absolute URLs
+                        img_src = urljoin(currenturl, img_data_src)
+
+                        img_src=img_src.replace('_S.jpg', '.jpg')
+
+                        # Save the raw image to a file
+                        self.save_image_to_file(img_src)
+
+                        # Replace the placeholder with the actual image tag
+                        img_tag = f'<img src="{img_src}" alt="{img_alt}" width="{img_width}" height="{img_height}" title="{img_title}">'
+                        text_with_images_list.append(img_tag)
+
+                # Convert text_content_list to a single string
+                text_content_str = '\n'.join(text_content_list)
+                text_with_images_list_str = '\n'.join(text_with_images_list)
+
+                # Save content to docs folder first
+                text_only_filename = os.path.join("quicksearch_cache/rawdata/", f"{filename_safe_url}_text_only.txt")
+                text_with_images_filename = os.path.join("quicksearch_cache/rawdata/", f"{filename_safe_url}_text_with_images.html")
+                self.save_content_to_file(text_content_str, text_only_filename)
+                self.save_content_to_file(text_with_images_list_str, text_with_images_filename)                
+
+                # Get img data
+                img_data_list = []
+                for img_index, line in enumerate(text_with_images_list):
+                    if line.startswith("<img"):
+                        # Extract image attributes
+                        img_src = line.split('src="')[1].split('"')[0]
+                        img_alt = line.split('alt="')[1].split('"')[0]
+                        img_width = line.split('width="')[1].split('"')[0]
+                        img_height = line.split('height="')[1].split('"')[0]
+                        img_title = line.split('title="')[1].split('"')[0]
+                        
+                        # Get Base64 encoded image content (currently returning empty string)
+                        img_base64 = self.get_base64_encoded_image(img_src)
+                        
+                        # Get n lines before and after the image
+                        content_before_image = []
+                        content_after_image = []
+                        
+                        # Extract n lines before the image, stop if another <img> tag is encountered
+                        for i in range(img_index-1, max(0, img_index-n)-1, -1):
+                            # if '<img' in text_with_images_list[i]:
+                            #     break
+                            content_before_image.append(text_with_images_list[i])
+                        content_before_image.reverse()
+                        
+                        # Extract n lines after the image, stop if another <img> tag is encountered
+                        for i in range(img_index+1, min(len(text_with_images_list), img_index+1+n)):
+                            # if '<img' in text_with_images_list[i]:
+                            #     break
+                            content_after_image.append(text_with_images_list[i])
+                        
+                        content_before_image_str = '\n'.join(content_before_image)
+                        content_after_image_str = '\n'.join(content_after_image)
+                        image_descrip_str = ''
+                        
+                        # Add the image metadata to the img_data_list
+                        img_data_list.append({
+                            "page_title": title_text,  # To recognize this image with the page title.
+                            "src": img_src,
+                            "base64": img_base64,  # Temporarily set to an empty string
+                            "title": img_title,
+                            "alt": img_alt,
+                            "content_before_image": content_before_image_str,
+                            "image_description": image_descrip_str,
+                            "content_after_image": content_after_image_str,
+                            "url": currenturl,  # Current page url
+                            "type": "img"
+                        })
+
+
+                txt_data_list.append({
+                        "txt": text_content_str,
+                        "url": currenturl,
+                        "type": "text"
+                    })
+
+                # Save the entire text_content_str directly to mmtext.json
+                self.save_data_json_with_format(txt_data_list, "quicksearch_cache/mmtext.json")
+
+                # Save the image metadata to JSON as a list of objects
+                self.save_data_json_with_format(img_data_list, "quicksearch_cache/mmimg.json")
+
+                return f"Content saved to files in docs and JSON files processed."
+            else:
+                return "No content found with class='Mid2L_con'."
+        else:
+            return "Failed to fetch content."
+
+    # Load existing links from the JSON file
+    def load_existing_links(self, filename):
+        """
+        Loads existing links from the specified JSON file.
+        If the file doesn't exist, it returns an empty list.
+        """
+        if os.path.exists(filename):
+            with open(filename, 'r', encoding="utf-8") as json_file:
+                return json.load(json_file)
+        return []
+        
+
+    # Global variable to track new links added across function calls
+    new_link_count = 0
+    
+    def save_link_to_json(self, new_link, filename="quicksearch_cache/links.json"):
+        """
+        Saves the provided link to the specified JSON file.
+        If the link contains .shtml?, it removes the string after .shtml.
+        If the link already exists, it returns False.
+        If the link is new and added, it returns True.
+        Logs the added link along with the updated total count of new links.
+        """
+        global new_link_count  # Use the global counter for new links
+        
+        # Check if the new_link contains '.shtml?'
+        if ".shtml?" in new_link:
+            new_link = new_link.split(".shtml?")[0] + ".shtml"
+        links = self.load_existing_links(filename)
+        
+        if new_link not in links:
+            links.append(new_link)
+            new_link_count += 1  # Increment the global counter for a new link
+            with open(filename, 'w', encoding="utf-8") as json_file:
+                json.dump(links, json_file, indent=4, ensure_ascii=False)
+            log_message(f"New link added to links.json: {new_link}. Total links: {new_link_count}")
+            return True
+        else:
+            log_message(f"Link already in links.json: {new_link}")
+            return False    
+
+
+
+    # Global variable to track new URLs added across function calls
+    new_url_count = 0
+
+    # Save crawled URLs to the JSON file and count added URLs
+    def save_crawled_url_to_json(self, new_url, filename="quicksearch_cache/crawled_urls.json"):
+        """
+        Saves the provided URL to the specified JSON file.
+        If the URL already exists, it returns False.
+        If the URL is new and added, it returns True.
+        Logs the added URL along with the updated total count of new URLs.
+        """
+        global new_url_count  # Use the global counter for new URLs
+
+        # Check if the file exists and load existing URLs
+        if os.path.exists(filename):
+            with open(filename, 'r', encoding="utf-8") as json_file:
+                urls = json.load(json_file)
+        else:
+            urls = [] 
+        
+        log_message(f"-----------------------------------------------------------")
+        
+        # Check if the URL is new
+        if new_url not in urls:
+            urls.append(new_url)
+            new_url_count += 1  # Increment the global counter for a new URL
+            with open(filename, 'w', encoding="utf-8") as json_file:
+                json.dump(urls, json_file, indent=4, ensure_ascii=False)
+            log_message(f"New crawled url added to crawled_urls.json: {new_url}. Total urls: {new_url_count}")
+            return True 
+        else:
+            log_message(f"Url already in crawled_urls.json: {new_url}")
+            return False
+        
+
+    # Check if the link exists in the JSON file
+    def check_link_in_json(self, new_link, filename="quicksearch_cache/links.json"):
+        """
+        Checks if the provided link exists in the specified JSON file.
+        If the link contains .shtml?, it removes the string after .shtml.
+        Returns True if the link is found, otherwise False.
+        """
+        # Check if the new_link contains '.shtml?'
+        if ".shtml?" in new_link:
+            new_link = new_link.split(".shtml?")[0] + ".shtml"
+        
+        # Load existing links from the JSON file
+        links = self.load_existing_links(filename)
+        
+        # Return True if the link is found, otherwise False
+        if new_link in links:
+            return True
+        else:
+            return False
+
+
+
+    # Send request with retry mechanism
+    def fetch_url_with_retries(url, max_retries=2):
+        """
+        Attempts to fetch content from the given URL, retrying up to max_retries times.
+        If the request fails, it waits for 1 second before retrying.
+        """
+        retries = 0
+        while retries < max_retries:
+            try:
+                response = requests.get(url, timeout=3)  # Set timeout to 3 seconds
+                
+                # If the status code is 200, the request was successful, return the content
+                if response.status_code == 200:
+                    log_message(f"Success on attempt {retries + 1} for {url}")
+                    return response.content
+                
+                # If the status code is not 200, log the failure reason
+                else:
+                    log_message(f"Attempt {retries + 1} failed with status code {response.status_code}")
+            
+            except requests.RequestException as e:
+                # Capture request exceptions like timeout or connection errors
+                log_message(f"Attempt {retries + 1} failed with error: {e}")
+            
+            # Increment retry count
+            retries += 1
+            
+            # Wait for 1 second before retrying
+            time.sleep(1)
+
+        # If max retries are exceeded, return None or handle the error accordingly
+        log_message(f"Failed to fetch the URL after {max_retries} attempts.")
+        return None
+
+    # New function to crawl the webpage and its linked pages up to a given depth, this only fits the page in gamesky. 
+    def crawl_and_extract(self, url, keyword, linkdepth=1):
+        """
+        Crawls the webpage starting from the given URL, and checks for links within the page.
+        If a page contains the term specified in 'keyword' in either "Mid2L_con" class or in the title,
+        or in the whole HTML content, it saves the link in 'links.json'.
+        Crawls up to the given linkdepth (including the original URL).
+        """
+        def crawl_nest(url, current_depth, max_depth):
+
+            # Check if the link has been crawled
+            if self.save_crawled_url_to_json(url) == False:
+                return
+
+
+            # Check if the link exists in the JSON file and it is in the max depth, if yes, just return.
+            if self.check_link_in_json(url) == True and current_depth == max_depth:
+                log_message(f"Link found in links.json: {url} (Depth: {current_depth})")
+                return
+            
+            # Fetch the page content
+            html_content = self.fetch_url_with_retries(url)
+            if not html_content:
+                log_message(f"Failed to fetch content for {url} (Depth: {current_depth})")
+                return
+            
+            # Parse the HTML using lxml
+            tree = html.fromstring(html_content)
+
+            # Check if class="Mid2L_con" or title contains the keyword
+            mid2l_con_elements = tree.xpath('//div[@class="Mid2L_con"]')
+            title_elements = tree.xpath('//title/text()')
+            
+            # Check if keyword exists in Mid2L_con or Title
+            mid2l_con_text = mid2l_con_elements[0].text_content() if mid2l_con_elements else ""
+            title_text = title_elements[0] if title_elements else ""
+            
+            links = []
+
+            if mid2l_con_text:
+                if keyword in mid2l_con_text or keyword in title_text:
+                    if current_depth == 0: current_depth = 1   # 0 is for url without mid2l_con, so we set it to 1
+                    log_message(f"Found '{keyword}' in Mid2L_con or Title at {url} (Depth: {current_depth})")
+                    linkexist = self.save_link_to_json(url)  # Save the link to JSON
+                    if linkexist == True:
+                        self.extract_text_and_images(url, tree)
+                    if current_depth < max_depth:
+                        # Get all links on the page
+                        alinks = tree.xpath('//div[@class="Mid2L_con"]//a[@href]/@href')
+                        links = [urljoin(url, link) for link in alinks if link.startswith(('http', '/'))]
+                        links = list(set(links))
+                        # Remove unwanted link, links starting with 'javascript:', and those ending with '.jpg' or '.png'
+                        unwanted_link = "" # "https://www.gamersky.com/z/bmwukong/"
+                        filtered_links = [link for link in links if link != unwanted_link and not link.startswith('javascript:') and not link.endswith(('.jpg', '.png'))]
+                        links = filtered_links
+                        log_message(f"Found {len(links)} links on {url} (Depth: {current_depth}). Crawling deeper...")
+
+            else:
+                # If not found in Mid2L_con, check the full HTML content
+                if keyword in title_text: 
+                    # current_depth = 0   # use this to jump the page without Mid2L_con(overview page) if nest crawling needed. 
+                    log_message(f"Found '{keyword}' in full HTML at {url} (Depth: {current_depth})")
+                # if keyword in html_content.decode('utf-8', errors='ignore'):                
+                    linkexist = self.save_link_to_json(url)  # Save the link to JSON
+                    if linkexist == True:
+                        pass
+                        self.extract_text_and_images(url, tree)   # Don't extract if it is just an overview
+
+                    if current_depth < max_depth:
+                        # Get all links on the page
+                        alinks = tree.xpath('//a[@href]/@href')
+                        links = [urljoin(url, link) for link in alinks if link.startswith(('http', '/'))]
+                        links = list(set(links))
+                        # Remove unwanted link, links starting with 'javascript:', and those ending with '.jpg' or '.png'
+                        unwanted_link = "" # "https://www.gamersky.com/z/bmwukong/"
+                        filtered_links = [link for link in links if link != unwanted_link and not link.startswith('javascript:') and not link.endswith(('.jpg', '.png'))]
+                        links = filtered_links
+                        log_message(f"Found {len(links)} links on {url} (Depth: {current_depth}). Crawling deeper...")
+                else:
+                    log_message(f"No '{keyword}' found at {url} (Depth: {current_depth})")
+
+            
+            if current_depth < max_depth and links:
+                current_depth = current_depth + 1
+                # Recursively crawl the found links, with increased depth
+                for link in tqdm(links, desc=f"Crawling depth {current_depth}/{max_depth}", leave=False, position=1, dynamic_ncols=True):
+                    crawl_nest(link, current_depth, max_depth)
+
+        crawl_nest(url, current_depth=1, max_depth=linkdepth)
+
+
+
+    def crawl(self):
+        """
+        Method to crawl web content from the specified URL.
+        """
+        try:
+            # Placeholder for crawling implementation
+            log_message(f"Starting crawl for URL: {self.url}")
+            self.crawl_and_extract(self.url, game_keywords, 1) # Crawl the URL and its linked pages up to a depth
+            log_message(f"Completed crawl for URL: {self.url}")
+        except Exception as e:
+            log_message(f"Error crawling URL: {self.url}, Error: {e}")
+
+    def clean(self, raw_data):
+        """
+        Method to clean the raw data crawled from the web.
+        """
+        try:
+            # Placeholder for data cleaning implementation
+            log_message(f"Starting cleaning data for URL: {self.url}")
+            # TODO: Add actual cleaning code here
+            cleaned_data = raw_data # Placeholder for cleaned data
+            log_message(f"Completed cleaning data for URL: {self.url}")
+            return cleaned_data
+        except Exception as e:
+            log_message(f"Error cleaning data for URL: {self.url}, Error: {e}")
+            return None
+
+    def save(self, cleaned_data, output_path):
+        """
+        Method to save the cleaned data to a file.
+        """
+        try:
+            # Placeholder for saving data implementation
+            log_message(f"Saving cleaned data for URL: {self.url} to {output_path}")
+            # TODO: Add actual save code here
+            log_message(f"Completed saving cleaned data for URL: {self.url}")
+        except Exception as e:
+            log_message(f"Error saving data for URL: {self.url}, Error: {e}")
+
+def process_url(url):
+    """
+    Function to process a single URL: crawl, clean, and save.
+    """
+    scraper = WebScraper(url)
+    scraper.crawl()
+    raw_data = None # TODO: Replace with actual crawled data
+    cleaned_data = scraper.clean(raw_data)
+    if cleaned_data is not None:
+        scraper.save(cleaned_data, f"{url.replace('/', '_')}.txt")
+
+def build_kg_database():
+    """
+    Function to build a Knowledge Graph (KG) database.
     """
     try:
-        # Record the start time
-        start_time = time.time()
-        log_message(f"API start_time: {start_time:.2f} seconds.")
-
-        # Initialize the OpenAI model
-        llm = ChatOpenAI(name="only4maxstest", model="gpt-4o-mini")
-
-        # Call the API with the prompt
-        response = llm.invoke(prompt)
-
-        # Record the end time
-        end_time = time.time()
-
-        # Calculate the elapsed time
-        elapsed_time = end_time - start_time
-        log_message(f"API call for prompt '{prompt}' took {elapsed_time:.2f} seconds.")
-
-        return response
+        log_message("Starting KG database build")
+        # TODO: Add KG database build implementation
+        log_message("Completed KG database build")
     except Exception as e:
-        # Handle exceptions and log errors
+        log_message(f"Error building KG database: {e}")
+
+def build_vector_database():
+    """
+    Function to build a Vector database (optional).
+    """
+    try:
+        log_message("Starting Vector database build")
+        # TODO: Add Vector database build implementation
+        log_message("Completed Vector database build")
+    except Exception as e:
+        log_message(f"Error building Vector database: {e}")
+
+def llm_agent(prompt):
+    """
+    Function to call the LLM with the given prompt.
+    """
+    try:
+        llm = ChatOpenAI(name="only4maxstest", model="gpt-4o-mini")
+        # response = llm.invoke(prompt)
+        # return response
+    except Exception as e:
         log_message(f"Error processing prompt: {prompt}, Error: {e}")
         return None
 
-def scrawl_webpages(page_url):
+def query_llm():
     """
-    Function to process multiple prompts using multiprocessing
+    Function to query the LLM with user prompts.
     """
-    # Create a pool of processes, limiting to cpu_count() - 1
-    with multiprocessing.Pool(processes=max(1, multiprocessing.cpu_count() - 1)) as pool:
-        # Map the function to the list of prompts
-        results = pool.map(call_openai_api, prompts)
-    
-    return results
+    try:
+        prompt = "Your prompt here"
+        log_message(f"Sending prompt to LLM: {prompt}")
+        response = llm_agent(prompt)
+        if response:
+            log_message(f"LLM response received: {response}")
+        else:
+            log_message("No response received from LLM")
+    except Exception as e:
+        log_message(f"Error querying LLM: {e}")
+
+def main():
+    """
+    Main function to coordinate the web scraping, database building, and LLM querying processes.
+    """
+
+
+    # Parallel processing of web scraping
+    log_message("Starting web scraping process")
+    try:
+        with multiprocessing.Pool(processes=multiprocessing.cpu_count()) as pool:
+            list(tqdm(pool.imap(process_url, game_urls), total=len(game_urls)))
+        log_message("Completed web scraping process")
+    except Exception as e:
+        log_message(f"Error in web scraping process: {e}")
+
+    # Building the Knowledge Graph database
+    build_kg_database()
+
+    # Optionally building the Vector database
+    build_vector_database()
+
+    # Query the LLM
+    query_llm()
 
 if __name__ == "__main__":
-    log_message(f"<----------------")
-
-
-    # Call the process_prompts function with a rate limit
-    responses = []
-    for i in range(0, len(prompts), 4):  # Process 2 prompts at a time
-        batch = prompts[i:i + 4]
-        responses.extend(process_prompts(batch))
-
-
-    # Print the responses
-    for i, response in enumerate(responses):
-        log_message(f"Response {i+1}: {response}")
-
-    log_message(f"---------------->")
+    try:
+        main()
+    except KeyboardInterrupt:
+        log_message("Process interrupted by user")
+        sys.exit(1)
+    except Exception as e:
+        log_message(f"Unexpected error in main execution: {e}")
+        sys.exit(1)
