@@ -10,6 +10,7 @@ import urllib.request
 from lxml import html, etree
 import requests
 import json
+import shutil
 
 from userlib.user_input import *
 from userlib.user_logger import log_message
@@ -297,7 +298,6 @@ class WebScraper:
         If the link is new and added, it returns True.
         Logs the added link along with the updated total count of new links.
         """
-        global new_link_count  # Use the global counter for new links
         
         # Check if the new_link contains '.shtml?'
         if ".shtml?" in new_link:
@@ -306,10 +306,10 @@ class WebScraper:
         
         if new_link not in links:
             links.append(new_link)
-            new_link_count += 1  # Increment the global counter for a new link
+            self.new_link_count += 1  # Increment the global counter for a new link
             with open(filename, 'w', encoding="utf-8") as json_file:
                 json.dump(links, json_file, indent=4, ensure_ascii=False)
-            log_message(f"New link added to links.json: {new_link}. Total links: {new_link_count}")
+            log_message(f"New link added to links.json: {new_link}. Total links: {self.new_link_count}")
             return True
         else:
             log_message(f"Link already in links.json: {new_link}")
@@ -328,28 +328,32 @@ class WebScraper:
         If the URL is new and added, it returns True.
         Logs the added URL along with the updated total count of new URLs.
         """
-        global new_url_count  # Use the global counter for new URLs
+        # Ensure the directory exists
+        directory = os.path.dirname(filename)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
 
         # Check if the file exists and load existing URLs
         if os.path.exists(filename):
             with open(filename, 'r', encoding="utf-8") as json_file:
                 urls = json.load(json_file)
         else:
-            urls = [] 
-        
+            urls = []
+
         log_message(f"-----------------------------------------------------------")
-        
+
         # Check if the URL is new
         if new_url not in urls:
             urls.append(new_url)
-            new_url_count += 1  # Increment the global counter for a new URL
+            self.new_url_count += 1  # Increment the global counter for a new URL
             with open(filename, 'w', encoding="utf-8") as json_file:
                 json.dump(urls, json_file, indent=4, ensure_ascii=False)
-            log_message(f"New crawled url added to crawled_urls.json: {new_url}. Total urls: {new_url_count}")
-            return True 
+            log_message(f"New crawled URL added to crawled_urls.json: {new_url}. Total URLs: {self.new_url_count}")
+            return True
         else:
-            log_message(f"Url already in crawled_urls.json: {new_url}")
+            log_message(f"URL already in crawled_urls.json: {new_url}")
             return False
+
         
 
     # Check if the link exists in the JSON file
@@ -375,7 +379,7 @@ class WebScraper:
 
 
     # Send request with retry mechanism
-    def fetch_url_with_retries(url, max_retries=2):
+    def fetch_url_with_retries(self, url, max_retries=2):
         """
         Attempts to fetch content from the given URL, retrying up to max_retries times.
         If the request fails, it waits for 1 second before retrying.
@@ -496,7 +500,7 @@ class WebScraper:
                 for link in tqdm(links, desc=f"Crawling depth {current_depth}/{max_depth}", leave=False, position=1, dynamic_ncols=True):
                     crawl_nest(link, current_depth, max_depth)
 
-        crawl_nest(url, current_depth=1, max_depth=linkdepth)
+        crawl_nest(url, 1, linkdepth)
 
 
 
@@ -507,6 +511,13 @@ class WebScraper:
         try:
             # Placeholder for crawling implementation
             log_message(f"Starting crawl for URL: {self.url}")
+            # Check if the directory exists
+            if os.path.exists("quicksearch_cache"):
+                # Remove all files in the directory
+                shutil.rmtree("quicksearch_cache")
+                # Recreate the empty directory
+                os.makedirs("quicksearch_cache")
+
             self.crawl_and_extract(self.url, game_keywords, 1) # Crawl the URL and its linked pages up to a depth
             log_message(f"Completed crawl for URL: {self.url}")
         except Exception as e:

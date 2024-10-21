@@ -1,0 +1,80 @@
+2024-10-22 00:06:27,861 - Default - MainProcess - 48119 - Starting web scraping process
+2024-10-22 00:06:28,852 - Default - SpawnPoolWorker-5 - 48125 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 00:06:28,855 - Default - SpawnPoolWorker-5 - 48125 - -----------------------------------------------------------
+2024-10-22 00:06:28,855 - Default - SpawnPoolWorker-5 - 48125 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1803231.shtml. Total URLs: 1
+2024-10-22 00:06:29,066 - Default - SpawnPoolWorker-5 - 48125 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 00:06:29,068 - Default - SpawnPoolWorker-5 - 48125 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1803231.shtml (Depth: 1)
+2024-10-22 00:06:29,069 - Default - SpawnPoolWorker-5 - 48125 - New link added to links.json: https://www.gamersky.com/handbook/202408/1803231.shtml. Total links: 1
+2024-10-22 00:06:29,210 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1168.jpg
+2024-10-22 00:06:29,325 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1263.jpg
+2024-10-22 00:06:29,526 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1277.jpg
+2024-10-22 00:06:29,728 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1303.jpg
+2024-10-22 00:06:29,873 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1375.jpg
+2024-10-22 00:06:30,051 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1401.jpg
+2024-10-22 00:06:30,201 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1505.jpg
+2024-10-22 00:06:30,330 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1682.jpg
+2024-10-22 00:06:30,491 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1684.jpg
+2024-10-22 00:06:30,686 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1838.jpg
+2024-10-22 00:06:30,844 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1887.jpg
+2024-10-22 00:06:30,983 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1944.jpg
+2024-10-22 00:06:31,124 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1946.jpg
+2024-10-22 00:06:31,261 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1993.jpg
+2024-10-22 00:06:31,444 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|11017.jpg
+2024-10-22 00:06:31,662 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|11080.jpg
+2024-10-22 00:06:31,814 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|11104.jpg
+2024-10-22 00:06:31,923 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|09|20240913_xdj_187_1|00.jpg
+2024-10-22 00:06:32,020 - Default - SpawnPoolWorker-5 - 48125 - Image saved as: quicksearch_cache/rawdata/img/https=||image.gamersky.com|webimg13|zt|wukong|banner|banner923.jpg
+2024-10-22 00:06:32,022 - Default - SpawnPoolWorker-5 - 48125 - Content successfully saved to quicksearch_cache/rawdata/https=||www.gamersky.com|handbook|202408|1803231.shtml_text_only.txt
+2024-10-22 00:06:32,023 - Default - SpawnPoolWorker-5 - 48125 - Content successfully saved to quicksearch_cache/rawdata/https=||www.gamersky.com|handbook|202408|1803231.shtml_text_with_images.html
+2024-10-22 00:06:32,024 - Default - SpawnPoolWorker-5 - 48125 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-10-22 00:06:32,025 - Default - SpawnPoolWorker-5 - 48125 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-10-22 00:06:32,026 - Default - SpawnPoolWorker-5 - 48125 - Completed crawl for URL: https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 00:06:32,026 - Default - SpawnPoolWorker-5 - 48125 - Starting cleaning data for URL: https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 00:06:32,026 - Default - SpawnPoolWorker-5 - 48125 - Completed cleaning data for URL: https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 00:06:32,070 - Default - MainProcess - 48119 - Completed web scraping process
+2024-10-22 00:06:32,070 - Default - MainProcess - 48119 - Starting KG database build
+2024-10-22 00:06:32,070 - Default - MainProcess - 48119 - Completed KG database build
+2024-10-22 00:06:32,070 - Default - MainProcess - 48119 - Starting Vector database build
+2024-10-22 00:06:32,070 - Default - MainProcess - 48119 - Completed Vector database build
+2024-10-22 00:06:32,070 - Default - MainProcess - 48119 - Sending prompt to LLM: Your prompt here
+2024-10-22 00:06:32,096 - Default - MainProcess - 48119 - No response received from LLM
+2024-10-22 00:08:27,304 - Default - MainProcess - 48243 - Starting web scraping process
+2024-10-22 00:08:28,249 - Default - SpawnPoolWorker-4 - 48248 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 00:08:28,253 - Default - SpawnPoolWorker-4 - 48248 - -----------------------------------------------------------
+2024-10-22 00:08:28,253 - Default - SpawnPoolWorker-4 - 48248 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1803231.shtml. Total URLs: 1
+2024-10-22 00:08:28,493 - Default - SpawnPoolWorker-4 - 48248 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 00:08:28,495 - Default - SpawnPoolWorker-4 - 48248 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1803231.shtml (Depth: 1)
+2024-10-22 00:08:28,496 - Default - SpawnPoolWorker-4 - 48248 - New link added to links.json: https://www.gamersky.com/handbook/202408/1803231.shtml. Total links: 1
+2024-10-22 00:08:29,012 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1168.jpg
+2024-10-22 00:08:29,149 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1263.jpg
+2024-10-22 00:08:29,311 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1277.jpg
+2024-10-22 00:08:29,430 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1303.jpg
+2024-10-22 00:08:29,539 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1375.jpg
+2024-10-22 00:08:29,658 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1401.jpg
+2024-10-22 00:08:29,763 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1505.jpg
+2024-10-22 00:08:29,878 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1682.jpg
+2024-10-22 00:08:30,000 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1684.jpg
+2024-10-22 00:08:30,141 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1838.jpg
+2024-10-22 00:08:30,270 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1887.jpg
+2024-10-22 00:08:30,408 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1944.jpg
+2024-10-22 00:08:30,535 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1946.jpg
+2024-10-22 00:08:30,651 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1993.jpg
+2024-10-22 00:08:30,781 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|11017.jpg
+2024-10-22 00:08:30,916 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|11080.jpg
+2024-10-22 00:08:31,034 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|11104.jpg
+2024-10-22 00:08:31,134 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|09|20240913_xdj_187_1|00.jpg
+2024-10-22 00:08:31,320 - Default - SpawnPoolWorker-4 - 48248 - Image saved as: quicksearch_cache/rawdata/img/https=||image.gamersky.com|webimg13|zt|wukong|banner|banner923.jpg
+2024-10-22 00:08:31,320 - Default - SpawnPoolWorker-4 - 48248 - Content successfully saved to quicksearch_cache/rawdata/https=||www.gamersky.com|handbook|202408|1803231.shtml_text_only.txt
+2024-10-22 00:08:31,320 - Default - SpawnPoolWorker-4 - 48248 - Content successfully saved to quicksearch_cache/rawdata/https=||www.gamersky.com|handbook|202408|1803231.shtml_text_with_images.html
+2024-10-22 00:08:31,321 - Default - SpawnPoolWorker-4 - 48248 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-10-22 00:08:31,322 - Default - SpawnPoolWorker-4 - 48248 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-10-22 00:08:31,322 - Default - SpawnPoolWorker-4 - 48248 - Completed crawl for URL: https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 00:08:31,322 - Default - SpawnPoolWorker-4 - 48248 - Starting cleaning data for URL: https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 00:08:31,322 - Default - SpawnPoolWorker-4 - 48248 - Completed cleaning data for URL: https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 00:08:31,368 - Default - MainProcess - 48243 - Completed web scraping process
+2024-10-22 00:08:31,369 - Default - MainProcess - 48243 - Starting KG database build
+2024-10-22 00:08:31,369 - Default - MainProcess - 48243 - Completed KG database build
+2024-10-22 00:08:31,369 - Default - MainProcess - 48243 - Starting Vector database build
+2024-10-22 00:08:31,369 - Default - MainProcess - 48243 - Completed Vector database build
+2024-10-22 00:08:31,369 - Default - MainProcess - 48243 - Sending prompt to LLM: Your prompt here
+2024-10-22 00:08:31,395 - Default - MainProcess - 48243 - No response received from LLM
