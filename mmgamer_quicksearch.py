@@ -12,6 +12,9 @@ import requests
 import json
 import shutil
 
+from langchain.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+
 from userlib.user_input import *
 from userlib.user_logger import log_message
 
@@ -128,8 +131,11 @@ class WebScraper:
             filename_safe_url = currenturl.replace(":", "=").replace("/", "|")
 
             if mid2l_con:
-                text_content_list = [f"Title: {title_text}"]
-                text_with_images_list = [f"Title: {title_text}"]
+                text_content_list = [f"Page Url: {currenturl}"]
+                text_with_images_list = [f"Page Url: {currenturl}"]
+                text_content_list.append(f"Title: {title_text}")
+                text_with_images_list.append(f"Title: {title_text}")
+                
                 txt_data_list = []
                 stop_extraction = False
 
@@ -562,9 +568,49 @@ def llm_agent(prompt):
     Function to call the LLM with the given prompt.
     """
     try:
-        llm = ChatOpenAI(name="only4maxstest", model="gpt-4o-mini")
-        # response = llm.invoke(prompt)
-        # return response
+        mmgamequickllm = ChatOpenAI(name="MMGameQuickRag", model_name="gpt-4o-mini", temperature=0.6, streaming=True)
+        prompt_quick = """你是《黑神话：悟空》这款游戏的AI攻略助手，根据Question、Context为玩家生成详尽的图文并茂的游戏攻略.请注意：
+        1. 在Images中找到与Question相关的所有image，并按下面要求插入到答案中。每个image都包含有content_before_image，image_description和content_after_image的描述，分别代表image的上文、image自身的描述和image的下文内容。根据这些内容将这些images插入到答案中间使得逻辑连贯。格式如下（文本段落和image不一定是一一对应的关系）：
+            
+            文本段落
+            <a href="Page Url" target="_blank">
+                <img src="Image Src">
+            </a>
+            文本段落
+            <a href="Page Url" target="_blank">
+                <img src="Image Src">
+            </a>
+            文本段落
+            
+        
+        2. 在Answer的最后，根据Question找到Context中的最相关的几个参考文档，并列出Url链接，以供用户参考原始文档。
+
+        Question: 
+        {question}
+
+        Context: 
+        {context}
+
+        Answer:
+        """
+
+        prompt_game_quick = ChatPromptTemplate.from_template(prompt_quick)
+
+        chain_game_text_image_together = (
+            prompt_game_quick
+            | mmgamequickllm
+            | StrOutputParser()
+        )
+
+        gamer_question = "userprompt"
+        # context_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question, k=10, filter={"type": "text"}))
+        # img_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question, k=10, filter={"type": "img"}))
+        # print("\n-----------img-------------\n" + img_retrieval)
+        result_game_text_image = chain_game_text_image_together.invoke({
+            "question": gamer_question, 
+            "context": "context_retrieval",
+            "image": "img_retrieval"
+        })
     except Exception as e:
         log_message(f"Error processing prompt: {prompt}, Error: {e}")
         return None
@@ -575,14 +621,17 @@ def query_llm():
     """
     try:
         prompt = "Your prompt here"
-        log_message(f"Sending prompt to LLM: {prompt}")
-        response = llm_agent(prompt)
+        log_message(f"2. Sending prompt to LLM: {prompt}")
+        # response = llm_agent(prompt)
+        response = ""
         if response:
             log_message(f"LLM response received: {response}")
         else:
             log_message("No response received from LLM")
     except Exception as e:
         log_message(f"Error querying LLM: {e}")
+
+
 
 def main():
     """
