@@ -523,32 +523,6 @@ class WebScraper:
         except Exception as e:
             log_message(f"Error crawling URL: {self.url}, Error: {e}")
 
-    def clean(self, raw_data):
-        """
-        Method to clean the raw data crawled from the web.
-        """
-        try:
-            # Placeholder for data cleaning implementation
-            log_message(f"Starting cleaning data for URL: {self.url}")
-            # TODO: Add actual cleaning code here
-            cleaned_data = raw_data # Placeholder for cleaned data
-            log_message(f"Completed cleaning data for URL: {self.url}")
-            return cleaned_data
-        except Exception as e:
-            log_message(f"Error cleaning data for URL: {self.url}, Error: {e}")
-            return None
-
-    def save(self, cleaned_data, output_path):
-        """
-        Method to save the cleaned data to a file.
-        """
-        try:
-            # Placeholder for saving data implementation
-            log_message(f"Saving cleaned data for URL: {self.url} to {output_path}")
-            # TODO: Add actual save code here
-            log_message(f"Completed saving cleaned data for URL: {self.url}")
-        except Exception as e:
-            log_message(f"Error saving data for URL: {self.url}, Error: {e}")
 
 def process_url(url):
     """
