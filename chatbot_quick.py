@@ -92,8 +92,8 @@ if prompt := st.chat_input():
     # LLM Chatbot with multimodal retrieval-augmented generation
     # response = llm_chatbot(prompt,st.session_state["messages"])
     # LLM Chatbot with multimodal quick search and retrieval-augmented generation
+    
     response = llm_chatbot_quick(prompt,st.session_state["messages"])
-
     end_time = datetime.now()  # 记录结束时间
     execution_time = end_time - start_time
     print(f"Time: {end_time}, llm Execution time: {execution_time} seconds")
@@ -103,13 +103,13 @@ if prompt := st.chat_input():
     
     msg = response
     msg_base64 = msg_imgurl_to_base64_quick(msg)
-
+ 
     # print('\n-----msg_base64----\n')
     # print(msg_base64 + '\n---------\n')
 
-    # st.chat_message("assistant").write_stream(llm_chatbot(prompt,st.session_state["messages"])) 
 
     st.chat_message("assistant").write(msg_base64, unsafe_allow_html=True) 
+
     # 清空占位符
     placeholder.empty()
 

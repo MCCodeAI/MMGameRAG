@@ -14,6 +14,7 @@ import shutil
 import re
 from io import BytesIO
 import base64
+import streamlit as st
 
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -533,16 +534,57 @@ class WebScraper:
             log_message(f"Error crawling URL: {self.url}, Error: {e}")
 
 
+def fetch_links_with_keyword(user_q):
+    """
+    Fetches links from a search result page that contain the specified keyword.
+    The function retrieves content from the search URL and looks for links in
+    elements with class="Mid2_L". It collects only those URLs containing the
+    user_q keyword, ensuring there are no duplicates.
+
+    Parameters:
+        user_q (str): The keyword to search for in the URLs.
+
+    Returns:
+        list: A list of URLs containing the user_q keyword.
+    """
+    search_url = f"https://so.gamersky.com/?s=%E9%BB%91%E7%A5%9E%E8%AF%9D+{user_q}"
+    links = []
+
+    try:
+        # Fetch the content of the search URL
+        response = requests.get(search_url)
+        if response.status_code != 200:
+            log_message(f"Failed to fetch content for {search_url}")
+            return []
+
+        # Parse the HTML content using lxml
+        tree = html.fromstring(response.content)
+
+        # Find all elements with class="Mid2_L" and extract links
+        mid2l_elements = tree.xpath('//div[@class="Mid2_L"]//a[@href]/@href')
+        if mid2l_elements:
+            # log_message(mid2l_elements)
+            # Filter links to include only those containing the user_q keyword
+            for link in mid2l_elements:
+                full_url = urljoin(search_url, link)
+                if full_url not in links:
+                    links.append(full_url)
+
+            log_message(f"Found {len(links)} links containing '{user_q}' on {search_url}")
+        else:
+            log_message(f"No elements with class='Mid2_L' found on {search_url}")
+
+    except Exception as e:
+        log_message(f"Error fetching or parsing content from {search_url}: {e}")
+
+    return links
+
 def process_url(url):
     """
     Function to process a single URL: crawl, clean, and save.
     """
     scraper = WebScraper(url)
     scraper.crawl()
-    raw_data = None # TODO: Replace with actual crawled data
-    cleaned_data = scraper.clean(raw_data)
-    if cleaned_data is not None:
-        scraper.save(cleaned_data, f"{url.replace('/', '_')}.txt")
 
 def build_kg_database():
     """
@@ -572,7 +614,7 @@ def llm_agent(user_q):
     """
     try:
         mmgamequickllm = ChatOpenAI(name="MMGameQuickRag", model_name="gpt-4o-mini", temperature=0.6, streaming=True)
-        prompt_quick = """你是《黑神话：悟空》这款游戏的AI攻略助手，根据Question、Context为玩家生成详尽的图文并茂的游戏攻略.请注意以下规则：
+        prompt_quick = """你是《黑神话：悟空》这款游戏的AI攻略助手，根据Question、Context为玩家生成详尽的图文并茂的游戏攻略.你应该忠于原文的内容，并尽可能详细的给出答案。请注意以下规则：
         1. 在Context中有若干个页面，每个页面都包含有Page Url，Title，文本内容和以<img>标签表示的图片。例如：
 
         Page Url:
@@ -587,10 +629,7 @@ def llm_agent(user_q):
 
         一般来说，Image1是文本a的内容的图像展示，Image2和Image3是与文本b的内容的图像展示。
         
-        2. 在生成答案时，如果答案引用了某段文本内容，应将与该文本相关的图像插入到答案中的相应位置。插入方式如下：
-        - 当某段文本有对应图像时，将相关的 <img> 标签插入文本下方。
-        - 如果文本中没有适合插入的图像，则可以省略图片。
-        - 如果有多个图像与同一段文本相关，按上下文的逻辑顺序插入。
+        2. 在生成答案时，如果引用了某段原始文本的内容，应将与此原始文本相关的所有图像按原文的逻辑顺序插入到此段文本的后面。如果你生成的某段答案引用了多个原始文本段落的内容，则将这些文本相关的所有图像按照原文的逻辑顺序依次插入到文本的后面。
     
         image按如下格式输出：
             <a href="Page Url" target="_blank">
@@ -660,11 +699,22 @@ def get_context(directory="quicksearch_cache/rawdata"):
 
     return context_q
 
+@st.cache_data
 def llm_chatbot_quick(user_q, chathistory):
     """
     Function to query the LLM with user prompts.
     """
     try:
+        # Parallel processing of web scraping
+
+        # log_message("Starting getting the related page links")
+        # search_links = fetch_links_with_keyword(user_q)
+
+        # search_links=game_urls
+        # with multiprocessing.Pool(processes=multiprocessing.cpu_count()) as pool:
+        #     list(tqdm(pool.imap(process_url, search_links), total=len(search_links)))
+        # log_message("Completed web scraping process")    
+
         # user_q = "告诉我第一回-苍狼林的攻略"
         log_message(f"⭐️2. Sending prompt to LLM: {user_q}")
         response = llm_agent(user_q)
@@ -747,11 +797,14 @@ def main():
     build_vector_database()
 
     # Query the LLM
-    llm_chatbot_quick()
+    # llm_chatbot_quick()
 
 if __name__ == "__main__":
     try:
-        main()
+        # main()
+        fetch_links_with_keyword('金池')
+        pass
+        
     except KeyboardInterrupt:
         log_message("Process interrupted by user")
         sys.exit(1)
