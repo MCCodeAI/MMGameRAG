@@ -78,3 +78,41 @@
 2024-10-22 00:08:31,369 - Default - MainProcess - 48243 - Completed Vector database build
 2024-10-22 00:08:31,369 - Default - MainProcess - 48243 - Sending prompt to LLM: Your prompt here
 2024-10-22 00:08:31,395 - Default - MainProcess - 48243 - No response received from LLM
+2024-10-22 12:55:28,399 - Default - MainProcess - 60641 - Starting web scraping process
+2024-10-22 12:55:29,095 - Default - SpawnPoolWorker-1 - 60644 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 12:55:29,103 - Default - SpawnPoolWorker-1 - 60644 - -----------------------------------------------------------
+2024-10-22 12:55:29,103 - Default - SpawnPoolWorker-1 - 60644 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1803231.shtml. Total URLs: 1
+2024-10-22 12:55:29,267 - Default - SpawnPoolWorker-1 - 60644 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 12:55:29,269 - Default - SpawnPoolWorker-1 - 60644 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1803231.shtml (Depth: 1)
+2024-10-22 12:55:29,270 - Default - SpawnPoolWorker-1 - 60644 - New link added to links.json: https://www.gamersky.com/handbook/202408/1803231.shtml. Total links: 1
+2024-10-22 12:55:29,434 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1168.jpg
+2024-10-22 12:55:29,557 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1263.jpg
+2024-10-22 12:55:29,722 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1277.jpg
+2024-10-22 12:55:29,869 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1303.jpg
+2024-10-22 12:55:30,005 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1375.jpg
+2024-10-22 12:55:30,173 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1401.jpg
+2024-10-22 12:55:30,292 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1505.jpg
+2024-10-22 12:55:30,445 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1682.jpg
+2024-10-22 12:55:30,681 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1684.jpg
+2024-10-22 12:55:30,834 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1838.jpg
+2024-10-22 12:55:31,052 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1887.jpg
+2024-10-22 12:55:31,206 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1944.jpg
+2024-10-22 12:55:31,369 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1946.jpg
+2024-10-22 12:55:31,533 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|1993.jpg
+2024-10-22 12:55:31,817 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|11017.jpg
+2024-10-22 12:55:31,975 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|11080.jpg
+2024-10-22 12:55:32,139 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|08|20240819_ax_156_2|11104.jpg
+2024-10-22 12:55:32,242 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||img1.gamersky.com|image2024|09|20240913_xdj_187_1|00.jpg
+2024-10-22 12:55:32,360 - Default - SpawnPoolWorker-1 - 60644 - Image saved as: quicksearch_cache/rawdata/img/https=||image.gamersky.com|webimg13|zt|wukong|banner|banner923.jpg
+2024-10-22 12:55:32,362 - Default - SpawnPoolWorker-1 - 60644 - Content successfully saved to quicksearch_cache/rawdata/https=||www.gamersky.com|handbook|202408|1803231.shtml_text_only.txt
+2024-10-22 12:55:32,362 - Default - SpawnPoolWorker-1 - 60644 - Content successfully saved to quicksearch_cache/rawdata/https=||www.gamersky.com|handbook|202408|1803231.shtml_text_with_images.html
+2024-10-22 12:55:32,363 - Default - SpawnPoolWorker-1 - 60644 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-10-22 12:55:32,365 - Default - SpawnPoolWorker-1 - 60644 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-10-22 12:55:32,366 - Default - SpawnPoolWorker-1 - 60644 - 1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 12:55:32,406 - Default - MainProcess - 60641 - Error in web scraping process: 'WebScraper' object has no attribute 'clean'
+2024-10-22 12:55:32,406 - Default - MainProcess - 60641 - Starting KG database build
+2024-10-22 12:55:32,406 - Default - MainProcess - 60641 - Completed KG database build
+2024-10-22 12:55:32,406 - Default - MainProcess - 60641 - Starting Vector database build
+2024-10-22 12:55:32,406 - Default - MainProcess - 60641 - Completed Vector database build
+2024-10-22 12:55:32,407 - Default - MainProcess - 60641 - 2. Sending prompt to LLM: Your prompt here
+2024-10-22 12:55:32,407 - Default - MainProcess - 60641 - No response received from LLM

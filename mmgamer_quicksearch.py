@@ -563,27 +563,38 @@ def build_vector_database():
     except Exception as e:
         log_message(f"Error building Vector database: {e}")
 
-def llm_agent(prompt):
+def llm_agent(user_q):
     """
     Function to call the LLM with the given prompt.
     """
     try:
         mmgamequickllm = ChatOpenAI(name="MMGameQuickRag", model_name="gpt-4o-mini", temperature=0.6, streaming=True)
-        prompt_quick = """你是《黑神话：悟空》这款游戏的AI攻略助手，根据Question、Context为玩家生成详尽的图文并茂的游戏攻略.请注意：
-        1. 在Images中找到与Question相关的所有image，并按下面要求插入到答案中。每个image都包含有content_before_image，image_description和content_after_image的描述，分别代表image的上文、image自身的描述和image的下文内容。根据这些内容将这些images插入到答案中间使得逻辑连贯。格式如下（文本段落和image不一定是一一对应的关系）：
-            
-            文本段落
-            <a href="Page Url" target="_blank">
-                <img src="Image Src">
-            </a>
-            文本段落
-            <a href="Page Url" target="_blank">
-                <img src="Image Src">
-            </a>
-            文本段落
-            
+        prompt_quick = """你是《黑神话：悟空》这款游戏的AI攻略助手，根据Question、Context为玩家生成详尽的图文并茂的游戏攻略.请注意以下规则：
+        1. 在Context中有若干个页面，每个页面都包含有Page Url，Title，文本内容和以<img>标签表示的图片。例如：
+
+        Page Url:
+        Title:
+        文本a
+        <img src="Image1 Src">
+        文本b
+        <img src="Image2 Src">
+        <img src="Image3 Src">
+        文本c
+        ...
+
+        一般来说，Image1是文本a的内容的图像展示，Image2和Image3是与文本b的内容的图像展示。
         
-        2. 在Answer的最后，根据Question找到Context中的最相关的几个参考文档，并列出Url链接，以供用户参考原始文档。
+        2. 在生成答案时，如果答案引用了某段文本内容，应将与该文本相关的图像插入到答案中的相应位置。插入方式如下：
+        - 当某段文本有对应图像时，将相关的 <img> 标签插入文本下方。
+        - 如果文本中没有适合插入的图像，则可以省略图片。
+        - 如果有多个图像与同一段文本相关，按上下文的逻辑顺序插入。
+    
+        image按如下格式输出：
+            <a href="Page Url" target="_blank">
+                <img src="Image Src">
+            </a>            
+        
+        3. 在 "Answer" 的末尾，请列出引用的所有页面的 Page Url 以供用户参考原始文档。
 
         Question: 
         {question}
@@ -602,18 +613,48 @@ def llm_agent(prompt):
             | StrOutputParser()
         )
 
-        gamer_question = "userprompt"
-        # context_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question, k=10, filter={"type": "text"}))
-        # img_retrieval = format_docs(vectorstore.similarity_search_with_score(query=gamer_question, k=10, filter={"type": "img"}))
-        # print("\n-----------img-------------\n" + img_retrieval)
+
+        context_q = get_context() # Get the context from the HTML files
         result_game_text_image = chain_game_text_image_together.invoke({
-            "question": gamer_question, 
-            "context": "context_retrieval",
-            "image": "img_retrieval"
+            "question": user_q, 
+            "context": context_q
         })
     except Exception as e:
-        log_message(f"Error processing prompt: {prompt}, Error: {e}")
+        log_message(f"Error processing prompt: {user_q}, Error: {e}")
         return None
+
+def get_context(directory="quicksearch_cache/rawdata"):
+    """
+    Searches for all HTML files in the specified directory, reads their content,
+    adds a sequence number and a newline to each file's content, and concatenates
+    them into a single string assigned to the variable context_q.
+
+    Parameters:
+        directory (str): The directory to search for HTML files. Defaults to "quicksearch_cache/rawdata".
+
+    Returns:
+        str: The concatenated content from all HTML files with added sequence numbers and newlines.
+    """
+    context_q = ""
+    file_index = 1
+
+    # Iterate over all files in the specified directory
+    for filename in os.listdir(directory):
+        # Check if the file has an HTML extension
+        if filename.endswith(".html"):
+            file_path = os.path.join(directory, filename)
+            try:
+                # Open and read the content of the HTML file
+                with open(file_path, 'r', encoding="utf-8") as file:
+                    file_content = file.read()
+                    # Append the file content with the sequence number and a newline
+                    context_q += f"{file_index}: {file_content}\n"
+                    file_index += 1
+            except Exception as e:
+                # Log or handle any exceptions during file reading
+                log_message(f"Error reading file {filename}: {e}")
+
+    return context_q
 
 def query_llm():
     """
