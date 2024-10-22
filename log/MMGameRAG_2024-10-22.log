@@ -1,0 +1,535 @@
+2024-10-22 13:50:54,746 - Default - MainProcess - 62937 - Starting web scraping process
+2024-10-22 13:50:55,607 - Default - SpawnPoolWorker-5 - 62943 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 13:50:55,613 - Default - SpawnPoolWorker-5 - 62943 - -----------------------------------------------------------
+2024-10-22 13:50:55,613 - Default - SpawnPoolWorker-5 - 62943 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1803231.shtml. Total URLs: 1
+2024-10-22 13:50:55,768 - Default - SpawnPoolWorker-5 - 62943 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 13:50:55,773 - Default - SpawnPoolWorker-5 - 62943 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1803231.shtml (Depth: 1)
+2024-10-22 13:50:55,773 - Default - SpawnPoolWorker-5 - 62943 - New link added to links.json: https://www.gamersky.com/handbook/202408/1803231.shtml. Total links: 1
+2024-10-22 13:50:58,272 - Default - SpawnPoolWorker-5 - 62943 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-10-22 13:50:58,273 - Default - SpawnPoolWorker-5 - 62943 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-10-22 13:50:58,274 - Default - SpawnPoolWorker-5 - 62943 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1803231.shtml
+2024-10-22 13:50:58,304 - Default - MainProcess - 62937 - Error in web scraping process: 'WebScraper' object has no attribute 'clean'
+2024-10-22 13:50:58,304 - Default - MainProcess - 62937 - Starting KG database build
+2024-10-22 13:50:58,304 - Default - MainProcess - 62937 - Completed KG database build
+2024-10-22 13:50:58,305 - Default - MainProcess - 62937 - Starting Vector database build
+2024-10-22 13:50:58,305 - Default - MainProcess - 62937 - Completed Vector database build
+2024-10-22 13:50:58,305 - Default - MainProcess - 62937 - ⭐️2. Sending prompt to LLM: 告诉我第一回-苍狼林的攻略
+2024-10-22 13:51:14,228 - Default - MainProcess - 62937 - No response received from LLM
+2024-10-22 14:07:45,977 - Default - MainProcess - 63483 - ⭐️2. Sending prompt to LLM: 告诉我第一回-苍狼林的攻略
+2024-10-22 14:08:03,868 - Default - MainProcess - 63483 - No response received from LLM
+2024-10-22 14:14:46,262 - Default - MainProcess - 63483 - ⭐️2. Sending prompt to LLM: 告诉我第一回-苍狼林的攻略？
+2024-10-22 14:14:46,262 - Default - MainProcess - 63483 - ⭐️2. Sending prompt to LLM: 告诉我第一回-苍狼林的攻略？
+2024-10-22 14:14:59,059 - Default - MainProcess - 63483 - No response received from LLM
+2024-10-22 14:14:59,059 - Default - MainProcess - 63483 - No response received from LLM
+2024-10-22 14:15:46,824 - Default - MainProcess - 63483 - ⭐️2. Sending prompt to LLM: 告诉我第一回-苍狼林的攻略 可以吗
+2024-10-22 14:15:46,824 - Default - MainProcess - 63483 - ⭐️2. Sending prompt to LLM: 告诉我第一回-苍狼林的攻略 可以吗
+2024-10-22 14:15:46,824 - Default - MainProcess - 63483 - ⭐️2. Sending prompt to LLM: 告诉我第一回-苍狼林的攻略 可以吗
+2024-10-22 14:16:02,253 - Default - MainProcess - 63483 - ⭐️3. LLM response received: 
+ ### 第一回-苍狼林 攻略
+
+在《黑神话：悟空》的第一回-苍狼林中，玩家将经历一系列的挑战与探索。以下是详细的攻略，帮助你顺利通过这一关卡。
+
+#### 1. 序幕与基本操作
+在游戏开始时，你将面对二郎神，这是一个熟悉基本操作的好机会。击败两只小狼妖后，继续前行，你会在路上捡到药材“老山参”。在探索地图时，务必多搜刮地上的药材，以便后续合成丹药，增强你的战斗能力。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1168.jpg">
+</a>
+
+#### 2. 探索前山
+接下来，沿着阶梯向上走，你会发现一个宝箱，记得打开它以获取奖励。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1263.jpg">
+</a>
+
+继续跟随金色光线，它将引导你找到附近的土地庙。土地公公会给你“缩地青符”，这是一项非常实用的物品，可以在需要时返回最后拜过的土地庙。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1303.jpg">
+</a>
+
+#### 3. 土地庙的功能
+在土地庙中，你可以查看庙的功能。随着游戏的进度，功能会逐步解锁。当前的功能包括：
+- **调息**：恢复满血、魔法以及葫芦中的酒，同时刷新妖怪。
+- **缩地**：传送到已解锁的土地庙。
+- **谢礼**：领取预购和豪华版奖励的装备。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1505.jpg">
+</a>
+
+#### 4. 探索河流与战斗
+继续前进，你会发现一座桥。过桥后进入一个较大的区域。这里有两条路可走，建议先向右跳到桥下的河流源头，采集灵蕴（货币）。然后顺着河流走，注意小青蛙妖的攻击，它们会爆炸并放毒。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1682.jpg">
+</a>
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1684.jpg">
+</a>
+
+在河流尽头，你会遇到一个鬼鬼祟祟的家伙，调查佛头后获得【色蕴】。之后，前往河流右侧挑战头目“牯护院”。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1944.jpg">
+</a>
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1946.jpg">
+</a>
+
+#### 5. 牯护院的打法
+在与牯护院的战斗中，土地公公会出现教你使用法术定身法。击败牯护院后，继续向前走。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1993.jpg">
+</a>
+
+#### 6. 收集与提升
+战斗后，继续探索山坡右边的小水池，获取灵蕴，然后上山坡。在山坡的亭子里，你可以找到一个【打坐蒲团】，坐上去可以获得一个技能点。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/11017.jpg">
+</a>
+
+之后，回头进入山洞，你会遇到第二个土地庙，继续你的探索之旅。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/11104.jpg">
+</a>
+
+### 总结
+在第一回-苍狼林中，探索与战斗是获取资源和提升角色的关键。务必多加注意周围的环境和敌人，不要错过任何机会。
+
+#### 参考链接
+- [《黑神话悟空》全探索图文攻略 支线+隐藏+重要收集路线讲解](https://www.gamersky.com/handbook/202408/1803231.shtml)
+2024-10-22 14:16:02,253 - Default - MainProcess - 63483 - ⭐️3. LLM response received: 
+ ### 第一回-苍狼林 攻略
+
+在《黑神话：悟空》的第一回-苍狼林中，玩家将经历一系列的挑战与探索。以下是详细的攻略，帮助你顺利通过这一关卡。
+
+#### 1. 序幕与基本操作
+在游戏开始时，你将面对二郎神，这是一个熟悉基本操作的好机会。击败两只小狼妖后，继续前行，你会在路上捡到药材“老山参”。在探索地图时，务必多搜刮地上的药材，以便后续合成丹药，增强你的战斗能力。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1168.jpg">
+</a>
+
+#### 2. 探索前山
+接下来，沿着阶梯向上走，你会发现一个宝箱，记得打开它以获取奖励。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1263.jpg">
+</a>
+
+继续跟随金色光线，它将引导你找到附近的土地庙。土地公公会给你“缩地青符”，这是一项非常实用的物品，可以在需要时返回最后拜过的土地庙。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1303.jpg">
+</a>
+
+#### 3. 土地庙的功能
+在土地庙中，你可以查看庙的功能。随着游戏的进度，功能会逐步解锁。当前的功能包括：
+- **调息**：恢复满血、魔法以及葫芦中的酒，同时刷新妖怪。
+- **缩地**：传送到已解锁的土地庙。
+- **谢礼**：领取预购和豪华版奖励的装备。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1505.jpg">
+</a>
+
+#### 4. 探索河流与战斗
+继续前进，你会发现一座桥。过桥后进入一个较大的区域。这里有两条路可走，建议先向右跳到桥下的河流源头，采集灵蕴（货币）。然后顺着河流走，注意小青蛙妖的攻击，它们会爆炸并放毒。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1682.jpg">
+</a>
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1684.jpg">
+</a>
+
+在河流尽头，你会遇到一个鬼鬼祟祟的家伙，调查佛头后获得【色蕴】。之后，前往河流右侧挑战头目“牯护院”。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1944.jpg">
+</a>
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1946.jpg">
+</a>
+
+#### 5. 牯护院的打法
+在与牯护院的战斗中，土地公公会出现教你使用法术定身法。击败牯护院后，继续向前走。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1993.jpg">
+</a>
+
+#### 6. 收集与提升
+战斗后，继续探索山坡右边的小水池，获取灵蕴，然后上山坡。在山坡的亭子里，你可以找到一个【打坐蒲团】，坐上去可以获得一个技能点。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/11017.jpg">
+</a>
+
+之后，回头进入山洞，你会遇到第二个土地庙，继续你的探索之旅。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/11104.jpg">
+</a>
+
+### 总结
+在第一回-苍狼林中，探索与战斗是获取资源和提升角色的关键。务必多加注意周围的环境和敌人，不要错过任何机会。
+
+#### 参考链接
+- [《黑神话悟空》全探索图文攻略 支线+隐藏+重要收集路线讲解](https://www.gamersky.com/handbook/202408/1803231.shtml)
+2024-10-22 14:16:02,253 - Default - MainProcess - 63483 - ⭐️3. LLM response received: 
+ ### 第一回-苍狼林 攻略
+
+在《黑神话：悟空》的第一回-苍狼林中，玩家将经历一系列的挑战与探索。以下是详细的攻略，帮助你顺利通过这一关卡。
+
+#### 1. 序幕与基本操作
+在游戏开始时，你将面对二郎神，这是一个熟悉基本操作的好机会。击败两只小狼妖后，继续前行，你会在路上捡到药材“老山参”。在探索地图时，务必多搜刮地上的药材，以便后续合成丹药，增强你的战斗能力。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1168.jpg">
+</a>
+
+#### 2. 探索前山
+接下来，沿着阶梯向上走，你会发现一个宝箱，记得打开它以获取奖励。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1263.jpg">
+</a>
+
+继续跟随金色光线，它将引导你找到附近的土地庙。土地公公会给你“缩地青符”，这是一项非常实用的物品，可以在需要时返回最后拜过的土地庙。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1303.jpg">
+</a>
+
+#### 3. 土地庙的功能
+在土地庙中，你可以查看庙的功能。随着游戏的进度，功能会逐步解锁。当前的功能包括：
+- **调息**：恢复满血、魔法以及葫芦中的酒，同时刷新妖怪。
+- **缩地**：传送到已解锁的土地庙。
+- **谢礼**：领取预购和豪华版奖励的装备。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1505.jpg">
+</a>
+
+#### 4. 探索河流与战斗
+继续前进，你会发现一座桥。过桥后进入一个较大的区域。这里有两条路可走，建议先向右跳到桥下的河流源头，采集灵蕴（货币）。然后顺着河流走，注意小青蛙妖的攻击，它们会爆炸并放毒。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1682.jpg">
+</a>
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1684.jpg">
+</a>
+
+在河流尽头，你会遇到一个鬼鬼祟祟的家伙，调查佛头后获得【色蕴】。之后，前往河流右侧挑战头目“牯护院”。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1944.jpg">
+</a>
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1946.jpg">
+</a>
+
+#### 5. 牯护院的打法
+在与牯护院的战斗中，土地公公会出现教你使用法术定身法。击败牯护院后，继续向前走。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1993.jpg">
+</a>
+
+#### 6. 收集与提升
+战斗后，继续探索山坡右边的小水池，获取灵蕴，然后上山坡。在山坡的亭子里，你可以找到一个【打坐蒲团】，坐上去可以获得一个技能点。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/11017.jpg">
+</a>
+
+之后，回头进入山洞，你会遇到第二个土地庙，继续你的探索之旅。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/11104.jpg">
+</a>
+
+### 总结
+在第一回-苍狼林中，探索与战斗是获取资源和提升角色的关键。务必多加注意周围的环境和敌人，不要错过任何机会。
+
+#### 参考链接
+- [《黑神话悟空》全探索图文攻略 支线+隐藏+重要收集路线讲解](https://www.gamersky.com/handbook/202408/1803231.shtml)
+2024-10-22 14:20:16,837 - Default - MainProcess - 63483 - ⭐️2. Sending prompt to LLM: 第一回-苍狼林的攻略
+2024-10-22 14:20:16,837 - Default - MainProcess - 63483 - ⭐️2. Sending prompt to LLM: 第一回-苍狼林的攻略
+2024-10-22 14:20:16,837 - Default - MainProcess - 63483 - ⭐️2. Sending prompt to LLM: 第一回-苍狼林的攻略
+2024-10-22 14:20:16,837 - Default - MainProcess - 63483 - ⭐️2. Sending prompt to LLM: 第一回-苍狼林的攻略
+2024-10-22 14:20:27,217 - Default - MainProcess - 63483 - ⭐️3. LLM response received: 
+ ### 第一回-苍狼林的攻略
+
+在《黑神话：悟空》的第一回“苍狼林”，你将经历一段充满挑战与探索的旅程。以下是详细的攻略，帮助你顺利通过这一关卡，收集到所有重要物品。
+
+#### 1. 序幕与基本操作
+在游戏开始时，你将面对二郎神的挑战。熟悉基本操作后，干掉两只小狼妖，在路上捡到药材“老山参”。在探索地图时，多搜刮地上的各种药材，以便后续合成丹药，提升战斗能力。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1168.jpg" alt="游民星空" title="">
+</a>
+
+#### 2. 路线指引
+- **走阶梯上山**：你会发现一个宝箱。
+  
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1263.jpg" alt="宝箱" title="">
+</a>
+
+- **跟随金色光线**：它会指引你找到附近的土地庙。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1303.jpg" alt="土地庙" title="">
+</a>
+
+#### 3. 土地庙的功能
+在土地庙处，你可以获得“缩地青符”，这在需要时可以帮助你返回最后拜过的土地庙。主角死亡后也会在最后的土地庙复活。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1375.jpg" alt="缩地青符" title="">
+</a>
+
+#### 4. 继续探索
+继续前行，你会来到一座桥。过桥后，你将进入一个较大的区域。可以选择向左跳到桥下，沿河流走。注意，这两条路是相通的。
+
+- **河流源头**：向右跳到桥下，你可以采集灵蕴（货币）。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1682.jpg" alt="灵蕴" title="">
+</a>
+
+#### 5. 遇到小青蛙妖
+在河流中，遇到小青蛙妖时要小心，它死后会爆炸放毒，保持距离以免中毒。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1887.jpg" alt="小青蛙妖" title="">
+</a>
+
+#### 6. 打败牯护院
+在河流的尽头，你会遇到头目“牯护院”。击败牯护院后，继续向前走。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1944.jpg" alt="牯护院" title="">
+</a>
+
+#### 7. 进入山洞
+击败牯护院后，进入山洞，你将遇到第二个土地庙。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/11104.jpg" alt="第二个土地庙" title="">
+</a>
+
+### 总结
+在苍狼林中，你需要小心探索，打败敌人并收集药材与灵蕴。通过以上步骤，你将能够顺利通关，并获得丰富的游戏体验。
+
+#### 参考页面
+- [《黑神话悟空》全探索图文攻略 支线+隐藏+重要收集路线讲解](https://www.gamersky.com/handbook/202408/1803231.shtml)
+2024-10-22 14:20:27,217 - Default - MainProcess - 63483 - ⭐️3. LLM response received: 
+ ### 第一回-苍狼林的攻略
+
+在《黑神话：悟空》的第一回“苍狼林”，你将经历一段充满挑战与探索的旅程。以下是详细的攻略，帮助你顺利通过这一关卡，收集到所有重要物品。
+
+#### 1. 序幕与基本操作
+在游戏开始时，你将面对二郎神的挑战。熟悉基本操作后，干掉两只小狼妖，在路上捡到药材“老山参”。在探索地图时，多搜刮地上的各种药材，以便后续合成丹药，提升战斗能力。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1168.jpg" alt="游民星空" title="">
+</a>
+
+#### 2. 路线指引
+- **走阶梯上山**：你会发现一个宝箱。
+  
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1263.jpg" alt="宝箱" title="">
+</a>
+
+- **跟随金色光线**：它会指引你找到附近的土地庙。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1303.jpg" alt="土地庙" title="">
+</a>
+
+#### 3. 土地庙的功能
+在土地庙处，你可以获得“缩地青符”，这在需要时可以帮助你返回最后拜过的土地庙。主角死亡后也会在最后的土地庙复活。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1375.jpg" alt="缩地青符" title="">
+</a>
+
+#### 4. 继续探索
+继续前行，你会来到一座桥。过桥后，你将进入一个较大的区域。可以选择向左跳到桥下，沿河流走。注意，这两条路是相通的。
+
+- **河流源头**：向右跳到桥下，你可以采集灵蕴（货币）。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1682.jpg" alt="灵蕴" title="">
+</a>
+
+#### 5. 遇到小青蛙妖
+在河流中，遇到小青蛙妖时要小心，它死后会爆炸放毒，保持距离以免中毒。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1887.jpg" alt="小青蛙妖" title="">
+</a>
+
+#### 6. 打败牯护院
+在河流的尽头，你会遇到头目“牯护院”。击败牯护院后，继续向前走。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1944.jpg" alt="牯护院" title="">
+</a>
+
+#### 7. 进入山洞
+击败牯护院后，进入山洞，你将遇到第二个土地庙。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/11104.jpg" alt="第二个土地庙" title="">
+</a>
+
+### 总结
+在苍狼林中，你需要小心探索，打败敌人并收集药材与灵蕴。通过以上步骤，你将能够顺利通关，并获得丰富的游戏体验。
+
+#### 参考页面
+- [《黑神话悟空》全探索图文攻略 支线+隐藏+重要收集路线讲解](https://www.gamersky.com/handbook/202408/1803231.shtml)
+2024-10-22 14:20:27,217 - Default - MainProcess - 63483 - ⭐️3. LLM response received: 
+ ### 第一回-苍狼林的攻略
+
+在《黑神话：悟空》的第一回“苍狼林”，你将经历一段充满挑战与探索的旅程。以下是详细的攻略，帮助你顺利通过这一关卡，收集到所有重要物品。
+
+#### 1. 序幕与基本操作
+在游戏开始时，你将面对二郎神的挑战。熟悉基本操作后，干掉两只小狼妖，在路上捡到药材“老山参”。在探索地图时，多搜刮地上的各种药材，以便后续合成丹药，提升战斗能力。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1168.jpg" alt="游民星空" title="">
+</a>
+
+#### 2. 路线指引
+- **走阶梯上山**：你会发现一个宝箱。
+  
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1263.jpg" alt="宝箱" title="">
+</a>
+
+- **跟随金色光线**：它会指引你找到附近的土地庙。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1303.jpg" alt="土地庙" title="">
+</a>
+
+#### 3. 土地庙的功能
+在土地庙处，你可以获得“缩地青符”，这在需要时可以帮助你返回最后拜过的土地庙。主角死亡后也会在最后的土地庙复活。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1375.jpg" alt="缩地青符" title="">
+</a>
+
+#### 4. 继续探索
+继续前行，你会来到一座桥。过桥后，你将进入一个较大的区域。可以选择向左跳到桥下，沿河流走。注意，这两条路是相通的。
+
+- **河流源头**：向右跳到桥下，你可以采集灵蕴（货币）。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1682.jpg" alt="灵蕴" title="">
+</a>
+
+#### 5. 遇到小青蛙妖
+在河流中，遇到小青蛙妖时要小心，它死后会爆炸放毒，保持距离以免中毒。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1887.jpg" alt="小青蛙妖" title="">
+</a>
+
+#### 6. 打败牯护院
+在河流的尽头，你会遇到头目“牯护院”。击败牯护院后，继续向前走。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1944.jpg" alt="牯护院" title="">
+</a>
+
+#### 7. 进入山洞
+击败牯护院后，进入山洞，你将遇到第二个土地庙。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/11104.jpg" alt="第二个土地庙" title="">
+</a>
+
+### 总结
+在苍狼林中，你需要小心探索，打败敌人并收集药材与灵蕴。通过以上步骤，你将能够顺利通关，并获得丰富的游戏体验。
+
+#### 参考页面
+- [《黑神话悟空》全探索图文攻略 支线+隐藏+重要收集路线讲解](https://www.gamersky.com/handbook/202408/1803231.shtml)
+2024-10-22 14:20:27,217 - Default - MainProcess - 63483 - ⭐️3. LLM response received: 
+ ### 第一回-苍狼林的攻略
+
+在《黑神话：悟空》的第一回“苍狼林”，你将经历一段充满挑战与探索的旅程。以下是详细的攻略，帮助你顺利通过这一关卡，收集到所有重要物品。
+
+#### 1. 序幕与基本操作
+在游戏开始时，你将面对二郎神的挑战。熟悉基本操作后，干掉两只小狼妖，在路上捡到药材“老山参”。在探索地图时，多搜刮地上的各种药材，以便后续合成丹药，提升战斗能力。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1168.jpg" alt="游民星空" title="">
+</a>
+
+#### 2. 路线指引
+- **走阶梯上山**：你会发现一个宝箱。
+  
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1263.jpg" alt="宝箱" title="">
+</a>
+
+- **跟随金色光线**：它会指引你找到附近的土地庙。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1303.jpg" alt="土地庙" title="">
+</a>
+
+#### 3. 土地庙的功能
+在土地庙处，你可以获得“缩地青符”，这在需要时可以帮助你返回最后拜过的土地庙。主角死亡后也会在最后的土地庙复活。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1375.jpg" alt="缩地青符" title="">
+</a>
+
+#### 4. 继续探索
+继续前行，你会来到一座桥。过桥后，你将进入一个较大的区域。可以选择向左跳到桥下，沿河流走。注意，这两条路是相通的。
+
+- **河流源头**：向右跳到桥下，你可以采集灵蕴（货币）。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1682.jpg" alt="灵蕴" title="">
+</a>
+
+#### 5. 遇到小青蛙妖
+在河流中，遇到小青蛙妖时要小心，它死后会爆炸放毒，保持距离以免中毒。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1887.jpg" alt="小青蛙妖" title="">
+</a>
+
+#### 6. 打败牯护院
+在河流的尽头，你会遇到头目“牯护院”。击败牯护院后，继续向前走。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/1944.jpg" alt="牯护院" title="">
+</a>
+
+#### 7. 进入山洞
+击败牯护院后，进入山洞，你将遇到第二个土地庙。
+
+<a href="https://www.gamersky.com/handbook/202408/1803231.shtml" target="_blank">
+    <img src="https://img1.gamersky.com/image2024/08/20240819_ax_156_2/11104.jpg" alt="第二个土地庙" title="">
+</a>
+
+### 总结
+在苍狼林中，你需要小心探索，打败敌人并收集药材与灵蕴。通过以上步骤，你将能够顺利通关，并获得丰富的游戏体验。
+
+#### 参考页面
+- [《黑神话悟空》全探索图文攻略 支线+隐藏+重要收集路线讲解](https://www.gamersky.com/handbook/202408/1803231.shtml)

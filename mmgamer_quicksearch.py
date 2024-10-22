@@ -11,6 +11,9 @@ from lxml import html, etree
 import requests
 import json
 import shutil
+import re
+from io import BytesIO
+import base64
 
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -594,7 +597,7 @@ def llm_agent(user_q):
                 <img src="Image Src">
             </a>            
         
-        3. 在 "Answer" 的末尾，请列出引用的所有页面的 Page Url 以供用户参考原始文档。
+        3. 在 "Answer" 的末尾，请列出引用的所有页面的Page Url和Title以供用户参考原始文档。
 
         Question: 
         {question}
@@ -619,6 +622,7 @@ def llm_agent(user_q):
             "question": user_q, 
             "context": context_q
         })
+        return result_game_text_image
     except Exception as e:
         log_message(f"Error processing prompt: {user_q}, Error: {e}")
         return None
@@ -656,22 +660,69 @@ def get_context(directory="quicksearch_cache/rawdata"):
 
     return context_q
 
-def query_llm():
+def llm_chatbot_quick(user_q, chathistory):
     """
     Function to query the LLM with user prompts.
     """
     try:
-        user_q = "Your prompt here"
+        # user_q = "告诉我第一回-苍狼林的攻略"
         log_message(f"⭐️2. Sending prompt to LLM: {user_q}")
         response = llm_agent(user_q)
-        response = ""
         if response:
             log_message(f"⭐️3. LLM response received: \n {response}")
+            return response
         else:
             log_message("No response received from LLM")
+            return "No response received from LLM"
     except Exception as e:
         log_message(f"Error querying LLM: {e}")
+    
 
+# Transfer image URL to base64, only for Gamerkey, because Streamlit can't display images from it.
+def msg_imgurl_to_base64_quick(msg):
+    """
+    This function processes the input message, finds <img> tags, extracts the src attribute, 
+    checks whether the image is local or remote, and converts it to base64 format.
+    After replacing all <img> tag src attributes with base64 encoded images, the function returns the updated message.
+    """
+    from PIL import Image
+    msg_base64 = msg
+    
+    # Regular expression to find the src attribute within <img> tags
+    img_tags = re.findall(r'<img src="([^"]+)"', msg)
+    # print(img_tags)
+    for src in img_tags:
+        try:
+            # Judge if the image is from http or local
+            # if src.startswith("http"):  # Remote image
+            #     response = requests.get(src)
+            #     image_open = Image.open(BytesIO(response.content))
+            # elif os.path.isfile(src):  # Local image
+            #     image_open = Image.open(src)
+            # else:
+            #     continue  # Skip if src is neither a valid URL nor a local file
+
+            # Use local image for quicker speed
+            # Clean the URL to make it filename-safe
+            filename_safe_url = src.replace(":", "=").replace("/", "|")
+            filename_safe_url = 'quicksearch_cache/rawdata/img/' + filename_safe_url
+            image_open = Image.open(filename_safe_url)
+
+
+            # Convert image to base64
+            buffered = BytesIO()
+            image_open.save(buffered, format="JPEG")
+            img_base64 = base64.b64encode(buffered.getvalue()).decode()
+
+            # Replace the original src with the base64 encoded image
+            msg_base64 = msg_base64.replace(src, f"data:image/jpeg;base64,{img_base64}")
+        
+        except Exception as e:
+            print(f"Error processing image {src}: {e}")
+    
+
+    # Output the updated message after all replacements
+    return msg_base64
 
 
 def main():
@@ -696,7 +747,7 @@ def main():
     build_vector_database()
 
     # Query the LLM
-    query_llm()
+    llm_chatbot_quick()
 
 if __name__ == "__main__":
     try:
