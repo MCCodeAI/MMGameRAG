@@ -44,7 +44,7 @@ class WebScraper:
         """
         with open(filename, "w", encoding="utf-8") as file:
             file.write(content)
-        log_message(f"Content successfully saved to {filename}")
+        if log_verbose:  log_message(f"Content successfully saved to {filename}")
 
     def save_image_to_file(self, img_src):
         """
@@ -65,7 +65,7 @@ class WebScraper:
         
         # Download and save the image
         urllib.request.urlretrieve(img_src, filename)
-        log_message(f"Image saved as: {filename}")
+        if log_verbose:  log_message(f"Image saved as: {filename}")
 
 
     # Save content to JSON file in a specified format
@@ -506,7 +506,7 @@ class WebScraper:
 
     def crawl(self):
         """
-        Method to crawl web content from the specified URL.
+        Method to crawl web content from the specified URL, clean and save to disk.
         """
         try:
             # Placeholder for crawling implementation
@@ -519,7 +519,7 @@ class WebScraper:
                 os.makedirs("quicksearch_cache")
 
             self.crawl_and_extract(self.url, game_keywords, 1) # Crawl the URL and its linked pages up to a depth
-            log_message(f"Completed crawl for URL: {self.url}")
+            log_message(f"1. Completed crawl and save data for URL: {self.url}")
         except Exception as e:
             log_message(f"Error crawling URL: {self.url}, Error: {e}")
 
