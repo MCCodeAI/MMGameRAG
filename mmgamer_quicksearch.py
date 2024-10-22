@@ -525,7 +525,7 @@ class WebScraper:
                 os.makedirs("quicksearch_cache")
 
             self.crawl_and_extract(self.url, game_keywords, 1) # Crawl the URL and its linked pages up to a depth
-            log_message(f"1. Completed crawl and save data for URL: {self.url}")
+            log_message(f"⭐️1. Completed crawl and save data for URL: {self.url}")
         except Exception as e:
             log_message(f"Error crawling URL: {self.url}, Error: {e}")
 
@@ -661,12 +661,12 @@ def query_llm():
     Function to query the LLM with user prompts.
     """
     try:
-        prompt = "Your prompt here"
-        log_message(f"2. Sending prompt to LLM: {prompt}")
-        # response = llm_agent(prompt)
+        user_q = "Your prompt here"
+        log_message(f"⭐️2. Sending prompt to LLM: {user_q}")
+        response = llm_agent(user_q)
         response = ""
         if response:
-            log_message(f"LLM response received: {response}")
+            log_message(f"⭐️3. LLM response received: \n {response}")
         else:
             log_message("No response received from LLM")
     except Exception as e:
