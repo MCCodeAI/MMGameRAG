@@ -22,8 +22,6 @@ with st.sidebar:
             del st.session_state['messages']
         st.success("Chat cleared!")
 
-
-
 st.title("Quick MMGameRAG\n🐒🐵🙈🙉🙊🦍🦧⭐️🍌")
 st.caption("🚀 Multimodal Retrieval-Augmented Generation System for Game Walkthroughs")
 if "messages" not in st.session_state: # Initialize the chat, only run once

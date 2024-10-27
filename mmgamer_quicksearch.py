@@ -14,6 +14,7 @@ import shutil
 import re
 from io import BytesIO
 import base64
+from filelock import FileLock
 import streamlit as st
 
 from langchain.prompts import ChatPromptTemplate
@@ -80,25 +81,29 @@ class WebScraper:
         """
         Saves the provided content to a JSON file with specified indentation format.
         Ensures the content is appended correctly to an existing JSON array.
+        Uses file locking to prevent race conditions during concurrent access.
         """
-        # Check if the file exists and load its content if it does
-        if os.path.exists(filename):
-            with open(filename, 'r', encoding="utf-8") as json_file:
-                try:
-                    existing_data = json.load(json_file)
-                except json.JSONDecodeError:
-                    existing_data = []
-        else:
-            existing_data = []
+        lock = FileLock(f"{filename}.lock")
         
-        # Append new content to the existing data
-        existing_data.extend(content)
-        
-        # Save the updated data back to the file
-        with open(filename, 'w', encoding="utf-8") as json_file:
-            json.dump(existing_data, json_file, indent=4, ensure_ascii=False)
-        
-        log_message(f"JSON content successfully saved to {filename}")   
+        with lock:
+            # Check if the file exists and load its content if it does
+            if os.path.exists(filename):
+                with open(filename, 'r', encoding="utf-8") as json_file:
+                    try:
+                        existing_data = json.load(json_file)
+                    except json.JSONDecodeError:
+                        existing_data = []
+            else:
+                existing_data = []
+
+            # Append new content to the existing data
+            existing_data.extend(content)
+
+            # Save the updated data back to the file
+            with open(filename, 'w', encoding="utf-8") as json_file:
+                json.dump(existing_data, json_file, indent=4, ensure_ascii=False)
+
+            log_message(f"JSON content successfully saved to {filename}")
 
     
 
@@ -110,7 +115,7 @@ class WebScraper:
         Saves content to files first in 'docs', then processes and saves image metadata to JSON files.
         """
         
-        if tree:
+        if tree is not None:
 
             # Extract the page title
             # title = tree.xpath('//title/text()') # regular title
@@ -134,7 +139,7 @@ class WebScraper:
             # Clean the URL to make it filename-safe
             filename_safe_url = currenturl.replace(":", "=").replace("/", "|")
 
-            if mid2l_con:
+            if mid2l_con is not None:
                 text_content_list = [f"Page Url: {currenturl}"]
                 text_with_images_list = [f"Page Url: {currenturl}"]
                 text_content_list.append(f"Title: {title_text}")
@@ -534,6 +539,8 @@ class WebScraper:
             log_message(f"Error crawling URL: {self.url}, Error: {e}")
 
 
+
+
 def fetch_links_with_keyword(user_q):
     """
     Fetches links from a search result page that contain the specified keyword.
@@ -547,7 +554,8 @@ def fetch_links_with_keyword(user_q):
     Returns:
         list: A list of URLs containing the user_q keyword.
     """
-    search_url = f"https://so.gamersky.com/?s=%E9%BB%91%E7%A5%9E%E8%AF%9D+{user_q}"
+    # search_url = f"https://so.gamersky.com/?s=%E9%BB%91%E7%A5%9E%E8%AF%9D {user_q}"  # Direct search engine
+    search_url = f"https://soso.gamersky.com/cse/search?q={user_q}&s=3068275339727451251&nsid=1&nsid=1"  # Vague search engine
     links = []
 
     try:
@@ -561,7 +569,9 @@ def fetch_links_with_keyword(user_q):
         tree = html.fromstring(response.content)
 
         # Find all elements with class="Mid2_L" and extract links
-        mid2l_elements = tree.xpath('//div[@class="Mid2_L"]//a[@href]/@href')
+        # mid2l_elements = tree.xpath('//div[@class="Mid2_L"]//a[@href]/@href')  # Direct search engine
+        mid2l_elements = tree.xpath('//div[@class="content-main"]//a[@href]/@href')  # Vague search engine
+
         if mid2l_elements:
             # log_message(mid2l_elements)
             # Filter links to include only those containing the user_q keyword
@@ -707,19 +717,20 @@ def llm_chatbot_quick(user_q, chathistory):
     try:
         # Parallel processing of web scraping
 
-        # log_message("Starting getting the related page links")
-        # search_links = fetch_links_with_keyword(user_q)
+        log_message("Starting getting the related page links")
+        search_links = fetch_links_with_keyword(user_q)
+        log_message(search_links)
 
-        # search_links=game_urls
-        # with multiprocessing.Pool(processes=multiprocessing.cpu_count()) as pool:
-        #     list(tqdm(pool.imap(process_url, search_links), total=len(search_links)))
-        # log_message("Completed web scraping process")    
+        with multiprocessing.Pool(processes=multiprocessing.cpu_count()) as pool:
+            list(tqdm(pool.imap(process_url, search_links), total=len(search_links)))
+        log_message("Completed web scraping process")    
 
         # user_q = "告诉我第一回-苍狼林的攻略"
         log_message(f"⭐️2. Sending prompt to LLM: {user_q}")
         response = llm_agent(user_q)
+
         if response:
-            log_message(f"⭐️3. LLM response received: \n {response}")
+            log_message(f"⭐️3. LLM response received: \n {response[:20]}")
             return response
         else:
             log_message("No response received from LLM")
