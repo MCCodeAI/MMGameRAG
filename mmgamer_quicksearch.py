@@ -560,7 +560,7 @@ def fetch_links_with_keyword(user_q):
 
     try:
         # Fetch the content of the search URL
-        response = requests.get(search_url)
+        response = requests.get(search_url, verify=False)
         if response.status_code != 200:
             log_message(f"Failed to fetch content for {search_url}")
             return []
@@ -813,7 +813,7 @@ def main():
 if __name__ == "__main__":
     try:
         # main()
-        fetch_links_with_keyword('金池')
+        # fetch_links_with_keyword('金池')
         pass
         
     except KeyboardInterrupt:

@@ -1,0 +1,161 @@
+2024-10-29 13:00:44,250 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 13:00:44,444 - Default - MainProcess - 40642 - Error fetching or parsing content from https://soso.gamersky.com/cse/search?q=黑神话第二回有哪些珍宝？&s=3068275339727451251&nsid=1&nsid=1: HTTPSConnectionPool(host='soso.gamersky.com', port=443): Max retries exceeded with url: /cse/search?q=%E9%BB%91%E7%A5%9E%E8%AF%9D%E7%AC%AC%E4%BA%8C%E5%9B%9E%E6%9C%89%E5%93%AA%E4%BA%9B%E7%8F%8D%E5%AE%9D%EF%BC%9F&s=3068275339727451251&nsid=1&nsid=1 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'soso.gamersky.com'. (_ssl.c:1006)")))
+2024-10-29 13:00:44,445 - Default - MainProcess - 40642 - []
+2024-10-29 13:00:44,559 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 13:00:44,559 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 黑神话第二回有哪些珍宝？
+2024-10-29 13:01:06,693 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ 在《黑神话：悟空》的第二回中，玩家可以获
+2024-10-29 13:01:46,947 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 13:01:47,091 - Default - MainProcess - 40642 - Error fetching or parsing content from https://soso.gamersky.com/cse/search?q=黑神话第二回如何通关？&s=3068275339727451251&nsid=1&nsid=1: HTTPSConnectionPool(host='soso.gamersky.com', port=443): Max retries exceeded with url: /cse/search?q=%E9%BB%91%E7%A5%9E%E8%AF%9D%E7%AC%AC%E4%BA%8C%E5%9B%9E%E5%A6%82%E4%BD%95%E9%80%9A%E5%85%B3%EF%BC%9F&s=3068275339727451251&nsid=1&nsid=1 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'soso.gamersky.com'. (_ssl.c:1006)")))
+2024-10-29 13:01:47,092 - Default - MainProcess - 40642 - []
+2024-10-29 13:01:47,130 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 13:01:47,130 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 黑神话第二回如何通关？
+2024-10-29 13:02:17,041 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ 在《黑神话：悟空》的第二回中，玩家需要完
+2024-10-29 13:07:27,046 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 13:07:27,195 - Default - MainProcess - 40642 - Error fetching or parsing content from https://soso.gamersky.com/cse/search?q=黑神话第三回有哪些珍宝？&s=3068275339727451251&nsid=1&nsid=1: HTTPSConnectionPool(host='soso.gamersky.com', port=443): Max retries exceeded with url: /cse/search?q=%E9%BB%91%E7%A5%9E%E8%AF%9D%E7%AC%AC%E4%B8%89%E5%9B%9E%E6%9C%89%E5%93%AA%E4%BA%9B%E7%8F%8D%E5%AE%9D%EF%BC%9F&s=3068275339727451251&nsid=1&nsid=1 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'soso.gamersky.com'. (_ssl.c:1006)")))
+2024-10-29 13:07:27,195 - Default - MainProcess - 40642 - []
+2024-10-29 13:07:27,231 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 13:07:27,231 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 黑神话第三回有哪些珍宝？
+2024-10-29 13:07:36,834 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ 在《黑神话：悟空》的第三回中，玩家可以获
+2024-10-29 13:25:01,713 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 13:25:01,816 - Default - MainProcess - 40642 - Error fetching or parsing content from https://soso.gamersky.com/cse/search?q=黑神话 日金乌&s=3068275339727451251&nsid=1&nsid=1: HTTPSConnectionPool(host='soso.gamersky.com', port=443): Max retries exceeded with url: /cse/search?q=%E9%BB%91%E7%A5%9E%E8%AF%9D%20%E6%97%A5%E9%87%91%E4%B9%8C&s=3068275339727451251&nsid=1&nsid=1 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'soso.gamersky.com'. (_ssl.c:1006)")))
+2024-10-29 13:25:01,816 - Default - MainProcess - 40642 - []
+2024-10-29 13:25:01,849 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 13:25:01,850 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 黑神话 日金乌
+2024-10-29 13:25:13,409 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ 在《黑神话：悟空》中，日金乌是一个重要的
+2024-10-29 13:27:05,645 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 13:27:05,703 - Default - MainProcess - 40642 - Error fetching or parsing content from https://soso.gamersky.com/cse/search?q=日金乌&s=3068275339727451251&nsid=1&nsid=1: HTTPSConnectionPool(host='soso.gamersky.com', port=443): Max retries exceeded with url: /cse/search?q=%E6%97%A5%E9%87%91%E4%B9%8C&s=3068275339727451251&nsid=1&nsid=1 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'soso.gamersky.com'. (_ssl.c:1006)")))
+2024-10-29 13:27:05,703 - Default - MainProcess - 40642 - []
+2024-10-29 13:27:05,739 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 13:27:05,739 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 日金乌
+2024-10-29 13:27:15,757 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ 在《黑神话：悟空》这款游戏中，日金乌是一
+2024-10-29 13:28:30,161 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 13:28:30,161 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 13:28:30,487 - Default - MainProcess - 40642 - No elements with class='Mid2_L' found on https://so.gamersky.com/?s=%E9%BB%91%E7%A5%9E%E8%AF%9D 日金乌
+2024-10-29 13:28:30,487 - Default - MainProcess - 40642 - No elements with class='Mid2_L' found on https://so.gamersky.com/?s=%E9%BB%91%E7%A5%9E%E8%AF%9D 日金乌
+2024-10-29 13:28:30,488 - Default - MainProcess - 40642 - []
+2024-10-29 13:28:30,488 - Default - MainProcess - 40642 - []
+2024-10-29 13:28:30,525 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 13:28:30,525 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 13:28:30,525 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 日金乌
+2024-10-29 13:28:30,525 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 日金乌
+2024-10-29 13:28:38,997 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ 在《黑神话：悟空》中，日金乌是一个重要的
+2024-10-29 13:28:38,997 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ 在《黑神话：悟空》中，日金乌是一个重要的
+2024-10-29 14:30:19,875 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 14:30:19,875 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 14:30:19,875 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 14:30:19,969 - Default - MainProcess - 40642 - Error fetching or parsing content from https://soso.gamersky.com/cse/search?q=第二回&s=3068275339727451251&nsid=1&nsid=1: HTTPSConnectionPool(host='soso.gamersky.com', port=443): Max retries exceeded with url: /cse/search?q=%E7%AC%AC%E4%BA%8C%E5%9B%9E&s=3068275339727451251&nsid=1&nsid=1 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'soso.gamersky.com'. (_ssl.c:1006)")))
+2024-10-29 14:30:19,969 - Default - MainProcess - 40642 - Error fetching or parsing content from https://soso.gamersky.com/cse/search?q=第二回&s=3068275339727451251&nsid=1&nsid=1: HTTPSConnectionPool(host='soso.gamersky.com', port=443): Max retries exceeded with url: /cse/search?q=%E7%AC%AC%E4%BA%8C%E5%9B%9E&s=3068275339727451251&nsid=1&nsid=1 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'soso.gamersky.com'. (_ssl.c:1006)")))
+2024-10-29 14:30:19,969 - Default - MainProcess - 40642 - Error fetching or parsing content from https://soso.gamersky.com/cse/search?q=第二回&s=3068275339727451251&nsid=1&nsid=1: HTTPSConnectionPool(host='soso.gamersky.com', port=443): Max retries exceeded with url: /cse/search?q=%E7%AC%AC%E4%BA%8C%E5%9B%9E&s=3068275339727451251&nsid=1&nsid=1 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'soso.gamersky.com'. (_ssl.c:1006)")))
+2024-10-29 14:30:19,969 - Default - MainProcess - 40642 - []
+2024-10-29 14:30:19,969 - Default - MainProcess - 40642 - []
+2024-10-29 14:30:19,969 - Default - MainProcess - 40642 - []
+2024-10-29 14:30:20,001 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 14:30:20,001 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 14:30:20,001 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 14:30:20,001 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 第二回
+2024-10-29 14:30:20,001 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 第二回
+2024-10-29 14:30:20,001 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 第二回
+2024-10-29 14:30:32,634 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ ### 第二回精魄图鉴及获取方法
+
+在《
+2024-10-29 14:30:32,634 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ ### 第二回精魄图鉴及获取方法
+
+在《
+2024-10-29 14:30:32,634 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ ### 第二回精魄图鉴及获取方法
+
+在《
+2024-10-29 14:32:35,253 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 14:32:35,253 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 14:32:35,253 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 14:32:35,253 - Default - MainProcess - 40642 - Starting getting the related page links
+2024-10-29 14:32:36,579 - Default - MainProcess - 40642 - Found 9 links containing '第三回' on https://soso.gamersky.com/cse/search?q=第三回&s=3068275339727451251&nsid=1&nsid=1
+2024-10-29 14:32:36,579 - Default - MainProcess - 40642 - Found 9 links containing '第三回' on https://soso.gamersky.com/cse/search?q=第三回&s=3068275339727451251&nsid=1&nsid=1
+2024-10-29 14:32:36,579 - Default - MainProcess - 40642 - Found 9 links containing '第三回' on https://soso.gamersky.com/cse/search?q=第三回&s=3068275339727451251&nsid=1&nsid=1
+2024-10-29 14:32:36,579 - Default - MainProcess - 40642 - Found 9 links containing '第三回' on https://soso.gamersky.com/cse/search?q=第三回&s=3068275339727451251&nsid=1&nsid=1
+2024-10-29 14:32:36,580 - Default - MainProcess - 40642 - ['https://www.gamersky.com/handbook/202409/1813209.shtml', 'https://www.gamersky.com/handbook/202408/1803792.shtml', 'https://wap.gamersky.com/gl/Content-1803834_4.html', 'https://wap.gamersky.com/gl/Content-1803410_5.html', 'https://shouyou.gamersky.com/gl/201603/725802_32.shtml', 'http://club.gamersky.com/m/activity/862410', 'https://down.gamersky.com/pc/202409/1816496.shtml', 'https://acg.gamersky.com/otaku/doujin/201503/537113_2.shtml', 'https://down.gamersky.com/pc/202409/1816491.shtml']
+2024-10-29 14:32:36,580 - Default - MainProcess - 40642 - ['https://www.gamersky.com/handbook/202409/1813209.shtml', 'https://www.gamersky.com/handbook/202408/1803792.shtml', 'https://wap.gamersky.com/gl/Content-1803834_4.html', 'https://wap.gamersky.com/gl/Content-1803410_5.html', 'https://shouyou.gamersky.com/gl/201603/725802_32.shtml', 'http://club.gamersky.com/m/activity/862410', 'https://down.gamersky.com/pc/202409/1816496.shtml', 'https://acg.gamersky.com/otaku/doujin/201503/537113_2.shtml', 'https://down.gamersky.com/pc/202409/1816491.shtml']
+2024-10-29 14:32:36,580 - Default - MainProcess - 40642 - ['https://www.gamersky.com/handbook/202409/1813209.shtml', 'https://www.gamersky.com/handbook/202408/1803792.shtml', 'https://wap.gamersky.com/gl/Content-1803834_4.html', 'https://wap.gamersky.com/gl/Content-1803410_5.html', 'https://shouyou.gamersky.com/gl/201603/725802_32.shtml', 'http://club.gamersky.com/m/activity/862410', 'https://down.gamersky.com/pc/202409/1816496.shtml', 'https://acg.gamersky.com/otaku/doujin/201503/537113_2.shtml', 'https://down.gamersky.com/pc/202409/1816491.shtml']
+2024-10-29 14:32:36,580 - Default - MainProcess - 40642 - ['https://www.gamersky.com/handbook/202409/1813209.shtml', 'https://www.gamersky.com/handbook/202408/1803792.shtml', 'https://wap.gamersky.com/gl/Content-1803834_4.html', 'https://wap.gamersky.com/gl/Content-1803410_5.html', 'https://shouyou.gamersky.com/gl/201603/725802_32.shtml', 'http://club.gamersky.com/m/activity/862410', 'https://down.gamersky.com/pc/202409/1816496.shtml', 'https://acg.gamersky.com/otaku/doujin/201503/537113_2.shtml', 'https://down.gamersky.com/pc/202409/1816491.shtml']
+2024-10-29 14:32:40,513 - Default - SpawnPoolWorker-88 - 44134 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1813209.shtml
+2024-10-29 14:32:40,516 - Default - SpawnPoolWorker-96 - 44142 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1803792.shtml
+2024-10-29 14:32:40,517 - Default - SpawnPoolWorker-96 - 44142 - Error crawling URL: https://www.gamersky.com/handbook/202408/1803792.shtml, Error: [Errno 2] No such file or directory: 'https=||www.gamersky.com|handbook|202408|1803534.shtml_text_only.txt'
+2024-10-29 14:32:40,517 - Default - SpawnPoolWorker-96 - 44142 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1803834_4.html
+2024-10-29 14:32:40,518 - Default - SpawnPoolWorker-88 - 44134 - Error crawling URL: https://www.gamersky.com/handbook/202409/1813209.shtml, Error: [Errno 2] No such file or directory: 'http=||img1.gamersky.com|image2024|08|20240819_qy_372_7|image017.jpg'
+2024-10-29 14:32:40,518 - Default - SpawnPoolWorker-88 - 44134 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1803410_5.html
+2024-10-29 14:32:40,520 - Default - SpawnPoolWorker-88 - 44134 - -----------------------------------------------------------
+2024-10-29 14:32:40,520 - Default - SpawnPoolWorker-96 - 44142 - Error crawling URL: https://wap.gamersky.com/gl/Content-1803834_4.html, Error: [Errno 17] File exists: 'quicksearch_cache'
+2024-10-29 14:32:40,522 - Default - SpawnPoolWorker-96 - 44142 - Starting crawl for URL: https://shouyou.gamersky.com/gl/201603/725802_32.shtml
+2024-10-29 14:32:40,522 - Default - SpawnPoolWorker-88 - 44134 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1803410_5.html. Total URLs: 1
+2024-10-29 14:32:40,525 - Default - SpawnPoolWorker-96 - 44142 - -----------------------------------------------------------
+2024-10-29 14:32:40,528 - Default - SpawnPoolWorker-96 - 44142 - New crawled URL added to crawled_urls.json: https://shouyou.gamersky.com/gl/201603/725802_32.shtml. Total URLs: 1
+2024-10-29 14:32:40,530 - Default - SpawnPoolWorker-86 - 44132 - Starting crawl for URL: http://club.gamersky.com/m/activity/862410
+2024-10-29 14:32:40,531 - Default - SpawnPoolWorker-86 - 44132 - -----------------------------------------------------------
+2024-10-29 14:32:40,532 - Default - SpawnPoolWorker-86 - 44132 - New crawled URL added to crawled_urls.json: http://club.gamersky.com/m/activity/862410. Total URLs: 1
+2024-10-29 14:32:40,539 - Default - SpawnPoolWorker-95 - 44141 - Starting crawl for URL: https://down.gamersky.com/pc/202409/1816496.shtml
+2024-10-29 14:32:40,539 - Default - SpawnPoolWorker-95 - 44141 - -----------------------------------------------------------
+2024-10-29 14:32:40,539 - Default - SpawnPoolWorker-95 - 44141 - New crawled URL added to crawled_urls.json: https://down.gamersky.com/pc/202409/1816496.shtml. Total URLs: 1
+2024-10-29 14:32:40,540 - Default - SpawnPoolWorker-89 - 44135 - Starting crawl for URL: https://acg.gamersky.com/otaku/doujin/201503/537113_2.shtml
+2024-10-29 14:32:40,540 - Default - SpawnPoolWorker-89 - 44135 - -----------------------------------------------------------
+2024-10-29 14:32:40,540 - Default - SpawnPoolWorker-89 - 44135 - New crawled URL added to crawled_urls.json: https://acg.gamersky.com/otaku/doujin/201503/537113_2.shtml. Total URLs: 1
+2024-10-29 14:32:40,541 - Default - SpawnPoolWorker-93 - 44139 - Starting crawl for URL: https://down.gamersky.com/pc/202409/1816491.shtml
+2024-10-29 14:32:40,541 - Default - SpawnPoolWorker-93 - 44139 - -----------------------------------------------------------
+2024-10-29 14:32:40,541 - Default - SpawnPoolWorker-93 - 44139 - New crawled URL added to crawled_urls.json: https://down.gamersky.com/pc/202409/1816491.shtml. Total URLs: 1
+2024-10-29 14:32:40,690 - Default - SpawnPoolWorker-86 - 44132 - Success on attempt 1 for http://club.gamersky.com/m/activity/862410
+2024-10-29 14:32:40,690 - Default - SpawnPoolWorker-86 - 44132 - Found '黑神话' in full HTML at http://club.gamersky.com/m/activity/862410 (Depth: 1)
+2024-10-29 14:32:40,690 - Default - SpawnPoolWorker-86 - 44132 - New link added to links.json: http://club.gamersky.com/m/activity/862410. Total links: 1
+2024-10-29 14:32:40,690 - Default - SpawnPoolWorker-86 - 44132 - Error crawling URL: http://club.gamersky.com/m/activity/862410, Error: list index out of range
+2024-10-29 14:32:40,856 - Default - SpawnPoolWorker-96 - 44142 - Success on attempt 1 for https://shouyou.gamersky.com/gl/201603/725802_32.shtml
+2024-10-29 14:32:40,862 - Default - SpawnPoolWorker-96 - 44142 - ⭐️1. Completed crawl and save data for URL: https://shouyou.gamersky.com/gl/201603/725802_32.shtml
+2024-10-29 14:32:40,886 - Default - SpawnPoolWorker-88 - 44134 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1803410_5.html
+2024-10-29 14:32:40,887 - Default - SpawnPoolWorker-88 - 44134 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1803410_5.html (Depth: 1)
+2024-10-29 14:32:40,888 - Default - SpawnPoolWorker-88 - 44134 - New link added to links.json: https://wap.gamersky.com/gl/Content-1803410_5.html. Total links: 1
+2024-10-29 14:32:40,888 - Default - SpawnPoolWorker-88 - 44134 - Error crawling URL: https://wap.gamersky.com/gl/Content-1803410_5.html, Error: list index out of range
+2024-10-29 14:32:40,944 - Default - SpawnPoolWorker-89 - 44135 - Success on attempt 1 for https://acg.gamersky.com/otaku/doujin/201503/537113_2.shtml
+2024-10-29 14:32:40,947 - Default - SpawnPoolWorker-89 - 44135 - No '黑神话' found at https://acg.gamersky.com/otaku/doujin/201503/537113_2.shtml (Depth: 1)
+2024-10-29 14:32:40,948 - Default - SpawnPoolWorker-89 - 44135 - ⭐️1. Completed crawl and save data for URL: https://acg.gamersky.com/otaku/doujin/201503/537113_2.shtml
+2024-10-29 14:32:40,980 - Default - SpawnPoolWorker-93 - 44139 - Success on attempt 1 for https://down.gamersky.com/pc/202409/1816491.shtml
+2024-10-29 14:32:40,986 - Default - SpawnPoolWorker-93 - 44139 - Found '黑神话' in Mid2L_con or Title at https://down.gamersky.com/pc/202409/1816491.shtml (Depth: 1)
+2024-10-29 14:32:40,986 - Default - SpawnPoolWorker-93 - 44139 - New link added to links.json: https://down.gamersky.com/pc/202409/1816491.shtml. Total links: 1
+2024-10-29 14:32:41,073 - Default - SpawnPoolWorker-95 - 44141 - Success on attempt 1 for https://down.gamersky.com/pc/202409/1816496.shtml
+2024-10-29 14:32:41,075 - Default - SpawnPoolWorker-95 - 44141 - Found '黑神话' in Mid2L_con or Title at https://down.gamersky.com/pc/202409/1816496.shtml (Depth: 1)
+2024-10-29 14:32:41,076 - Default - SpawnPoolWorker-95 - 44141 - New link added to links.json: https://down.gamersky.com/pc/202409/1816496.shtml. Total links: 1
+2024-10-29 14:32:44,007 - Default - SpawnPoolWorker-95 - 44141 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-10-29 14:32:44,007 - Default - SpawnPoolWorker-95 - 44141 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-10-29 14:32:44,008 - Default - SpawnPoolWorker-95 - 44141 - ⭐️1. Completed crawl and save data for URL: https://down.gamersky.com/pc/202409/1816496.shtml
+2024-10-29 14:32:44,037 - Default - SpawnPoolWorker-93 - 44139 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-10-29 14:32:44,038 - Default - SpawnPoolWorker-93 - 44139 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-10-29 14:32:44,039 - Default - SpawnPoolWorker-93 - 44139 - ⭐️1. Completed crawl and save data for URL: https://down.gamersky.com/pc/202409/1816491.shtml
+2024-10-29 14:32:44,072 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 14:32:44,072 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 14:32:44,072 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 14:32:44,072 - Default - MainProcess - 40642 - Completed web scraping process
+2024-10-29 14:32:44,072 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 第三回
+2024-10-29 14:32:44,072 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 第三回
+2024-10-29 14:32:44,072 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 第三回
+2024-10-29 14:32:44,072 - Default - MainProcess - 40642 - ⭐️2. Sending prompt to LLM: 第三回
+2024-10-29 14:33:26,322 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ ### 第三回攻略
+
+在《黑神话：悟空》
+2024-10-29 14:33:26,322 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ ### 第三回攻略
+
+在《黑神话：悟空》
+2024-10-29 14:33:26,322 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ ### 第三回攻略
+
+在《黑神话：悟空》
+2024-10-29 14:33:26,322 - Default - MainProcess - 40642 - ⭐️3. LLM response received: 
+ ### 第三回攻略
+
+在《黑神话：悟空》
