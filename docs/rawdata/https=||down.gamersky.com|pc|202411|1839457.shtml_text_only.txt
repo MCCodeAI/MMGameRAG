@@ -1,0 +1,68 @@
+Title: 《黑神话悟空》醉八仙棍法MOD_黑神话：悟空下载 - 游民星空下载中心
+城通网盘访问密码：419586 
+ 1、解压缩
+ 2、将解压后得到的.pak文件复制到游戏根目录/b1/Content/Paks/~mods文件夹下，如果没有请玩家自行创建“~mods”文件夹。
+ 3、将命令 -fileopenlog添加到steam的启动命令中
+ 4、开始游戏
+ MOD说明：
+ 醉八仙棍法MOD，他以中国传统的醉八仙棍法为灵感，创造了全新的动作玩法。模组包括多种新机制，如劈棍·醉云、立棍·抛云、劈棍强攻·敬客红云等，每种机制都有不同的攻击效果和动作，允许玩家在战斗中进入醉态、跌足等特殊状态，以及执行各种强化攻击和特殊技能。
+ （机翻）
+ >>>><总内容/Content>
+ 打造全新玩法【八仙醉棍】
+ 将醉八仙融入棍法的趣味动作玩法！低门槛高上限，观赏度拉满！
+ Brand New Action Gameplay inspired by drunken boxing.
+ >>>><新机制/New gameplay>
+ 【八仙醉棍】
+ 劈棍·醉云——劈棍攻击开始前按“后方向”，1豆以下时进入【醉态】，可GP;2豆时进入【跌足】，清空棍势，可闪避。开始时可增涨棍势，一豆可增强棍法
+ Smash stance：Press "Back" before attack. Enter 【Drunk】 with 0/1 focus, GP available; Enter【Fall】 with 2 focus, dodge available.
+ 立棍·抛云——立棍攻击开始前按“后方向”，1豆以下时进入【空尘】，奔跑加速;2豆时进入【跌足】，清空棍势。开始时无敌，可增涨棍势
+ Pillar stance：Press "Back" before attack.Enter【Light】 with 0/1 focus, speed up running; Enter【Fall】 with 2 focus, dodge available.
+ 劈棍强攻·敬客红云——1豆劈棍强化普攻连段，2段丢出飞棍，解除强化，可接闪避;3段可GP，可配合切手技使用;5段戳棍涨1豆，出手无敌，解除强化
+ Enhanced·Red Jin Gu Bang: Light attack enhanced by smash-stance-attack with 1focus. 3rd atk can GP.
+ 空棍强攻·荡步金云——2豆空中重棍强化普攻连段，2段起跳，解除强化，可接闪避;3段使用枪法，动作较快;5段戳棍出手时无敌，解除强化
+ Enhanced·Golden Jin Gu Bang: Light attack enhanced by air heavy attack with 2 focus. 2nd atk can jump up.
+ 戳棍强化·弹腰·金红云——1豆劈棍或2豆空中重棍强化无豆戳棍，出手时无敌，强削韧
+ Enhanced·Thrust stance：Thrust stance charged action enhanced by smash-stance-attack or air heavy attack.
+ ??·??——彩蛋招式，强化后的四豆劈棍
+ ???——彩蛋招式，四豆劈棍蓄力前同时按后方向
+ 已整合旧版My Old MOD
+ Containing My old mod——
+ 【水云身/Fluid Cloud】
+ 普攻·衔云——棍类攻击动作更改，3a后按“后+轻击”可进入特殊立棍状态，此时按重攻击可使用切手技，按轻击再按重攻击可蓄力，立棍开始有无敌帧，可跳跃或闪避取消，闪避不打断连招。
+ Normal combo·3rd——Press “Backward+light attack” to enter Special-Pillar-State when you can press"heavy-atk" to use combo skill or press "light+heavy attack" to use charge action.
+ 普攻·破云——棍类攻击动作更改，5a腾空后按“跳跃”进入特殊空中状态，此时迅速按轻击或重击可使用地面攻击，稍晚按则为空中攻击，可视情况切换不同棍法，无豆时推荐立棍，一豆以上时推荐戳棍或使用切手技。
+ Normal combo·5th——Press "Jump" during 5th normal attack and enter special-air-state, you can use Ground-Attack by quickly press light or heavy attack.
+ 戳棍·弄云——加速无豆戳棍动作，优化切手技动作，退寸进尺时可跳跃，一豆时，退寸后按“侧+重击”横扫，出手时无敌，按“后+重击”撑杆跳，此外优化过去玩法机制，优化一豆二豆戳棍动作，可以在闪避后更快衔接。
+ Thrust stance——Speed up charge action with no focus. Enable jump during light-heavy-heavy-attack combo action. Press"sideward + heavy attack" or "backward + heavy attack" after light-heavy-attack combo action with one focus now lead to Different action. Optimize charge action with 1~2 focus.
+ 立棍·立云——优化立棍动作，无豆与一豆立棍可跳跃闪避，跳跃后不清空棍势，加速风云转及后空翻速度，均可闪避取消，按跳跃可加速下落，空中无豆重击同样
+ Pillar stance——Enable to press"Jump" during charge action with 0~1 focus and light-heavy-attack action. The focus Can be Reserved after jumping.Same as Air-NO-Focus-Heavy-Attack.
+ 劈·九华云——劈棍蓄力时闪避不再清空棍势，并简化相关特效，切手技二段撑杆跳出手后短时间内可用跳跃取消，空中一豆重击同理。
+ Smash stance——The focus won't be cleared when you dodge in charge action. Eanble to press"Jump" during light-heavy-heavy-attack. Same as Air-One-Focus-Heavy-Attack.
+ 定身·云定——定身添加霸体效果，提高容错，不再被打断，黑色定身瞬机特效无需装备。
+ Dingshen——Add Super-amour-buff to Dingshen action.
+ 跳攻·落云——4豆以下跳跃重攻击落地前按“后方向”可派生闪避动作，但后摇稍大，用于紧急回避，三豆跳跃重击落地前按“侧方向”还可逐渐恢复棍势！
+ Air Heavy Landing——Press "backward" before landing during air heavy attack with 0~3 focus and automatically dodge.Press "sideward" during air heavy attack with 3 focus can regain your focus.
+ ??·??——跳跃攻击特殊化解招式，可短暂滞空恢复棍势
+ ??·??——重棍花攻击特殊终结技，出手无敌并消耗一豆
+ 【朱云棍花/Rosy Cloud】
+ 重棍花·云卷——重棍花终结技动作变更，消耗一格棍势，可大范围攻击，低削韧，适合打群架使用或连段打出硬直。
+ 戳棍切手技·霞云——搅棍的后摇动作变更，转棍花短时间内可化解敌人进攻，并且加强下一次攻击，期间可闪避跳跃。
+ 劈棍切手技·扫云——无豆劈棍一二段变更，一段可积攒棍势，二段出手时可GP，同时击中可积攒棍势，期间可翻滚化身不打断连招。
+ 飞棍花·吹云——重棍花派生技巧，当棍子在身体右侧时按左右方向键触发，出手瞬间可通过移动打断动作，完整动作可积攒棍势。
+ 【蜃云技法/Fantasy Cloud】
+ 戳·冰·积云——无豆戳棍蓄力速度提高，且一豆戳棍攻击不消耗豆，可触发冰炎特效，翻身与出手瞬间有无敌效果。
+ 立·雷·激云——引雷上身，1.5~1.9豆时减少前摇，按住重击不放，则不释放后续攻击，此时可行其他操作，并保留棍势。
+ 劈·火·烟云——手上与棍身附带火焰，一豆劈棍减少前摇，2豆以下攻击腾空时可翻滚取消后摇，后续可能更新。
+ 跳·雷·荡云——引雷于棍，无豆跳攻时有短暂无敌效果，落地前可闪避，可结合72变MOD
+ 【耸云棍法/Cloud Breaking】
+ 翻云——无豆立棍轻重重，加入无敌效果，当在棍子上，立刻再按一次重攻击即可触发快速后翻身，可改向。
+ 云涌——无豆立棍轻重（长按重），松开时后空翻。期间可翻滚，若长按至后摇结束，玩家进入【云散】状态，此时无法触发后空翻，且无法使用法术，需进行其他行动才可破除。
+ 【云靡身法/Blown Cloud】
+ 浮云：空中攻击后闪避，达成二段跳，若结合轻击后空翻则可实现三段跳，空中四豆重击无法闪避;
+ 逐云：空中重击改写，无豆时加强，一豆撑杆跳，后退时无敌，可配合72变MOD，三与四豆均加强;
+ By JAOFS
+游戏视频 
+游戏图片 
+大图 
+PC游戏运行指南、常见问题百科 |
+缺少dll文件/配置不正确等错误解决方法 

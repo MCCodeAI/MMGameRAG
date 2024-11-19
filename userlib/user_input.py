@@ -4,3 +4,4 @@ game_keywords = "黑神话"
 
 # User variable
 log_verbose = False
+shared_var1 = ""

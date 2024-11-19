@@ -1,0 +1,16 @@
+Title: 《黑神话悟空》棍势打出凤尾花MOD_黑神话：悟空下载 - 游民星空下载中心
+城通网盘访问密码：419586 
+ MOD前置：
+CSharpLoader 
+ 1、下载文件
+ 2、将MonsterEnhance.zip 直接解压 b1\Binaries\Win64\CSharpLoader\Mods\ 文件夹中
+ 3、最终路径为 b1\Binaries\Win64\CSharpLoader\Mods\MonsterEnhance\MonsterEnhance.dll
+ 注意：要启用加载模组，请在 Steam 设置中添加命令 -fileopenlog！
+ MOD说明：
+ 棍势打出凤尾花MOD，他让玩家现在的棍式的0/1/2/3都可以打出风尾花，其实也就是给你添加特效，让你的攻击变得更加华丽，更加好看。
+ By towachan
+游戏视频 
+游戏图片 
+大图 
+PC游戏运行指南、常见问题百科 |
+缺少dll文件/配置不正确等错误解决方法 

@@ -1,0 +1,8 @@
+2024-11-12 14:18:43,945 - Default - MainProcess - 3374 - Error processing prompt: hi, Error: Connection error.
+2024-11-12 14:18:54,166 - Default - MainProcess - 3374 - Error processing prompt: hi, Error: Connection error.
+2024-11-12 20:30:52,053 - Default - MainProcess - 33600 - Error processing prompt: tell me a joke, Error: 'str' object has no attribute 'content'
+2024-11-12 20:31:00,043 - Default - MainProcess - 33600 - Error processing prompt: a joke, Error: 'str' object has no attribute 'content'
+2024-11-12 20:32:30,441 - Default - MainProcess - 34020 - Error processing prompt: tell me a joke, Error: 'str' object has no attribute 'content'
+2024-11-12 20:32:46,297 - Default - MainProcess - 34069 - Error processing prompt: tell me a joke, Error: 'str' object has no attribute 'content'
+2024-11-12 20:32:55,623 - Default - MainProcess - 34107 - Error processing prompt: tell me a joke, Error: 'str' object has no attribute 'content'
+2024-11-12 20:33:15,220 - Default - MainProcess - 34195 - Error processing prompt: tell me a joke, Error: 'str' object has no attribute 'content'

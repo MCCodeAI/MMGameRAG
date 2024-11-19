@@ -1,5 +1,4 @@
-Title: 《黑神话：悟空》现身虚幻引擎讲座 讲授动作动画系统
-2021-03-29 14:30:49 来源：bilibil 作者：虚幻引擎官方 编辑：Siwondark　浏览：loading
+Title: 《黑神话：悟空》现身虚幻引擎讲座 讲授动作动画系统 _ 游民星空 GamerSky.com
 日前虚幻引擎在深圳召开了Unreal Circle 虚幻引擎全国巡回线下沙龙，游戏科学的联合创始人兼客户端技术负责人招文勇分享了他们制作《黑神话：悟空》使用到的动作技术。 
 视频欣赏： 
 gsVideo("B站", "https://www.bilibili.com/video/BV1GK4y1S7Zw"); 

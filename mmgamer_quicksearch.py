@@ -19,6 +19,7 @@ import streamlit as st
 
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from langchain_groq import ChatGroq
 
 from userlib.user_input import *
 from userlib.user_logger import log_message
@@ -618,6 +619,45 @@ def build_vector_database():
     except Exception as e:
         log_message(f"Error building Vector database: {e}")
 
+
+def llm_groq_agent(user_q):
+    """
+    Function to call the LLM with the given prompt.
+    """
+    try:
+        # mmgamequickllm = ChatGroq(name="MMGameQuickRag_groq", model_name="llama-3.2-3b-preview", temperature=0.6, streaming=True)
+        mmgamequickllm = ChatOpenAI(name="MMGameQuickRag", model_name="gpt-4o", temperature=0.6, streaming=True)
+        prompt_quick = """
+
+        Question: 
+        {question}
+
+        Answer:
+        """
+
+        prompt_game_quick = ChatPromptTemplate.from_template(prompt_quick)
+
+        chain_game_text_image_together = (
+            prompt_game_quick
+            | mmgamequickllm
+            | StrOutputParser()
+        )
+
+
+        # partial_message = ""
+        # for response in chain_game_text_image_together.invoke({"question": user_q}):
+        #     partial_message += response.content
+        #     return response.content
+
+        result_game_text_image = chain_game_text_image_together.invoke({
+            "question": user_q
+        })
+
+        return result_game_text_image
+    except Exception as e:
+        log_message(f"Error processing prompt: {user_q}, Error: {e}")
+        return None
+
 def llm_agent(user_q):
     """
     Function to call the LLM with the given prompt.
@@ -709,7 +749,7 @@ def get_context(directory="quicksearch_cache/rawdata"):
 
     return context_q
 
-@st.cache_data
+# @st.cache_data
 def llm_chatbot_quick(user_q, chathistory):
     """
     Function to query the LLM with user prompts.

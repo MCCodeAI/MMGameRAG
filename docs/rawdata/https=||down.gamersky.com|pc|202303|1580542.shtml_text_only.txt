@@ -1,4 +1,4 @@
-Title: 
+Title: Cheat Engine V7.5简体中文汉化版 - 游民星空下载中心
 百度网盘提取码：ymxk 
 城通网盘访问密码：419586 
 1、解压缩 
@@ -13,72 +13,3 @@ CheatEngine是一款内存修改编辑工具，它允许你修改你的游戏或
 大图 
 PC游戏运行指南、常见问题百科 |
 缺少dll文件/配置不正确等错误解决方法 
-推荐下载 
-（通过魔方修改器下载） 
-(function ($) {
-   //获取游戏名字
-var GameName = $('.box_game .box_c .c_2 ul li.tit').text()
-    , matchGameName = "" || GameName
-    , mofangjiasuDownLink = "https://api.mofangjiasu.com/api/versionDownload?channel=mfym&type=0&apply_type=0"
-    , Btnlisttext = ['联通下载1', '电信下载1', '联通下载2', '电信下载2']
-    , mofangjiasuGetHits = 1532727;
-
-   if ($('#hot').attr('data-gamelib') == "1314156" || $('.YXXX').text().indexOf('黑神话悟空') != -1) {
-	mofangjiasuDownLink = "https://downfl.yz3l.com//download/20240828/FLiNG_Trainer_c56_.exe";
-        mofangjiasuGetHits = 1574530;
-	$('.YXSM_CJWT_DW span').html('通过风灵月影下载')
-}
-    $.each(Btnlisttext, function (index, item) {
-        var Dom = '<a class="down2  Steam countHit" data-itemid="' + mofangjiasuGetHits + '" data-hot="true"'
-        Dom += ' href="' + mofangjiasuDownLink + '"'
-        Dom += 'itemprop="downloadUrl" >' + item + '</a>'
-        $('.downLoadGame-2-Btn.dl_url').append(Dom)
-    })
-    $('.downLoadGame-2-Btn.dl_url').append('<div class="ad" style="background: url("https://imgf.gamersky.com/img/tqbc2010/xzggjb.png") no-repeat center; position: absolute;bottom: 5px;right: 11px;width: 24px;height: 13px;opacity: 0.5;"> </div>')
-})(jQuery); 
-本地下载 
-FTP下载 
-百度网盘高速下载 
-城通网盘高速下载 
-同类手游推荐 
-免责声明 
-本站下载资源全部转载自各大游戏论坛及游戏下载站，并全部为免费分享。若有侵权之处请速联系我们，将会在24小时内删除。 
- 举报方式：
-在线举报 ，或在
-联系方式 中联系。
-资源安全说明： 
-本站资源不会集成任何流氓插件，但下载后仍请大家自行查杀以便决定是否使用。 
-资源纠错反馈： 
-若您下载的资源有问题，请到论坛的 
-资源反馈区 发帖告知，以便尽快解决。
-游民星空APP 
-随时掌握游戏情报 
-分享 
- 新浪微博
- QQ
- 微信
- 举报
-| 
- 收藏
-| 
-(function(){
-    var myDate=new Date(),mytt=myDate.getFullYear()+''+(myDate.getMonth()+1)+''+myDate.getDate();
-    var urlTmp = window.location;
-    var urlTmpOri = urlTmp.host;
-    var urlTmpPath = urlTmp.pathname;
-    var urlTmpCale = urlTmpOri + urlTmpPath.replace(/_\d*/, '');
-    var thisPageUrl = urlTmp.protocol + '//' + urlTmpCale;
-    window._bd_share_config = {common: {bdUrl: thisPageUrl}, share: [{"tag" : "share_2","bdSize": 16 }]}
-    with(document) 0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//j.gamersky.com/static/api/js/share.js?cdnversion='+mytt];
-})(); 
-系列游戏 
- Robot Arena Survivors
- 剑心崛起
- 虚灯のセレスティア
- 返杀
- Card Clash Chronicles
- Eternal Damnation
- 星脉：重生
- 四十九把钥匙
- Magic Farm
- Galactic Starfire: Squadron

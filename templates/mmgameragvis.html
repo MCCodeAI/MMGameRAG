@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>黑神话 Radial Tidy Tree</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!-- 引入 Bootstrap -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            margin: 0;
+            padding: 20px;
+        }
+        .svg-container {
+            position: relative;
+            display: inline-block;
+        }
+        svg {
+            display: block;
+            margin: auto;
+            width: 1200px;
+            height: 1200px;
+        }
+        .node circle {
+            fill-opacity: 0.8;
+            stroke: #999;
+            stroke-width: 1.5px;
+        }
+        .node text {
+            font-size: 12px;
+        }
+        .link {
+            fill: none;
+            stroke-opacity: 0.4;
+            stroke-width: 1.5px;
+        }
+        #toggle-subtitles {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="svg-container">
+        <svg></svg>
+        <!-- 使用 Bootstrap 按钮样式 -->
+        <button id="toggle-subtitles" class="btn btn-link btn-outline-light">显示子标题dd</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

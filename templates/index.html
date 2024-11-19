@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Split Screen with Iframe</title>
+    <style>
+        /* Set container layout */
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid #FFA500;
+        }
+
+        /* Set the first iframe to occupy 30% of the width and the second iframe to occupy 70% */
+        .container iframe:first-child {
+            flex: 5; /* 30% */
+            border: none; /* Remove default iframe border */
+        }
+
+        .container iframe:last-child {
+            flex: 5; /* 70% */
+            border: none; /* Remove default iframe border */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Define a global variable in the parent page
+        window.sharedData = "ssssssss";
+    </script>
+
+    <!-- Two iframes with different width ratios using Flexbox layout -->
+    <div class="container">
+        <iframe name="firstIframe" src="http://127.0.0.1:5000"></iframe>
+        <iframe name="siframe" src="http://127.0.0.1:5501/templates/mmgameragvis.html"></iframe>
+    </div>
+</body>
+</html>
