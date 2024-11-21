@@ -1,4 +1,13 @@
 {
     "liveServer.settings.port": 5501,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "liveServer.settings.fullReload": false,
+    "liveServer.settings.ignoreFiles": [
+        "log/**",
+        "quicksearch_cache/**",
+        ".vscode/**",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.ts"
+    ]
 }

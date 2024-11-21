@@ -5,7 +5,11 @@ import torch
 import markdown2
 
 from mmgamer_quicksearch import *
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv())
 
+extra_files = os.environ.get("FLASK_RUN_EXTRA_FILES")
+print(f"Extra files to watch: {extra_files}")
 
 # Load tokenizer and model
 # tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
@@ -32,7 +36,10 @@ def stream():
 def generate_response_stream(user_q):
     try:
         # Simulate streaming data generation
-        for chunk in llm_groq_agent(user_q):
+        # for chunk in llm_groq_agent(user_q):
+        resp = llm_groq_agent(user_q)
+        print(resp)
+        for chunk in resp:
             # Replace each newline in the chunk with "\ndata:" to ensure proper SSE formatting
             formatted_chunk = chunk.replace("\n", "\ndata: ")
             yield f"data: {formatted_chunk}\n\n"
@@ -59,10 +66,11 @@ def get_Chat_response(text):
     # return llm_groq_agent(text)
     # return "ddd"
 
-    # resp=llm_groq_agent(text)
+    resp=llm_groq_agent(text)
 
-    chat_history = ""
-    resp=llm_chatbot_quick(text, chat_history)
+    # chat_history = ""
+    # resp=llm_chatbot_quick(text, chat_history)
+    print(resp)
     for chunk in resp:
         print(chunk)
         yield chunk
@@ -74,10 +82,10 @@ def convert_markdown():
     data = request.get_json()
     markdown_text = data.get("markdown", "")
     html_content = markdown2.markdown(markdown_text)
-    print("-------md")
-    print(markdown_text)
-    print("-------html")
-    print(html_content)
+    # print("-------md")
+    # print(markdown_text)
+    # print("-------html")
+    # print(html_content)
     return jsonify(html_content)
 
 

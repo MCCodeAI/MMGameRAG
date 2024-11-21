@@ -25,6 +25,7 @@ from userlib.user_input import *
 from userlib.user_logger import log_message
 
 # Load environment variables
+from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
 
@@ -750,7 +751,7 @@ def get_context(directory="quicksearch_cache/rawdata"):
     return context_q
 
 # @st.cache_data
-def llm_chatbot_quick(user_q, chathistory):
+def llm_chatbot_quick(user_q, chathistory=""):
     """
     Function to query the LLM with user prompts.
     """
