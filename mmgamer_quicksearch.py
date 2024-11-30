@@ -3,7 +3,7 @@ import sys
 import time
 import multiprocessing
 from dotenv import load_dotenv, find_dotenv
-from langchain_openai import ChatOpenAI
+from langchain_openai import ChatOpenAI, OpenAI
 from tqdm import tqdm
 from urllib.parse import urljoin
 import urllib.request
@@ -17,12 +17,14 @@ import base64
 from filelock import FileLock
 import streamlit as st
 
+
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_groq import ChatGroq
 
 from userlib.user_input import *
 from userlib.user_logger import log_message
+from userlib.agentx import *
 
 # Load environment variables
 from dotenv import load_dotenv, find_dotenv
@@ -621,6 +623,7 @@ def build_vector_database():
         log_message(f"Error building Vector database: {e}")
 
 
+
 def llm_groq_agent(user_q):
     """
     Function to call the LLM with the given prompt.
@@ -628,6 +631,7 @@ def llm_groq_agent(user_q):
     try:
         # mmgamequickllm = ChatGroq(name="MMGameQuickRag_groq", model_name="llama-3.2-3b-preview", temperature=0.6, streaming=True)
         mmgamequickllm = ChatOpenAI(name="MMGameQuickRag", model_name="gpt-4o", temperature=0.6, streaming=True)
+        
         prompt_quick = """
 
         Question: 
@@ -671,10 +675,10 @@ def llm_agent(user_q):
         Page Url:
         Title:
         文本a
-        <img src="Image1 Src">
+        Image1
         文本b
-        <img src="Image2 Src">
-        <img src="Image3 Src">
+        Image2
+        Image3
         文本c
         ...
 
@@ -682,12 +686,10 @@ def llm_agent(user_q):
         
         2. 在生成答案时，如果引用了某段原始文本的内容，应将与此原始文本相关的所有图像按原文的逻辑顺序插入到此段文本的后面。如果你生成的某段答案引用了多个原始文本段落的内容，则将这些文本相关的所有图像按照原文的逻辑顺序依次插入到文本的后面。
     
-        image按如下格式输出：
-            <a href="Page Url" target="_blank">
-                <img src="Image Src">
-            </a>            
+        image按如下md格式输出：           
+        [![Alt Text](Image Src)](Page Url)
         
-        3. 在 "Answer" 的末尾，请列出引用的所有页面的Page Url和Title以供用户参考原始文档。
+        3. 在 "Answer" 的末尾，请列出引用的所有页面的Page Url和Title以供用户参考原始文档。最后写出一句话总结。
 
         Question: 
         {question}
@@ -827,6 +829,139 @@ def msg_imgurl_to_base64_quick(msg):
     return msg_base64
 
 
+def extract_content_with_delimiter(raw_text, delimiter):
+    """
+    Extracts content between specified delimiters from the input text.
+
+    :param text: The input text to process.
+    :param delimiter: The delimiter for extracting content (e.g., "```").
+    :return: Extracted content or a message if no content is found.
+    """
+    import re
+    pattern = re.escape(delimiter) + r'(.*?)' + re.escape(delimiter)
+    matches = re.findall(pattern, raw_text, re.DOTALL)
+    if matches:
+        return "\n".join(matches)
+    return f"No content found between delimiter '{delimiter}'."
+
+def fetch_page_title(url):
+    """
+    Fetches the title of the given webpage URL.
+
+    :param url: The URL of the webpage.
+    :return: The title of the webpage or an error message.
+    """
+    try:
+        # Fetch the HTML content of the webpage
+        response = requests.get(url, timeout=2)  # Set a timeout to avoid hanging
+        response.raise_for_status()  # Raise an exception for HTTP errors
+
+        # Parse the HTML content
+        tree = html.fromstring(response.content)
+
+        # Extract the title using XPath
+        title = tree.xpath('//title/text()')
+        if title:
+            return title[0].strip()  # Return the stripped title
+        else:
+            return "No title found"
+
+    except requests.RequestException as e:
+        return f"Request failed: {e}"
+    except Exception as e:
+        return f"Error processing URL: {e}"
+
+import threading
+from multiprocessing import Value
+
+# Global variable
+counter = Value('i', 0)  # 'i' represents integer
+
+def increment_counter():
+    """
+    Increments the global counter by 1 every 2 seconds.
+    """
+    with counter.get_lock():  # Ensure thread-safe updates
+        counter.value += 1
+    # print(f"Counter updated: {counter}")
+    # Schedule the function to run again after 2 seconds
+    threading.Timer(2.0, increment_counter).start()
+
+# Start the timer
+increment_counter()
+
+## Agent Start############################################################
+
+websense_llm = ChatOpenAI(name="websense_llm", model_name="gpt-4o-mini", streaming=True)
+websense_agent = AgentX(name="websense_agent",llm=websense_llm, streaming=True)
+datafetch_llm = ChatOpenAI(name="datafetch_llm", model_name="gpt-4o-mini", streaming=True)
+datafetch_agent = AgentX(name="datafetch_agent", llm=datafetch_llm)
+fusionbot_llm = ChatOpenAI(name="fusionbot_llm", model_name="gpt-4o-mini", streaming=True)
+fusionbot_agent = AgentX(name="fusionbot_agent", llm=fusionbot_llm)
+
+
+
+def agent_flow(user_q):
+    """
+    Main agent flow function. Fetches search links, evaluates their relevance, 
+    and processes the relevant links based on the user query.
+    """
+    log_message("Starting to get the related page links")
+
+    # Fetch links containing the user query keyword
+    search_links = fetch_links_with_keyword(user_q)
+    log_message(f"Fetched links: {search_links}")
+
+    # Iterate through each link and fetch its title
+    relevant_links = []
+    for link in search_links:
+        # Fetch the page title
+        title = fetch_page_title(link)
+        if not title or "Request failed" in title or "Error processing" in title:
+            log_message(f"Failed to fetch title for link: {link}")
+            continue  # Skip this link if title fetch fails
+        
+        # Update the websense_agent instructions with the user question and the current link title
+        websense_agent.instructions = f"根据用户的问题: {user_q}，判断标题为: {title} 的内容是否与问题相关，相关度大于50%则返回True，否则返回False。"
+        websense_agent.update_instructions(websense_agent.instructions)
+
+        # Use the agent to evaluate relevance
+        is_relevant = websense_agent.generate_response(user_q)
+        if is_relevant.strip().lower() == "true":
+            log_message(f"{websense_agent.name}: Relevant link found: {link} (Title: {title})")
+            relevant_links.append(link)
+        else:
+            log_message(f"{websense_agent.name}: Irrelevant link skipped: {link} (Title: {title})")
+
+    log_message(f"Relevant links: {relevant_links}")
+
+    # Process relevant links if any
+    for relevant_link in relevant_links:
+        # Placeholder for next steps
+        log_message(f"Processing relevant link: {relevant_link}")
+        # Call further processing functions or logic here
+        # Example: process_url(relevant_link)
+
+    return relevant_links
+    
+
+
+
+
+    # links=extract_content_with_delimiter(str(links),'```')
+    # urls_list = links.strip("[]").split(", ")
+
+
+ 
+
+
+    return links
+
+## Agent End###############################################################
+
+
+
+
 def main():
     """
     Main function to coordinate the web scraping, database building, and LLM querying processes.
@@ -850,7 +985,7 @@ def main():
 
     # Query the LLM
     # llm_chatbot_quick()
-
+    
 if __name__ == "__main__":
     try:
         # main()

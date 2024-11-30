@@ -1,0 +1,86 @@
+2024-11-21 23:35:44,721 - Default - MainProcess - 52352 - Starting getting the related page links
+2024-11-21 23:35:47,438 - Default - MainProcess - 52352 - Found 10 links containing '64岁演员车保罗COS《黑神话》老猴子 大鼻子引注目' on https://soso.gamersky.com/cse/search?q=64岁演员车保罗COS《黑神话》老猴子 大鼻子引注目&s=3068275339727451251&nsid=1&nsid=1
+2024-11-21 23:35:47,439 - Default - MainProcess - 52352 - ['https://wap.gamersky.com/soft/Content-351935.html', 'https://wap.gamersky.com/news/Content-1186903.html', 'https://shouyou.gamersky.com/news/201708/944432.shtml?yyue=a21bo.50862.201879', 'https://wap.gamersky.com/news/Content-820259.html', 'https://www.gamersky.com/handbook/201508/651757.shtml', 'https://www.gamersky.com/zl/1260/List_401.html', 'http://tag.gamersky.com/news/2517.html', 'https://wap.gamersky.com/soft/Content-387200.html', 'https://wap.gamersky.com/news/content-501251.html', 'https://www.gamersky.com/?87750a1f80dd69f083d950db125267df=f560cf6d9349a257267be139a8370028']
+2024-11-21 23:35:50,948 - Default - SpawnPoolWorker-2 - 52477 - Starting crawl for URL: https://wap.gamersky.com/soft/Content-351935.html
+2024-11-21 23:35:50,977 - Default - SpawnPoolWorker-2 - 52477 - -----------------------------------------------------------
+2024-11-21 23:35:50,978 - Default - SpawnPoolWorker-2 - 52477 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/soft/Content-351935.html. Total URLs: 1
+2024-11-21 23:35:51,020 - Default - SpawnPoolWorker-5 - 52480 - Starting crawl for URL: https://wap.gamersky.com/news/Content-1186903.html
+2024-11-21 23:35:51,020 - Default - SpawnPoolWorker-5 - 52480 - -----------------------------------------------------------
+2024-11-21 23:35:51,021 - Default - SpawnPoolWorker-5 - 52480 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/news/Content-1186903.html. Total URLs: 1
+2024-11-21 23:35:51,076 - Default - SpawnPoolWorker-9 - 52484 - Starting crawl for URL: https://shouyou.gamersky.com/news/201708/944432.shtml?yyue=a21bo.50862.201879
+2024-11-21 23:35:51,077 - Default - SpawnPoolWorker-9 - 52484 - -----------------------------------------------------------
+2024-11-21 23:35:51,077 - Default - SpawnPoolWorker-9 - 52484 - New crawled URL added to crawled_urls.json: https://shouyou.gamersky.com/news/201708/944432.shtml?yyue=a21bo.50862.201879. Total URLs: 1
+2024-11-21 23:35:51,140 - Default - SpawnPoolWorker-8 - 52483 - Starting crawl for URL: https://wap.gamersky.com/news/Content-820259.html
+2024-11-21 23:35:51,140 - Default - SpawnPoolWorker-8 - 52483 - -----------------------------------------------------------
+2024-11-21 23:35:51,141 - Default - SpawnPoolWorker-8 - 52483 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/news/Content-820259.html. Total URLs: 1
+2024-11-21 23:35:51,150 - Default - SpawnPoolWorker-10 - 52485 - Starting crawl for URL: https://www.gamersky.com/handbook/201508/651757.shtml
+2024-11-21 23:35:51,151 - Default - SpawnPoolWorker-10 - 52485 - -----------------------------------------------------------
+2024-11-21 23:35:51,151 - Default - SpawnPoolWorker-10 - 52485 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/201508/651757.shtml. Total URLs: 1
+2024-11-21 23:35:51,190 - Default - SpawnPoolWorker-3 - 52478 - Starting crawl for URL: https://www.gamersky.com/zl/1260/List_401.html
+2024-11-21 23:35:51,190 - Default - SpawnPoolWorker-12 - 52487 - Starting crawl for URL: http://tag.gamersky.com/news/2517.html
+2024-11-21 23:35:51,191 - Default - SpawnPoolWorker-12 - 52487 - Error crawling URL: http://tag.gamersky.com/news/2517.html, Error: [Errno 2] No such file or directory: 'crawled_urls.json'
+2024-11-21 23:35:51,191 - Default - SpawnPoolWorker-12 - 52487 - Starting crawl for URL: https://wap.gamersky.com/soft/Content-387200.html
+2024-11-21 23:35:51,191 - Default - SpawnPoolWorker-3 - 52478 - -----------------------------------------------------------
+2024-11-21 23:35:51,191 - Default - SpawnPoolWorker-12 - 52487 - Error crawling URL: https://wap.gamersky.com/soft/Content-387200.html, Error: [Errno 66] Directory not empty: 'quicksearch_cache'
+2024-11-21 23:35:51,191 - Default - SpawnPoolWorker-12 - 52487 - Starting crawl for URL: https://wap.gamersky.com/news/content-501251.html
+2024-11-21 23:35:51,191 - Default - SpawnPoolWorker-3 - 52478 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/zl/1260/List_401.html. Total URLs: 1
+2024-11-21 23:35:51,191 - Default - SpawnPoolWorker-12 - 52487 - -----------------------------------------------------------
+2024-11-21 23:35:51,192 - Default - SpawnPoolWorker-12 - 52487 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/news/content-501251.html. Total URLs: 1
+2024-11-21 23:35:51,210 - Default - SpawnPoolWorker-6 - 52481 - Starting crawl for URL: https://www.gamersky.com/?87750a1f80dd69f083d950db125267df=f560cf6d9349a257267be139a8370028
+2024-11-21 23:35:51,210 - Default - SpawnPoolWorker-6 - 52481 - -----------------------------------------------------------
+2024-11-21 23:35:51,210 - Default - SpawnPoolWorker-6 - 52481 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/?87750a1f80dd69f083d950db125267df=f560cf6d9349a257267be139a8370028. Total URLs: 1
+2024-11-21 23:35:53,331 - Default - SpawnPoolWorker-12 - 52487 - Success on attempt 1 for https://wap.gamersky.com/news/content-501251.html
+2024-11-21 23:35:53,333 - Default - SpawnPoolWorker-12 - 52487 - No '黑神话' found at https://wap.gamersky.com/news/content-501251.html (Depth: 1)
+2024-11-21 23:35:53,333 - Default - SpawnPoolWorker-12 - 52487 - ⭐️1. Completed crawl and save data for URL: https://wap.gamersky.com/news/content-501251.html
+2024-11-21 23:35:53,375 - Default - SpawnPoolWorker-8 - 52483 - Success on attempt 1 for https://wap.gamersky.com/news/Content-820259.html
+2024-11-21 23:35:53,376 - Default - SpawnPoolWorker-8 - 52483 - No '黑神话' found at https://wap.gamersky.com/news/Content-820259.html (Depth: 1)
+2024-11-21 23:35:53,377 - Default - SpawnPoolWorker-8 - 52483 - ⭐️1. Completed crawl and save data for URL: https://wap.gamersky.com/news/Content-820259.html
+2024-11-21 23:35:53,433 - Default - SpawnPoolWorker-5 - 52480 - Success on attempt 1 for https://wap.gamersky.com/news/Content-1186903.html
+2024-11-21 23:35:53,433 - Default - SpawnPoolWorker-5 - 52480 - No '黑神话' found at https://wap.gamersky.com/news/Content-1186903.html (Depth: 1)
+2024-11-21 23:35:53,434 - Default - SpawnPoolWorker-5 - 52480 - ⭐️1. Completed crawl and save data for URL: https://wap.gamersky.com/news/Content-1186903.html
+2024-11-21 23:35:53,446 - Default - SpawnPoolWorker-10 - 52485 - Success on attempt 1 for https://www.gamersky.com/handbook/201508/651757.shtml
+2024-11-21 23:35:53,449 - Default - SpawnPoolWorker-10 - 52485 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/201508/651757.shtml
+2024-11-21 23:35:53,474 - Default - SpawnPoolWorker-2 - 52477 - Success on attempt 1 for https://wap.gamersky.com/soft/Content-351935.html
+2024-11-21 23:35:53,475 - Default - SpawnPoolWorker-2 - 52477 - No '黑神话' found at https://wap.gamersky.com/soft/Content-351935.html (Depth: 1)
+2024-11-21 23:35:53,475 - Default - SpawnPoolWorker-2 - 52477 - ⭐️1. Completed crawl and save data for URL: https://wap.gamersky.com/soft/Content-351935.html
+2024-11-21 23:35:53,511 - Default - SpawnPoolWorker-9 - 52484 - Success on attempt 1 for https://shouyou.gamersky.com/news/201708/944432.shtml?yyue=a21bo.50862.201879
+2024-11-21 23:35:53,513 - Default - SpawnPoolWorker-9 - 52484 - ⭐️1. Completed crawl and save data for URL: https://shouyou.gamersky.com/news/201708/944432.shtml?yyue=a21bo.50862.201879
+2024-11-21 23:35:53,645 - Default - SpawnPoolWorker-3 - 52478 - Success on attempt 1 for https://www.gamersky.com/zl/1260/List_401.html
+2024-11-21 23:35:53,646 - Default - SpawnPoolWorker-3 - 52478 - No '黑神话' found at https://www.gamersky.com/zl/1260/List_401.html (Depth: 1)
+2024-11-21 23:35:53,646 - Default - SpawnPoolWorker-3 - 52478 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/zl/1260/List_401.html
+2024-11-21 23:35:53,843 - Default - SpawnPoolWorker-6 - 52481 - Success on attempt 1 for https://www.gamersky.com/?87750a1f80dd69f083d950db125267df=f560cf6d9349a257267be139a8370028
+2024-11-21 23:35:53,851 - Default - SpawnPoolWorker-6 - 52481 - No '黑神话' found at https://www.gamersky.com/?87750a1f80dd69f083d950db125267df=f560cf6d9349a257267be139a8370028 (Depth: 1)
+2024-11-21 23:35:53,853 - Default - SpawnPoolWorker-6 - 52481 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/?87750a1f80dd69f083d950db125267df=f560cf6d9349a257267be139a8370028
+2024-11-21 23:35:53,895 - Default - MainProcess - 52352 - Completed web scraping process
+2024-11-21 23:35:53,896 - Default - MainProcess - 52352 - ⭐️2. Sending prompt to LLM: 64岁演员车保罗COS《黑神话》老猴子 大鼻子引注目
+2024-11-21 23:35:53,910 - Default - MainProcess - 52352 - Error processing prompt: 64岁演员车保罗COS《黑神话》老猴子 大鼻子引注目, Error: [Errno 2] No such file or directory: 'quicksearch_cache/rawdata'
+2024-11-21 23:35:53,910 - Default - MainProcess - 52352 - No response received from LLM
+2024-11-21 23:42:55,358 - Default - MainProcess - 52352 - Starting getting the related page links
+2024-11-21 23:42:56,185 - Default - MainProcess - 52352 - Found 3 links containing 'TGA询问网友年度最佳 《黑神话：悟空》和《最终幻想7重生》引“骂战”' on https://soso.gamersky.com/cse/search?q=TGA询问网友年度最佳 《黑神话：悟空》和《最终幻想7重生》引“骂战”&s=3068275339727451251&nsid=1&nsid=1
+2024-11-21 23:42:56,186 - Default - MainProcess - 52352 - ['https://wap.gamersky.com/news/Content-1805762.html', 'https://down.gamersky.com/pc/202409/1817793.shtml', 'https://www.gamersky.com/news/ot/index.shtml']
+2024-11-21 23:42:59,721 - Default - SpawnPoolWorker-21 - 54701 - Starting crawl for URL: https://wap.gamersky.com/news/Content-1805762.html
+2024-11-21 23:42:59,722 - Default - SpawnPoolWorker-21 - 54701 - -----------------------------------------------------------
+2024-11-21 23:42:59,722 - Default - SpawnPoolWorker-21 - 54701 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/news/Content-1805762.html. Total URLs: 1
+2024-11-21 23:42:59,740 - Default - SpawnPoolWorker-23 - 54703 - Starting crawl for URL: https://down.gamersky.com/pc/202409/1817793.shtml
+2024-11-21 23:42:59,740 - Default - SpawnPoolWorker-23 - 54703 - -----------------------------------------------------------
+2024-11-21 23:42:59,741 - Default - SpawnPoolWorker-23 - 54703 - New crawled URL added to crawled_urls.json: https://down.gamersky.com/pc/202409/1817793.shtml. Total URLs: 1
+2024-11-21 23:42:59,762 - Default - SpawnPoolWorker-24 - 54704 - Starting crawl for URL: https://www.gamersky.com/news/ot/index.shtml
+2024-11-21 23:42:59,763 - Default - SpawnPoolWorker-24 - 54704 - -----------------------------------------------------------
+2024-11-21 23:42:59,763 - Default - SpawnPoolWorker-24 - 54704 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/news/ot/index.shtml. Total URLs: 1
+2024-11-21 23:43:01,081 - Default - SpawnPoolWorker-21 - 54701 - Success on attempt 1 for https://wap.gamersky.com/news/Content-1805762.html
+2024-11-21 23:43:01,082 - Default - SpawnPoolWorker-21 - 54701 - Found '黑神话' in full HTML at https://wap.gamersky.com/news/Content-1805762.html (Depth: 1)
+2024-11-21 23:43:01,082 - Default - SpawnPoolWorker-21 - 54701 - New link added to links.json: https://wap.gamersky.com/news/Content-1805762.html. Total links: 1
+2024-11-21 23:43:01,082 - Default - SpawnPoolWorker-21 - 54701 - Error crawling URL: https://wap.gamersky.com/news/Content-1805762.html, Error: list index out of range
+2024-11-21 23:43:01,090 - Default - SpawnPoolWorker-23 - 54703 - Success on attempt 1 for https://down.gamersky.com/pc/202409/1817793.shtml
+2024-11-21 23:43:01,092 - Default - SpawnPoolWorker-23 - 54703 - Found '黑神话' in Mid2L_con or Title at https://down.gamersky.com/pc/202409/1817793.shtml (Depth: 1)
+2024-11-21 23:43:01,092 - Default - SpawnPoolWorker-23 - 54703 - New link added to links.json: https://down.gamersky.com/pc/202409/1817793.shtml. Total links: 1
+2024-11-21 23:43:01,129 - Default - SpawnPoolWorker-24 - 54704 - Success on attempt 1 for https://www.gamersky.com/news/ot/index.shtml
+2024-11-21 23:43:01,140 - Default - SpawnPoolWorker-24 - 54704 - No '黑神话' found at https://www.gamersky.com/news/ot/index.shtml (Depth: 1)
+2024-11-21 23:43:01,142 - Default - SpawnPoolWorker-24 - 54704 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/news/ot/index.shtml
+2024-11-21 23:43:05,684 - Default - SpawnPoolWorker-23 - 54703 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-21 23:43:05,685 - Default - SpawnPoolWorker-23 - 54703 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-21 23:43:05,686 - Default - SpawnPoolWorker-23 - 54703 - ⭐️1. Completed crawl and save data for URL: https://down.gamersky.com/pc/202409/1817793.shtml
+2024-11-21 23:43:05,722 - Default - MainProcess - 52352 - Completed web scraping process
+2024-11-21 23:43:05,722 - Default - MainProcess - 52352 - ⭐️2. Sending prompt to LLM: TGA询问网友年度最佳 《黑神话：悟空》和《最终幻想7重生》引“骂战”
+2024-11-21 23:43:19,991 - Default - MainProcess - 52352 - ⭐️3. LLM response received: 
+ 在最近的TGA（The Game Awa

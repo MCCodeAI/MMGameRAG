@@ -6,7 +6,11 @@ body,html{
     background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(54, 60, 70), rgb(32, 32, 43));
 	background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
 }
-
+img:not(.user_img_msg) {
+    max-width: 100%; /* 防止图片超出容器宽度 */
+    height: auto;  
+     /*display: block; */
+}
 .chat{
 	margin-top: auto;
     margin-bottom: auto;
@@ -234,3 +238,4 @@ body,html{
 	margin-bottom: 10px !important;
 }
 }
+

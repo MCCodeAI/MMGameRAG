@@ -4,12 +4,18 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 import markdown2
 
+
+
 from mmgamer_quicksearch import *
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
-extra_files = os.environ.get("FLASK_RUN_EXTRA_FILES")
-print(f"Extra files to watch: {extra_files}")
+# extra_files = os.environ.get("FLASK_RUN_EXTRA_FILES")
+# print(f"Extra files to watch: {extra_files}")
+
+
+
+
 
 # Load tokenizer and model
 # tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
@@ -31,19 +37,25 @@ def chat():
 @app.route("/stream", methods=["GET"])
 def stream():
     msg = request.args.get("msg")
+    
     return Response(stream_with_context(generate_response_stream(msg)), mimetype="text/event-stream")
 
 def generate_response_stream(user_q):
     try:
         # Simulate streaming data generation
         # for chunk in llm_groq_agent(user_q):
-        resp = llm_groq_agent(user_q)
-        print(resp)
+        # resp = agent_flow(user_q)
+        # resp = llm_chatbot_quick(user_q)
+        resp = agent_flow(user_q)
+
+        # Iterate through resp and process each chunk
         for chunk in resp:
             # Replace each newline in the chunk with "\ndata:" to ensure proper SSE formatting
             formatted_chunk = chunk.replace("\n", "\ndata: ")
             yield f"data: {formatted_chunk}\n\n"
             time.sleep(0.002)
+
+        yield "data:   \n\n"
         yield "data: [END]\n\n"  # Signify the end of the stream
     except Exception as e:
         yield f"data: Error: {str(e)}\n\n"
@@ -82,16 +94,27 @@ def convert_markdown():
     data = request.get_json()
     markdown_text = data.get("markdown", "")
     html_content = markdown2.markdown(markdown_text)
+    # Post-process to ensure target="_blank"
+    html_content = html_content.replace('<a ', '<a target="_blank" ')
     # print("-------md")
     # print(markdown_text)
     # print("-------html")
-    # print(html_content)
+    print(html_content)
     return jsonify(html_content)
 
+
+@app.route("/get_updates", methods=["GET"])
+def get_updates():
+    with counter.get_lock():  # Ensure thread-safe reads
+        current_value = counter.value
+    print(current_value)
+    updates = {"new_message": f"{current_value}: This is a real-time update!"}
+    return jsonify(updates)
 
 # New route to return "good night" for the button click
 @app.route("/get_goodnight", methods=["POST"])
 def get_good_night():
+
     return jsonify({"response": "good night!"})
 
 if __name__ == '__main__':

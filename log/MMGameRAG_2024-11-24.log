@@ -1,0 +1,393 @@
+2024-11-24 18:55:14,531 - Default - MainProcess - 61173 - Starting getting the related page links
+2024-11-24 18:55:15,814 - Default - MainProcess - 61173 - Found 10 links containing '王灵官隐身蓄力流打法教学' on https://soso.gamersky.com/cse/search?q=王灵官隐身蓄力流打法教学&s=3068275339727451251&nsid=1&nsid=1
+2024-11-24 18:55:15,815 - Default - MainProcess - 61173 - ['https://www.gamersky.com/handbook/202410/1824735.shtml', 'https://www.gamersky.com/news/1314156_34214/', 'https://www.gamersky.com/handbook/35188/', 'https://wap.gamersky.com/gl/Content-1824735.html', 'https://www.gamersky.com/z/bmwukong/1314156_35188/?gsAppOpenWithNewWindow=true', 'https://www.gamersky.com/handbook/Special/bmwukong', 'https://www.gamersky.com/news/1314156_35188/', 'https://wap.gamersky.com/z/bmwukong/1314156_34214/', 'https://www.gamersky.com/news/1314156_33233/', 'https://www.gamersky.com/handbook/1314156_33233/']
+2024-11-24 18:55:19,773 - Default - SpawnPoolWorker-8 - 78362 - Starting crawl for URL: https://www.gamersky.com/handbook/202410/1824735.shtml
+2024-11-24 18:55:19,781 - Default - SpawnPoolWorker-8 - 78362 - -----------------------------------------------------------
+2024-11-24 18:55:19,782 - Default - SpawnPoolWorker-8 - 78362 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202410/1824735.shtml. Total URLs: 1
+2024-11-24 18:55:19,799 - Default - SpawnPoolWorker-12 - 78366 - Starting crawl for URL: https://www.gamersky.com/news/1314156_34214/
+2024-11-24 18:55:19,800 - Default - SpawnPoolWorker-12 - 78366 - -----------------------------------------------------------
+2024-11-24 18:55:19,800 - Default - SpawnPoolWorker-12 - 78366 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/news/1314156_34214/. Total URLs: 1
+2024-11-24 18:55:19,808 - Default - SpawnPoolWorker-2 - 78356 - Starting crawl for URL: https://www.gamersky.com/handbook/35188/
+2024-11-24 18:55:19,809 - Default - SpawnPoolWorker-2 - 78356 - -----------------------------------------------------------
+2024-11-24 18:55:19,809 - Default - SpawnPoolWorker-2 - 78356 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/35188/. Total URLs: 1
+2024-11-24 18:55:19,846 - Default - SpawnPoolWorker-3 - 78357 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1824735.html
+2024-11-24 18:55:19,847 - Default - SpawnPoolWorker-3 - 78357 - -----------------------------------------------------------
+2024-11-24 18:55:19,847 - Default - SpawnPoolWorker-3 - 78357 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1824735.html. Total URLs: 1
+2024-11-24 18:55:19,862 - Default - SpawnPoolWorker-5 - 78359 - Starting crawl for URL: https://www.gamersky.com/z/bmwukong/1314156_35188/?gsAppOpenWithNewWindow=true
+2024-11-24 18:55:19,863 - Default - SpawnPoolWorker-5 - 78359 - -----------------------------------------------------------
+2024-11-24 18:55:19,863 - Default - SpawnPoolWorker-7 - 78361 - Starting crawl for URL: https://www.gamersky.com/handbook/Special/bmwukong
+2024-11-24 18:55:19,864 - Default - SpawnPoolWorker-5 - 78359 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/z/bmwukong/1314156_35188/?gsAppOpenWithNewWindow=true. Total URLs: 1
+2024-11-24 18:55:19,864 - Default - SpawnPoolWorker-7 - 78361 - -----------------------------------------------------------
+2024-11-24 18:55:19,864 - Default - SpawnPoolWorker-7 - 78361 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/Special/bmwukong. Total URLs: 1
+2024-11-24 18:55:19,897 - Default - SpawnPoolWorker-6 - 78360 - Starting crawl for URL: https://www.gamersky.com/news/1314156_35188/
+2024-11-24 18:55:19,898 - Default - SpawnPoolWorker-6 - 78360 - -----------------------------------------------------------
+2024-11-24 18:55:19,898 - Default - SpawnPoolWorker-6 - 78360 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/news/1314156_35188/. Total URLs: 1
+2024-11-24 18:55:19,908 - Default - SpawnPoolWorker-11 - 78365 - Starting crawl for URL: https://wap.gamersky.com/z/bmwukong/1314156_34214/
+2024-11-24 18:55:19,909 - Default - SpawnPoolWorker-11 - 78365 - -----------------------------------------------------------
+2024-11-24 18:55:19,909 - Default - SpawnPoolWorker-11 - 78365 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/z/bmwukong/1314156_34214/. Total URLs: 1
+2024-11-24 18:55:19,931 - Default - SpawnPoolWorker-4 - 78358 - Starting crawl for URL: https://www.gamersky.com/news/1314156_33233/
+2024-11-24 18:55:19,932 - Default - SpawnPoolWorker-4 - 78358 - -----------------------------------------------------------
+2024-11-24 18:55:19,932 - Default - SpawnPoolWorker-4 - 78358 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/news/1314156_33233/. Total URLs: 1
+2024-11-24 18:55:19,956 - Default - SpawnPoolWorker-1 - 78355 - Starting crawl for URL: https://www.gamersky.com/handbook/1314156_33233/
+2024-11-24 18:55:19,959 - Default - SpawnPoolWorker-1 - 78355 - -----------------------------------------------------------
+2024-11-24 18:55:19,960 - Default - SpawnPoolWorker-1 - 78355 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/1314156_33233/. Total URLs: 1
+2024-11-24 18:55:21,658 - Default - SpawnPoolWorker-5 - 78359 - Success on attempt 1 for https://www.gamersky.com/z/bmwukong/1314156_35188/?gsAppOpenWithNewWindow=true
+2024-11-24 18:55:21,660 - Default - SpawnPoolWorker-5 - 78359 - Found '黑神话' in full HTML at https://www.gamersky.com/z/bmwukong/1314156_35188/?gsAppOpenWithNewWindow=true (Depth: 1)
+2024-11-24 18:55:21,660 - Default - SpawnPoolWorker-5 - 78359 - New link added to links.json: https://www.gamersky.com/z/bmwukong/1314156_35188/?gsAppOpenWithNewWindow=true. Total links: 1
+2024-11-24 18:55:21,661 - Default - SpawnPoolWorker-5 - 78359 - Error crawling URL: https://www.gamersky.com/z/bmwukong/1314156_35188/?gsAppOpenWithNewWindow=true, Error: list index out of range
+2024-11-24 18:55:21,679 - Default - SpawnPoolWorker-8 - 78362 - Success on attempt 1 for https://www.gamersky.com/handbook/202410/1824735.shtml
+2024-11-24 18:55:21,681 - Default - SpawnPoolWorker-8 - 78362 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202410/1824735.shtml (Depth: 1)
+2024-11-24 18:55:21,682 - Default - SpawnPoolWorker-8 - 78362 - New link added to links.json: https://www.gamersky.com/handbook/202410/1824735.shtml. Total links: 1
+2024-11-24 18:55:21,688 - Default - SpawnPoolWorker-3 - 78357 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1824735.html
+2024-11-24 18:55:21,689 - Default - SpawnPoolWorker-3 - 78357 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1824735.html (Depth: 1)
+2024-11-24 18:55:21,689 - Default - SpawnPoolWorker-3 - 78357 - New link added to links.json: https://wap.gamersky.com/gl/Content-1824735.html. Total links: 1
+2024-11-24 18:55:21,690 - Default - SpawnPoolWorker-3 - 78357 - Error crawling URL: https://wap.gamersky.com/gl/Content-1824735.html, Error: list index out of range
+2024-11-24 18:55:21,700 - Default - SpawnPoolWorker-4 - 78358 - Success on attempt 1 for https://www.gamersky.com/news/1314156_33233/
+2024-11-24 18:55:21,705 - Default - SpawnPoolWorker-4 - 78358 - Found '黑神话' in full HTML at https://www.gamersky.com/news/1314156_33233/ (Depth: 1)
+2024-11-24 18:55:21,711 - Default - SpawnPoolWorker-4 - 78358 - New link added to links.json: https://www.gamersky.com/news/1314156_33233/. Total links: 1
+2024-11-24 18:55:21,712 - Default - SpawnPoolWorker-4 - 78358 - Error crawling URL: https://www.gamersky.com/news/1314156_33233/, Error: list index out of range
+2024-11-24 18:55:21,783 - Default - SpawnPoolWorker-7 - 78361 - Success on attempt 1 for https://www.gamersky.com/handbook/Special/bmwukong
+2024-11-24 18:55:21,785 - Default - SpawnPoolWorker-7 - 78361 - Found '黑神话' in full HTML at https://www.gamersky.com/handbook/Special/bmwukong (Depth: 1)
+2024-11-24 18:55:21,785 - Default - SpawnPoolWorker-7 - 78361 - New link added to links.json: https://www.gamersky.com/handbook/Special/bmwukong. Total links: 1
+2024-11-24 18:55:21,786 - Default - SpawnPoolWorker-7 - 78361 - Error crawling URL: https://www.gamersky.com/handbook/Special/bmwukong, Error: list index out of range
+2024-11-24 18:55:21,792 - Default - SpawnPoolWorker-2 - 78356 - Success on attempt 1 for https://www.gamersky.com/handbook/35188/
+2024-11-24 18:55:21,794 - Default - SpawnPoolWorker-2 - 78356 - No '黑神话' found at https://www.gamersky.com/handbook/35188/ (Depth: 1)
+2024-11-24 18:55:21,794 - Default - SpawnPoolWorker-2 - 78356 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/35188/
+2024-11-24 18:55:21,799 - Default - SpawnPoolWorker-11 - 78365 - Success on attempt 1 for https://wap.gamersky.com/z/bmwukong/1314156_34214/
+2024-11-24 18:55:21,800 - Default - SpawnPoolWorker-11 - 78365 - Found '黑神话' in full HTML at https://wap.gamersky.com/z/bmwukong/1314156_34214/ (Depth: 1)
+2024-11-24 18:55:21,800 - Default - SpawnPoolWorker-11 - 78365 - New link added to links.json: https://wap.gamersky.com/z/bmwukong/1314156_34214/. Total links: 1
+2024-11-24 18:55:21,800 - Default - SpawnPoolWorker-11 - 78365 - Error crawling URL: https://wap.gamersky.com/z/bmwukong/1314156_34214/, Error: list index out of range
+2024-11-24 18:55:22,155 - Default - SpawnPoolWorker-12 - 78366 - Success on attempt 1 for https://www.gamersky.com/news/1314156_34214/
+2024-11-24 18:55:22,156 - Default - SpawnPoolWorker-12 - 78366 - Found '黑神话' in full HTML at https://www.gamersky.com/news/1314156_34214/ (Depth: 1)
+2024-11-24 18:55:22,157 - Default - SpawnPoolWorker-12 - 78366 - New link added to links.json: https://www.gamersky.com/news/1314156_34214/. Total links: 1
+2024-11-24 18:55:22,157 - Default - SpawnPoolWorker-12 - 78366 - Error crawling URL: https://www.gamersky.com/news/1314156_34214/, Error: list index out of range
+2024-11-24 18:55:22,180 - Default - SpawnPoolWorker-6 - 78360 - Success on attempt 1 for https://www.gamersky.com/news/1314156_35188/
+2024-11-24 18:55:22,182 - Default - SpawnPoolWorker-6 - 78360 - Found '黑神话' in full HTML at https://www.gamersky.com/news/1314156_35188/ (Depth: 1)
+2024-11-24 18:55:22,183 - Default - SpawnPoolWorker-6 - 78360 - New link added to links.json: https://www.gamersky.com/news/1314156_35188/. Total links: 1
+2024-11-24 18:55:22,183 - Default - SpawnPoolWorker-6 - 78360 - Error crawling URL: https://www.gamersky.com/news/1314156_35188/, Error: list index out of range
+2024-11-24 18:55:22,289 - Default - SpawnPoolWorker-1 - 78355 - Success on attempt 1 for https://www.gamersky.com/handbook/1314156_33233/
+2024-11-24 18:55:22,292 - Default - SpawnPoolWorker-1 - 78355 - Found '黑神话' in full HTML at https://www.gamersky.com/handbook/1314156_33233/ (Depth: 1)
+2024-11-24 18:55:22,293 - Default - SpawnPoolWorker-1 - 78355 - New link added to links.json: https://www.gamersky.com/handbook/1314156_33233/. Total links: 1
+2024-11-24 18:55:22,294 - Default - SpawnPoolWorker-1 - 78355 - Error crawling URL: https://www.gamersky.com/handbook/1314156_33233/, Error: list index out of range
+2024-11-24 18:55:22,997 - Default - SpawnPoolWorker-8 - 78362 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:55:22,997 - Default - SpawnPoolWorker-8 - 78362 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:55:22,998 - Default - SpawnPoolWorker-8 - 78362 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202410/1824735.shtml
+2024-11-24 18:55:23,053 - Default - MainProcess - 61173 - Completed web scraping process
+2024-11-24 18:55:23,053 - Default - MainProcess - 61173 - ⭐️2. Sending prompt to LLM: 王灵官隐身蓄力流打法教学
+2024-11-24 18:55:31,280 - Default - MainProcess - 61173 - ⭐️3. LLM response received: 
+ 在《黑神话：悟空》中，王灵官是花果山开头
+2024-11-24 18:56:17,097 - Default - MainProcess - 61173 - Starting getting the related page links
+2024-11-24 18:56:18,061 - Default - MainProcess - 61173 - Found 10 links containing '全土地庙篝火列表 各章节传送点一览' on https://soso.gamersky.com/cse/search?q=全土地庙篝火列表 各章节传送点一览&s=3068275339727451251&nsid=1&nsid=1
+2024-11-24 18:56:18,062 - Default - MainProcess - 61173 - ['https://www.gamersky.com/handbook/202408/1803753_4.shtml', 'https://wap.gamersky.com/gl/Content-1803753.html', 'https://wap.gamersky.com/gl/Content-1803828_2.html', 'https://www.gamersky.com/handbook/202408/1806461_4.shtml', 'https://wap.gamersky.com/gl/Content-1806644_3.html', 'https://www.gamersky.com/handbook/202408/1803824_3.shtml', 'https://www.gamersky.com/handbook/202408/1806461_2.shtml', 'https://wap.gamersky.com/gl/Content-1806644_2.html', 'https://www.gamersky.com/handbook/202408/1806461_3.shtml', 'https://www.gamersky.com/handbook/202408/1806644_4.shtml']
+2024-11-24 18:56:21,449 - Default - SpawnPoolWorker-21 - 78720 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1803753_4.shtml
+2024-11-24 18:56:21,450 - Default - SpawnPoolWorker-19 - 78718 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1803753.html
+2024-11-24 18:56:21,451 - Default - SpawnPoolWorker-21 - 78720 - -----------------------------------------------------------
+2024-11-24 18:56:21,452 - Default - SpawnPoolWorker-21 - 78720 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1803753_4.shtml. Total URLs: 1
+2024-11-24 18:56:21,458 - Default - SpawnPoolWorker-19 - 78718 - Error crawling URL: https://wap.gamersky.com/gl/Content-1803753.html, Error: [Errno 2] No such file or directory: 'mmimg.json.lock'
+2024-11-24 18:56:21,458 - Default - SpawnPoolWorker-19 - 78718 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1803828_2.html
+2024-11-24 18:56:21,458 - Default - SpawnPoolWorker-19 - 78718 - -----------------------------------------------------------
+2024-11-24 18:56:21,459 - Default - SpawnPoolWorker-19 - 78718 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1803828_2.html. Total URLs: 1
+2024-11-24 18:56:21,500 - Default - SpawnPoolWorker-23 - 78722 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1806461_4.shtml
+2024-11-24 18:56:21,500 - Default - SpawnPoolWorker-23 - 78722 - -----------------------------------------------------------
+2024-11-24 18:56:21,501 - Default - SpawnPoolWorker-23 - 78722 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1806461_4.shtml. Total URLs: 1
+2024-11-24 18:56:21,503 - Default - SpawnPoolWorker-18 - 78717 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1806644_3.html
+2024-11-24 18:56:21,504 - Default - SpawnPoolWorker-18 - 78717 - -----------------------------------------------------------
+2024-11-24 18:56:21,504 - Default - SpawnPoolWorker-18 - 78717 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1806644_3.html. Total URLs: 1
+2024-11-24 18:56:21,519 - Default - SpawnPoolWorker-22 - 78721 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1803824_3.shtml
+2024-11-24 18:56:21,520 - Default - SpawnPoolWorker-16 - 78715 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1806461_2.shtml
+2024-11-24 18:56:21,520 - Default - SpawnPoolWorker-22 - 78721 - -----------------------------------------------------------
+2024-11-24 18:56:21,520 - Default - SpawnPoolWorker-15 - 78714 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1806644_2.html
+2024-11-24 18:56:21,520 - Default - SpawnPoolWorker-20 - 78719 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1806461_3.shtml
+2024-11-24 18:56:21,521 - Default - SpawnPoolWorker-15 - 78714 - Error crawling URL: https://wap.gamersky.com/gl/Content-1806644_2.html, Error: [Errno 17] File exists: 'quicksearch_cache'
+2024-11-24 18:56:21,521 - Default - SpawnPoolWorker-22 - 78721 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1803824_3.shtml. Total URLs: 1
+2024-11-24 18:56:21,521 - Default - SpawnPoolWorker-16 - 78715 - Error crawling URL: https://www.gamersky.com/handbook/202408/1806461_2.shtml, Error: [Errno 2] No such file or directory: 'quicksearch_cache'
+2024-11-24 18:56:21,521 - Default - SpawnPoolWorker-20 - 78719 - -----------------------------------------------------------
+2024-11-24 18:56:21,521 - Default - SpawnPoolWorker-15 - 78714 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1806644_4.shtml
+2024-11-24 18:56:21,521 - Default - SpawnPoolWorker-20 - 78719 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1806461_3.shtml. Total URLs: 1
+2024-11-24 18:56:21,521 - Default - SpawnPoolWorker-15 - 78714 - -----------------------------------------------------------
+2024-11-24 18:56:21,521 - Default - SpawnPoolWorker-15 - 78714 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1806644_4.shtml. Total URLs: 1
+2024-11-24 18:56:21,642 - Default - SpawnPoolWorker-21 - 78720 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1803753_4.shtml
+2024-11-24 18:56:21,644 - Default - SpawnPoolWorker-21 - 78720 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1803753_4.shtml (Depth: 1)
+2024-11-24 18:56:21,644 - Default - SpawnPoolWorker-21 - 78720 - New link added to links.json: https://www.gamersky.com/handbook/202408/1803753_4.shtml. Total links: 1
+2024-11-24 18:56:21,731 - Default - SpawnPoolWorker-15 - 78714 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1806644_4.shtml
+2024-11-24 18:56:21,733 - Default - SpawnPoolWorker-15 - 78714 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1806644_4.shtml (Depth: 1)
+2024-11-24 18:56:21,733 - Default - SpawnPoolWorker-15 - 78714 - New link added to links.json: https://www.gamersky.com/handbook/202408/1806644_4.shtml. Total links: 1
+2024-11-24 18:56:21,745 - Default - SpawnPoolWorker-22 - 78721 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1803824_3.shtml
+2024-11-24 18:56:21,746 - Default - SpawnPoolWorker-22 - 78721 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1803824_3.shtml (Depth: 1)
+2024-11-24 18:56:21,747 - Default - SpawnPoolWorker-22 - 78721 - New link added to links.json: https://www.gamersky.com/handbook/202408/1803824_3.shtml. Total links: 1
+2024-11-24 18:56:21,751 - Default - SpawnPoolWorker-19 - 78718 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1803828_2.html
+2024-11-24 18:56:21,751 - Default - SpawnPoolWorker-19 - 78718 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1803828_2.html (Depth: 1)
+2024-11-24 18:56:21,752 - Default - SpawnPoolWorker-19 - 78718 - New link added to links.json: https://wap.gamersky.com/gl/Content-1803828_2.html. Total links: 1
+2024-11-24 18:56:21,752 - Default - SpawnPoolWorker-19 - 78718 - Error crawling URL: https://wap.gamersky.com/gl/Content-1803828_2.html, Error: list index out of range
+2024-11-24 18:56:21,766 - Default - SpawnPoolWorker-23 - 78722 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1806461_4.shtml
+2024-11-24 18:56:21,768 - Default - SpawnPoolWorker-23 - 78722 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1806461_4.shtml (Depth: 1)
+2024-11-24 18:56:21,768 - Default - SpawnPoolWorker-23 - 78722 - New link added to links.json: https://www.gamersky.com/handbook/202408/1806461_4.shtml. Total links: 1
+2024-11-24 18:56:21,807 - Default - SpawnPoolWorker-20 - 78719 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1806461_3.shtml
+2024-11-24 18:56:21,808 - Default - SpawnPoolWorker-20 - 78719 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1806461_3.shtml (Depth: 1)
+2024-11-24 18:56:21,809 - Default - SpawnPoolWorker-20 - 78719 - New link added to links.json: https://www.gamersky.com/handbook/202408/1806461_3.shtml. Total links: 1
+2024-11-24 18:56:21,836 - Default - SpawnPoolWorker-18 - 78717 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1806644_3.html
+2024-11-24 18:56:21,836 - Default - SpawnPoolWorker-18 - 78717 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1806644_3.html (Depth: 1)
+2024-11-24 18:56:21,837 - Default - SpawnPoolWorker-18 - 78717 - New link added to links.json: https://wap.gamersky.com/gl/Content-1806644_3.html. Total links: 1
+2024-11-24 18:56:21,837 - Default - SpawnPoolWorker-18 - 78717 - Error crawling URL: https://wap.gamersky.com/gl/Content-1806644_3.html, Error: list index out of range
+2024-11-24 18:56:22,358 - Default - SpawnPoolWorker-21 - 78720 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:56:22,358 - Default - SpawnPoolWorker-21 - 78720 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:56:22,359 - Default - SpawnPoolWorker-21 - 78720 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1803753_4.shtml
+2024-11-24 18:56:22,389 - Default - SpawnPoolWorker-15 - 78714 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:56:22,390 - Default - SpawnPoolWorker-15 - 78714 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:56:22,390 - Default - SpawnPoolWorker-15 - 78714 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1806644_4.shtml
+2024-11-24 18:56:22,941 - Default - SpawnPoolWorker-23 - 78722 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:56:22,942 - Default - SpawnPoolWorker-23 - 78722 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:56:22,942 - Default - SpawnPoolWorker-23 - 78722 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1806461_4.shtml
+2024-11-24 18:56:23,324 - Default - SpawnPoolWorker-20 - 78719 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:56:23,324 - Default - SpawnPoolWorker-20 - 78719 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:56:23,325 - Default - SpawnPoolWorker-20 - 78719 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1806461_3.shtml
+2024-11-24 18:56:23,487 - Default - SpawnPoolWorker-22 - 78721 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:56:23,487 - Default - SpawnPoolWorker-22 - 78721 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:56:23,488 - Default - SpawnPoolWorker-22 - 78721 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1803824_3.shtml
+2024-11-24 18:56:23,520 - Default - MainProcess - 61173 - Completed web scraping process
+2024-11-24 18:56:23,521 - Default - MainProcess - 61173 - ⭐️2. Sending prompt to LLM: 全土地庙篝火列表 各章节传送点一览
+2024-11-24 18:56:35,291 - Default - MainProcess - 61173 - ⭐️3. LLM response received: 
+ ### 全土地庙篝火列表 各章节传送点一
+2024-11-24 18:56:55,261 - Default - MainProcess - 61173 - Starting getting the related page links
+2024-11-24 18:56:56,311 - Default - MainProcess - 61173 - Found 10 links containing '高周目减伤流构筑分享 减伤流怎么玩' on https://soso.gamersky.com/cse/search?q=高周目减伤流构筑分享 减伤流怎么玩&s=3068275339727451251&nsid=1&nsid=1
+2024-11-24 18:56:56,312 - Default - MainProcess - 61173 - ['http://nourl.ubs.baidu.com/279', 'https://www.gamersky.com/handbook/202409/1817209.shtml', 'https://www.gamersky.com/handbook/202409/1819873.shtml', 'https://wap.gamersky.com/gl/Content-1477009.html', 'https://wap.gamersky.com/gl/Content-1470367.html', 'https://www.gamersky.com/handbook/202409/1809825.shtml', 'https://www.gamersky.com/handbook/202409/1813963.shtml', 'https://wap.gamersky.com/gl/Content-1817209.html', 'https://wap.gamersky.com/gl/Content-1819873.html', 'https://www.gamersky.com/handbook/202409/1811433.shtml']
+2024-11-24 18:56:59,587 - Default - SpawnPoolWorker-29 - 78958 - Starting crawl for URL: http://nourl.ubs.baidu.com/279
+2024-11-24 18:56:59,591 - Default - SpawnPoolWorker-29 - 78958 - -----------------------------------------------------------
+2024-11-24 18:56:59,591 - Default - SpawnPoolWorker-29 - 78958 - New crawled URL added to crawled_urls.json: http://nourl.ubs.baidu.com/279. Total URLs: 1
+2024-11-24 18:56:59,686 - Default - SpawnPoolWorker-26 - 78955 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1817209.shtml
+2024-11-24 18:56:59,687 - Default - SpawnPoolWorker-26 - 78955 - -----------------------------------------------------------
+2024-11-24 18:56:59,687 - Default - SpawnPoolWorker-26 - 78955 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1817209.shtml. Total URLs: 1
+2024-11-24 18:56:59,712 - Default - SpawnPoolWorker-36 - 78965 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1819873.shtml
+2024-11-24 18:56:59,713 - Default - SpawnPoolWorker-36 - 78965 - -----------------------------------------------------------
+2024-11-24 18:56:59,713 - Default - SpawnPoolWorker-36 - 78965 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1819873.shtml. Total URLs: 1
+2024-11-24 18:56:59,723 - Default - SpawnPoolWorker-30 - 78959 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1477009.html
+2024-11-24 18:56:59,723 - Default - SpawnPoolWorker-30 - 78959 - -----------------------------------------------------------
+2024-11-24 18:56:59,724 - Default - SpawnPoolWorker-30 - 78959 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1477009.html. Total URLs: 1
+2024-11-24 18:56:59,731 - Default - SpawnPoolWorker-28 - 78957 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1470367.html
+2024-11-24 18:56:59,731 - Default - SpawnPoolWorker-28 - 78957 - -----------------------------------------------------------
+2024-11-24 18:56:59,732 - Default - SpawnPoolWorker-28 - 78957 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1470367.html. Total URLs: 1
+2024-11-24 18:56:59,740 - Default - SpawnPoolWorker-34 - 78963 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1809825.shtml
+2024-11-24 18:56:59,741 - Default - SpawnPoolWorker-34 - 78963 - -----------------------------------------------------------
+2024-11-24 18:56:59,741 - Default - SpawnPoolWorker-31 - 78960 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1813963.shtml
+2024-11-24 18:56:59,741 - Default - SpawnPoolWorker-34 - 78963 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1809825.shtml. Total URLs: 1
+2024-11-24 18:56:59,741 - Default - SpawnPoolWorker-31 - 78960 - -----------------------------------------------------------
+2024-11-24 18:56:59,742 - Default - SpawnPoolWorker-31 - 78960 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1813963.shtml. Total URLs: 1
+2024-11-24 18:56:59,744 - Default - SpawnPoolWorker-33 - 78962 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1817209.html
+2024-11-24 18:56:59,744 - Default - SpawnPoolWorker-33 - 78962 - -----------------------------------------------------------
+2024-11-24 18:56:59,745 - Default - SpawnPoolWorker-33 - 78962 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1817209.html. Total URLs: 1
+2024-11-24 18:56:59,747 - Default - SpawnPoolWorker-32 - 78961 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1819873.html
+2024-11-24 18:56:59,747 - Default - SpawnPoolWorker-32 - 78961 - -----------------------------------------------------------
+2024-11-24 18:56:59,747 - Default - SpawnPoolWorker-32 - 78961 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1819873.html. Total URLs: 1
+2024-11-24 18:56:59,748 - Default - SpawnPoolWorker-35 - 78964 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1811433.shtml
+2024-11-24 18:56:59,748 - Default - SpawnPoolWorker-35 - 78964 - -----------------------------------------------------------
+2024-11-24 18:56:59,749 - Default - SpawnPoolWorker-35 - 78964 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1811433.shtml. Total URLs: 1
+2024-11-24 18:56:59,826 - Default - SpawnPoolWorker-29 - 78958 - Attempt 1 failed with error: HTTPConnectionPool(host='nourl.ubs.baidu.com', port=80): Max retries exceeded with url: /279 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x13c7f7150>: Failed to resolve 'nourl.ubs.baidu.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-11-24 18:56:59,964 - Default - SpawnPoolWorker-32 - 78961 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1819873.html
+2024-11-24 18:56:59,965 - Default - SpawnPoolWorker-32 - 78961 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1819873.html (Depth: 1)
+2024-11-24 18:56:59,965 - Default - SpawnPoolWorker-32 - 78961 - New link added to links.json: https://wap.gamersky.com/gl/Content-1819873.html. Total links: 1
+2024-11-24 18:56:59,965 - Default - SpawnPoolWorker-32 - 78961 - Error crawling URL: https://wap.gamersky.com/gl/Content-1819873.html, Error: list index out of range
+2024-11-24 18:56:59,975 - Default - SpawnPoolWorker-33 - 78962 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1817209.html
+2024-11-24 18:56:59,976 - Default - SpawnPoolWorker-33 - 78962 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1817209.html (Depth: 1)
+2024-11-24 18:56:59,976 - Default - SpawnPoolWorker-33 - 78962 - New link added to links.json: https://wap.gamersky.com/gl/Content-1817209.html. Total links: 1
+2024-11-24 18:56:59,977 - Default - SpawnPoolWorker-33 - 78962 - Error crawling URL: https://wap.gamersky.com/gl/Content-1817209.html, Error: list index out of range
+2024-11-24 18:56:59,990 - Default - SpawnPoolWorker-34 - 78963 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1809825.shtml
+2024-11-24 18:56:59,992 - Default - SpawnPoolWorker-34 - 78963 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1809825.shtml (Depth: 1)
+2024-11-24 18:56:59,992 - Default - SpawnPoolWorker-34 - 78963 - New link added to links.json: https://www.gamersky.com/handbook/202409/1809825.shtml. Total links: 1
+2024-11-24 18:57:00,044 - Default - SpawnPoolWorker-36 - 78965 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1819873.shtml
+2024-11-24 18:57:00,046 - Default - SpawnPoolWorker-36 - 78965 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1819873.shtml (Depth: 1)
+2024-11-24 18:57:00,046 - Default - SpawnPoolWorker-36 - 78965 - New link added to links.json: https://www.gamersky.com/handbook/202409/1819873.shtml. Total links: 1
+2024-11-24 18:57:00,059 - Default - SpawnPoolWorker-31 - 78960 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1813963.shtml
+2024-11-24 18:57:00,061 - Default - SpawnPoolWorker-31 - 78960 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1813963.shtml (Depth: 1)
+2024-11-24 18:57:00,061 - Default - SpawnPoolWorker-31 - 78960 - New link added to links.json: https://www.gamersky.com/handbook/202409/1813963.shtml. Total links: 1
+2024-11-24 18:57:00,070 - Default - SpawnPoolWorker-35 - 78964 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1811433.shtml
+2024-11-24 18:57:00,071 - Default - SpawnPoolWorker-35 - 78964 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1811433.shtml (Depth: 1)
+2024-11-24 18:57:00,072 - Default - SpawnPoolWorker-35 - 78964 - New link added to links.json: https://www.gamersky.com/handbook/202409/1811433.shtml. Total links: 1
+2024-11-24 18:57:00,086 - Default - SpawnPoolWorker-26 - 78955 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1817209.shtml
+2024-11-24 18:57:00,088 - Default - SpawnPoolWorker-26 - 78955 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1817209.shtml (Depth: 1)
+2024-11-24 18:57:00,088 - Default - SpawnPoolWorker-26 - 78955 - New link added to links.json: https://www.gamersky.com/handbook/202409/1817209.shtml. Total links: 1
+2024-11-24 18:57:00,138 - Default - SpawnPoolWorker-30 - 78959 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1477009.html
+2024-11-24 18:57:00,146 - Default - SpawnPoolWorker-30 - 78959 - No '黑神话' found at https://wap.gamersky.com/gl/Content-1477009.html (Depth: 1)
+2024-11-24 18:57:00,147 - Default - SpawnPoolWorker-30 - 78959 - ⭐️1. Completed crawl and save data for URL: https://wap.gamersky.com/gl/Content-1477009.html
+2024-11-24 18:57:00,217 - Default - SpawnPoolWorker-28 - 78957 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1470367.html
+2024-11-24 18:57:00,224 - Default - SpawnPoolWorker-28 - 78957 - No '黑神话' found at https://wap.gamersky.com/gl/Content-1470367.html (Depth: 1)
+2024-11-24 18:57:00,226 - Default - SpawnPoolWorker-28 - 78957 - ⭐️1. Completed crawl and save data for URL: https://wap.gamersky.com/gl/Content-1470367.html
+2024-11-24 18:57:00,828 - Default - SpawnPoolWorker-29 - 78958 - Attempt 2 failed with error: HTTPConnectionPool(host='nourl.ubs.baidu.com', port=80): Max retries exceeded with url: /279 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x16ff96490>: Failed to resolve 'nourl.ubs.baidu.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-11-24 18:57:00,909 - Default - SpawnPoolWorker-35 - 78964 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:57:00,910 - Default - SpawnPoolWorker-35 - 78964 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:57:00,910 - Default - SpawnPoolWorker-35 - 78964 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1811433.shtml
+2024-11-24 18:57:00,952 - Default - SpawnPoolWorker-36 - 78965 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:57:00,952 - Default - SpawnPoolWorker-36 - 78965 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:57:00,953 - Default - SpawnPoolWorker-36 - 78965 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1819873.shtml
+2024-11-24 18:57:01,084 - Default - SpawnPoolWorker-26 - 78955 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:57:01,084 - Default - SpawnPoolWorker-26 - 78955 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:57:01,085 - Default - SpawnPoolWorker-26 - 78955 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1817209.shtml
+2024-11-24 18:57:01,831 - Default - SpawnPoolWorker-29 - 78958 - Failed to fetch the URL after 2 attempts.
+2024-11-24 18:57:01,831 - Default - SpawnPoolWorker-29 - 78958 - Failed to fetch content for http://nourl.ubs.baidu.com/279 (Depth: 1)
+2024-11-24 18:57:01,831 - Default - SpawnPoolWorker-29 - 78958 - ⭐️1. Completed crawl and save data for URL: http://nourl.ubs.baidu.com/279
+2024-11-24 18:57:02,143 - Default - SpawnPoolWorker-31 - 78960 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:57:02,144 - Default - SpawnPoolWorker-31 - 78960 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:57:02,144 - Default - SpawnPoolWorker-31 - 78960 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1813963.shtml
+2024-11-24 18:57:02,179 - Default - SpawnPoolWorker-34 - 78963 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:57:02,179 - Default - SpawnPoolWorker-34 - 78963 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:57:02,179 - Default - SpawnPoolWorker-34 - 78963 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1809825.shtml
+2024-11-24 18:57:02,206 - Default - MainProcess - 61173 - Completed web scraping process
+2024-11-24 18:57:02,206 - Default - MainProcess - 61173 - ⭐️2. Sending prompt to LLM: 高周目减伤流构筑分享 减伤流怎么玩
+2024-11-24 18:57:15,327 - Default - MainProcess - 61173 - ⭐️3. LLM response received: 
+ ### 高周目减伤流构筑分享
+
+在《黑神
+2024-11-24 18:58:18,914 - Default - MainProcess - 79352 - Starting getting the related page links
+2024-11-24 18:58:19,512 - Default - MainProcess - 79352 - Found 10 links containing '高周目减伤流构筑分享 减伤流怎么玩' on https://soso.gamersky.com/cse/search?q=高周目减伤流构筑分享 减伤流怎么玩&s=3068275339727451251&nsid=1&nsid=1
+2024-11-24 18:58:19,513 - Default - MainProcess - 79352 - ['http://nourl.ubs.baidu.com/279', 'https://www.gamersky.com/handbook/202409/1817209.shtml', 'https://www.gamersky.com/handbook/202409/1819873.shtml', 'https://wap.gamersky.com/gl/Content-1477009.html', 'https://wap.gamersky.com/gl/Content-1470367.html', 'https://www.gamersky.com/handbook/202409/1809825.shtml', 'https://www.gamersky.com/handbook/202409/1813963.shtml', 'https://wap.gamersky.com/gl/Content-1817209.html', 'https://wap.gamersky.com/gl/Content-1819873.html', 'https://www.gamersky.com/handbook/202409/1811433.shtml']
+2024-11-24 18:58:22,620 - Default - SpawnPoolWorker-8 - 79424 - Starting crawl for URL: http://nourl.ubs.baidu.com/279
+2024-11-24 18:58:22,623 - Default - SpawnPoolWorker-8 - 79424 - -----------------------------------------------------------
+2024-11-24 18:58:22,623 - Default - SpawnPoolWorker-8 - 79424 - New crawled URL added to crawled_urls.json: http://nourl.ubs.baidu.com/279. Total URLs: 1
+2024-11-24 18:58:22,647 - Default - SpawnPoolWorker-8 - 79424 - Attempt 1 failed with error: HTTPConnectionPool(host='nourl.ubs.baidu.com', port=80): Max retries exceeded with url: /279 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x311a6aad0>: Failed to resolve 'nourl.ubs.baidu.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-11-24 18:58:22,705 - Default - SpawnPoolWorker-9 - 79425 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1817209.shtml
+2024-11-24 18:58:22,705 - Default - SpawnPoolWorker-9 - 79425 - -----------------------------------------------------------
+2024-11-24 18:58:22,706 - Default - SpawnPoolWorker-9 - 79425 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1817209.shtml. Total URLs: 1
+2024-11-24 18:58:22,898 - Default - SpawnPoolWorker-9 - 79425 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1817209.shtml
+2024-11-24 18:58:22,902 - Default - SpawnPoolWorker-9 - 79425 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1817209.shtml (Depth: 1)
+2024-11-24 18:58:22,902 - Default - SpawnPoolWorker-9 - 79425 - New link added to links.json: https://www.gamersky.com/handbook/202409/1817209.shtml. Total links: 1
+2024-11-24 18:58:23,013 - Default - SpawnPoolWorker-2 - 79418 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1819873.shtml
+2024-11-24 18:58:23,015 - Default - SpawnPoolWorker-2 - 79418 - -----------------------------------------------------------
+2024-11-24 18:58:23,015 - Default - SpawnPoolWorker-2 - 79418 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1819873.shtml. Total URLs: 1
+2024-11-24 18:58:23,030 - Default - SpawnPoolWorker-12 - 79428 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1477009.html
+2024-11-24 18:58:23,031 - Default - SpawnPoolWorker-12 - 79428 - -----------------------------------------------------------
+2024-11-24 18:58:23,032 - Default - SpawnPoolWorker-12 - 79428 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1477009.html. Total URLs: 1
+2024-11-24 18:58:23,100 - Default - SpawnPoolWorker-9 - 79425 - Error crawling URL: https://www.gamersky.com/handbook/202409/1817209.shtml, Error: [Errno 2] No such file or directory: 'quicksearch_cache/rawdata/img/https=||img1.gamersky.com|upimg|pic|2024|09|15|small_202409151719151774.png'
+2024-11-24 18:58:23,100 - Default - SpawnPoolWorker-9 - 79425 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1470367.html
+2024-11-24 18:58:23,101 - Default - SpawnPoolWorker-9 - 79425 - -----------------------------------------------------------
+2024-11-24 18:58:23,101 - Default - SpawnPoolWorker-9 - 79425 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1470367.html. Total URLs: 1
+2024-11-24 18:58:23,108 - Default - SpawnPoolWorker-5 - 79421 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1809825.shtml
+2024-11-24 18:58:23,108 - Default - SpawnPoolWorker-5 - 79421 - -----------------------------------------------------------
+2024-11-24 18:58:23,109 - Default - SpawnPoolWorker-5 - 79421 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1809825.shtml. Total URLs: 1
+2024-11-24 18:58:23,115 - Default - SpawnPoolWorker-7 - 79423 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1813963.shtml
+2024-11-24 18:58:23,116 - Default - SpawnPoolWorker-7 - 79423 - -----------------------------------------------------------
+2024-11-24 18:58:23,117 - Default - SpawnPoolWorker-7 - 79423 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1813963.shtml. Total URLs: 1
+2024-11-24 18:58:23,117 - Default - SpawnPoolWorker-10 - 79426 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1817209.html
+2024-11-24 18:58:23,117 - Default - SpawnPoolWorker-10 - 79426 - -----------------------------------------------------------
+2024-11-24 18:58:23,118 - Default - SpawnPoolWorker-10 - 79426 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1817209.html. Total URLs: 1
+2024-11-24 18:58:23,137 - Default - SpawnPoolWorker-11 - 79427 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1819873.html
+2024-11-24 18:58:23,138 - Default - SpawnPoolWorker-11 - 79427 - -----------------------------------------------------------
+2024-11-24 18:58:23,138 - Default - SpawnPoolWorker-11 - 79427 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1819873.html. Total URLs: 1
+2024-11-24 18:58:23,146 - Default - SpawnPoolWorker-6 - 79422 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1811433.shtml
+2024-11-24 18:58:23,146 - Default - SpawnPoolWorker-6 - 79422 - -----------------------------------------------------------
+2024-11-24 18:58:23,147 - Default - SpawnPoolWorker-6 - 79422 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1811433.shtml. Total URLs: 1
+2024-11-24 18:58:23,218 - Default - SpawnPoolWorker-2 - 79418 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1819873.shtml
+2024-11-24 18:58:23,219 - Default - SpawnPoolWorker-2 - 79418 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1819873.shtml (Depth: 1)
+2024-11-24 18:58:23,220 - Default - SpawnPoolWorker-2 - 79418 - New link added to links.json: https://www.gamersky.com/handbook/202409/1819873.shtml. Total links: 1
+2024-11-24 18:58:23,297 - Default - SpawnPoolWorker-5 - 79421 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1809825.shtml
+2024-11-24 18:58:23,297 - Default - SpawnPoolWorker-7 - 79423 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1813963.shtml
+2024-11-24 18:58:23,298 - Default - SpawnPoolWorker-7 - 79423 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1813963.shtml (Depth: 1)
+2024-11-24 18:58:23,298 - Default - SpawnPoolWorker-5 - 79421 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1809825.shtml (Depth: 1)
+2024-11-24 18:58:23,298 - Default - SpawnPoolWorker-7 - 79423 - New link added to links.json: https://www.gamersky.com/handbook/202409/1813963.shtml. Total links: 1
+2024-11-24 18:58:23,299 - Default - SpawnPoolWorker-5 - 79421 - New link added to links.json: https://www.gamersky.com/handbook/202409/1809825.shtml. Total links: 1
+2024-11-24 18:58:23,311 - Default - SpawnPoolWorker-6 - 79422 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1811433.shtml
+2024-11-24 18:58:23,313 - Default - SpawnPoolWorker-6 - 79422 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1811433.shtml (Depth: 1)
+2024-11-24 18:58:23,313 - Default - SpawnPoolWorker-6 - 79422 - New link added to links.json: https://www.gamersky.com/handbook/202409/1811433.shtml. Total links: 1
+2024-11-24 18:58:23,654 - Default - SpawnPoolWorker-8 - 79424 - Attempt 2 failed with error: HTTPConnectionPool(host='nourl.ubs.baidu.com', port=80): Max retries exceeded with url: /279 (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x311a9a550>: Failed to resolve 'nourl.ubs.baidu.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-11-24 18:58:24,659 - Default - SpawnPoolWorker-8 - 79424 - Failed to fetch the URL after 2 attempts.
+2024-11-24 18:58:24,659 - Default - SpawnPoolWorker-8 - 79424 - Failed to fetch content for http://nourl.ubs.baidu.com/279 (Depth: 1)
+2024-11-24 18:58:24,659 - Default - SpawnPoolWorker-8 - 79424 - ⭐️1. Completed crawl and save data for URL: http://nourl.ubs.baidu.com/279
+2024-11-24 18:58:25,150 - Default - SpawnPoolWorker-2 - 79418 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:58:25,150 - Default - SpawnPoolWorker-2 - 79418 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:58:25,151 - Default - SpawnPoolWorker-2 - 79418 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1819873.shtml
+2024-11-24 18:58:25,794 - Default - SpawnPoolWorker-7 - 79423 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:58:25,795 - Default - SpawnPoolWorker-7 - 79423 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:58:25,795 - Default - SpawnPoolWorker-7 - 79423 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1813963.shtml
+2024-11-24 18:58:26,077 - Default - SpawnPoolWorker-6 - 79422 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:58:26,077 - Default - SpawnPoolWorker-6 - 79422 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:58:26,078 - Default - SpawnPoolWorker-6 - 79422 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1811433.shtml
+2024-11-24 18:58:27,174 - Default - SpawnPoolWorker-5 - 79421 - JSON content successfully saved to quicksearch_cache/mmtext.json
+2024-11-24 18:58:27,175 - Default - SpawnPoolWorker-5 - 79421 - JSON content successfully saved to quicksearch_cache/mmimg.json
+2024-11-24 18:58:27,175 - Default - SpawnPoolWorker-5 - 79421 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1809825.shtml
+2024-11-24 18:58:27,795 - Default - SpawnPoolWorker-11 - 79427 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1819873.html
+2024-11-24 18:58:27,796 - Default - SpawnPoolWorker-11 - 79427 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1819873.html (Depth: 1)
+2024-11-24 18:58:27,796 - Default - SpawnPoolWorker-11 - 79427 - New link added to links.json: https://wap.gamersky.com/gl/Content-1819873.html. Total links: 1
+2024-11-24 18:58:27,796 - Default - SpawnPoolWorker-11 - 79427 - Error crawling URL: https://wap.gamersky.com/gl/Content-1819873.html, Error: list index out of range
+2024-11-24 18:58:27,836 - Default - SpawnPoolWorker-9 - 79425 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1470367.html
+2024-11-24 18:58:27,844 - Default - SpawnPoolWorker-9 - 79425 - No '黑神话' found at https://wap.gamersky.com/gl/Content-1470367.html (Depth: 1)
+2024-11-24 18:58:27,846 - Default - SpawnPoolWorker-9 - 79425 - ⭐️1. Completed crawl and save data for URL: https://wap.gamersky.com/gl/Content-1470367.html
+2024-11-24 18:58:27,848 - Default - SpawnPoolWorker-10 - 79426 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1817209.html
+2024-11-24 18:58:27,849 - Default - SpawnPoolWorker-10 - 79426 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1817209.html (Depth: 1)
+2024-11-24 18:58:27,849 - Default - SpawnPoolWorker-10 - 79426 - New link added to links.json: https://wap.gamersky.com/gl/Content-1817209.html. Total links: 1
+2024-11-24 18:58:27,850 - Default - SpawnPoolWorker-10 - 79426 - Error crawling URL: https://wap.gamersky.com/gl/Content-1817209.html, Error: list index out of range
+2024-11-24 18:58:27,909 - Default - SpawnPoolWorker-12 - 79428 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1477009.html
+2024-11-24 18:58:27,917 - Default - SpawnPoolWorker-12 - 79428 - No '黑神话' found at https://wap.gamersky.com/gl/Content-1477009.html (Depth: 1)
+2024-11-24 18:58:27,919 - Default - SpawnPoolWorker-12 - 79428 - ⭐️1. Completed crawl and save data for URL: https://wap.gamersky.com/gl/Content-1477009.html
+2024-11-24 18:58:27,957 - Default - MainProcess - 79352 - Completed web scraping process
+2024-11-24 18:58:27,957 - Default - MainProcess - 79352 - ⭐️2. Sending prompt to LLM: 高周目减伤流构筑分享 减伤流怎么玩
+2024-11-24 18:58:37,781 - Default - MainProcess - 79352 - ⭐️3. LLM response received: 
+ 在《黑神话：悟空》的高周目模式中，减伤流
+2024-11-24 23:59:27,577 - Default - MainProcess - 83533 - Starting getting the related page links
+2024-11-24 23:59:35,850 - Default - MainProcess - 83533 - Found 10 links containing 'good night!' on https://soso.gamersky.com/cse/search?q=good night!&s=3068275339727451251&nsid=1&nsid=1
+2024-11-24 23:59:35,851 - Default - MainProcess - 83533 - ['https://wap.gamersky.com/gl/Content-785746.html', 'https://wap.gamersky.com/olgl/content-911382.html', 'http://club.gamersky.com/activity/409175?club=163', 'https://wap.gamersky.com/gl/Content-132270_3.html', 'https://www.gamersky.com/handbook/201803/1020176.shtml', 'https://www.gamersky.com/ent/201811/1118851_37.shtml', 'https://wap.gamersky.com/news/Content-350829.html', 'https://www.gamersky.com/handbook/201404/350829.shtml', 'https://www.gamersky.com/news/202402/1707497.shtml', 'https://wap.gamersky.com/gl/Content-156545_4.html']
+2024-11-24 23:59:39,270 - Default - SpawnPoolWorker-2 - 83796 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-785746.html
+2024-11-24 23:59:39,274 - Default - SpawnPoolWorker-7 - 83801 - Starting crawl for URL: https://wap.gamersky.com/olgl/content-911382.html
+2024-11-24 23:59:39,275 - Default - SpawnPoolWorker-7 - 83801 - Error crawling URL: https://wap.gamersky.com/olgl/content-911382.html, Error: [Errno 17] File exists: 'quicksearch_cache'
+2024-11-24 23:59:39,275 - Default - SpawnPoolWorker-2 - 83796 - -----------------------------------------------------------
+2024-11-24 23:59:39,275 - Default - SpawnPoolWorker-7 - 83801 - Starting crawl for URL: http://club.gamersky.com/activity/409175?club=163
+2024-11-24 23:59:39,276 - Default - SpawnPoolWorker-2 - 83796 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-785746.html. Total URLs: 1
+2024-11-24 23:59:39,276 - Default - SpawnPoolWorker-7 - 83801 - -----------------------------------------------------------
+2024-11-24 23:59:39,276 - Default - SpawnPoolWorker-7 - 83801 - New crawled URL added to crawled_urls.json: http://club.gamersky.com/activity/409175?club=163. Total URLs: 1
+2024-11-24 23:59:39,310 - Default - SpawnPoolWorker-4 - 83798 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-132270_3.html
+2024-11-24 23:59:39,311 - Default - SpawnPoolWorker-4 - 83798 - -----------------------------------------------------------
+2024-11-24 23:59:39,312 - Default - SpawnPoolWorker-10 - 83804 - Starting crawl for URL: https://www.gamersky.com/handbook/201803/1020176.shtml
+2024-11-24 23:59:39,312 - Default - SpawnPoolWorker-4 - 83798 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-132270_3.html. Total URLs: 1
+2024-11-24 23:59:39,313 - Default - SpawnPoolWorker-10 - 83804 - -----------------------------------------------------------
+2024-11-24 23:59:39,313 - Default - SpawnPoolWorker-10 - 83804 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/201803/1020176.shtml. Total URLs: 1
+2024-11-24 23:59:39,340 - Default - SpawnPoolWorker-3 - 83797 - Starting crawl for URL: https://www.gamersky.com/ent/201811/1118851_37.shtml
+2024-11-24 23:59:39,341 - Default - SpawnPoolWorker-3 - 83797 - -----------------------------------------------------------
+2024-11-24 23:59:39,341 - Default - SpawnPoolWorker-3 - 83797 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/ent/201811/1118851_37.shtml. Total URLs: 1
+2024-11-24 23:59:39,342 - Default - SpawnPoolWorker-5 - 83799 - Starting crawl for URL: https://wap.gamersky.com/news/Content-350829.html
+2024-11-24 23:59:39,343 - Default - SpawnPoolWorker-5 - 83799 - -----------------------------------------------------------
+2024-11-24 23:59:39,343 - Default - SpawnPoolWorker-5 - 83799 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/news/Content-350829.html. Total URLs: 1
+2024-11-24 23:59:39,354 - Default - SpawnPoolWorker-12 - 83806 - Starting crawl for URL: https://www.gamersky.com/handbook/201404/350829.shtml
+2024-11-24 23:59:39,355 - Default - SpawnPoolWorker-12 - 83806 - -----------------------------------------------------------
+2024-11-24 23:59:39,355 - Default - SpawnPoolWorker-12 - 83806 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/201404/350829.shtml. Total URLs: 1
+2024-11-24 23:59:39,372 - Default - SpawnPoolWorker-6 - 83800 - Starting crawl for URL: https://www.gamersky.com/news/202402/1707497.shtml
+2024-11-24 23:59:39,372 - Default - SpawnPoolWorker-6 - 83800 - -----------------------------------------------------------
+2024-11-24 23:59:39,373 - Default - SpawnPoolWorker-6 - 83800 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/news/202402/1707497.shtml. Total URLs: 1
+2024-11-24 23:59:39,374 - Default - SpawnPoolWorker-9 - 83803 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-156545_4.html
+2024-11-24 23:59:39,375 - Default - SpawnPoolWorker-9 - 83803 - -----------------------------------------------------------
+2024-11-24 23:59:39,375 - Default - SpawnPoolWorker-9 - 83803 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-156545_4.html. Total URLs: 1
+2024-11-24 23:59:45,626 - Default - SpawnPoolWorker-7 - 83801 - Attempt 1 failed with error: HTTPConnectionPool(host='club.gamersky.com', port=80): Read timed out. (read timeout=3)
+2024-11-24 23:59:45,871 - Default - SpawnPoolWorker-6 - 83800 - Success on attempt 1 for https://www.gamersky.com/news/202402/1707497.shtml
+2024-11-24 23:59:45,874 - Default - SpawnPoolWorker-6 - 83800 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/news/202402/1707497.shtml
+2024-11-24 23:59:46,050 - Default - SpawnPoolWorker-12 - 83806 - Success on attempt 1 for https://www.gamersky.com/handbook/201404/350829.shtml
+2024-11-24 23:59:46,051 - Default - SpawnPoolWorker-12 - 83806 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/201404/350829.shtml
+2024-11-24 23:59:46,783 - Default - SpawnPoolWorker-3 - 83797 - Success on attempt 1 for https://www.gamersky.com/ent/201811/1118851_37.shtml
+2024-11-24 23:59:46,784 - Default - SpawnPoolWorker-3 - 83797 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/ent/201811/1118851_37.shtml
+2024-11-24 23:59:47,084 - Default - SpawnPoolWorker-10 - 83804 - Success on attempt 1 for https://www.gamersky.com/handbook/201803/1020176.shtml
+2024-11-24 23:59:47,087 - Default - SpawnPoolWorker-10 - 83804 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/201803/1020176.shtml
+2024-11-24 23:59:47,193 - Default - SpawnPoolWorker-4 - 83798 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-132270_3.html
+2024-11-24 23:59:47,194 - Default - SpawnPoolWorker-4 - 83798 - No '黑神话' found at https://wap.gamersky.com/gl/Content-132270_3.html (Depth: 1)
+2024-11-24 23:59:47,194 - Default - SpawnPoolWorker-4 - 83798 - ⭐️1. Completed crawl and save data for URL: https://wap.gamersky.com/gl/Content-132270_3.html
+2024-11-24 23:59:47,318 - Default - SpawnPoolWorker-9 - 83803 - Attempt 1 failed with error: HTTPSConnectionPool(host='wap.gamersky.com', port=443): Read timed out. (read timeout=3)
+2024-11-24 23:59:47,534 - Default - SpawnPoolWorker-7 - 83801 - Success on attempt 2 for http://club.gamersky.com/activity/409175?club=163
+2024-11-24 23:59:47,535 - Default - SpawnPoolWorker-7 - 83801 - No '黑神话' found at http://club.gamersky.com/activity/409175?club=163 (Depth: 1)
+2024-11-24 23:59:47,535 - Default - SpawnPoolWorker-7 - 83801 - ⭐️1. Completed crawl and save data for URL: http://club.gamersky.com/activity/409175?club=163
+2024-11-24 23:59:47,723 - Default - SpawnPoolWorker-2 - 83796 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-785746.html
+2024-11-24 23:59:47,724 - Default - SpawnPoolWorker-2 - 83796 - No '黑神话' found at https://wap.gamersky.com/gl/Content-785746.html (Depth: 1)
+2024-11-24 23:59:47,724 - Default - SpawnPoolWorker-2 - 83796 - ⭐️1. Completed crawl and save data for URL: https://wap.gamersky.com/gl/Content-785746.html
+2024-11-24 23:59:51,324 - Default - SpawnPoolWorker-9 - 83803 - Attempt 2 failed with error: HTTPSConnectionPool(host='wap.gamersky.com', port=443): Read timed out. (read timeout=3)
+2024-11-24 23:59:51,371 - Default - SpawnPoolWorker-5 - 83799 - Attempt 1 failed with error: HTTPConnectionPool(host='wap.gamersky.com', port=80): Read timed out. (read timeout=3)
+2024-11-24 23:59:52,324 - Default - SpawnPoolWorker-9 - 83803 - Failed to fetch the URL after 2 attempts.
+2024-11-24 23:59:52,324 - Default - SpawnPoolWorker-9 - 83803 - Failed to fetch content for https://wap.gamersky.com/gl/Content-156545_4.html (Depth: 1)
+2024-11-24 23:59:52,324 - Default - SpawnPoolWorker-9 - 83803 - ⭐️1. Completed crawl and save data for URL: https://wap.gamersky.com/gl/Content-156545_4.html
+2024-11-24 23:59:55,376 - Default - SpawnPoolWorker-5 - 83799 - Attempt 2 failed with error: HTTPSConnectionPool(host='wap.gamersky.com', port=443): Read timed out. (read timeout=3)
+2024-11-24 23:59:56,377 - Default - SpawnPoolWorker-5 - 83799 - Failed to fetch the URL after 2 attempts.
+2024-11-24 23:59:56,377 - Default - SpawnPoolWorker-5 - 83799 - Failed to fetch content for https://wap.gamersky.com/news/Content-350829.html (Depth: 1)
+2024-11-24 23:59:56,377 - Default - SpawnPoolWorker-5 - 83799 - ⭐️1. Completed crawl and save data for URL: https://wap.gamersky.com/news/Content-350829.html
+2024-11-24 23:59:56,414 - Default - MainProcess - 83533 - Completed web scraping process
+2024-11-24 23:59:56,414 - Default - MainProcess - 83533 - ⭐️2. Sending prompt to LLM: good night!
+2024-11-24 23:59:56,433 - Default - MainProcess - 83533 - Error processing prompt: good night!, Error: [Errno 2] No such file or directory: 'quicksearch_cache/rawdata'
+2024-11-24 23:59:56,433 - Default - MainProcess - 83533 - No response received from LLM
+2024-11-25 00:00:14,452 - Default - MainProcess - 83533 - Starting getting the related page links
+2024-11-25 00:00:26,671 - Default - MainProcess - 83533 - Found 10 links containing '高周目减伤流构筑分享 减伤流怎么玩' on https://soso.gamersky.com/cse/search?q=高周目减伤流构筑分享 减伤流怎么玩&s=3068275339727451251&nsid=1&nsid=1
+2024-11-25 00:00:26,672 - Default - MainProcess - 83533 - ['http://nourl.ubs.baidu.com/279', 'https://www.gamersky.com/handbook/202409/1817209.shtml', 'https://www.gamersky.com/handbook/202409/1819873.shtml', 'https://wap.gamersky.com/gl/Content-1477009.html', 'https://wap.gamersky.com/gl/Content-1470367.html', 'https://www.gamersky.com/handbook/202409/1809825.shtml', 'https://www.gamersky.com/handbook/202409/1813963.shtml', 'https://wap.gamersky.com/gl/Content-1817209.html', 'https://wap.gamersky.com/gl/Content-1819873.html', 'https://www.gamersky.com/handbook/202409/1811433.shtml']
+2024-11-25 00:00:38,221 - Default - MainProcess - 83533 - Completed web scraping process
+2024-11-25 00:00:38,221 - Default - MainProcess - 83533 - ⭐️2. Sending prompt to LLM: 高周目减伤流构筑分享 减伤流怎么玩
+2024-11-25 00:00:51,721 - Default - MainProcess - 83533 - ⭐️3. LLM response received: 
+ 在《黑神话：悟空》中，高周目下的减伤流构

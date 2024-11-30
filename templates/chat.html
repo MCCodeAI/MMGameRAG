@@ -86,6 +86,23 @@
 
 
     <script>
+      async function fetchUpdates() {
+          const response = await fetch("/get_updates");
+          const data = await response.json();
+          // document.getElementById("user_info").innerText = data.new_message;
+          // var botContainer = $(`<div class="d-flex justify-content-start ml-4"><img src="static/loading22.gif" style="width: 14px; height: 14px;" alt="Loading"><div class="user_info" id="updata_flow_state"><p>${data.new_message}</p></div></div>`);
+          // $("#messageFormeight").append(botContainer);
+          
+          if(document.getElementById("updata_flow_state").innerText != data.new_message){
+            document.getElementById("updata_flow_state").innerText = data.new_message
+          }
+          
+      }
+
+      // 1s interval
+      setInterval(fetchUpdates, 1000);
+
+
       // "Good Night" button click event to send a predefined message
       document.getElementById("setGoodNight").addEventListener("click", function () {
         $.ajax({
@@ -95,7 +112,14 @@
             document.getElementById("textInput").value = response.response;
           }
         });
+
+        // Test
+        var botContainer = $('<div class="d-flex justify-content-start mb-4 ml-4"><img src="static/loading22.gif" style="width: 14px; height: 14px;" alt="Loading"><div class="user_info"><p id="updata_flow_state">1. Web searching</p></div></div>');
+        $("#messageFormeight").append(botContainer);
+          
       });
+
+
 
       // Scroll to bottom function
       function scrollToBottom() {
@@ -128,6 +152,8 @@ function startStreaming(rawText) {
         let lines = accumulatedContent.split("\n");
         accumulatedContent = lines.pop(); // Save incomplete line for next chunk
 
+
+
         // Process each complete line
         lines.forEach(line => {
             // Create a plain text placeholder for this line if it doesn't exist yet
@@ -154,6 +180,8 @@ function startStreaming(rawText) {
 
             lineIndex++; // Increment line index for the next line
         });
+
+
 
         // Append any remaining partial line as plain text until it completes
         if (accumulatedContent) {
