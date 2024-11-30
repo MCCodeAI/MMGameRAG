@@ -3,8 +3,7 @@ from flask import Response, stream_with_context
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 import markdown2
-
-
+import userlib.shared
 
 from mmgamer_quicksearch import *
 from dotenv import load_dotenv, find_dotenv
@@ -13,7 +12,12 @@ load_dotenv(find_dotenv())
 # extra_files = os.environ.get("FLASK_RUN_EXTRA_FILES")
 # print(f"Extra files to watch: {extra_files}")
 
+ 
+def on_shared_data_change(old_value, new_value):
+    print(f"Shared data changed from {old_value} to {new_value} in flask")
 
+# 添加监听回调
+shared_flow_state_str.add_callback(on_shared_data_change)
 
 
 
@@ -46,6 +50,8 @@ def generate_response_stream(user_q):
         # for chunk in llm_groq_agent(user_q):
         # resp = agent_flow(user_q)
         # resp = llm_chatbot_quick(user_q)
+
+
         resp = agent_flow(user_q)
 
         # Iterate through resp and process each chunk
@@ -105,10 +111,10 @@ def convert_markdown():
 
 @app.route("/get_updates", methods=["GET"])
 def get_updates():
-    with counter.get_lock():  # Ensure thread-safe reads
-        current_value = counter.value
-    print(current_value)
-    updates = {"new_message": f"{current_value}: This is a real-time update!"}
+    
+    current_value = "22"
+
+    updates = {"new_message": f"{current_value}"}
     return jsonify(updates)
 
 # New route to return "good night" for the button click

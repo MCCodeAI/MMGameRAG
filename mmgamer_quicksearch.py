@@ -16,7 +16,7 @@ from io import BytesIO
 import base64
 from filelock import FileLock
 import streamlit as st
-
+import threading
 
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -25,6 +25,7 @@ from langchain_groq import ChatGroq
 from userlib.user_input import *
 from userlib.user_logger import log_message
 from userlib.agentx import *
+from userlib.shared import *
 
 # Load environment variables
 from dotenv import load_dotenv, find_dotenv
@@ -871,24 +872,7 @@ def fetch_page_title(url):
     except Exception as e:
         return f"Error processing URL: {e}"
 
-import threading
-from multiprocessing import Value
 
-# Global variable
-counter = Value('i', 0)  # 'i' represents integer
-
-def increment_counter():
-    """
-    Increments the global counter by 1 every 2 seconds.
-    """
-    with counter.get_lock():  # Ensure thread-safe updates
-        counter.value += 1
-    # print(f"Counter updated: {counter}")
-    # Schedule the function to run again after 2 seconds
-    threading.Timer(2.0, increment_counter).start()
-
-# Start the timer
-increment_counter()
 
 ## Agent Start############################################################
 
@@ -906,11 +890,13 @@ def agent_flow(user_q):
     Main agent flow function. Fetches search links, evaluates their relevance, 
     and processes the relevant links based on the user query.
     """
-    log_message("Starting to get the related page links")
-
+    log_message("Get related page links...")
+    shared_flow_state_str.value = "Get related page links..."
+    
     # Fetch links containing the user query keyword
     search_links = fetch_links_with_keyword(user_q)
     log_message(f"Fetched links: {search_links}")
+
 
     # Iterate through each link and fetch its title
     relevant_links = []
@@ -941,6 +927,8 @@ def agent_flow(user_q):
         log_message(f"Processing relevant link: {relevant_link}")
         # Call further processing functions or logic here
         # Example: process_url(relevant_link)
+    
+    
 
     return relevant_links
     
