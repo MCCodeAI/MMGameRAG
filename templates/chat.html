@@ -99,9 +99,7 @@
           
       }
 
-      // 1s interval
-      setInterval(fetchUpdates, 1000);
-
+      
 
       // "Good Night" button click event to send a predefined message
       document.getElementById("setGoodNight").addEventListener("click", function () {
@@ -132,8 +130,13 @@ function startStreaming(rawText) {
     if (window.source) {
         window.source.close();
     }
-
+    
+    fetchUpdatesTimer = setInterval(fetchUpdates, 1000); //Start timer to update flow state
     window.source = new EventSource("/stream?msg=" + encodeURIComponent(rawText));
+
+    //  flow state container
+    var botContainer = $('<div id="flow_state" class="d-flex justify-content-start mb-4 ml-4"><img src="static/loading22.gif" style="width: 14px; height: 14px;" alt="Loading"><div class="user_info"><p id="updata_flow_state">1. Web searching</p></div></div>');
+        $("#messageFormeight").append(botContainer);
 
     var botContainer = $('<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img_msg"></div><div class="msg_cotainer"></div></div>');
     $("#messageFormeight").append(botContainer);
@@ -144,6 +147,8 @@ function startStreaming(rawText) {
     window.source.onmessage = function(event) {
         if (event.data === "[END]") {
             window.source.close();
+            clearInterval(fetchUpdatesTimer); //Stop the timer to update flow state
+            $("#flow_state").remove(); // Remove previously appended botContainer element by id
             return;
         }
 
@@ -194,6 +199,7 @@ function startStreaming(rawText) {
             }
         }
     };
+    
 }
 
 
@@ -221,8 +227,14 @@ function startStreaming(rawText) {
           $("#messageFormeight").append(userHtml);
           scrollToBottom();
 
+          
+
           // Start streaming response from the backend
           startStreaming(rawText);
+          
+          
+
+          
         });
       });
 

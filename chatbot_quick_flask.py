@@ -12,9 +12,12 @@ load_dotenv(find_dotenv())
 # extra_files = os.environ.get("FLASK_RUN_EXTRA_FILES")
 # print(f"Extra files to watch: {extra_files}")
 
+local_flow_state_str=""
  
 def on_shared_data_change(old_value, new_value):
     print(f"Shared data changed from {old_value} to {new_value} in flask")
+    global local_flow_state_str
+    local_flow_state_str=new_value
 
 # 添加监听回调
 shared_flow_state_str.add_callback(on_shared_data_change)
@@ -111,16 +114,12 @@ def convert_markdown():
 
 @app.route("/get_updates", methods=["GET"])
 def get_updates():
-    
-    current_value = "22"
-
-    updates = {"new_message": f"{current_value}"}
+    updates = {"new_message": f"{local_flow_state_str}"}
     return jsonify(updates)
 
 # New route to return "good night" for the button click
 @app.route("/get_goodnight", methods=["POST"])
 def get_good_night():
-
     return jsonify({"response": "good night!"})
 
 if __name__ == '__main__':

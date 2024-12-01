@@ -891,13 +891,13 @@ def agent_flow(user_q):
     and processes the relevant links based on the user query.
     """
     log_message("Get related page links...")
-    shared_flow_state_str.value = "Get related page links..."
+    shared_flow_state_str.value = "Getting related page links..."  # Updata flow state in the flask and then UI
     
     # Fetch links containing the user query keyword
     search_links = fetch_links_with_keyword(user_q)
     log_message(f"Fetched links: {search_links}")
 
-
+    shared_flow_state_str.value = "Analyzing related pages with WebSense agent..."  # Updata flow state in the flask and then UI
     # Iterate through each link and fetch its title
     relevant_links = []
     for link in search_links:
@@ -921,10 +921,12 @@ def agent_flow(user_q):
 
     log_message(f"Relevant links: {relevant_links}")
 
+    shared_flow_state_str.value = "Processing related page..."  # Updata flow state in the flask and then UI
     # Process relevant links if any
     for relevant_link in relevant_links:
         # Placeholder for next steps
         log_message(f"Processing relevant link: {relevant_link}")
+        time.sleep(2)
         # Call further processing functions or logic here
         # Example: process_url(relevant_link)
     
