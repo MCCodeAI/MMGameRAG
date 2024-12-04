@@ -13,11 +13,15 @@ load_dotenv(find_dotenv())
 # print(f"Extra files to watch: {extra_files}")
 
 local_flow_state_str=""
+flow_state_tick = 0
  
 def on_shared_data_change(old_value, new_value):
     print(f"Shared data changed from {old_value} to {new_value} in flask")
     global local_flow_state_str
-    local_flow_state_str=new_value
+    global flow_state_tick
+    tick_str = f'...{flow_state_tick}s\n' if local_flow_state_str else ''
+    local_flow_state_str += f'{tick_str}{new_value}'
+    flow_state_tick = 0 # Reset tick
 
 # 添加监听回调
 shared_flow_state_str.add_callback(on_shared_data_change)
@@ -57,6 +61,7 @@ def generate_response_stream(user_q):
 
         resp = agent_flow(user_q)
 
+
         # Iterate through resp and process each chunk
         for chunk in resp:
             # Replace each newline in the chunk with "\ndata:" to ensure proper SSE formatting
@@ -66,6 +71,8 @@ def generate_response_stream(user_q):
 
         yield "data:   \n\n"
         yield "data: [END]\n\n"  # Signify the end of the stream
+        global local_flow_state_str
+        local_flow_state_str=""
     except Exception as e:
         yield f"data: Error: {str(e)}\n\n"
 
@@ -114,7 +121,9 @@ def convert_markdown():
 
 @app.route("/get_updates", methods=["GET"])
 def get_updates():
-    updates = {"new_message": f"{local_flow_state_str}"}
+    global flow_state_tick
+    flow_state_tick = flow_state_tick + 1
+    updates = {"new_message": f"{local_flow_state_str}...{flow_state_tick}s"}
     return jsonify(updates)
 
 # New route to return "good night" for the button click

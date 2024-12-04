@@ -135,11 +135,12 @@ function startStreaming(rawText) {
     window.source = new EventSource("/stream?msg=" + encodeURIComponent(rawText));
 
     //  flow state container
-    var botContainer = $('<div id="flow_state" class="d-flex justify-content-start mb-4 ml-4"><img src="static/loading22.gif" style="width: 14px; height: 14px;" alt="Loading"><div class="user_info"><p id="updata_flow_state">1. Web searching</p></div></div>');
+    var botContainer = $('<div id="flow_state" class="d-flex justify-content-start mb-4 ml-4"><img id="loading_img" src="static/loading22.gif" style="width: 14px; height: 14px;" alt="Loading"><div class="user_info"><p id="updata_flow_state"></p></div></div>');
         $("#messageFormeight").append(botContainer);
 
     var botContainer = $('<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img_msg"></div><div class="msg_cotainer"></div></div>');
     $("#messageFormeight").append(botContainer);
+    scrollToBottom();
 
     let accumulatedContent = ""; // To accumulate chunks until a full line is received
     let lineIndex = 0; // Track line index for creating placeholders and replacing content
@@ -148,7 +149,9 @@ function startStreaming(rawText) {
         if (event.data === "[END]") {
             window.source.close();
             clearInterval(fetchUpdatesTimer); //Stop the timer to update flow state
-            $("#flow_state").remove(); // Remove previously appended botContainer element by id
+            // $("#flow_state").remove(); // Remove previously appended botContainer element by id
+            $("#updata_flow_state").attr("id", "updata_flow_state_old");
+            $("#loading_img").remove(); // Remove previously appended botContainer element by id
             return;
         }
 

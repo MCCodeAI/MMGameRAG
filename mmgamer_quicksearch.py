@@ -26,6 +26,7 @@ from userlib.user_input import *
 from userlib.user_logger import log_message
 from userlib.agentx import *
 from userlib.shared import *
+from userlib.manualcheck import *
 
 # Load environment variables
 from dotenv import load_dotenv, find_dotenv
@@ -145,8 +146,8 @@ class WebScraper:
             filename_safe_url = currenturl.replace(":", "=").replace("/", "|")
 
             if mid2l_con is not None:
-                text_content_list = [f"Page Url: {currenturl}"]
-                text_with_images_list = [f"Page Url: {currenturl}"]
+                text_content_list = [f"(Page_Url): {currenturl}"]
+                text_with_images_list = [f"(Page_Url): {currenturl}"]
                 text_content_list.append(f"Title: {title_text}")
                 text_with_images_list.append(f"Title: {title_text}")
                 
@@ -198,7 +199,7 @@ class WebScraper:
 
                     # If it's an <img> tag
                     if element.tag == 'img' and not stop_extraction:
-                        img_src = element.get('src')
+                        img_src = element.get('src')  # Fallback to the src of the <img> tag
                         img_data_src = element.get('data-src', img_src)  # Use data-src if available, otherwise fallback to src
                         img_alt = element.get('alt', '')
                         img_title = element.get('title', '')
@@ -210,84 +211,97 @@ class WebScraper:
 
                         img_src=img_src.replace('_S.jpg', '.jpg')
 
-                        # Save the raw image to a file
-                        self.save_image_to_file(img_src)
+                        # # Save the raw image to a file
+                        # self.save_image_to_file(img_src)
+
+                        # Check if the parent tag is <a>
+                        parent = element.getparent()
+                        if parent is not None and parent.tag == 'a' and not(parent.get('href').endswith('.jpg')):
+                            href_url = parent.get('href')  # Use the href of the parent <a> tag
+                        else:
+                            href_url = currenturl  # Fallback to the src of the <img> tag
 
                         # Replace the placeholder with the actual image tag
-                        img_tag = f'<img src="{img_src}" alt="{img_alt}" width="{img_width}" height="{img_height}" title="{img_title}">'
+                        img_tag = f'<img src="{img_src}" alt="{img_alt}" width="{img_width}" height="{img_height}" title="{img_title}" Page_Url="{href_url}">'
                         text_with_images_list.append(img_tag)
 
                 # Convert text_content_list to a single string
                 text_content_str = '\n'.join(text_content_list)
                 text_with_images_list_str = '\n'.join(text_with_images_list)
 
+                # Specify the save path
+                save_directory = "quicksearch_cache/rawdata"
+                os.makedirs(save_directory, exist_ok=True)
+
+
                 # Save content to docs folder first
                 text_only_filename = os.path.join("quicksearch_cache/rawdata/", f"{filename_safe_url}_text_only.txt")
                 text_with_images_filename = os.path.join("quicksearch_cache/rawdata/", f"{filename_safe_url}_text_with_images.html")
                 self.save_content_to_file(text_content_str, text_only_filename)
                 self.save_content_to_file(text_with_images_list_str, text_with_images_filename)                
+                log_message(f"Html and text files successfully saved for {filename_safe_url}")
 
-                # Get img data
-                img_data_list = []
-                for img_index, line in enumerate(text_with_images_list):
-                    if line.startswith("<img"):
-                        # Extract image attributes
-                        img_src = line.split('src="')[1].split('"')[0]
-                        img_alt = line.split('alt="')[1].split('"')[0]
-                        img_width = line.split('width="')[1].split('"')[0]
-                        img_height = line.split('height="')[1].split('"')[0]
-                        img_title = line.split('title="')[1].split('"')[0]
+                # # Get img data
+                # img_data_list = []
+                # for img_index, line in enumerate(text_with_images_list):
+                #     if line.startswith("<img"):
+                #         # Extract image attributes
+                #         img_src = line.split('src="')[1].split('"')[0]
+                #         img_alt = line.split('alt="')[1].split('"')[0]
+                #         img_width = line.split('width="')[1].split('"')[0]
+                #         img_height = line.split('height="')[1].split('"')[0]
+                #         img_title = line.split('title="')[1].split('"')[0]
                         
-                        # Get Base64 encoded image content (currently returning empty string)
-                        img_base64 = self.get_base64_encoded_image(img_src)
+                #         # Get Base64 encoded image content (currently returning empty string)
+                #         img_base64 = self.get_base64_encoded_image(img_src)
                         
-                        # Get n lines before and after the image
-                        content_before_image = []
-                        content_after_image = []
+                #         # Get n lines before and after the image
+                #         content_before_image = []
+                #         content_after_image = []
                         
-                        # Extract n lines before the image, stop if another <img> tag is encountered
-                        for i in range(img_index-1, max(0, img_index-n)-1, -1):
-                            # if '<img' in text_with_images_list[i]:
-                            #     break
-                            content_before_image.append(text_with_images_list[i])
-                        content_before_image.reverse()
+                #         # Extract n lines before the image, stop if another <img> tag is encountered
+                #         for i in range(img_index-1, max(0, img_index-n)-1, -1):
+                #             # if '<img' in text_with_images_list[i]:
+                #             #     break
+                #             content_before_image.append(text_with_images_list[i])
+                #         content_before_image.reverse()
                         
-                        # Extract n lines after the image, stop if another <img> tag is encountered
-                        for i in range(img_index+1, min(len(text_with_images_list), img_index+1+n)):
-                            # if '<img' in text_with_images_list[i]:
-                            #     break
-                            content_after_image.append(text_with_images_list[i])
+                #         # Extract n lines after the image, stop if another <img> tag is encountered
+                #         for i in range(img_index+1, min(len(text_with_images_list), img_index+1+n)):
+                #             # if '<img' in text_with_images_list[i]:
+                #             #     break
+                #             content_after_image.append(text_with_images_list[i])
                         
-                        content_before_image_str = '\n'.join(content_before_image)
-                        content_after_image_str = '\n'.join(content_after_image)
-                        image_descrip_str = ''
+                #         content_before_image_str = '\n'.join(content_before_image)
+                #         content_after_image_str = '\n'.join(content_after_image)
+                #         image_descrip_str = ''
                         
-                        # Add the image metadata to the img_data_list
-                        img_data_list.append({
-                            "page_title": title_text,  # To recognize this image with the page title.
-                            "src": img_src,
-                            "base64": img_base64,  # Temporarily set to an empty string
-                            "title": img_title,
-                            "alt": img_alt,
-                            "content_before_image": content_before_image_str,
-                            "image_description": image_descrip_str,
-                            "content_after_image": content_after_image_str,
-                            "url": currenturl,  # Current page url
-                            "type": "img"
-                        })
+                #         # Add the image metadata to the img_data_list
+                #         img_data_list.append({
+                #             "page_title": title_text,  # To recognize this image with the page title.
+                #             "src": img_src,
+                #             "base64": img_base64,  # Temporarily set to an empty string
+                #             "title": img_title,
+                #             "alt": img_alt,
+                #             "content_before_image": content_before_image_str,
+                #             "image_description": image_descrip_str,
+                #             "content_after_image": content_after_image_str,
+                #             "url": currenturl,  # Current page url
+                #             "type": "img"
+                #         })
 
 
-                txt_data_list.append({
-                        "txt": text_content_str,
-                        "url": currenturl,
-                        "type": "text"
-                    })
+                # txt_data_list.append({
+                #         "txt": text_content_str,
+                #         "url": currenturl,
+                #         "type": "text"
+                #     })
 
-                # Save the entire text_content_str directly to mmtext.json
-                self.save_data_json_with_format(txt_data_list, "quicksearch_cache/mmtext.json")
+                # # Save the entire text_content_str directly to mmtext.json
+                # self.save_data_json_with_format(txt_data_list, "quicksearch_cache/mmtext.json")
 
-                # Save the image metadata to JSON as a list of objects
-                self.save_data_json_with_format(img_data_list, "quicksearch_cache/mmimg.json")
+                # # Save the image metadata to JSON as a list of objects
+                # self.save_data_json_with_format(img_data_list, "quicksearch_cache/mmimg.json")
 
                 return f"Content saved to files in docs and JSON files processed."
             else:
@@ -407,7 +421,7 @@ class WebScraper:
         retries = 0
         while retries < max_retries:
             try:
-                response = requests.get(url, timeout=3)  # Set timeout to 3 seconds
+                response = requests.get(url, timeout=1)  # Set timeout to 3 seconds
                 
                 # If the status code is 200, the request was successful, return the content
                 if response.status_code == 200:
@@ -531,12 +545,6 @@ class WebScraper:
         try:
             # Placeholder for crawling implementation
             log_message(f"Starting crawl for URL: {self.url}")
-            # Check if the directory exists
-            if os.path.exists("quicksearch_cache"):
-                # Remove all files in the directory
-                shutil.rmtree("quicksearch_cache")
-                # Recreate the empty directory
-                os.makedirs("quicksearch_cache")
 
             self.crawl_and_extract(self.url, game_keywords, 1) # Crawl the URL and its linked pages up to a depth
             log_message(f"⭐️1. Completed crawl and save data for URL: {self.url}")
@@ -745,7 +753,7 @@ def get_context(directory="quicksearch_cache/rawdata"):
                 with open(file_path, 'r', encoding="utf-8") as file:
                     file_content = file.read()
                     # Append the file content with the sequence number and a newline
-                    context_q += f"{file_index}: {file_content}\n"
+                    context_q += f"\n\n网页{file_index}: \n{file_content}\n"
                     file_index += 1
             except Exception as e:
                 # Log or handle any exceptions during file reading
@@ -854,7 +862,7 @@ def fetch_page_title(url):
     """
     try:
         # Fetch the HTML content of the webpage
-        response = requests.get(url, timeout=2)  # Set a timeout to avoid hanging
+        response = requests.get(url, timeout=1)  # Set a timeout to avoid hanging
         response.raise_for_status()  # Raise an exception for HTTP errors
 
         # Parse the HTML content
@@ -875,13 +883,45 @@ def fetch_page_title(url):
 
 
 ## Agent Start############################################################
-
+websense_agent_instructions = f"根据用户问题和网页标题，如果有相同的关键字，则返回True，否则返回False。"
 websense_llm = ChatOpenAI(name="websense_llm", model_name="gpt-4o-mini", streaming=True)
-websense_agent = AgentX(name="websense_agent",llm=websense_llm, streaming=True)
+websense_agent = AgentX(name="websense_agent",llm=websense_llm, instructions=websense_agent_instructions)
 datafetch_llm = ChatOpenAI(name="datafetch_llm", model_name="gpt-4o-mini", streaming=True)
 datafetch_agent = AgentX(name="datafetch_agent", llm=datafetch_llm)
-fusionbot_llm = ChatOpenAI(name="fusionbot_llm", model_name="gpt-4o-mini", streaming=True)
-fusionbot_agent = AgentX(name="fusionbot_agent", llm=fusionbot_llm)
+
+# Update the websense_agent instructions with the user question and the current link title
+fusionbot_agent_instructions = """你是《黑神话：悟空》这款游戏的AI攻略助手，根据用户问题和提供的网页内容为玩家生成详尽的图文并茂的游戏攻略.
+    请注意以下规则：
+    1. 在网页内容中有若干个页面，每个页面都包含有Page Url，Title，文本内容和以<img>标签表示的图片。例如：
+
+    (Page_Url):
+    Title:
+    文本a
+    Image1
+    文本b
+    Image2
+    Image3
+    文本c
+    ...
+
+    一般来说，Image1是文本a的内容的图像展示，Image2和Image3是与文本b的内容的图像展示。
+    
+    2. image要按如下md格式输出：
+
+    [![Alt Text](Image Src)](Page_Url)
+
+    例如，[![图片说明](https://www.xyz.com/img1.jpg)](https://www.xyz.com)
+
+    3. 攻略的结构应该按照 
+
+    - 详细描述最相关的1-2个网页内容（尽可能完整的保留原网页的文本内容和其展示的image，将image按其原文的逻辑顺序插入到文本中间）
+    - 总结和列出提供的所有网页的内容点，并分别给出网页的链接和title
+    - 最后写出一句话总结。
+    """
+
+
+fusionbot_llm = ChatOpenAI(name="fusionbot_llm", model_name="gpt-4o", streaming=True)
+fusionbot_agent = AgentX(name="fusionbot_agent", llm=fusionbot_llm, instructions=fusionbot_agent_instructions)
 
 
 
@@ -891,13 +931,13 @@ def agent_flow(user_q):
     and processes the relevant links based on the user query.
     """
     log_message("Get related page links...")
-    shared_flow_state_str.value = "Getting related page links..."  # Updata flow state in the flask and then UI
+    shared_flow_state_str.value = "⭐️Getting related page links..."  # Updata flow state in the flask and then UI
     
     # Fetch links containing the user query keyword
     search_links = fetch_links_with_keyword(user_q)
     log_message(f"Fetched links: {search_links}")
 
-    shared_flow_state_str.value = "Analyzing related pages with WebSense agent..."  # Updata flow state in the flask and then UI
+    shared_flow_state_str.value = "⭐️Analyzing related pages with WebSense agent..."  # Updata flow state in the flask and then UI
     # Iterate through each link and fetch its title
     relevant_links = []
     for link in search_links:
@@ -906,13 +946,9 @@ def agent_flow(user_q):
         if not title or "Request failed" in title or "Error processing" in title:
             log_message(f"Failed to fetch title for link: {link}")
             continue  # Skip this link if title fetch fails
-        
-        # Update the websense_agent instructions with the user question and the current link title
-        websense_agent.instructions = f"根据用户的问题: {user_q}，判断标题为: {title} 的内容是否与问题相关，相关度大于50%则返回True，否则返回False。"
-        websense_agent.update_instructions(websense_agent.instructions)
 
         # Use the agent to evaluate relevance
-        is_relevant = websense_agent.generate_response(user_q)
+        is_relevant = websense_agent.generate_response(f"问题是 {user_q}, 网页标题是 {title}")
         if is_relevant.strip().lower() == "true":
             log_message(f"{websense_agent.name}: Relevant link found: {link} (Title: {title})")
             relevant_links.append(link)
@@ -921,31 +957,32 @@ def agent_flow(user_q):
 
     log_message(f"Relevant links: {relevant_links}")
 
-    shared_flow_state_str.value = "Processing related page..."  # Updata flow state in the flask and then UI
-    # Process relevant links if any
-    for relevant_link in relevant_links:
-        # Placeholder for next steps
-        log_message(f"Processing relevant link: {relevant_link}")
-        time.sleep(2)
-        # Call further processing functions or logic here
-        # Example: process_url(relevant_link)
+    shared_flow_state_str.value = "⭐️Processing related page..."  # Updata flow state in the flask and then UI
+
+    # Check if the directory exists
+    if os.path.exists("quicksearch_cache"):
+        # Remove all files in the directory
+        shutil.rmtree("quicksearch_cache")
+        # Recreate the empty directory
+        os.makedirs("quicksearch_cache")
+        os.makedirs("quicksearch_cache/rawdata")
+
+    # mc(y)
+
+    with multiprocessing.Pool(processes=multiprocessing.cpu_count()) as pool:
+        list(tqdm(pool.imap(process_url, relevant_links), total=len(relevant_links)))
+    log_message("Completed web scraping process")    
+
+
+    shared_flow_state_str.value = "⭐️Considering the answer with FusionBot agent..."  # Updata flow state in the flask and then UI
+
+    context_q = get_context() # Get the context from the HTML files
     
-    
+    # Get the answer with images from the FusionBot agent
+    answer_with_image = fusionbot_agent.stream_response(f"用户问题是 {user_q} ， 网页内容是\n {context_q}")
 
-    return relevant_links
-    
-
-
-
-
-    # links=extract_content_with_delimiter(str(links),'```')
-    # urls_list = links.strip("[]").split(", ")
-
-
- 
-
-
-    return links
+    return answer_with_image
+     
 
 ## Agent End###############################################################
 
@@ -957,24 +994,8 @@ def main():
     Main function to coordinate the web scraping, database building, and LLM querying processes.
     """
 
+    pass
 
-    # Parallel processing of web scraping
-    log_message("Starting web scraping process")
-    try:
-        with multiprocessing.Pool(processes=multiprocessing.cpu_count()) as pool:
-            list(tqdm(pool.imap(process_url, game_urls), total=len(game_urls)))
-        log_message("Completed web scraping process")
-    except Exception as e:
-        log_message(f"Error in web scraping process: {e}")
-
-    # Building the Knowledge Graph database
-    build_kg_database()
-
-    # Optionally building the Vector database
-    build_vector_database()
-
-    # Query the LLM
-    # llm_chatbot_quick()
     
 if __name__ == "__main__":
     try:

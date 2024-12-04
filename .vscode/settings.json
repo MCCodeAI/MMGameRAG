@@ -9,5 +9,6 @@
         "**/*.scss",
         "**/*.sass",
         "**/*.ts"
-    ]
+    ],
+    "livePreview.defaultPreviewPath": "/templates/index.html"
 }

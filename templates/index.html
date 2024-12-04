@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple Split Screen with Iframe</title>
+    <title>Dynamic Scaling for Iframes</title>
     <style>
         /* Set container layout */
         .container {
@@ -12,28 +12,82 @@
             border: 2px solid #FFA500;
         }
 
-        /* Set the first iframe to occupy 30% of the width and the second iframe to occupy 70% */
+        /* Set the first iframe to occupy 50% of the width */
         .container iframe:first-child {
-            flex: 5; /* 30% */
+            flex: 1; /* 50% */
             border: none; /* Remove default iframe border */
         }
 
-        .container iframe:last-child {
-            flex: 5; /* 70% */
-            border: none; /* Remove default iframe border */
+        /* Set the second container for the right side (50%) */
+        .right-container {
+            flex: 1; /* 50% */
+            display: flex;
+            flex-direction: column; /* Split into top and bottom */
+        }
+
+        /* Default styles for iframe */
+        iframe {
+            transform-origin: top left; /* Default origin */
         }
     </style>
 </head>
 <body>
     <script>
-        // Define a global variable in the parent page
-        window.sharedData = "ssssssss";
+        /**
+         * Adjust the scale of a specific iframe
+         * @param {string} iframeName - Name attribute of the iframe
+         * @param {number} scaleValue - Scale value (e.g., 0.8, 1.0, 1.2)
+         */
+        function adjustIframeScale(iframeName, scaleValue) {
+            const iframe = document.querySelector(`iframe[name="${iframeName}"]`);
+            if (iframe) {
+                iframe.style.transform = `scale(${scaleValue})`;
+                iframe.style.transformOrigin = "top left"; // Ensure scaling starts from top-left corner
+                iframe.style.width = `${100 / scaleValue}%`; // Adjust width
+                iframe.style.height = `${100 / scaleValue}%`; // Adjust height
+                iframe.parentElement.style.overflow = "hidden"; // Prevent content overflow
+            }
+        }
+
+        /**
+         * Adjust the flex-grow for top and bottom iframes in the right container
+         * @param {number} topRatio - Flex ratio for the top iframe
+         * @param {number} bottomRatio - Flex ratio for the bottom iframe
+         */
+        function adjustRightIframeProportion(topRatio, bottomRatio) {
+            const topIframe = document.querySelector('iframe[name="topIframe"]');
+            const bottomIframe = document.querySelector('iframe[name="bottomIframe"]');
+            if (topIframe && bottomIframe) {
+                topIframe.style.flex = topRatio;
+                bottomIframe.style.flex = bottomRatio;
+            }
+        }
+
+        // Variables to define the scale and proportions
+        const leftIframeScale = 1.0; // Scale for the left iframe
+        const topRightIframeScale = 0.9; // Scale for the top-right iframe
+        const bottomRightIframeScale = 0.8; // Scale for the bottom-right iframe
+        const topRightIframeProportion = 6; // Top iframe occupies 60%
+        const bottomRightIframeProportion = 4; // Bottom iframe occupies 40%
+
+        // Apply the scales and proportions
+        window.onload = () => {
+            adjustIframeScale('firstIframe', leftIframeScale);
+            adjustIframeScale('topIframe', topRightIframeScale);
+            adjustIframeScale('bottomIframe', bottomRightIframeScale);
+            adjustRightIframeProportion(topRightIframeProportion, bottomRightIframeProportion);
+        };
     </script>
 
-    <!-- Two iframes with different width ratios using Flexbox layout -->
+    <!-- Two iframes with equal width, right side split into top and bottom -->
     <div class="container">
         <iframe name="firstIframe" src="http://127.0.0.1:5000"></iframe>
-        <iframe name="siframe" src="http://127.0.0.1:5501/templates/mmgameragvis.html"></iframe>
+        
+        <!-- Nested right container -->
+        <div class="right-container">
+            <iframe name="topIframe" src="http://127.0.0.1:5501/templates/1128_1623_Disjoint_force_cls8.html"></iframe>
+            <iframe name="bottomIframe" src="http://127.0.0.1:5501/templates/mmgameragvis.html"></iframe>
+        </div>
     </div>
 </body>
 </html>
