@@ -6,6 +6,8 @@ import markdown2
 import userlib.shared
 
 from mmgamer_quicksearch import *
+from mmgamer_kgrag import *
+
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
@@ -59,7 +61,8 @@ def generate_response_stream(user_q):
         # resp = llm_chatbot_quick(user_q)
 
 
-        resp = agent_flow(user_q)
+        # resp = agent_flow_quick(user_q)
+        resp = agent_flow_kg(user_q)
 
 
         # Iterate through resp and process each chunk
