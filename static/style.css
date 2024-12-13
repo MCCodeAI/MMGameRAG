@@ -238,4 +238,24 @@ img:not(.user_img_msg) {
 	margin-bottom: 10px !important;
 }
 }
+.history-dropdown {
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    border: 0px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+    width: 60%;
+	transform: translateY(-10px); /* Add a small offset above the input */
+	color: white;
+}
+
+.history-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.history-item:hover {
+    background-color: rgba(0, 0, 0, 0.262);
+}
 

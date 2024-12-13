@@ -1,0 +1,229 @@
+2024-12-08 13:44:18,473 - Default - MainProcess - 46857 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:44:21,477 - Default - MainProcess - 46857 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:44:24,480 - Default - MainProcess - 46857 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:44:27,485 - Default - MainProcess - 46857 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:44:30,491 - Default - MainProcess - 46857 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:44:33,496 - Default - MainProcess - 46857 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:44:36,500 - Default - MainProcess - 46857 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:44:39,505 - Default - MainProcess - 46857 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:44:42,511 - Default - MainProcess - 46857 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:44:45,516 - Default - MainProcess - 46857 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:44:48,521 - Default - MainProcess - 46857 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:44:51,528 - Default - MainProcess - 46857 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:46:07,492 - Default - MainProcess - 47448 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:46:10,496 - Default - MainProcess - 47448 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:46:13,501 - Default - MainProcess - 47448 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:46:16,506 - Default - MainProcess - 47448 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:46:19,511 - Default - MainProcess - 47448 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:48:08,223 - Default - MainProcess - 47925 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:48:09,393 - Default - MainProcess - 47925 - Similarity search completed. Processing retrieved documents.
+2024-12-08 13:48:09,452 - Default - MainProcess - 47925 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:48:09,487 - Default - MainProcess - 47925 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:48:09,487 - Default - MainProcess - 47925 - FusionBot has completed the response generation.
+2024-12-08 13:48:17,158 - Default - MainProcess - 47925 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:48:18,299 - Default - MainProcess - 47925 - Similarity search completed. Processing retrieved documents.
+2024-12-08 13:48:18,336 - Default - MainProcess - 47925 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:48:18,361 - Default - MainProcess - 47925 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:48:18,361 - Default - MainProcess - 47925 - FusionBot has completed the response generation.
+2024-12-08 13:48:25,923 - Default - MainProcess - 47925 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:48:26,953 - Default - MainProcess - 47925 - Similarity search completed. Processing retrieved documents.
+2024-12-08 13:48:27,002 - Default - MainProcess - 47925 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:48:27,037 - Default - MainProcess - 47925 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:48:27,037 - Default - MainProcess - 47925 - FusionBot has completed the response generation.
+2024-12-08 13:48:33,832 - Default - MainProcess - 47925 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:48:34,893 - Default - MainProcess - 47925 - Similarity search completed. Processing retrieved documents.
+2024-12-08 13:48:34,940 - Default - MainProcess - 47925 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:48:34,972 - Default - MainProcess - 47925 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:48:34,972 - Default - MainProcess - 47925 - FusionBot has completed the response generation.
+2024-12-08 13:48:42,366 - Default - MainProcess - 47925 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:48:49,431 - Default - MainProcess - 47925 - Similarity search completed. Processing retrieved documents.
+2024-12-08 13:48:49,480 - Default - MainProcess - 47925 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:48:49,513 - Default - MainProcess - 47925 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:48:49,513 - Default - MainProcess - 47925 - FusionBot has completed the response generation.
+2024-12-08 13:59:15,874 - Default - MainProcess - 49347 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:59:17,088 - Default - MainProcess - 49347 - Similarity search completed. Processing retrieved documents.
+2024-12-08 13:59:17,153 - Default - MainProcess - 49347 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:59:17,153 - Default - MainProcess - 49347 - FusionBot has completed the response generation.
+2024-12-08 13:59:34,905 - Default - MainProcess - 49347 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:59:36,197 - Default - MainProcess - 49347 - Similarity search completed. Processing retrieved documents.
+2024-12-08 13:59:36,277 - Default - MainProcess - 49347 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:59:36,277 - Default - MainProcess - 49347 - FusionBot has completed the response generation.
+2024-12-08 13:59:55,973 - Default - MainProcess - 49347 - Starting similarity search in the vector index for the user's query.
+2024-12-08 13:59:57,233 - Default - MainProcess - 49347 - Similarity search completed. Processing retrieved documents.
+2024-12-08 13:59:57,318 - Default - MainProcess - 49347 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 13:59:57,318 - Default - MainProcess - 49347 - FusionBot has completed the response generation.
+2024-12-08 14:00:12,685 - Default - MainProcess - 49347 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:00:13,961 - Default - MainProcess - 49347 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:00:14,046 - Default - MainProcess - 49347 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:00:14,046 - Default - MainProcess - 49347 - FusionBot has completed the response generation.
+2024-12-08 14:00:26,176 - Default - MainProcess - 49347 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:00:27,516 - Default - MainProcess - 49347 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:00:27,601 - Default - MainProcess - 49347 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:00:27,601 - Default - MainProcess - 49347 - FusionBot has completed the response generation.
+2024-12-08 14:02:01,882 - Default - MainProcess - 50530 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:02:03,243 - Default - MainProcess - 50530 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:02:03,378 - Default - MainProcess - 50530 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:02:03,378 - Default - MainProcess - 50530 - FusionBot has completed the response generation.
+2024-12-08 14:02:20,668 - Default - MainProcess - 50530 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:02:22,180 - Default - MainProcess - 50530 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:02:22,259 - Default - MainProcess - 50530 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:02:22,259 - Default - MainProcess - 50530 - FusionBot has completed the response generation.
+2024-12-08 14:08:41,396 - Default - MainProcess - 51704 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:08:42,418 - Default - MainProcess - 51704 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:08:42,518 - Default - MainProcess - 51704 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:08:42,518 - Default - MainProcess - 51704 - FusionBot has completed the response generation.
+2024-12-08 14:08:59,804 - Default - MainProcess - 51704 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:09:01,178 - Default - MainProcess - 51704 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:09:01,190 - Default - MainProcess - 51704 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:09:01,190 - Default - MainProcess - 51704 - FusionBot has completed the response generation.
+2024-12-08 14:09:03,619 - Default - MainProcess - 51704 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:09:04,086 - Default - MainProcess - 51704 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:09:04,111 - Default - MainProcess - 51704 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:09:04,111 - Default - MainProcess - 51704 - FusionBot has completed the response generation.
+2024-12-08 14:09:07,267 - Default - MainProcess - 51704 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:09:07,911 - Default - MainProcess - 51704 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:09:08,132 - Default - MainProcess - 51704 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:09:08,132 - Default - MainProcess - 51704 - FusionBot has completed the response generation.
+2024-12-08 14:09:11,894 - Default - MainProcess - 51704 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:09:12,443 - Default - MainProcess - 51704 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:09:12,464 - Default - MainProcess - 51704 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:09:12,465 - Default - MainProcess - 51704 - FusionBot has completed the response generation.
+2024-12-08 14:09:20,495 - Default - MainProcess - 51704 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:09:21,623 - Default - MainProcess - 51704 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:09:21,710 - Default - MainProcess - 51704 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:09:21,710 - Default - MainProcess - 51704 - FusionBot has completed the response generation.
+2024-12-08 14:10:31,977 - Default - MainProcess - 52032 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:10:32,465 - Default - MainProcess - 52032 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:10:32,554 - Default - MainProcess - 52032 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:10:32,555 - Default - MainProcess - 52032 - FusionBot has completed the response generation.
+2024-12-08 14:11:18,504 - Default - MainProcess - 52032 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:11:37,924 - Default - MainProcess - 52032 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:19:40,691 - Default - MainProcess - 52734 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:22:09,272 - Default - MainProcess - 54869 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:22:10,223 - Default - MainProcess - 54869 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:22:10,310 - Default - MainProcess - 54869 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:22:10,310 - Default - MainProcess - 54869 - FusionBot has completed the response generation.
+2024-12-08 14:31:30,816 - Default - MainProcess - 55432 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:31:31,871 - Default - MainProcess - 55432 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:31:31,981 - Default - MainProcess - 55432 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:31:31,981 - Default - MainProcess - 55432 - FusionBot has completed the response generation.
+2024-12-08 14:38:58,055 - Default - MainProcess - 57268 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:38:59,357 - Default - MainProcess - 57268 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:38:59,426 - Default - MainProcess - 57268 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:38:59,426 - Default - MainProcess - 57268 - FusionBot has completed the response generation.
+2024-12-08 14:42:03,998 - Default - MainProcess - 58306 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:42:04,962 - Default - MainProcess - 58306 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:42:05,029 - Default - MainProcess - 58306 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:42:05,029 - Default - MainProcess - 58306 - FusionBot has completed the response generation.
+2024-12-08 14:43:00,703 - Default - MainProcess - 58573 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:43:01,292 - Default - MainProcess - 58573 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:43:01,398 - Default - MainProcess - 58573 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:43:01,398 - Default - MainProcess - 58573 - FusionBot has completed the response generation.
+2024-12-08 14:48:32,609 - Default - MainProcess - 59370 - Starting similarity search in the vector index for the user's query.
+2024-12-08 14:48:33,619 - Default - MainProcess - 59370 - Similarity search completed. Processing retrieved documents.
+2024-12-08 14:48:33,730 - Default - MainProcess - 59370 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 14:48:33,730 - Default - MainProcess - 59370 - FusionBot has completed the response generation.
+2024-12-08 15:01:41,430 - Default - MainProcess - 61670 - Starting similarity search in the vector index for the user's query.
+2024-12-08 15:01:42,355 - Default - MainProcess - 61670 - Similarity search completed. Processing retrieved documents.
+2024-12-08 15:01:42,420 - Default - MainProcess - 61670 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 15:01:42,420 - Default - MainProcess - 61670 - FusionBot has completed the response generation.
+2024-12-08 15:02:14,098 - Default - MainProcess - 61670 - Starting similarity search in the vector index for the user's query.
+2024-12-08 15:02:15,486 - Default - MainProcess - 61670 - Similarity search completed. Processing retrieved documents.
+2024-12-08 15:02:15,584 - Default - MainProcess - 61670 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 15:02:15,584 - Default - MainProcess - 61670 - FusionBot has completed the response generation.
+2024-12-08 15:03:43,046 - Default - MainProcess - 62068 - Starting similarity search in the vector index for the user's query.
+2024-12-08 15:03:43,550 - Default - MainProcess - 62068 - Similarity search completed. Processing retrieved documents.
+2024-12-08 15:03:43,642 - Default - MainProcess - 62068 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 15:03:43,642 - Default - MainProcess - 62068 - FusionBot has completed the response generation.
+2024-12-08 15:04:37,862 - Default - MainProcess - 62250 - Starting similarity search in the vector index for the user's query.
+2024-12-08 15:04:38,257 - Default - MainProcess - 62250 - Similarity search completed. Processing retrieved documents.
+2024-12-08 15:04:38,349 - Default - MainProcess - 62250 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 15:04:38,350 - Default - MainProcess - 62250 - FusionBot has completed the response generation.
+2024-12-08 15:14:17,858 - Default - MainProcess - 63877 - Starting similarity search in the vector index for the user's query.
+2024-12-08 15:14:18,498 - Default - MainProcess - 63877 - Similarity search completed. Processing retrieved documents.
+2024-12-08 15:14:18,568 - Default - MainProcess - 63877 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 15:14:18,568 - Default - MainProcess - 63877 - FusionBot has completed the response generation.
+2024-12-08 15:19:28,662 - Default - MainProcess - 63975 - Starting similarity search in the vector index for the user's query.
+2024-12-08 15:19:29,558 - Default - MainProcess - 63975 - Similarity search completed. Processing retrieved documents.
+2024-12-08 15:19:29,644 - Default - MainProcess - 63975 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 15:19:29,644 - Default - MainProcess - 63975 - FusionBot has completed the response generation.
+2024-12-08 15:25:10,159 - Default - MainProcess - 65581 - Starting similarity search in the vector index for the user's query.
+2024-12-08 15:25:11,028 - Default - MainProcess - 65581 - Similarity search completed. Processing retrieved documents.
+2024-12-08 15:25:11,124 - Default - MainProcess - 65581 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 15:25:11,124 - Default - MainProcess - 65581 - FusionBot has completed the response generation.
+2024-12-08 16:05:51,050 - Default - MainProcess - 72190 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:05:52,328 - Default - MainProcess - 72190 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:05:52,422 - Default - MainProcess - 72190 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:05:52,423 - Default - MainProcess - 72190 - FusionBot has completed the response generation.
+2024-12-08 16:07:48,786 - Default - MainProcess - 72190 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:07:49,722 - Default - MainProcess - 72190 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:07:49,826 - Default - MainProcess - 72190 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:07:49,826 - Default - MainProcess - 72190 - FusionBot has completed the response generation.
+2024-12-08 16:10:08,912 - Default - MainProcess - 72190 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:10:15,819 - Default - MainProcess - 72190 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:10:15,887 - Default - MainProcess - 72190 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:10:15,887 - Default - MainProcess - 72190 - FusionBot has completed the response generation.
+2024-12-08 16:12:04,285 - Default - MainProcess - 72190 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:12:05,225 - Default - MainProcess - 72190 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:12:06,075 - Default - MainProcess - 72190 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:12:06,076 - Default - MainProcess - 72190 - FusionBot has completed the response generation.
+2024-12-08 16:14:08,258 - Default - MainProcess - 72190 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:14:09,285 - Default - MainProcess - 72190 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:14:09,484 - Default - MainProcess - 72190 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:14:09,485 - Default - MainProcess - 72190 - FusionBot has completed the response generation.
+2024-12-08 16:35:29,934 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:35:30,888 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:35:30,974 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:35:30,974 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:36:25,043 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:36:25,841 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:36:25,875 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:36:25,875 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:38:41,087 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:38:42,031 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:38:42,067 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:38:42,068 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:40:46,495 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:40:47,593 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:40:47,907 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:40:47,907 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:41:39,730 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:41:40,706 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:41:40,728 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:41:40,729 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:42:03,141 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:42:04,172 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:42:04,257 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:42:04,257 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:42:41,036 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:42:41,844 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:42:41,910 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:42:41,910 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:43:10,175 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:43:11,246 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:43:11,316 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:43:11,316 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:43:21,157 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:43:22,120 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:43:22,175 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:43:22,175 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:44:03,138 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:44:04,221 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:44:05,029 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:44:05,029 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:48:58,562 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:48:59,537 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:48:59,862 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:48:59,863 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:49:24,114 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:49:25,006 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:49:25,297 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:49:25,297 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:49:35,337 - Default - MainProcess - 77064 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:49:36,356 - Default - MainProcess - 77064 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:49:36,538 - Default - MainProcess - 77064 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:49:36,538 - Default - MainProcess - 77064 - FusionBot has completed the response generation.
+2024-12-08 16:51:22,995 - Default - MainProcess - 79872 - Starting similarity search in the vector index for the user's query.
+2024-12-08 16:51:23,429 - Default - MainProcess - 79872 - Similarity search completed. Processing retrieved documents.
+2024-12-08 16:51:23,491 - Default - MainProcess - 79872 - Context for FusionBot generated. Preparing to send the query.
+2024-12-08 16:51:23,491 - Default - MainProcess - 79872 - FusionBot has completed the response generation.

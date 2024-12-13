@@ -61,8 +61,8 @@ def generate_response_stream(user_q):
         # resp = llm_chatbot_quick(user_q)
 
 
-        # resp = agent_flow_quick(user_q)
-        resp = agent_flow_kg(user_q)
+        resp = agent_flow_quick(user_q)
+        # resp = agent_flow_kg(user_q)
 
 
         # Iterate through resp and process each chunk

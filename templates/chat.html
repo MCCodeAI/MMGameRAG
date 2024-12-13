@@ -64,6 +64,7 @@
                   autocomplete="off"
                   class="form-control type_msg"
                   required
+                  ondblclick="showHistory()"
                 />
                 <div class="input-group-append">
                   <button
@@ -248,6 +249,54 @@ function startStreaming(rawText) {
           document.getElementById("textInput").value = event.data;
         }
       }, false);
+
+      // Array to store input history
+      let inputHistory = [];
+
+      // Modify form submission to save input to history
+      document.getElementById("messageArea").addEventListener("submit", function (event) {
+          const rawText = document.getElementById("textInput").value;
+          if (rawText.trim() !== "") {
+              inputHistory.push(rawText); // Save input to history
+          }
+      });
+
+      // Function to show input history on double-click
+      function showHistory() {
+          // Create a dropdown for history
+          const historyDropdown = document.createElement("div");
+          historyDropdown.classList.add("history-dropdown");
+
+          // Populate dropdown with history items in reverse order
+          inputHistory.slice().reverse().forEach((item, index) => {
+              const historyItem = document.createElement("div");
+              historyItem.classList.add("history-item");
+              historyItem.innerText = item;
+              historyItem.onclick = () => {
+                  document.getElementById("textInput").value = item; // Fill input with selected history
+                  historyDropdown.remove(); // Remove dropdown after selection
+              };
+              historyDropdown.appendChild(historyItem); // Add items in reverse order
+          });
+
+          // Append dropdown above the input box
+          const inputBox = document.getElementById("textInput");
+          inputBox.parentNode.appendChild(historyDropdown);
+
+          // Position the dropdown to be above the input box
+          const inputBoxRect = inputBox.getBoundingClientRect();
+          historyDropdown.style.left = inputBoxRect.left + "px";
+          historyDropdown.style.width = inputBoxRect.width + "px";
+
+          // Remove dropdown when clicking outside
+          document.addEventListener("click", function removeDropdown(event) {
+              if (!historyDropdown.contains(event.target) && event.target !== inputBox) {
+                  historyDropdown.remove();
+                  document.removeEventListener("click", removeDropdown);
+              }
+          });
+      }
+
     </script>
   </body>
 </html>

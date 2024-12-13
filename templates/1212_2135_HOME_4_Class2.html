@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Force-Directed Graph</title>
+  <link href="https://excalidraw.com/fonts.css" rel="stylesheet">
+
+  <style>
+
+    body {
+        font-family: 'Hanzipen SC';
+        /* font-size: 20px;   */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 如果需要调整特定元素的字体大小，可以覆盖样式 */
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+    }
+    p, span, div {
+        line-height: 1.5;
+    }
+    svg text{
+      font-family: 'Hanzipen SC', sans-serif;
+      font-size: 18px;  
+      fill: seagreen; 
+    }
+    button{
+      font-family: 'Hanzipen SC', sans-serif;
+      font-size: 16px;  
+    }
+  </style>
+</head>
+
+<body>
+  <div id="buttonContainer">
+    <button id="btn1" class="btn btn-link btn-outline-light" onclick="loadData('https://raw.githubusercontent.com/AsherLHJ/CMAA5024_Data/refs/heads/main/CMAA5024_Final_data/data_1128_cls_1.json')">游戏设备与平台</button>
+    <button id="btn2" class="btn btn-link btn-outline-light" onclick="loadData('https://raw.githubusercontent.com/AsherLHJ/CMAA5024_Data/refs/heads/main/CMAA5024_Final_data/data_1128_cls_2.json')">游戏人物与内容</button>
+    <button id="btn3" class="btn btn-link btn-outline-light" onclick="loadData('https://raw.githubusercontent.com/AsherLHJ/CMAA5024_Data/refs/heads/main/CMAA5024_Final_data/data_1128_cls_3.json')">游戏视觉与音效</button>
+    <button id="btn4" class="btn btn-link btn-outline-light" onclick="loadData('https://raw.githubusercontent.com/AsherLHJ/CMAA5024_Data/refs/heads/main/CMAA5024_Final_data/data_1128_cls_4.json')">游戏开发与制作</button>
+    <button id="btn5" class="btn btn-link btn-outline-light" onclick="loadData('https://raw.githubusercontent.com/AsherLHJ/CMAA5024_Data/refs/heads/main/CMAA5024_Final_data/data_1128_cls_5.json')">游戏问题与支持</button>
+    <button id="btn6" class="btn btn-link btn-outline-light" onclick="loadData('https://raw.githubusercontent.com/AsherLHJ/CMAA5024_Data/refs/heads/main/CMAA5024_Final_data/data_1128_cls_6.json')">游戏发布与推广</button>
+    <button id="btn7" class="btn btn-link btn-outline-light" onclick="loadData('https://raw.githubusercontent.com/AsherLHJ/CMAA5024_Data/refs/heads/main/CMAA5024_Final_data/data_1128_cls_7.json')">游戏评价与反馈</button>
+    <button id="btn8" class="btn btn-link btn-outline-light" onclick="loadData('https://raw.githubusercontent.com/AsherLHJ/CMAA5024_Data/refs/heads/main/CMAA5024_Final_data/data_1128_cls_8.json')">其他</button>
+    <button id="btn9" class="btn btn-link btn-outline-light" onclick="setUserQuestion('黑神话悟空在哪里')">问题：黑神话悟空在哪里</button>
+    <button id="btn10" class="btn btn-link btn-outline-light" onclick="setUserQuestion('量子计算在太空')">问题：量子计算在太空</button>
+    <button id="btn11" class="btn btn-link btn-outline-light" onclick="setUserQuestion('蜘蛛精')">问题：蜘蛛精</button>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/roughjs/bundled/rough.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!-- 引入 Bootstrap -->
+  <script>
+    let userQuestion = ""; // 声明全局的userQuestion变量，用于存储用户问题
+    
+    function setUserQuestion(value) {
+      userQuestion = value;
+      console.log("userQuestion: ", userQuestion);
+    }
+
+    // 加载默认数据
+    loadData("https://raw.githubusercontent.com/AsherLHJ/CMAA5024_Data/refs/heads/main/CMAA5024_Final_data/data_1128_cls_2.json");
+    
+    function loadData(url) {
+      // 清除之前加载的数据
+      d3.select("svg").remove();
+      d3.json(url).then(data => {
+        // 获取浏览器窗口的宽度和高度
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        const LinkLength = 10; // 设置Link的长度
+        const sizeDivisor_cluster = 5; // 设置cluster节点大小的除数
+        const sizeDivisor_keywords = 5; // 设置keywords节点大小的除数
+
+        const leafNodeRadius = 3; // 叶子节点半径固定值
+        const minClusterNodeRadius = 10; // Cluster节点半径最小值
+        const minKeywordsNodeRadius = 26; // Keywords节点半径最小值
+
+
+        const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+        const links = data.links.map(d => ({...d}));
+        const nodes = data.nodes.map(d => ({...d}));
+
+        const simulation = d3.forceSimulation(nodes)
+          // 变化link长度
+        .force("link", d3.forceLink(links).id(d => {
+            return d.id;
+          }).distance(d => {
+            if (d.source.group.endsWith("_cluster")) {
+              var size_cluster = d.source.radius / sizeDivisor_cluster;
+              return size_cluster < minClusterNodeRadius? minClusterNodeRadius + leafNodeRadius + LinkLength : size_cluster + leafNodeRadius + LinkLength;
+            }
+            else {
+              var size = d.source.radius / sizeDivisor_keywords;
+              return size < minKeywordsNodeRadius?
+                minKeywordsNodeRadius + (d.target.radius / sizeDivisor_cluster < minClusterNodeRadius? minClusterNodeRadius : (d.target.radius / sizeDivisor_cluster)) + LinkLength : size + (d.target.radius / sizeDivisor_cluster < minClusterNodeRadius? minClusterNodeRadius : (d.target.radius / sizeDivisor_cluster)) + LinkLength;
+            }
+
+          }).strength(2)) // 设置link的刚度值.strength()
+
+        .force("charge", d3.forceManyBody().strength(-10)) // 设置排斥力大小
+          //.force("charge", null) // 设置排斥力为空
+        .force("x", d3.forceX())
+        .force("y", d3.forceY());
+
+        const svg = d3.create("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .attr("viewBox", [-width / 2, -height / 2, width, height])
+        .attr("style", "max-width: 100%; height: auto;");
+
+        const link = svg.append("g")
+        .attr("stroke", "#999")
+        .attr("stroke-opacity", 0.6) // link线段的透明度
+        .selectAll("line")
+        .data(links)
+        .join("line")
+          //.attr("stroke-width", d => Math.sqrt(d.value)); // link线段的宽度
+        .attr("stroke-width", 1); // link线段的宽度
+
+
+        const node = svg.append("g")
+        .attr("fill", "currentColor")
+        .selectAll("g")
+        .data(nodes)
+        .join("g");
+
+        node.append("circle")
+        .attr("stroke", d => {
+            if (d.group.endsWith("_keywords")) {
+              return "seagreen";
+            } else {
+              return "white";
+            }
+          })
+        .attr("stroke-width", 1.5)
+        .attr("fill", d => {
+            if (d.group.endsWith("_keywords")) {
+              return "white";
+            } else {
+              return color(d.group);
+            }
+          })
+        .attr("r", d => {
+            // 根据节点的group属性设置最小半径
+            if (d.group.endsWith("_leaf")) {
+              return leafNodeRadius;
+            } else if (d.group.endsWith("_cluster")) {
+              var size_cluster = d.radius / sizeDivisor_cluster;
+              return size_cluster < minClusterNodeRadius? minClusterNodeRadius : size_cluster;
+            }
+            else {
+              var size = d.radius / sizeDivisor_keywords;
+              return size < minKeywordsNodeRadius? minKeywordsNodeRadius : size;
+            }
+          });
+
+        node.on("mouseover", function (event, d) {
+          // 当前node轮廓加粗
+          d3.select(this).select("circle")
+          .attr("stroke", "seagreen")
+          .attr("stroke-width", 3);
+
+          const tooltip = d3.select("body")
+          .append("div")
+          .attr("class", "tooltip")
+          .style("position", "absolute")
+          .style("background-color", "white")
+          .style("border", "solid")
+          .style("border-width", "1px")
+          .style("border-radius", "5px")
+          .style("border-color", "seagreen")
+          .style("font-family", "Hanzipen SC")
+          .style("font-size", "18px")
+          .style("padding", "10px")
+          .style("opacity", 0.8)
+          .html(d.id); // 显示节点的id
+          tooltip.style("left", (event.pageX + 10) + "px")
+          .style("top", (event.pageY - 28) + "px");
+        })
+      .on("mouseout", function () {
+          // 当前node轮廓恢复
+          d3.select(this).select("circle")
+          .attr("stroke", function (d) {
+              if (d.group.endsWith("_keywords")) {
+                return "seagreen";
+              } else {
+                return "white";
+              }
+            })
+          .attr("stroke-width", 1.5);
+
+          d3.select(".tooltip").remove(); // 移除提示信息
+        });
+
+        node.filter(d => d.group.endsWith("_keywords"))
+        .append("text")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("text-anchor", "middle") // 水平居中
+        .attr("dominant-baseline", "middle") // 垂直居中
+        .text(d => d.id)
+        .clone(true).lower()
+        .attr("fill", "blue")
+        .attr("stroke", "blue")
+        .attr("stroke-width", 6);
+
+        // 实时监测userQuestion是否有值，有值则执行突出显示相关逻辑
+        const checkUserQuestion = setInterval(() => {
+          if (userQuestion!== "") {
+            console.log("实时监测userQuestion: ", userQuestion);
+
+            // START-------------------------以userQuestion作为输入，在当前页面中模糊搜索最相关的前三个节点
+            const showTopNResults = 3;  // 用户自定义显示前N个结果
+
+            // 将当前nodes中每个数据的id属性提取出来，组成一个数组
+            const questionList = nodes.map(d => d.id);
+            // 假设userQuestion是包含要搜索内容的字符串变量
+            const fuse = new Fuse(questionList)
+            const result = fuse.search(userQuestion, {limit: showTopNResults});
+            // 创建一个新的数组，将每个元素的id属性提取出来
+            const resultArray = result.map(item => item.item);
+            console.log("模糊搜索结果: ", result);
+            console.log("模糊搜索结果的字符串resultArray: ", resultArray);
+
+            // END-------------------------以userQuestion作为输入，在当前页面中模糊搜索最相关的前三个节点
+
+            const targetNodeMultiple_key = 4; // 目标node变大的倍数(key节点)
+            const targetNodeMultiple_cluster = 15; // 目标node变大的倍数(cluster节点)
+            const targetNodeMultiple_leaf = 5; // 目标node变大的倍数(leaf节点)
+            const targetNodeGrowTime = 1000; // 目标node变大过程的持续时间
+            const afterGrowKeepTime = 5000; // 节点变大后的所有过程的总时间（保持时间+缩小时间）
+            const targetNodeReduceRime = 1000; // 目标node缩小的持续时间
+            const otherNodeRecoverTime = 1000; // 其他node恢复颜色的时间
+
+            let userQuestionNode_1;
+            let userQuestionNode_2;
+            let userQuestionNode_3;
+            
+            // 找到对应的节点
+            userQuestionNode_1 = nodes.find(node => node.id === resultArray[0]);
+            userQuestionNode_2 = nodes.find(node => node.id === resultArray[1]);
+            userQuestionNode_3 = nodes.find(node => node.id === resultArray[2]);
+
+            // 得到前三个问题所属的keywords节点
+            let textNode_1 = "";
+            if (userQuestionNode_1){
+              // 提取userQuestionNode_1的group属性的"_leaf"之前的字符串
+              textNode_1 = nodes.find(node => node.id === userQuestionNode_1.group.split("_leaf")[0]);
+            }
+            let textNode_2 = "";
+            if (userQuestionNode_2){
+              // 提取userQuestionNode_2的group属性的"_leaf"之前的字符串
+              textNode_2 = nodes.find(node => node.id === userQuestionNode_2.group.split("_leaf")[0]);
+            }
+            let textNode_3 = "";
+            if (userQuestionNode_3){
+              // 提取userQuestionNode_3的group属性的"_leaf"之前的字符串
+              textNode_3 = nodes.find(node => node.id === userQuestionNode_3.group.split("_leaf")[0]);
+            }
+
+            if (resultArray.length > 0) {
+              if (userQuestionNode_1){
+                node.filter(n => n === userQuestionNode_1)
+                    .append("text")
+                    .attr("x", 10)
+                    .attr("y", "0.31em")
+                    .text(d => d.id)
+                    .clone(true).lower()
+                    .attr("fill", "white")
+                    .attr("stroke", "none")
+                    .attr("stroke-width", 3)
+                    .attr("font-size", "18px");
+              }
+              if (userQuestionNode_2){
+                node.filter(n => n === userQuestionNode_2)
+                    .append("text")
+                    .attr("x", 10)
+                    .attr("y", "0.31em")
+                    .text(d => d.id)
+                    .clone(true).lower()
+                    .attr("fill", "white")
+                    .attr("stroke", "none")
+                    .attr("stroke-width", 3)
+                    .attr("font-size", "18px");
+              }
+              if (userQuestionNode_3){
+                node.filter(n => n === userQuestionNode_3)
+                    .append("text")
+                    .attr("x", 10)
+                    .attr("y", "0.31em")
+                    .text(d => d.id)
+                    .clone(true).lower()
+                    .attr("fill", "white")
+                    .attr("stroke", "none")
+                    .attr("stroke-width", 3)
+                    .attr("font-size", "18px");
+              }
+
+              // 将除了目标问题节点和其所属keywords节点以外的其他所有节点变透明
+              node.filter(n => n!== userQuestionNode_1 && n!== userQuestionNode_2 && n!== userQuestionNode_3 
+                && n!== textNode_1 && n!== textNode_2 && n!== textNode_3
+              )
+              .select("circle")
+              .transition()
+              .duration(targetNodeGrowTime)
+              .attr("stroke-opacity", "0.1") // 设置轮廓的透明度
+              .attr("fill-opacity", "0.1"); // 设置填充颜色的透明度
+
+              // 将除了目标问题节点和其所属keywords节点以外的其他所有节点的text变透明
+              node.filter(n => n!== userQuestionNode_1 && n!== userQuestionNode_2 && n!== userQuestionNode_3 
+              && n!== textNode_1 && n!== textNode_2 && n!== textNode_3)
+                  .selectAll("text")
+                  .transition()
+                  .duration(targetNodeGrowTime)
+                  .attr("stroke-opacity", "0.1") // 设置轮廓的透明度
+                  .attr("fill-opacity", "0.1"); // 设置填充颜色的透明度
+
+              // afterGrowKeepTime秒后恢复原始状态
+              setTimeout(() => {
+                // 恢复除了目标问题节点和其所属keywords节点以外的其他所有节点的透明度
+                node.filter(n => n!== userQuestionNode_1 && n!== userQuestionNode_2 && n!== userQuestionNode_3)
+                .select("circle")
+                .transition()
+                .duration(otherNodeRecoverTime)
+                .attr("stroke-opacity", "1") // 设置轮廓的透明度
+                .attr("fill-opacity", "1") // 设置填充颜色的透明度
+
+                // 移除node.filter(n => n === userQuestionNode_1)的text
+                node.filter(n => n === userQuestionNode_1)
+                    .selectAll("text")
+                    .remove();
+                // 移除node.filter(n => n === userQuestionNode_2)的text
+                node.filter(n => n === userQuestionNode_2)
+                    .selectAll("text")
+                    .remove();
+                // 移除node.filter(n => n === userQuestionNode_3)的text
+                node.filter(n => n === userQuestionNode_3)
+                    .selectAll("text")
+                    .remove();
+                
+                //将所有text变为不透明
+                node.selectAll("text")
+                    .transition()
+                    .duration(otherNodeRecoverTime)
+                    .attr("stroke-opacity", "1") // 设置轮廓的透明度
+                    .attr("fill-opacity", "1") // 设置填充颜色的透明度
+
+              }, afterGrowKeepTime);
+            }
+            // 执行一次后清除定时器，避免重复执行（如果不需要重复检测可这样做）
+            // clearInterval(checkUserQuestion);
+
+            userQuestion = ""; // 清空userQuestion的值
+          }
+        }, 100);  // 每100毫秒检查一次，可根据实际需求调整检查频率
+
+        node.call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended));
+
+        simulation.on("tick", () => {
+          link.attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+          node.attr("transform", d => `translate(${d.x}, ${d.y})`);
+        });
+
+        function dragstarted(event) {
+          if (!event.active) simulation.alphaTarget(0.3).restart();
+          event.subject.fx = event.subject.x;
+          event.subject.fy = event.subject.y;
+        }
+
+        function dragged(event) {
+          event.subject.fx = event.x;
+          event.subject.fy = event.y;
+        }
+
+        function dragended(event) {
+          if (!event.active) simulation.alphaTarget(0);
+          event.subject.fx = null;
+          event.subject.fy = null;
+        }
+
+        document.body.appendChild(svg.node());
+      });
+    }
+
+  </script>
+</body>
+
+</html>

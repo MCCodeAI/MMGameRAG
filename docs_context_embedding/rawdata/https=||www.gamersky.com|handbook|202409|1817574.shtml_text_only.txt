@@ -1,0 +1,14 @@
+Title: 《黑神话悟空》Wegame版回档方法 Wegame版怎么回档-游民星空 GamerSky.com
+第1页： 
+展开 
+《黑神话悟空》Wegame版应该怎么回档呢？许多小伙伴和我有着同样的问题，下面是由“jiangwei75822”为大家带来的《黑神话悟空》Wegame版回档方法，希望可以帮助到大家。 
+游戏安装目录（以我的为例）： 
+E:\WeGameApps\rail_apps\BlackMythWukong(2002122)\b1\Saved 
+打开此文件里面还有两个文件夹，其中savegames就是当前的存档，savegamesbackup就是之前的存档。 
+在savegamesbackup还有三个文件夹，当天的文件是放在01RealtimeBackup这个文件夹中，按时间顺序排列，选择好想要回档的时间段。 
+将其内的全部文件复制到：E:\WeGameApps\rail_apps\BlackMythWukong(2002122)\b1\Saved\SaveGames\17293822637842316291，覆盖原有文档即可。 
+《黑神话：悟空》互动地图 
+ 游民星空
+《黑神话悟空》原创全收集互动地图 现已上线！全部NPC支线、隐藏点位、重要道具一应俱全。还配有详尽的图文与视频攻略，一站式满足所有收集需求！
+0 
+0 

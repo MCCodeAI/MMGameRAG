@@ -120,6 +120,10 @@ class AgentX:
                     break
             # Add the complete response to the chat history
             
+            self.chat_history.pop()# Removes the last message from the chat history. This is typically done to prevent redundant or verbose prompts in the history.
+
+            self.add_to_chat_history(HumanMessage(content=user_prompt.splitlines()[0])) # Adds only the first line of the user prompt as a new message in the chat history. This ensures the agent retains the primary context or intent of the user's input while reducing verbosity and not reaching llm's context limit.
+
             self.add_to_chat_history(AIMessage(content=partial_response))
             print(self.chat_history)
 
@@ -149,6 +153,10 @@ class AgentX:
                 complete_response = response.content
             else:
                 complete_response = "No response content returned by LLM."
+
+            self.chat_history.pop()# Removes the last message from the chat history. This is typically done to prevent redundant or verbose prompts in the history.
+
+            self.add_to_chat_history(HumanMessage(content=user_prompt.splitlines()[0])) # Adds only the first line of the user prompt as a new message in the chat history. This ensures the agent retains the primary context or intent of the user's input while reducing verbosity and not reaching llm's context limit.
 
             # Add the complete response to the chat history
             self.add_to_chat_history(AIMessage(content=complete_response))

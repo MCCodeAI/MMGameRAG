@@ -4,9 +4,9 @@ from dotenv import load_dotenv,find_dotenv
 import os
 from tqdm import tqdm  
 import uuid
-from time import *
+from time import sleep
 
-from langchain.vectorstores.neo4j_vector import Neo4jVector
+from langchain_community.vectorstores import Neo4jVector
 from langchain_openai import OpenAIEmbeddings
 from langchain_openai import ChatOpenAI, OpenAI
 
@@ -25,39 +25,39 @@ kg=None
 vector_index=None
 
 fusionbot_agent_instructions = """
-你是《黑神话：悟空》这款游戏的AI攻略助手，根据用户问题和提供的网页内容为玩家生成详尽的同时包含文本和图像的游戏攻略。
+你是《黑神话：悟空》这款游戏的AI攻略助手，根据问题和提供的网页内容为玩家生成详尽的同时包含文本和图像的游戏攻略。
 
-在提供的网页内容中，有若干个页面，每个页面包含 Title 和若干个 Subtitle，其中每个 Subtitle 都有 page_url 和 content，content 中有文本和以 <img> 标签表示的图片。例如：
+在提供的网页内容中，有若干个页面，每个页面包含 Title 和若干个 Subtitle，其中每个 Subtitle 都有 Subtitle_page_url 和 content，content 中有文本和以 <img> 标签表示的图片。例如：
+-------------
 Title: 《黑神话悟空》xx指南
-    - SubTitle: ...
-    - Subtitle_page_url: ...
-    - Subtitle_content:
-        文本
-        <img src="...">
-        文本
-        <img src="...">
-        <img src="...">
-        文本
-        ...
+ SubTitle: ...
+ Subtitle_page_url: ...
+ Subtitle_content:
+文本
+<img src="...">
+文本
+<img src="...">
+<img src="...">
+文本
+...
+-------------
 每个 <img> 都是其上面的文本内容的图像展示。
 
-请按照如下步骤和 Markdown 格式生成答案：
-1. 判断哪些网页内容和用户问题相关，基于以下标准：
-    - 内容中是否包含与问题相关的关键词。
-    - 内容是否直接回答了用户的问题，或提供了相关背景信息。
-    - 是否存在明确的上下文逻辑关联。
-2. 将相关的网页的文本内容和其中的图像按如下顺序整理：
-    - 标题及其 URL。
-    - 每个 Subtitle 的文本内容与图片。
-    - 保持内容按照原网页逻辑顺序排列。
-    - **图像输出格式**：答案中的图像要按如下格式输出：
-      [![图片说明](https://www.xyz.com/img1.jpg)](https://www.xyz.com)
-3. 在文末总结并列出你认为相关的网页的内容点，并分别给出网页的标题和 page_url。
-4. 最后写出一句话总结。
-
+请按照如下步骤生成答案：
+1. 判断哪些网页内容和问题相关，基于以下标准：
+内容中是否包含与问题相关的关键词。
+内容是否直接回答了用户的问题，或提供了相关背景信息。
+是否存在明确的上下文逻辑关联。
+2. 保持文本和图像内容按照原网页逻辑顺序排列，保留和上下文相关的尽可能多的图像内容。
+图像输出格式：答案中的图像的src和对应的page_url从提供的网页内容中获取，并按如下格式输出（图片不要缩进）：
+[![图片说明](img src)](Subtitle_page_url)
+例如:
+[![这是xx图片](https://img1.gamersky.com/xxx.jpg)](https://www.gamersky.com/yyy.html)
+3. 在文末列出网页的标题和链接。
+4. 最后写一个与游戏相关的冷笑话，一定要够冷。
 5. 如果没有找到相关的网页内容：
-    - 提供一个简短的回答，例如：“未能找到与用户问题相关的网页内容。”
-    - 不必强行输出图片或总结。
+提供一个简短的回答，例如：“未能找到与用户问题相关的网页内容。”
+不必强行输出图片或总结。
 
 """
 
@@ -540,12 +540,14 @@ def agent_flow_kg(user_q):
     # Log the start of similarity search in the vector index
     log_message("Starting similarity search in the vector index for the user's query.")
     shared_flow_state_str.value = "🔍 Performing similarity search..."  # Indicate progress of the search
-    response = vector_index.similarity_search_with_relevance_scores(user_q, k=2)
+    response = vector_index.similarity_search_with_relevance_scores(user_q, k=4)
 
     # Log after retrieving the similarity search results
     log_message("Similarity search completed. Processing retrieved documents.")
     shared_flow_state_str.value = "📄 Processing retrieved documents..."  # Indicate document processing
 
+    output = []  # Prepare the output context
+    output.append('-------------')
     # Process each retrieved document
     for document, score in response:
         uuid = document.metadata.get('uuid', 'No UUID found')
@@ -556,42 +558,41 @@ def agent_flow_kg(user_q):
         # Retrieve title nodes connected to the first subtitle node
         titles = kg.get_related_nodes('Subtitle', subtitles[0].get('uuid'), 'HAS_SUBTITLE', 'INCOMING')
 
-        output = []  # Prepare the output context
+        
         output.append('Title: ' + titles[0].get('name'))
 
         # Retrieve all subtitle nodes related to the title node
         subtitles = kg.get_related_nodes('Title', titles[0].get('uuid'), 'HAS_SUBTITLE', 'OUTGOING')
 
         for subtitle in subtitles:
-            output.append('  - SubTitle: ' + subtitle.get('name'))
+            output.append(' SubTitle: ' + subtitle.get('name'))
 
             # Retrieve the text nodes associated with the current subtitle
             subtitle_txt = kg.get_related_nodes('Subtitle', subtitle.get('uuid'), 'HAS_TXT', 'OUTGOING')
-            output.append('  - Subtitle_page_url: ' + revert_url(subtitle_txt[0].get('page_url')))
-            output.append('  - Subtitle_content: ' + subtitle_txt[0].get('content') + '\n')
-
+            output.append(' Subtitle_page_url: ' + revert_url(subtitle_txt[0].get('page_url')))
+            output.append(' Subtitle_content: ' + subtitle_txt[0].get('content') + '\n')
         output.append('-------------')
-        context_q = '\n'.join(output)
+        
+    context_q = '\n'.join(output)
 
-        # Log the completion of context generation
-        log_message("Context for FusionBot generated. Preparing to send the query.")
-        shared_flow_state_str.value = "🤖 Preparing query for FusionBot..."  # Indicate query preparation
+    # Log the completion of context generation
+    log_message("Context for FusionBot generated. Preparing to send the query.")
+    shared_flow_state_str.value = "🤖 Preparing query for FusionBot..."  # Indicate query preparation
 
-        # Use the FusionBot agent to generate an answer with images
-        answer_with_image = fusionbot_agent.stream_response(
-            f"The user's question is: {user_q}, and the webpage content is:\n{context_q}"
-        )
+    # Use the FusionBot agent to generate an answer with images
+    answer_with_image = fusionbot_agent.stream_response(f"问题是：' {user_q} '\n网页内容是:\n\n{context_q}")
 
+    # answer_with_image = "ssssss"
     # Log the completion of the FusionBot query
     log_message("FusionBot has completed the response generation.")
-    shared_flow_state_str.value = "✅ Response generation completed."  # Indicate completion
+    # shared_flow_state_str.value = "✅ Response generation completed."  # Indicate completion
 
     return answer_with_image
 
 
-
-
-
+# 全丹方收集指南
+# Error: 'builtin_function_or_method' object has no attribute 'sleep'
+ 
 
 
 # When running as a standalone script
@@ -601,7 +602,7 @@ if __name__ == "__main__":
     # create_knowledge_graph()
 
 # When imported as a module
-if __name__ == "__mmgamer_kgrag__":
+if __name__ == "mmgamer_kgrag":
     pass
     init_kg_vectorindex()
     print(__name__)
