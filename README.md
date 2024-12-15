@@ -19,7 +19,7 @@ Project repository: [https://github.com/MCCodeAI/MMGameRAG](https://github.com/M
   - `index.html`: The project’s main entry point.
   - `mmgameragvis.html`: A template for visualizing game data.
   - `1212_2135_HOME_4_Class2.html`: A template for search data visualization, showcasing results and trends effectively.
-- `dataset/`: Contains cleaned data from various search engines.
+- `dataset/`: Contains raw and cleaned data from various search engines.
 - `vectorstore/`: Manages embeddings and data storage for retrieval operations.
 - `docs/`: Contains additional documentation and assets, such as walkthroughs and context embeddings.
 - `userlib/`: Custom libraries for extended functionality.
