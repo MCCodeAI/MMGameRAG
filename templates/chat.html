@@ -236,6 +236,8 @@ function startStreaming(rawText) {
           // Start streaming response from the backend
           startStreaming(rawText);
           
+
+          window.parent.frames["topIframe"].postMessage(rawText, "http://127.0.0.1:5501");
           
 
           

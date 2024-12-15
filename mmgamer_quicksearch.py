@@ -986,7 +986,7 @@ def agent_flow_quick(user_q):
 
     # Log the completion of the FusionBot agent's response generation
     log_message("✅ FusionBot response generated successfully.")
-    shared_flow_state_str.value = "🎉 Answer generation completed."  # Indicate the final step
+    # shared_flow_state_str.value = "🎉 Answer generation completed."  # Indicate the final step
 
     return answer_with_image
      

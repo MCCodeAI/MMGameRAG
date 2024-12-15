@@ -25,7 +25,7 @@
     }
     svg text{
       font-family: 'Hanzipen SC', sans-serif;
-      font-size: 18px;  
+      font-size: 14px;  
       fill: seagreen; 
     }
     button{
@@ -45,9 +45,9 @@
     <button id="btn6" class="btn btn-link btn-outline-light" onclick="loadData('https://raw.githubusercontent.com/AsherLHJ/CMAA5024_Data/refs/heads/main/CMAA5024_Final_data/data_1128_cls_6.json')">游戏发布与推广</button>
     <button id="btn7" class="btn btn-link btn-outline-light" onclick="loadData('https://raw.githubusercontent.com/AsherLHJ/CMAA5024_Data/refs/heads/main/CMAA5024_Final_data/data_1128_cls_7.json')">游戏评价与反馈</button>
     <button id="btn8" class="btn btn-link btn-outline-light" onclick="loadData('https://raw.githubusercontent.com/AsherLHJ/CMAA5024_Data/refs/heads/main/CMAA5024_Final_data/data_1128_cls_8.json')">其他</button>
-    <button id="btn9" class="btn btn-link btn-outline-light" onclick="setUserQuestion('黑神话悟空在哪里')">问题：黑神话悟空在哪里</button>
+    <!-- <button id="btn9" class="btn btn-link btn-outline-light" onclick="setUserQuestion('黑神话悟空在哪里')">问题：黑神话悟空在哪里</button>
     <button id="btn10" class="btn btn-link btn-outline-light" onclick="setUserQuestion('量子计算在太空')">问题：量子计算在太空</button>
-    <button id="btn11" class="btn btn-link btn-outline-light" onclick="setUserQuestion('蜘蛛精')">问题：蜘蛛精</button>
+    <button id="btn11" class="btn btn-link btn-outline-light" onclick="setUserQuestion('蜘蛛精')">问题：蜘蛛精</button> -->
   </div>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -57,6 +57,16 @@
   <script>
     let userQuestion = ""; // 声明全局的userQuestion变量，用于存储用户问题
     
+          // Listen for messages from other windows
+    window.addEventListener("message", function(event) {
+      if (event.origin === "http://127.0.0.1:5000") {
+          console.log("Received message from chat.html:", event.data);
+          userQuestion = event.data;
+
+        }
+      }, false);
+
+
     function setUserQuestion(value) {
       userQuestion = value;
       console.log("userQuestion: ", userQuestion);
@@ -183,6 +193,14 @@
           tooltip.style("left", (event.pageX + 10) + "px")
           .style("top", (event.pageY - 28) + "px");
         })
+      .on("click", function(event, d) {
+            console.log(d.id);
+            // sendDataToOtherFrame(d.data.name);
+            // sendMessage(d.data.name);
+            // parent.sharedData = d.data.name;
+            // console.log(parent.sharedData);
+            window.parent.frames["firstIframe"].postMessage(d.id, "http://127.0.0.1:5000");
+        })
       .on("mouseout", function () {
           // 当前node轮廓恢复
           d3.select(this).select("circle")
@@ -234,7 +252,7 @@
             const targetNodeMultiple_cluster = 15; // 目标node变大的倍数(cluster节点)
             const targetNodeMultiple_leaf = 5; // 目标node变大的倍数(leaf节点)
             const targetNodeGrowTime = 1000; // 目标node变大过程的持续时间
-            const afterGrowKeepTime = 5000; // 节点变大后的所有过程的总时间（保持时间+缩小时间）
+            const afterGrowKeepTime=8000; // 节点变大后的所有过程的总时间（保持时间+缩小时间）
             const targetNodeReduceRime = 1000; // 目标node缩小的持续时间
             const otherNodeRecoverTime = 1000; // 其他node恢复颜色的时间
 

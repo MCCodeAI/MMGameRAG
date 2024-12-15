@@ -1,0 +1,589 @@
+2024-12-14 16:06:13,565 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:06:15,297 - Default - MainProcess - 86026 - Found 10 links containing '黑神话悟空第二回有哪些法宝？' on https://soso.gamersky.com/cse/search?q=黑神话悟空第二回有哪些法宝？&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:06:15,298 - Default - MainProcess - 86026 - 🔗 Links fetched: ['http://nourl.ubs.baidu.com/279', 'https://www.gamersky.com/handbook/202408/1803442.shtml', 'https://www.gamersky.com/handbook/202409/1809888.shtml', 'https://wap.gamersky.com/gl/Content-1803237_2.html', 'https://wap.gamersky.com/gl/Content-1803231_17.html', 'http://club.gamersky.com/m/activity/857793?club=213', 'https://down.gamersky.com/pc/202412/1858874.shtml', 'http://club.gamersky.com/activity/620345', 'https://ku.gamersky.com/release/release/pc_202408/', 'https://down.gamersky.com/soft/1314156_48299/?tag=wap']
+2024-12-14 16:06:15,314 - Default - MainProcess - 86026 - ⚠️ Failed to fetch title for link: http://nourl.ubs.baidu.com/279
+2024-12-14 16:06:16,856 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1803442.shtml (Title: 《黑神话悟空》第二回法宝获取方法 定风珠怎么获得-游民星空 GamerSky.com)
+2024-12-14 16:06:17,637 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://www.gamersky.com/handbook/202409/1809888.shtml (Title: 《黑神话悟空》第二章黄风岭全收集攻略-游民星空 GamerSky.com)
+2024-12-14 16:06:18,375 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://wap.gamersky.com/gl/Content-1803237_2.html (Title: 《黑神话悟空》攻略路线推荐 支线、隐藏一网打尽_第二回-黄风岭 :: 游民星空 GamerSky.com)
+2024-12-14 16:06:19,006 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://wap.gamersky.com/gl/Content-1803231_17.html (Title: 《黑神话悟空》全探索图文攻略 支线+隐藏+重要收集路线讲解_第二回-挟魂崖 碎石台 :: 游民星空 GamerSky.com)
+2024-12-14 16:06:19,702 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/m/activity/857793?club=213 (Title: 【黑神话：悟空】第18~21难成就&顶级法宝「定风珠」收集_黑神话：悟空|游民星空)
+2024-12-14 16:06:20,593 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://down.gamersky.com/pc/202412/1858874.shtml (Title: 《黑神话悟空》隐身铁驭取代乌金套装MOD_黑神话：悟空下载 - 游民星空下载中心)
+2024-12-14 16:06:21,262 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/activity/620345 (Title: 历经3年 《黑神话：悟空》终于定档_百家争鸣|游民星空)
+2024-12-14 16:06:22,401 - Default - MainProcess - 86026 - ⚠️ Failed to fetch title for link: https://ku.gamersky.com/release/release/pc_202408/
+2024-12-14 16:06:23,918 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://down.gamersky.com/soft/1314156_48299/?tag=wap (Title: 黑神话悟空法宝_黑神话悟空攻略秘籍_ 游民星空 Gamersky.com)
+2024-12-14 16:06:23,919 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202408/1803442.shtml', 'https://wap.gamersky.com/gl/Content-1803237_2.html', 'https://wap.gamersky.com/gl/Content-1803231_17.html', 'https://down.gamersky.com/soft/1314156_48299/?tag=wap']
+2024-12-14 16:06:31,029 - Default - SpawnPoolWorker-7 - 86471 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1803442.shtml
+2024-12-14 16:06:31,030 - Default - SpawnPoolWorker-7 - 86471 - -----------------------------------------------------------
+2024-12-14 16:06:31,030 - Default - SpawnPoolWorker-7 - 86471 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1803442.shtml. Total URLs: 1
+2024-12-14 16:06:31,057 - Default - SpawnPoolWorker-4 - 86468 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1803237_2.html
+2024-12-14 16:06:31,063 - Default - SpawnPoolWorker-4 - 86468 - -----------------------------------------------------------
+2024-12-14 16:06:31,065 - Default - SpawnPoolWorker-4 - 86468 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1803237_2.html. Total URLs: 1
+2024-12-14 16:06:31,071 - Default - SpawnPoolWorker-8 - 86472 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1803231_17.html
+2024-12-14 16:06:31,077 - Default - SpawnPoolWorker-12 - 86476 - Starting crawl for URL: https://down.gamersky.com/soft/1314156_48299/?tag=wap
+2024-12-14 16:06:31,077 - Default - SpawnPoolWorker-8 - 86472 - -----------------------------------------------------------
+2024-12-14 16:06:31,078 - Default - SpawnPoolWorker-8 - 86472 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1803231_17.html. Total URLs: 1
+2024-12-14 16:06:31,080 - Default - SpawnPoolWorker-12 - 86476 - -----------------------------------------------------------
+2024-12-14 16:06:31,081 - Default - SpawnPoolWorker-12 - 86476 - New crawled URL added to crawled_urls.json: https://down.gamersky.com/soft/1314156_48299/?tag=wap. Total URLs: 1
+2024-12-14 16:06:31,132 - Default - SpawnPoolWorker-4 - 86468 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1803237_2.html
+2024-12-14 16:06:31,133 - Default - SpawnPoolWorker-4 - 86468 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1803237_2.html (Depth: 1)
+2024-12-14 16:06:31,134 - Default - SpawnPoolWorker-4 - 86468 - New link added to links.json: https://wap.gamersky.com/gl/Content-1803237_2.html. Total links: 1
+2024-12-14 16:06:31,134 - Default - SpawnPoolWorker-4 - 86468 - Error crawling URL: https://wap.gamersky.com/gl/Content-1803237_2.html, Error: list index out of range
+2024-12-14 16:06:31,136 - Default - SpawnPoolWorker-8 - 86472 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1803231_17.html
+2024-12-14 16:06:31,137 - Default - SpawnPoolWorker-8 - 86472 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1803231_17.html (Depth: 1)
+2024-12-14 16:06:31,137 - Default - SpawnPoolWorker-8 - 86472 - New link added to links.json: https://wap.gamersky.com/gl/Content-1803231_17.html. Total links: 1
+2024-12-14 16:06:31,137 - Default - SpawnPoolWorker-8 - 86472 - Error crawling URL: https://wap.gamersky.com/gl/Content-1803231_17.html, Error: list index out of range
+2024-12-14 16:06:31,203 - Default - SpawnPoolWorker-7 - 86471 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1803442.shtml
+2024-12-14 16:06:31,205 - Default - SpawnPoolWorker-7 - 86471 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1803442.shtml (Depth: 1)
+2024-12-14 16:06:31,206 - Default - SpawnPoolWorker-7 - 86471 - New link added to links.json: https://www.gamersky.com/handbook/202408/1803442.shtml. Total links: 1
+2024-12-14 16:06:31,208 - Default - SpawnPoolWorker-7 - 86471 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1803442.shtml
+2024-12-14 16:06:31,208 - Default - SpawnPoolWorker-7 - 86471 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1803442.shtml
+2024-12-14 16:06:31,378 - Default - SpawnPoolWorker-12 - 86476 - Success on attempt 1 for https://down.gamersky.com/soft/1314156_48299/?tag=wap
+2024-12-14 16:06:31,378 - Default - SpawnPoolWorker-12 - 86476 - Found '黑神话' in full HTML at https://down.gamersky.com/soft/1314156_48299/?tag=wap (Depth: 1)
+2024-12-14 16:06:31,379 - Default - SpawnPoolWorker-12 - 86476 - New link added to links.json: https://down.gamersky.com/soft/1314156_48299/?tag=wap. Total links: 1
+2024-12-14 16:06:31,379 - Default - SpawnPoolWorker-12 - 86476 - Error crawling URL: https://down.gamersky.com/soft/1314156_48299/?tag=wap, Error: list index out of range
+2024-12-14 16:06:31,421 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:06:31,421 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:07:36,046 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:07:36,895 - Default - MainProcess - 86026 - Found 7 links containing '第二回定风珠如何获取' on https://soso.gamersky.com/cse/search?q=第二回定风珠如何获取&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:07:36,896 - Default - MainProcess - 86026 - 🔗 Links fetched: ['http://nourl.ubs.baidu.com/279', 'https://www.gamersky.com/handbook/202408/1803442.shtml', 'https://www.gamersky.com/handbook/202409/1817177.shtml', 'https://wap.gamersky.com/gl/Content-1803442.html', 'https://wap.gamersky.com/gl/Content-1803816.html', 'https://www.gamersky.com/news/ot/index.shtml', 'https://www.gamersky.com/handbook/202408/1803816.shtml']
+2024-12-14 16:07:36,898 - Default - MainProcess - 86026 - ⚠️ Failed to fetch title for link: http://nourl.ubs.baidu.com/279
+2024-12-14 16:07:38,241 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1803442.shtml (Title: 《黑神话悟空》第二回法宝获取方法 定风珠怎么获得-游民星空 GamerSky.com)
+2024-12-14 16:07:39,014 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://www.gamersky.com/handbook/202409/1817177.shtml (Title: 《黑神话悟空》破隐暴击流玩法解析-游民星空 GamerSky.com)
+2024-12-14 16:07:39,733 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://wap.gamersky.com/gl/Content-1803442.html (Title: 《黑神话悟空》第二回法宝获取方法 定风珠怎么获得 :: 游民星空 GamerSky.com)
+2024-12-14 16:07:40,469 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://wap.gamersky.com/gl/Content-1803816.html (Title: 《黑神话悟空》定风珠获取方法 定风珠怎么获得 :: 游民星空 GamerSky.com)
+2024-12-14 16:07:41,350 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://www.gamersky.com/news/ot/index.shtml (Title: 游民星空)
+2024-12-14 16:07:42,132 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1803816.shtml (Title: 《黑神话悟空》定风珠获取方法 定风珠怎么获得-游民星空 GamerSky.com)
+2024-12-14 16:07:42,132 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202408/1803442.shtml', 'https://wap.gamersky.com/gl/Content-1803442.html', 'https://wap.gamersky.com/gl/Content-1803816.html', 'https://www.gamersky.com/handbook/202408/1803816.shtml']
+2024-12-14 16:07:47,849 - Default - SpawnPoolWorker-23 - 86928 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1803442.shtml
+2024-12-14 16:07:47,849 - Default - SpawnPoolWorker-23 - 86928 - -----------------------------------------------------------
+2024-12-14 16:07:47,849 - Default - SpawnPoolWorker-23 - 86928 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1803442.shtml. Total URLs: 1
+2024-12-14 16:07:47,874 - Default - SpawnPoolWorker-20 - 86925 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1803442.html
+2024-12-14 16:07:47,874 - Default - SpawnPoolWorker-20 - 86925 - -----------------------------------------------------------
+2024-12-14 16:07:47,874 - Default - SpawnPoolWorker-20 - 86925 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1803442.html. Total URLs: 1
+2024-12-14 16:07:47,927 - Default - SpawnPoolWorker-20 - 86925 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1803442.html
+2024-12-14 16:07:47,927 - Default - SpawnPoolWorker-20 - 86925 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1803442.html (Depth: 1)
+2024-12-14 16:07:47,928 - Default - SpawnPoolWorker-20 - 86925 - New link added to links.json: https://wap.gamersky.com/gl/Content-1803442.html. Total links: 1
+2024-12-14 16:07:47,928 - Default - SpawnPoolWorker-20 - 86925 - Error crawling URL: https://wap.gamersky.com/gl/Content-1803442.html, Error: list index out of range
+2024-12-14 16:07:47,928 - Default - SpawnPoolWorker-20 - 86925 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1803816.html
+2024-12-14 16:07:47,928 - Default - SpawnPoolWorker-20 - 86925 - -----------------------------------------------------------
+2024-12-14 16:07:47,928 - Default - SpawnPoolWorker-20 - 86925 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1803816.html. Total URLs: 1
+2024-12-14 16:07:47,976 - Default - SpawnPoolWorker-16 - 86921 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1803816.shtml
+2024-12-14 16:07:47,976 - Default - SpawnPoolWorker-16 - 86921 - -----------------------------------------------------------
+2024-12-14 16:07:47,977 - Default - SpawnPoolWorker-16 - 86921 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1803816.shtml. Total URLs: 1
+2024-12-14 16:07:47,978 - Default - SpawnPoolWorker-20 - 86925 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1803816.html
+2024-12-14 16:07:47,979 - Default - SpawnPoolWorker-20 - 86925 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1803816.html (Depth: 1)
+2024-12-14 16:07:47,979 - Default - SpawnPoolWorker-20 - 86925 - New link added to links.json: https://wap.gamersky.com/gl/Content-1803816.html. Total links: 1
+2024-12-14 16:07:47,980 - Default - SpawnPoolWorker-20 - 86925 - Error crawling URL: https://wap.gamersky.com/gl/Content-1803816.html, Error: list index out of range
+2024-12-14 16:07:47,983 - Default - SpawnPoolWorker-23 - 86928 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1803442.shtml
+2024-12-14 16:07:47,984 - Default - SpawnPoolWorker-23 - 86928 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1803442.shtml (Depth: 1)
+2024-12-14 16:07:47,985 - Default - SpawnPoolWorker-23 - 86928 - New link added to links.json: https://www.gamersky.com/handbook/202408/1803442.shtml. Total links: 1
+2024-12-14 16:07:47,985 - Default - SpawnPoolWorker-23 - 86928 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1803442.shtml
+2024-12-14 16:07:47,986 - Default - SpawnPoolWorker-23 - 86928 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1803442.shtml
+2024-12-14 16:07:48,118 - Default - SpawnPoolWorker-16 - 86921 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1803816.shtml
+2024-12-14 16:07:48,120 - Default - SpawnPoolWorker-16 - 86921 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1803816.shtml (Depth: 1)
+2024-12-14 16:07:48,120 - Default - SpawnPoolWorker-16 - 86921 - New link added to links.json: https://www.gamersky.com/handbook/202408/1803816.shtml. Total links: 1
+2024-12-14 16:07:48,121 - Default - SpawnPoolWorker-16 - 86921 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1803816.shtml
+2024-12-14 16:07:48,121 - Default - SpawnPoolWorker-16 - 86921 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1803816.shtml
+2024-12-14 16:07:48,162 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:07:48,162 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:10:11,188 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:10:12,429 - Default - MainProcess - 86026 - Found 10 links containing '《黑神话：悟空》中的丹方避凶药和延寿膏怎么收集？苦海北岸简图是什么？' on https://soso.gamersky.com/cse/search?q=《黑神话：悟空》中的丹方避凶药和延寿膏怎么收集？苦海北岸简图是什么？&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:10:12,430 - Default - MainProcess - 86026 - 🔗 Links fetched: ['http://nourl.ubs.baidu.com/279', 'https://wap.gamersky.com/gl/Content-1803231_37.html', 'https://wap.gamersky.com/gl/Content-1809428_15.html', 'https://www.gamersky.com/handbook/202411/1850815.shtml', 'https://www.gamersky.com/handbook/202408/1802878_5.shtml', 'https://wap.gamersky.com/gl/Content-1814706_12.html', 'https://wap.gamersky.com/gl/Content-1814505_13.html', 'https://www.gamersky.com/handbook/202408/1803231_37.shtml', 'https://www.gamersky.com/handbook/202412/1854166.shtml', 'https://wap.gamersky.com/gl/Content-1802878_3.html']
+2024-12-14 16:10:12,442 - Default - MainProcess - 86026 - ⚠️ Failed to fetch title for link: http://nourl.ubs.baidu.com/279
+2024-12-14 16:10:14,201 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-1803231_37.html (Title: 《黑神话悟空》全探索图文攻略 支线+隐藏+重要收集路线讲解_第三回-苦海 戒语廊 :: 游民星空 GamerSky.com)
+2024-12-14 16:10:14,916 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-1809428_15.html (Title: 《黑神话悟空》重要道具获得攻略 重要道具怎么获得_如意画轴 :: 游民星空 GamerSky.com)
+2024-12-14 16:10:15,683 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://www.gamersky.com/handbook/202411/1850815.shtml (Title: 《黑神话悟空》第二章全收集跑图路线指引_第二回-沙门村 村口-游民星空 GamerSky.com)
+2024-12-14 16:10:16,523 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1802878_5.shtml (Title: 《黑神话悟空》全药材图鉴 各丹方与药材一览_避凶药（良品）-游民星空 GamerSky.com)
+2024-12-14 16:10:17,189 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://wap.gamersky.com/gl/Content-1814706_12.html (Title: 《黑神话悟空》全丹药功效与获取方式 全丹药图鉴_延寿膏 :: 游民星空 GamerSky.com)
+2024-12-14 16:10:17,850 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://wap.gamersky.com/gl/Content-1814505_13.html (Title: 《黑神话悟空》全丹方收集视频攻略_延寿膏 :: 游民星空 GamerSky.com)
+2024-12-14 16:10:18,790 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://www.gamersky.com/handbook/202408/1803231_37.shtml (Title: 《黑神话悟空》全探索图文攻略 支线+隐藏+重要收集路线讲解_第三回-苦海 戒语廊-游民星空 GamerSky.com)
+2024-12-14 16:10:19,567 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://www.gamersky.com/handbook/202412/1854166.shtml (Title: 《黑神话悟空》辰龙支线攻略-游民星空 GamerSky.com)
+2024-12-14 16:10:21,035 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://wap.gamersky.com/gl/Content-1802878_3.html (Title: 《黑神话悟空》全药材图鉴 各丹方与药材一览_延寿膏（上品） :: 游民星空 GamerSky.com)
+2024-12-14 16:10:21,035 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202408/1802878_5.shtml', 'https://wap.gamersky.com/gl/Content-1814706_12.html', 'https://wap.gamersky.com/gl/Content-1814505_13.html', 'https://wap.gamersky.com/gl/Content-1802878_3.html']
+2024-12-14 16:10:27,409 - Default - SpawnPoolWorker-36 - 87768 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1802878_5.shtml
+2024-12-14 16:10:27,410 - Default - SpawnPoolWorker-26 - 87758 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1814706_12.html
+2024-12-14 16:10:27,411 - Default - SpawnPoolWorker-31 - 87763 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1814505_13.html
+2024-12-14 16:10:27,411 - Default - SpawnPoolWorker-31 - 87763 - -----------------------------------------------------------
+2024-12-14 16:10:27,412 - Default - SpawnPoolWorker-31 - 87763 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1814505_13.html. Total URLs: 1
+2024-12-14 16:10:27,413 - Default - SpawnPoolWorker-36 - 87768 - -----------------------------------------------------------
+2024-12-14 16:10:27,413 - Default - SpawnPoolWorker-26 - 87758 - Error crawling URL: https://wap.gamersky.com/gl/Content-1814706_12.html, Error: Expecting value: line 1 column 1 (char 0)
+2024-12-14 16:10:27,414 - Default - SpawnPoolWorker-33 - 87765 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1802878_3.html
+2024-12-14 16:10:27,420 - Default - SpawnPoolWorker-36 - 87768 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1802878_5.shtml. Total URLs: 1
+2024-12-14 16:10:27,421 - Default - SpawnPoolWorker-33 - 87765 - -----------------------------------------------------------
+2024-12-14 16:10:27,421 - Default - SpawnPoolWorker-33 - 87765 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1802878_3.html. Total URLs: 1
+2024-12-14 16:10:27,484 - Default - SpawnPoolWorker-31 - 87763 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1814505_13.html
+2024-12-14 16:10:27,484 - Default - SpawnPoolWorker-33 - 87765 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1802878_3.html
+2024-12-14 16:10:27,485 - Default - SpawnPoolWorker-31 - 87763 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1814505_13.html (Depth: 1)
+2024-12-14 16:10:27,485 - Default - SpawnPoolWorker-33 - 87765 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1802878_3.html (Depth: 1)
+2024-12-14 16:10:27,485 - Default - SpawnPoolWorker-31 - 87763 - New link added to links.json: https://wap.gamersky.com/gl/Content-1814505_13.html. Total links: 1
+2024-12-14 16:10:27,485 - Default - SpawnPoolWorker-33 - 87765 - New link added to links.json: https://wap.gamersky.com/gl/Content-1802878_3.html. Total links: 1
+2024-12-14 16:10:27,485 - Default - SpawnPoolWorker-31 - 87763 - Error crawling URL: https://wap.gamersky.com/gl/Content-1814505_13.html, Error: list index out of range
+2024-12-14 16:10:27,485 - Default - SpawnPoolWorker-33 - 87765 - Error crawling URL: https://wap.gamersky.com/gl/Content-1802878_3.html, Error: list index out of range
+2024-12-14 16:10:27,523 - Default - SpawnPoolWorker-36 - 87768 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1802878_5.shtml
+2024-12-14 16:10:27,525 - Default - SpawnPoolWorker-36 - 87768 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1802878_5.shtml (Depth: 1)
+2024-12-14 16:10:27,525 - Default - SpawnPoolWorker-36 - 87768 - New link added to links.json: https://www.gamersky.com/handbook/202408/1802878_5.shtml. Total links: 1
+2024-12-14 16:10:27,526 - Default - SpawnPoolWorker-36 - 87768 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1802878_5.shtml
+2024-12-14 16:10:27,526 - Default - SpawnPoolWorker-36 - 87768 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1802878_5.shtml
+2024-12-14 16:10:27,573 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:10:27,574 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:11:00,598 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:11:01,152 - Default - MainProcess - 86026 - Found 10 links containing '第二回' on https://soso.gamersky.com/cse/search?q=第二回&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:11:01,153 - Default - MainProcess - 86026 - 🔗 Links fetched: ['https://www.gamersky.com/handbook/202411/1851006_6.shtml', 'https://www.gamersky.com/handbook/202408/1803398_4.shtml', 'https://wap.gamersky.com/gl/Content-1817815_20.html', 'https://wap.gamersky.com/gl/Content-1803873_2.html', 'http://club.gamersky.com/m/activity/864902?club=213', 'https://down.gamersky.com/pc/202409/1815281.shtml', 'https://down.gamersky.com/pc/202409/1815275.shtml', 'https://acg.gamersky.com/news/202010/1332199.shtml', 'http://club.gamersky.com/m/activity/857775?club=213', 'https://shouyou.gamersky.com/news/202005/1290401_2.shtml']
+2024-12-14 16:11:02,785 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202411/1851006_6.shtml (Title: 《黑神话悟空》第二章人物剧情详解 黑神话悟空第二章讲了什么_第二回-黄风怪-游民星空 GamerSky.com)
+2024-12-14 16:11:03,552 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1803398_4.shtml (Title: 《黑神话悟空》第二回蒲团位置及路线 第二章蒲团在哪_第二回-黄风岭-枕石坪枯松下-游民星空 GamerSky.com)
+2024-12-14 16:11:04,295 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://wap.gamersky.com/gl/Content-1817815_20.html (Title: 《黑神话悟空》第二回影神图妖怪位置及图鉴解锁方法_头目-第二回-石母 :: 游民星空 GamerSky.com)
+2024-12-14 16:11:05,496 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-1803873_2.html (Title: 《黑神话悟空》第二回珍玩获取方法 第二章珍玩有哪些_上品-砗磲佩 :: 游民星空 GamerSky.com)
+2024-12-14 16:11:06,541 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/m/activity/864902?club=213 (Title: 做个反论：灵吉菩萨并非恶人 黄风怪和它的幕后才是真恶_黑神话：悟空|游民星空)
+2024-12-14 16:11:07,505 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://down.gamersky.com/pc/202409/1815281.shtml (Title: 《黑神话悟空》二周目第二回土地存档_黑神话：悟空下载 - 游民星空下载中心)
+2024-12-14 16:11:08,426 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://down.gamersky.com/pc/202409/1815275.shtml (Title: 《黑神话悟空》二周目第二回虎先锋存档_黑神话：悟空下载 - 游民星空下载中心)
+2024-12-14 16:11:09,472 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://acg.gamersky.com/news/202010/1332199.shtml (Title: JUMP《鬼灭之刃》第二回人气投票 祢豆子又没进前十_动漫星空)
+2024-12-14 16:11:10,614 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/m/activity/857775?club=213 (Title: 黑神话悟空全BOSS攻略集-第一回黑风山_黑神话：悟空|游民星空)
+2024-12-14 16:11:11,594 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://shouyou.gamersky.com/news/202005/1290401_2.shtml (Title: 《弹丸论破：希望的学园和绝望的高中生》今日登陆移动端 售价约129元人民币 _ 游民星空手游频道)
+2024-12-14 16:11:11,594 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202411/1851006_6.shtml', 'https://www.gamersky.com/handbook/202408/1803398_4.shtml', 'https://wap.gamersky.com/gl/Content-1817815_20.html', 'https://down.gamersky.com/pc/202409/1815281.shtml', 'https://down.gamersky.com/pc/202409/1815275.shtml']
+2024-12-14 16:11:17,009 - Default - SpawnPoolWorker-37 - 88076 - Starting crawl for URL: https://www.gamersky.com/handbook/202411/1851006_6.shtml
+2024-12-14 16:11:17,009 - Default - SpawnPoolWorker-37 - 88076 - -----------------------------------------------------------
+2024-12-14 16:11:17,009 - Default - SpawnPoolWorker-37 - 88076 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202411/1851006_6.shtml. Total URLs: 1
+2024-12-14 16:11:17,034 - Default - SpawnPoolWorker-44 - 88085 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1803398_4.shtml
+2024-12-14 16:11:17,034 - Default - SpawnPoolWorker-44 - 88085 - -----------------------------------------------------------
+2024-12-14 16:11:17,035 - Default - SpawnPoolWorker-44 - 88085 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1803398_4.shtml. Total URLs: 1
+2024-12-14 16:11:17,038 - Default - SpawnPoolWorker-38 - 88078 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1817815_20.html
+2024-12-14 16:11:17,038 - Default - SpawnPoolWorker-38 - 88078 - -----------------------------------------------------------
+2024-12-14 16:11:17,039 - Default - SpawnPoolWorker-38 - 88078 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1817815_20.html. Total URLs: 1
+2024-12-14 16:11:17,045 - Default - SpawnPoolWorker-47 - 88088 - Starting crawl for URL: https://down.gamersky.com/pc/202409/1815281.shtml
+2024-12-14 16:11:17,045 - Default - SpawnPoolWorker-47 - 88088 - -----------------------------------------------------------
+2024-12-14 16:11:17,046 - Default - SpawnPoolWorker-47 - 88088 - New crawled URL added to crawled_urls.json: https://down.gamersky.com/pc/202409/1815281.shtml. Total URLs: 1
+2024-12-14 16:11:17,066 - Default - SpawnPoolWorker-41 - 88082 - Starting crawl for URL: https://down.gamersky.com/pc/202409/1815275.shtml
+2024-12-14 16:11:17,066 - Default - SpawnPoolWorker-41 - 88082 - -----------------------------------------------------------
+2024-12-14 16:11:17,067 - Default - SpawnPoolWorker-41 - 88082 - New crawled URL added to crawled_urls.json: https://down.gamersky.com/pc/202409/1815275.shtml. Total URLs: 1
+2024-12-14 16:11:17,092 - Default - SpawnPoolWorker-38 - 88078 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1817815_20.html
+2024-12-14 16:11:17,093 - Default - SpawnPoolWorker-38 - 88078 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1817815_20.html (Depth: 1)
+2024-12-14 16:11:17,093 - Default - SpawnPoolWorker-38 - 88078 - New link added to links.json: https://wap.gamersky.com/gl/Content-1817815_20.html. Total links: 1
+2024-12-14 16:11:17,093 - Default - SpawnPoolWorker-38 - 88078 - Error crawling URL: https://wap.gamersky.com/gl/Content-1817815_20.html, Error: list index out of range
+2024-12-14 16:11:17,119 - Default - SpawnPoolWorker-37 - 88076 - Success on attempt 1 for https://www.gamersky.com/handbook/202411/1851006_6.shtml
+2024-12-14 16:11:17,121 - Default - SpawnPoolWorker-37 - 88076 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202411/1851006_6.shtml (Depth: 1)
+2024-12-14 16:11:17,121 - Default - SpawnPoolWorker-37 - 88076 - New link added to links.json: https://www.gamersky.com/handbook/202411/1851006_6.shtml. Total links: 1
+2024-12-14 16:11:17,122 - Default - SpawnPoolWorker-37 - 88076 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202411|1851006_6.shtml
+2024-12-14 16:11:17,123 - Default - SpawnPoolWorker-37 - 88076 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202411/1851006_6.shtml
+2024-12-14 16:11:17,143 - Default - SpawnPoolWorker-44 - 88085 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1803398_4.shtml
+2024-12-14 16:11:17,145 - Default - SpawnPoolWorker-44 - 88085 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1803398_4.shtml (Depth: 1)
+2024-12-14 16:11:17,146 - Default - SpawnPoolWorker-44 - 88085 - New link added to links.json: https://www.gamersky.com/handbook/202408/1803398_4.shtml. Total links: 1
+2024-12-14 16:11:17,147 - Default - SpawnPoolWorker-44 - 88085 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1803398_4.shtml
+2024-12-14 16:11:17,147 - Default - SpawnPoolWorker-44 - 88085 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1803398_4.shtml
+2024-12-14 16:11:17,153 - Default - SpawnPoolWorker-47 - 88088 - Success on attempt 1 for https://down.gamersky.com/pc/202409/1815281.shtml
+2024-12-14 16:11:17,155 - Default - SpawnPoolWorker-47 - 88088 - Found '黑神话' in Mid2L_con or Title at https://down.gamersky.com/pc/202409/1815281.shtml (Depth: 1)
+2024-12-14 16:11:17,155 - Default - SpawnPoolWorker-47 - 88088 - New link added to links.json: https://down.gamersky.com/pc/202409/1815281.shtml. Total links: 1
+2024-12-14 16:11:17,157 - Default - SpawnPoolWorker-47 - 88088 - Html and text files successfully saved for https=||down.gamersky.com|pc|202409|1815281.shtml
+2024-12-14 16:11:17,157 - Default - SpawnPoolWorker-47 - 88088 - ⭐️1. Completed crawl and save data for URL: https://down.gamersky.com/pc/202409/1815281.shtml
+2024-12-14 16:11:17,166 - Default - SpawnPoolWorker-41 - 88082 - Success on attempt 1 for https://down.gamersky.com/pc/202409/1815275.shtml
+2024-12-14 16:11:17,168 - Default - SpawnPoolWorker-41 - 88082 - Found '黑神话' in Mid2L_con or Title at https://down.gamersky.com/pc/202409/1815275.shtml (Depth: 1)
+2024-12-14 16:11:17,168 - Default - SpawnPoolWorker-41 - 88082 - New link added to links.json: https://down.gamersky.com/pc/202409/1815275.shtml. Total links: 1
+2024-12-14 16:11:17,170 - Default - SpawnPoolWorker-41 - 88082 - Html and text files successfully saved for https=||down.gamersky.com|pc|202409|1815275.shtml
+2024-12-14 16:11:17,170 - Default - SpawnPoolWorker-41 - 88082 - ⭐️1. Completed crawl and save data for URL: https://down.gamersky.com/pc/202409/1815275.shtml
+2024-12-14 16:11:17,208 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:11:17,208 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:11:35,442 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:11:36,024 - Default - MainProcess - 86026 - Found 1 links containing '黑悟空第二回怎么过关' on https://soso.gamersky.com/cse/search?q=黑悟空第二回怎么过关&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:11:36,025 - Default - MainProcess - 86026 - 🔗 Links fetched: ['http://www.baidu.com/s?wd=%E9%BB%91%E6%82%9F%E7%A9%BA%E7%AC%AC%E4%BA%8C%E5%9B%9E%E6%80%8E%E4%B9%88%E8%BF%87%E5%85%B3&ie=utf-8&tn=SE_pscse_053x7tyx']
+2024-12-14 16:11:37,127 - Default - MainProcess - 86026 - ⚠️ Failed to fetch title for link: http://www.baidu.com/s?wd=%E9%BB%91%E6%82%9F%E7%A9%BA%E7%AC%AC%E4%BA%8C%E5%9B%9E%E6%80%8E%E4%B9%88%E8%BF%87%E5%85%B3&ie=utf-8&tn=SE_pscse_053x7tyx
+2024-12-14 16:11:37,127 - Default - MainProcess - 86026 - 📋 Relevant links: []
+2024-12-14 16:11:37,184 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:11:37,184 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:11:58,428 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:11:59,743 - Default - MainProcess - 86026 - Found 10 links containing '第二回隐藏剧情' on https://soso.gamersky.com/cse/search?q=第二回隐藏剧情&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:11:59,744 - Default - MainProcess - 86026 - 🔗 Links fetched: ['https://wap.gamersky.com/gl/Content-1811168.html', 'https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml', 'https://wap.gamersky.com/gl/Content-944614.html', 'https://wap.gamersky.com/sygl/Content-1035235.html', 'https://ol.gamersky.com/z/jx3/201802/1012590.shtml', 'https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap', 'http://tag.gamersky.com/handbook/2618.html', 'https://down.gamersky.com/pc/201708/943964.shtml', 'http://club.gamersky.com/activity/397532?club=163']
+2024-12-14 16:12:01,384 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-1811168.html (Title: 《黑神话悟空》三王子支线任务攻略 如何触发双头鼠隐藏剧情 :: 游民星空 GamerSky.com)
+2024-12-14 16:12:02,331 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1804934_3.shtml (Title: 《黑神话悟空》全流程图文攻略 全剧情流程及物品收集方法分享_第二回-风起黄昏-游民星空 GamerSky.com)
+2024-12-14 16:12:03,328 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202409/1810891_10.shtml (Title: 《黑神话悟空》人物剧情梳理分析 黑神话悟空讲了个什么故事_第二回-疯虎、虎伥-游民星空 GamerSky.com)
+2024-12-14 16:12:04,468 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-944614.html (Title: 《黑暗之魂3》全地图隐藏剧情深度解读_洛斯里克 :: 游民星空 GamerSky.com)
+2024-12-14 16:12:05,343 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/sygl/Content-1035235.html (Title: 逆袭幻想传攻略大全 支线任务、配方及宝物一览
+        :: 游民星空 GamerSky.com)
+2024-12-14 16:12:06,361 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/z/jx3/201802/1012590.shtml (Title: 剑网31380任务戒指获取攻略 任务流程前置详解 _ 游民星空 GamerSky.com)
+2024-12-14 16:12:07,726 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap (Title: 年度资料片“北天药宗”公布 《剑网3》十二周年发布会回顾_ _ 游民星空 GamerSky.com)
+2024-12-14 16:12:08,751 - Default - MainProcess - 86026 - ⚠️ Failed to fetch title for link: http://tag.gamersky.com/handbook/2618.html
+2024-12-14 16:12:09,777 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://down.gamersky.com/pc/201708/943964.shtml (Title: 《英雄传说闪之轨迹》超详细全剧情过程存档_英雄传说：闪之轨迹下载 - 游民星空下载中心)
+2024-12-14 16:12:10,683 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/activity/397532?club=163 (Title: 多年后才知道《拳皇》那些有来历的隐藏人物，全是吸血鬼咬出来的_百家争鸣|游民星空)
+2024-12-14 16:12:10,683 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml']
+2024-12-14 16:12:16,541 - Default - SpawnPoolWorker-65 - 88473 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:12:16,541 - Default - SpawnPoolWorker-65 - 88473 - -----------------------------------------------------------
+2024-12-14 16:12:16,542 - Default - SpawnPoolWorker-65 - 88473 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total URLs: 1
+2024-12-14 16:12:16,543 - Default - SpawnPoolWorker-64 - 88472 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:12:16,543 - Default - SpawnPoolWorker-64 - 88472 - -----------------------------------------------------------
+2024-12-14 16:12:16,543 - Default - SpawnPoolWorker-64 - 88472 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total URLs: 1
+2024-12-14 16:12:16,649 - Default - SpawnPoolWorker-64 - 88472 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:12:16,651 - Default - SpawnPoolWorker-64 - 88472 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1810891_10.shtml (Depth: 1)
+2024-12-14 16:12:16,651 - Default - SpawnPoolWorker-64 - 88472 - New link added to links.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total links: 1
+2024-12-14 16:12:16,652 - Default - SpawnPoolWorker-64 - 88472 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202409|1810891_10.shtml
+2024-12-14 16:12:16,653 - Default - SpawnPoolWorker-64 - 88472 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:12:16,674 - Default - SpawnPoolWorker-65 - 88473 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:12:16,678 - Default - SpawnPoolWorker-65 - 88473 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1804934_3.shtml (Depth: 1)
+2024-12-14 16:12:16,679 - Default - SpawnPoolWorker-65 - 88473 - New link added to links.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total links: 1
+2024-12-14 16:12:16,683 - Default - SpawnPoolWorker-65 - 88473 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1804934_3.shtml
+2024-12-14 16:12:16,683 - Default - SpawnPoolWorker-65 - 88473 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:12:16,719 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:12:16,719 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:12:29,350 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:12:30,510 - Default - MainProcess - 86026 - Found 10 links containing '第二回' on https://soso.gamersky.com/cse/search?q=第二回&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:12:30,511 - Default - MainProcess - 86026 - 🔗 Links fetched: ['https://www.gamersky.com/handbook/202411/1851006_6.shtml', 'https://www.gamersky.com/handbook/202408/1803398_4.shtml', 'https://wap.gamersky.com/gl/Content-1817815_20.html', 'https://wap.gamersky.com/gl/Content-1803873_2.html', 'http://club.gamersky.com/m/activity/864902?club=213', 'https://down.gamersky.com/pc/202409/1815281.shtml', 'https://down.gamersky.com/pc/202409/1815275.shtml', 'https://acg.gamersky.com/news/202010/1332199.shtml', 'http://club.gamersky.com/m/activity/857775?club=213', 'https://shouyou.gamersky.com/news/202005/1290401_2.shtml']
+2024-12-14 16:12:32,214 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202411/1851006_6.shtml (Title: 《黑神话悟空》第二章人物剧情详解 黑神话悟空第二章讲了什么_第二回-黄风怪-游民星空 GamerSky.com)
+2024-12-14 16:12:33,520 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1803398_4.shtml (Title: 《黑神话悟空》第二回蒲团位置及路线 第二章蒲团在哪_第二回-黄风岭-枕石坪枯松下-游民星空 GamerSky.com)
+2024-12-14 16:12:35,144 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://wap.gamersky.com/gl/Content-1817815_20.html (Title: 《黑神话悟空》第二回影神图妖怪位置及图鉴解锁方法_头目-第二回-石母 :: 游民星空 GamerSky.com)
+2024-12-14 16:12:36,019 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-1803873_2.html (Title: 《黑神话悟空》第二回珍玩获取方法 第二章珍玩有哪些_上品-砗磲佩 :: 游民星空 GamerSky.com)
+2024-12-14 16:12:36,909 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/m/activity/864902?club=213 (Title: 做个反论：灵吉菩萨并非恶人 黄风怪和它的幕后才是真恶_黑神话：悟空|游民星空)
+2024-12-14 16:12:37,827 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://down.gamersky.com/pc/202409/1815281.shtml (Title: 《黑神话悟空》二周目第二回土地存档_黑神话：悟空下载 - 游民星空下载中心)
+2024-12-14 16:12:38,186 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:12:38,705 - Default - MainProcess - 86026 - Found 10 links containing '第二回隐藏剧情' on https://soso.gamersky.com/cse/search?q=第二回隐藏剧情&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:12:38,706 - Default - MainProcess - 86026 - 🔗 Links fetched: ['https://wap.gamersky.com/gl/Content-1811168.html', 'https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml', 'https://wap.gamersky.com/gl/Content-944614.html', 'https://wap.gamersky.com/sygl/Content-1035235.html', 'https://ol.gamersky.com/z/jx3/201802/1012590.shtml', 'https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap', 'http://tag.gamersky.com/handbook/2618.html', 'https://down.gamersky.com/pc/201708/943964.shtml', 'http://club.gamersky.com/activity/397532?club=163']
+2024-12-14 16:12:38,982 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://down.gamersky.com/pc/202409/1815275.shtml (Title: 《黑神话悟空》二周目第二回虎先锋存档_黑神话：悟空下载 - 游民星空下载中心)
+2024-12-14 16:12:39,963 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://acg.gamersky.com/news/202010/1332199.shtml (Title: JUMP《鬼灭之刃》第二回人气投票 祢豆子又没进前十_动漫星空)
+2024-12-14 16:12:40,464 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-1811168.html (Title: 《黑神话悟空》三王子支线任务攻略 如何触发双头鼠隐藏剧情 :: 游民星空 GamerSky.com)
+2024-12-14 16:12:41,069 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/m/activity/857775?club=213 (Title: 黑神话悟空全BOSS攻略集-第一回黑风山_黑神话：悟空|游民星空)
+2024-12-14 16:12:41,376 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1804934_3.shtml (Title: 《黑神话悟空》全流程图文攻略 全剧情流程及物品收集方法分享_第二回-风起黄昏-游民星空 GamerSky.com)
+2024-12-14 16:12:42,025 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://shouyou.gamersky.com/news/202005/1290401_2.shtml (Title: 《弹丸论破：希望的学园和绝望的高中生》今日登陆移动端 售价约129元人民币 _ 游民星空手游频道)
+2024-12-14 16:12:42,025 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202411/1851006_6.shtml', 'https://www.gamersky.com/handbook/202408/1803398_4.shtml', 'https://wap.gamersky.com/gl/Content-1817815_20.html', 'https://down.gamersky.com/pc/202409/1815281.shtml', 'https://down.gamersky.com/pc/202409/1815275.shtml']
+2024-12-14 16:12:42,452 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202409/1810891_10.shtml (Title: 《黑神话悟空》人物剧情梳理分析 黑神话悟空讲了个什么故事_第二回-疯虎、虎伥-游民星空 GamerSky.com)
+2024-12-14 16:12:44,964 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-944614.html (Title: 《黑暗之魂3》全地图隐藏剧情深度解读_洛斯里克 :: 游民星空 GamerSky.com)
+2024-12-14 16:12:46,158 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/sygl/Content-1035235.html (Title: 逆袭幻想传攻略大全 支线任务、配方及宝物一览
+        :: 游民星空 GamerSky.com)
+2024-12-14 16:12:47,199 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/z/jx3/201802/1012590.shtml (Title: 剑网31380任务戒指获取攻略 任务流程前置详解 _ 游民星空 GamerSky.com)
+2024-12-14 16:12:47,862 - Default - SpawnPoolWorker-75 - 88706 - Starting crawl for URL: https://www.gamersky.com/handbook/202411/1851006_6.shtml
+2024-12-14 16:12:47,862 - Default - SpawnPoolWorker-75 - 88706 - -----------------------------------------------------------
+2024-12-14 16:12:47,863 - Default - SpawnPoolWorker-75 - 88706 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202411/1851006_6.shtml. Total URLs: 1
+2024-12-14 16:12:47,895 - Default - SpawnPoolWorker-79 - 88710 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1803398_4.shtml
+2024-12-14 16:12:47,895 - Default - SpawnPoolWorker-79 - 88710 - -----------------------------------------------------------
+2024-12-14 16:12:47,895 - Default - SpawnPoolWorker-79 - 88710 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1803398_4.shtml. Total URLs: 1
+2024-12-14 16:12:47,924 - Default - SpawnPoolWorker-73 - 88704 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1817815_20.html
+2024-12-14 16:12:47,924 - Default - SpawnPoolWorker-73 - 88704 - -----------------------------------------------------------
+2024-12-14 16:12:47,924 - Default - SpawnPoolWorker-73 - 88704 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1817815_20.html. Total URLs: 1
+2024-12-14 16:12:47,946 - Default - SpawnPoolWorker-76 - 88707 - Starting crawl for URL: https://down.gamersky.com/pc/202409/1815281.shtml
+2024-12-14 16:12:47,947 - Default - SpawnPoolWorker-76 - 88707 - -----------------------------------------------------------
+2024-12-14 16:12:47,947 - Default - SpawnPoolWorker-76 - 88707 - New crawled URL added to crawled_urls.json: https://down.gamersky.com/pc/202409/1815281.shtml. Total URLs: 1
+2024-12-14 16:12:47,970 - Default - SpawnPoolWorker-75 - 88706 - Success on attempt 1 for https://www.gamersky.com/handbook/202411/1851006_6.shtml
+2024-12-14 16:12:47,972 - Default - SpawnPoolWorker-75 - 88706 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202411/1851006_6.shtml (Depth: 1)
+2024-12-14 16:12:47,972 - Default - SpawnPoolWorker-75 - 88706 - New link added to links.json: https://www.gamersky.com/handbook/202411/1851006_6.shtml. Total links: 1
+2024-12-14 16:12:47,973 - Default - SpawnPoolWorker-75 - 88706 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202411|1851006_6.shtml
+2024-12-14 16:12:47,973 - Default - SpawnPoolWorker-75 - 88706 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202411/1851006_6.shtml
+2024-12-14 16:12:47,973 - Default - SpawnPoolWorker-75 - 88706 - Starting crawl for URL: https://down.gamersky.com/pc/202409/1815275.shtml
+2024-12-14 16:12:47,974 - Default - SpawnPoolWorker-75 - 88706 - -----------------------------------------------------------
+2024-12-14 16:12:47,974 - Default - SpawnPoolWorker-75 - 88706 - New crawled URL added to crawled_urls.json: https://down.gamersky.com/pc/202409/1815275.shtml. Total URLs: 1
+2024-12-14 16:12:47,978 - Default - SpawnPoolWorker-73 - 88704 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1817815_20.html
+2024-12-14 16:12:47,979 - Default - SpawnPoolWorker-73 - 88704 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1817815_20.html (Depth: 1)
+2024-12-14 16:12:47,980 - Default - SpawnPoolWorker-73 - 88704 - New link added to links.json: https://wap.gamersky.com/gl/Content-1817815_20.html. Total links: 1
+2024-12-14 16:12:47,980 - Default - SpawnPoolWorker-73 - 88704 - Error crawling URL: https://wap.gamersky.com/gl/Content-1817815_20.html, Error: list index out of range
+2024-12-14 16:12:48,008 - Default - SpawnPoolWorker-79 - 88710 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1803398_4.shtml
+2024-12-14 16:12:48,010 - Default - SpawnPoolWorker-79 - 88710 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1803398_4.shtml (Depth: 1)
+2024-12-14 16:12:48,010 - Default - SpawnPoolWorker-79 - 88710 - New link added to links.json: https://www.gamersky.com/handbook/202408/1803398_4.shtml. Total links: 1
+2024-12-14 16:12:48,011 - Default - SpawnPoolWorker-79 - 88710 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1803398_4.shtml
+2024-12-14 16:12:48,012 - Default - SpawnPoolWorker-79 - 88710 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1803398_4.shtml
+2024-12-14 16:12:48,050 - Default - SpawnPoolWorker-76 - 88707 - Success on attempt 1 for https://down.gamersky.com/pc/202409/1815281.shtml
+2024-12-14 16:12:48,052 - Default - SpawnPoolWorker-76 - 88707 - Found '黑神话' in Mid2L_con or Title at https://down.gamersky.com/pc/202409/1815281.shtml (Depth: 1)
+2024-12-14 16:12:48,052 - Default - SpawnPoolWorker-76 - 88707 - New link added to links.json: https://down.gamersky.com/pc/202409/1815281.shtml. Total links: 1
+2024-12-14 16:12:48,054 - Default - SpawnPoolWorker-76 - 88707 - Html and text files successfully saved for https=||down.gamersky.com|pc|202409|1815281.shtml
+2024-12-14 16:12:48,054 - Default - SpawnPoolWorker-76 - 88707 - ⭐️1. Completed crawl and save data for URL: https://down.gamersky.com/pc/202409/1815281.shtml
+2024-12-14 16:12:48,073 - Default - SpawnPoolWorker-75 - 88706 - Success on attempt 1 for https://down.gamersky.com/pc/202409/1815275.shtml
+2024-12-14 16:12:48,075 - Default - SpawnPoolWorker-75 - 88706 - Found '黑神话' in Mid2L_con or Title at https://down.gamersky.com/pc/202409/1815275.shtml (Depth: 1)
+2024-12-14 16:12:48,075 - Default - SpawnPoolWorker-75 - 88706 - New link added to links.json: https://down.gamersky.com/pc/202409/1815275.shtml. Total links: 1
+2024-12-14 16:12:48,076 - Default - SpawnPoolWorker-75 - 88706 - Html and text files successfully saved for https=||down.gamersky.com|pc|202409|1815275.shtml
+2024-12-14 16:12:48,077 - Default - SpawnPoolWorker-75 - 88706 - ⭐️1. Completed crawl and save data for URL: https://down.gamersky.com/pc/202409/1815275.shtml
+2024-12-14 16:12:48,116 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:12:48,117 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:12:48,229 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap (Title: 年度资料片“北天药宗”公布 《剑网3》十二周年发布会回顾_ _ 游民星空 GamerSky.com)
+2024-12-14 16:12:49,171 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://tag.gamersky.com/handbook/2618.html (Title: 魔兽争霸3_攻略秘籍_游民星空 Gamersky.com)
+2024-12-14 16:12:50,131 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://down.gamersky.com/pc/201708/943964.shtml (Title: 《英雄传说闪之轨迹》超详细全剧情过程存档_英雄传说：闪之轨迹下载 - 游民星空下载中心)
+2024-12-14 16:12:51,527 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/activity/397532?club=163 (Title: 多年后才知道《拳皇》那些有来历的隐藏人物，全是吸血鬼咬出来的_百家争鸣|游民星空)
+2024-12-14 16:12:51,527 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml']
+2024-12-14 16:12:57,052 - Default - SpawnPoolWorker-92 - 88805 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:12:57,052 - Default - SpawnPoolWorker-92 - 88805 - -----------------------------------------------------------
+2024-12-14 16:12:57,053 - Default - SpawnPoolWorker-92 - 88805 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total URLs: 1
+2024-12-14 16:12:57,186 - Default - SpawnPoolWorker-96 - 88809 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:12:57,187 - Default - SpawnPoolWorker-96 - 88809 - -----------------------------------------------------------
+2024-12-14 16:12:57,187 - Default - SpawnPoolWorker-96 - 88809 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total URLs: 1
+2024-12-14 16:12:57,213 - Default - SpawnPoolWorker-92 - 88805 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:12:57,217 - Default - SpawnPoolWorker-92 - 88805 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1804934_3.shtml (Depth: 1)
+2024-12-14 16:12:57,217 - Default - SpawnPoolWorker-92 - 88805 - New link added to links.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total links: 1
+2024-12-14 16:12:57,223 - Default - SpawnPoolWorker-92 - 88805 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1804934_3.shtml
+2024-12-14 16:12:57,224 - Default - SpawnPoolWorker-92 - 88805 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:12:57,298 - Default - SpawnPoolWorker-96 - 88809 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:12:57,300 - Default - SpawnPoolWorker-96 - 88809 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1810891_10.shtml (Depth: 1)
+2024-12-14 16:12:57,300 - Default - SpawnPoolWorker-96 - 88809 - New link added to links.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total links: 1
+2024-12-14 16:12:57,301 - Default - SpawnPoolWorker-96 - 88809 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202409|1810891_10.shtml
+2024-12-14 16:12:57,302 - Default - SpawnPoolWorker-96 - 88809 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:12:57,340 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:12:57,340 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:13:36,837 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:13:37,404 - Default - MainProcess - 86026 - Found 10 links containing '第二回隐藏剧情' on https://soso.gamersky.com/cse/search?q=第二回隐藏剧情&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:13:37,404 - Default - MainProcess - 86026 - 🔗 Links fetched: ['https://wap.gamersky.com/gl/Content-1811168.html', 'https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml', 'https://wap.gamersky.com/gl/Content-944614.html', 'https://wap.gamersky.com/sygl/Content-1035235.html', 'https://ol.gamersky.com/z/jx3/201802/1012590.shtml', 'https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap', 'http://tag.gamersky.com/handbook/2618.html', 'https://down.gamersky.com/pc/201708/943964.shtml', 'http://club.gamersky.com/activity/397532?club=163']
+2024-12-14 16:13:39,035 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-1811168.html (Title: 《黑神话悟空》三王子支线任务攻略 如何触发双头鼠隐藏剧情 :: 游民星空 GamerSky.com)
+2024-12-14 16:13:40,020 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1804934_3.shtml (Title: 《黑神话悟空》全流程图文攻略 全剧情流程及物品收集方法分享_第二回-风起黄昏-游民星空 GamerSky.com)
+2024-12-14 16:13:40,968 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202409/1810891_10.shtml (Title: 《黑神话悟空》人物剧情梳理分析 黑神话悟空讲了个什么故事_第二回-疯虎、虎伥-游民星空 GamerSky.com)
+2024-12-14 16:13:42,234 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-944614.html (Title: 《黑暗之魂3》全地图隐藏剧情深度解读_洛斯里克 :: 游民星空 GamerSky.com)
+2024-12-14 16:13:43,167 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/sygl/Content-1035235.html (Title: 逆袭幻想传攻略大全 支线任务、配方及宝物一览
+        :: 游民星空 GamerSky.com)
+2024-12-14 16:13:44,211 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/z/jx3/201802/1012590.shtml (Title: 剑网31380任务戒指获取攻略 任务流程前置详解 _ 游民星空 GamerSky.com)
+2024-12-14 16:13:45,425 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap (Title: 年度资料片“北天药宗”公布 《剑网3》十二周年发布会回顾_ _ 游民星空 GamerSky.com)
+2024-12-14 16:13:46,322 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://tag.gamersky.com/handbook/2618.html (Title: 魔兽争霸3_攻略秘籍_游民星空 Gamersky.com)
+2024-12-14 16:13:47,270 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://down.gamersky.com/pc/201708/943964.shtml (Title: 《英雄传说闪之轨迹》超详细全剧情过程存档_英雄传说：闪之轨迹下载 - 游民星空下载中心)
+2024-12-14 16:13:48,237 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/activity/397532?club=163 (Title: 多年后才知道《拳皇》那些有来历的隐藏人物，全是吸血鬼咬出来的_百家争鸣|游民星空)
+2024-12-14 16:13:48,237 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml']
+2024-12-14 16:13:53,712 - Default - SpawnPoolWorker-106 - 89151 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:13:53,712 - Default - SpawnPoolWorker-106 - 89151 - -----------------------------------------------------------
+2024-12-14 16:13:53,712 - Default - SpawnPoolWorker-106 - 89151 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total URLs: 1
+2024-12-14 16:13:53,750 - Default - SpawnPoolWorker-103 - 89148 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:13:53,750 - Default - SpawnPoolWorker-103 - 89148 - -----------------------------------------------------------
+2024-12-14 16:13:53,751 - Default - SpawnPoolWorker-103 - 89148 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total URLs: 1
+2024-12-14 16:13:53,859 - Default - SpawnPoolWorker-103 - 89148 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:13:53,861 - Default - SpawnPoolWorker-103 - 89148 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1810891_10.shtml (Depth: 1)
+2024-12-14 16:13:53,861 - Default - SpawnPoolWorker-103 - 89148 - New link added to links.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total links: 1
+2024-12-14 16:13:53,862 - Default - SpawnPoolWorker-103 - 89148 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202409|1810891_10.shtml
+2024-12-14 16:13:53,862 - Default - SpawnPoolWorker-106 - 89151 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:13:53,862 - Default - SpawnPoolWorker-103 - 89148 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:13:53,866 - Default - SpawnPoolWorker-106 - 89151 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1804934_3.shtml (Depth: 1)
+2024-12-14 16:13:53,867 - Default - SpawnPoolWorker-106 - 89151 - New link added to links.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total links: 1
+2024-12-14 16:13:53,871 - Default - SpawnPoolWorker-106 - 89151 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1804934_3.shtml
+2024-12-14 16:13:53,871 - Default - SpawnPoolWorker-106 - 89151 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:13:53,909 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:13:53,909 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:16:07,341 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:16:07,932 - Default - MainProcess - 86026 - Found 10 links containing '第二回隐藏剧情' on https://soso.gamersky.com/cse/search?q=第二回隐藏剧情&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:16:07,933 - Default - MainProcess - 86026 - 🔗 Links fetched: ['https://wap.gamersky.com/gl/Content-1811168.html', 'https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml', 'https://wap.gamersky.com/gl/Content-944614.html', 'https://wap.gamersky.com/sygl/Content-1035235.html', 'https://ol.gamersky.com/z/jx3/201802/1012590.shtml', 'https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap', 'http://tag.gamersky.com/handbook/2618.html', 'https://down.gamersky.com/pc/201708/943964.shtml', 'http://club.gamersky.com/activity/397532?club=163']
+2024-12-14 16:16:10,289 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-1811168.html (Title: 《黑神话悟空》三王子支线任务攻略 如何触发双头鼠隐藏剧情 :: 游民星空 GamerSky.com)
+2024-12-14 16:16:11,453 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1804934_3.shtml (Title: 《黑神话悟空》全流程图文攻略 全剧情流程及物品收集方法分享_第二回-风起黄昏-游民星空 GamerSky.com)
+2024-12-14 16:16:12,437 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202409/1810891_10.shtml (Title: 《黑神话悟空》人物剧情梳理分析 黑神话悟空讲了个什么故事_第二回-疯虎、虎伥-游民星空 GamerSky.com)
+2024-12-14 16:16:13,592 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-944614.html (Title: 《黑暗之魂3》全地图隐藏剧情深度解读_洛斯里克 :: 游民星空 GamerSky.com)
+2024-12-14 16:16:14,707 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/sygl/Content-1035235.html (Title: 逆袭幻想传攻略大全 支线任务、配方及宝物一览
+        :: 游民星空 GamerSky.com)
+2024-12-14 16:16:15,890 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/z/jx3/201802/1012590.shtml (Title: 剑网31380任务戒指获取攻略 任务流程前置详解 _ 游民星空 GamerSky.com)
+2024-12-14 16:16:17,135 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap (Title: 年度资料片“北天药宗”公布 《剑网3》十二周年发布会回顾_ _ 游民星空 GamerSky.com)
+2024-12-14 16:16:18,374 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://tag.gamersky.com/handbook/2618.html (Title: 魔兽争霸3_攻略秘籍_游民星空 Gamersky.com)
+2024-12-14 16:16:19,447 - Default - MainProcess - 86026 - ⚠️ Failed to fetch title for link: https://down.gamersky.com/pc/201708/943964.shtml
+2024-12-14 16:16:20,530 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/activity/397532?club=163 (Title: 多年后才知道《拳皇》那些有来历的隐藏人物，全是吸血鬼咬出来的_百家争鸣|游民星空)
+2024-12-14 16:16:20,531 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml']
+2024-12-14 16:16:26,708 - Default - SpawnPoolWorker-117 - 90078 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:16:26,708 - Default - SpawnPoolWorker-117 - 90078 - -----------------------------------------------------------
+2024-12-14 16:16:26,709 - Default - SpawnPoolWorker-111 - 90072 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:16:26,709 - Default - SpawnPoolWorker-117 - 90078 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total URLs: 1
+2024-12-14 16:16:26,709 - Default - SpawnPoolWorker-111 - 90072 - -----------------------------------------------------------
+2024-12-14 16:16:26,710 - Default - SpawnPoolWorker-111 - 90072 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total URLs: 1
+2024-12-14 16:16:26,810 - Default - SpawnPoolWorker-111 - 90072 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:16:26,811 - Default - SpawnPoolWorker-111 - 90072 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1810891_10.shtml (Depth: 1)
+2024-12-14 16:16:26,812 - Default - SpawnPoolWorker-111 - 90072 - New link added to links.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total links: 1
+2024-12-14 16:16:26,813 - Default - SpawnPoolWorker-111 - 90072 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202409|1810891_10.shtml
+2024-12-14 16:16:26,813 - Default - SpawnPoolWorker-111 - 90072 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:16:26,861 - Default - SpawnPoolWorker-117 - 90078 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:16:26,865 - Default - SpawnPoolWorker-117 - 90078 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1804934_3.shtml (Depth: 1)
+2024-12-14 16:16:26,865 - Default - SpawnPoolWorker-117 - 90078 - New link added to links.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total links: 1
+2024-12-14 16:16:26,870 - Default - SpawnPoolWorker-117 - 90078 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1804934_3.shtml
+2024-12-14 16:16:26,874 - Default - SpawnPoolWorker-117 - 90078 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:16:26,925 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:16:26,926 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:17:08,864 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:17:09,431 - Default - MainProcess - 86026 - Found 10 links containing '第二回隐藏剧情' on https://soso.gamersky.com/cse/search?q=第二回隐藏剧情&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:17:09,432 - Default - MainProcess - 86026 - 🔗 Links fetched: ['https://wap.gamersky.com/gl/Content-1811168.html', 'https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml', 'https://wap.gamersky.com/gl/Content-944614.html', 'https://wap.gamersky.com/sygl/Content-1035235.html', 'https://ol.gamersky.com/z/jx3/201802/1012590.shtml', 'https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap', 'http://tag.gamersky.com/handbook/2618.html', 'https://down.gamersky.com/pc/201708/943964.shtml', 'http://club.gamersky.com/activity/397532?club=163']
+2024-12-14 16:17:11,383 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-1811168.html (Title: 《黑神话悟空》三王子支线任务攻略 如何触发双头鼠隐藏剧情 :: 游民星空 GamerSky.com)
+2024-12-14 16:17:12,523 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1804934_3.shtml (Title: 《黑神话悟空》全流程图文攻略 全剧情流程及物品收集方法分享_第二回-风起黄昏-游民星空 GamerSky.com)
+2024-12-14 16:17:13,585 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202409/1810891_10.shtml (Title: 《黑神话悟空》人物剧情梳理分析 黑神话悟空讲了个什么故事_第二回-疯虎、虎伥-游民星空 GamerSky.com)
+2024-12-14 16:17:14,801 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-944614.html (Title: 《黑暗之魂3》全地图隐藏剧情深度解读_洛斯里克 :: 游民星空 GamerSky.com)
+2024-12-14 16:17:15,879 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/sygl/Content-1035235.html (Title: 逆袭幻想传攻略大全 支线任务、配方及宝物一览
+        :: 游民星空 GamerSky.com)
+2024-12-14 16:17:17,830 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/z/jx3/201802/1012590.shtml (Title: 剑网31380任务戒指获取攻略 任务流程前置详解 _ 游民星空 GamerSky.com)
+2024-12-14 16:17:19,248 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap (Title: 年度资料片“北天药宗”公布 《剑网3》十二周年发布会回顾_ _ 游民星空 GamerSky.com)
+2024-12-14 16:17:20,413 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://tag.gamersky.com/handbook/2618.html (Title: 魔兽争霸3_攻略秘籍_游民星空 Gamersky.com)
+2024-12-14 16:17:21,525 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://down.gamersky.com/pc/201708/943964.shtml (Title: 《英雄传说闪之轨迹》超详细全剧情过程存档_英雄传说：闪之轨迹下载 - 游民星空下载中心)
+2024-12-14 16:17:22,728 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/activity/397532?club=163 (Title: 多年后才知道《拳皇》那些有来历的隐藏人物，全是吸血鬼咬出来的_百家争鸣|游民星空)
+2024-12-14 16:17:22,728 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml']
+2024-12-14 16:17:29,839 - Default - SpawnPoolWorker-121 - 90488 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:17:29,839 - Default - SpawnPoolWorker-121 - 90488 - -----------------------------------------------------------
+2024-12-14 16:17:29,839 - Default - SpawnPoolWorker-121 - 90488 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total URLs: 1
+2024-12-14 16:17:30,029 - Default - SpawnPoolWorker-130 - 90497 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:17:30,029 - Default - SpawnPoolWorker-130 - 90497 - -----------------------------------------------------------
+2024-12-14 16:17:30,029 - Default - SpawnPoolWorker-130 - 90497 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total URLs: 1
+2024-12-14 16:17:30,101 - Default - SpawnPoolWorker-121 - 90488 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:17:30,106 - Default - SpawnPoolWorker-121 - 90488 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1804934_3.shtml (Depth: 1)
+2024-12-14 16:17:30,106 - Default - SpawnPoolWorker-121 - 90488 - New link added to links.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total links: 1
+2024-12-14 16:17:30,110 - Default - SpawnPoolWorker-121 - 90488 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1804934_3.shtml
+2024-12-14 16:17:30,111 - Default - SpawnPoolWorker-121 - 90488 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:17:30,147 - Default - SpawnPoolWorker-130 - 90497 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:17:30,149 - Default - SpawnPoolWorker-130 - 90497 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1810891_10.shtml (Depth: 1)
+2024-12-14 16:17:30,149 - Default - SpawnPoolWorker-130 - 90497 - New link added to links.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total links: 1
+2024-12-14 16:17:30,150 - Default - SpawnPoolWorker-130 - 90497 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202409|1810891_10.shtml
+2024-12-14 16:17:30,151 - Default - SpawnPoolWorker-130 - 90497 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:17:30,194 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:17:30,194 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:18:04,984 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:18:06,418 - Default - MainProcess - 86026 - Found 10 links containing '黑神话悟空的背后故事概括' on https://soso.gamersky.com/cse/search?q=黑神话悟空的背后故事概括&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:18:06,419 - Default - MainProcess - 86026 - 🔗 Links fetched: ['http://nourl.ubs.baidu.com/279', 'http://club.gamersky.com/activity/861427?club=213', 'https://www.gamersky.com/news/202408/1806534.shtml', 'https://www.gamersky.com/handbook/202409/1810891_47.shtml', 'http://club.gamersky.com/activity/848441?club=213', 'https://wap.gamersky.com/gl/Content-1803371_6.html', 'https://wap.gamersky.com/gl/Content-1803306_86.html', 'https://ku.gamersky.com/activity/n/62856894', 'https://www.gamersky.com/handbook/202409/1810891_13.shtml', 'https://www.gamersky.com/handbook/202409/1810891_8.shtml']
+2024-12-14 16:18:06,436 - Default - MainProcess - 86026 - ⚠️ Failed to fetch title for link: http://nourl.ubs.baidu.com/279
+2024-12-14 16:18:08,385 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: http://club.gamersky.com/activity/861427?club=213 (Title: 《黑神话：悟空》故事背景梳理_黑神话：悟空|游民星空)
+2024-12-14 16:18:09,738 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/news/202408/1806534.shtml (Title: 黑神话悟空隐藏结局，整个故事解析。 _ 游民星空 GamerSky.com)
+2024-12-14 16:18:11,113 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202409/1810891_47.shtml (Title: 《黑神话悟空》人物剧情梳理分析 黑神话悟空讲了个什么故事_结局解读-游民星空 GamerSky.com)
+2024-12-14 16:18:12,332 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/activity/848441?club=213 (Title: 好兄弟去世后，我收到他送的《黑神话：悟空》_黑神话：悟空|游民星空)
+2024-12-14 16:18:13,623 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://wap.gamersky.com/gl/Content-1803371_6.html (Title: 《黑神话悟空》妖王图鉴 妖怪背景故事介绍_石先锋 :: 游民星空 GamerSky.com)
+2024-12-14 16:18:14,975 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://wap.gamersky.com/gl/Content-1803306_86.html (Title: 《黑神话悟空》小妖图鉴 小妖背景故事介绍_牯都督 :: 游民星空 GamerSky.com)
+2024-12-14 16:18:16,391 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ku.gamersky.com/activity/n/62856894 (Title: 黑神话：悟空你还记得儿时的梦吗？_游民星空 GamerSky.com)
+2024-12-14 16:18:17,569 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202409/1810891_13.shtml (Title: 《黑神话悟空》人物剧情梳理分析 黑神话悟空讲了个什么故事_第二回-黄风怪-游民星空 GamerSky.com)
+2024-12-14 16:18:19,002 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202409/1810891_8.shtml (Title: 《黑神话悟空》人物剧情梳理分析 黑神话悟空讲了个什么故事_第二回-沙国王父子、流沙国-游民星空 GamerSky.com)
+2024-12-14 16:18:19,003 - Default - MainProcess - 86026 - 📋 Relevant links: ['http://club.gamersky.com/activity/861427?club=213', 'https://www.gamersky.com/news/202408/1806534.shtml', 'https://www.gamersky.com/handbook/202409/1810891_47.shtml', 'https://wap.gamersky.com/gl/Content-1803371_6.html', 'https://wap.gamersky.com/gl/Content-1803306_86.html', 'https://www.gamersky.com/handbook/202409/1810891_13.shtml', 'https://www.gamersky.com/handbook/202409/1810891_8.shtml']
+2024-12-14 16:18:25,601 - Default - SpawnPoolWorker-137 - 90833 - Starting crawl for URL: http://club.gamersky.com/activity/861427?club=213
+2024-12-14 16:18:25,601 - Default - SpawnPoolWorker-137 - 90833 - -----------------------------------------------------------
+2024-12-14 16:18:25,602 - Default - SpawnPoolWorker-137 - 90833 - New crawled URL added to crawled_urls.json: http://club.gamersky.com/activity/861427?club=213. Total URLs: 1
+2024-12-14 16:18:25,609 - Default - SpawnPoolWorker-136 - 90832 - Starting crawl for URL: https://www.gamersky.com/news/202408/1806534.shtml
+2024-12-14 16:18:25,609 - Default - SpawnPoolWorker-136 - 90832 - -----------------------------------------------------------
+2024-12-14 16:18:25,609 - Default - SpawnPoolWorker-136 - 90832 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/news/202408/1806534.shtml. Total URLs: 1
+2024-12-14 16:18:25,624 - Default - SpawnPoolWorker-139 - 90835 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1810891_47.shtml
+2024-12-14 16:18:25,624 - Default - SpawnPoolWorker-139 - 90835 - -----------------------------------------------------------
+2024-12-14 16:18:25,624 - Default - SpawnPoolWorker-139 - 90835 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1810891_47.shtml. Total URLs: 1
+2024-12-14 16:18:25,627 - Default - SpawnPoolWorker-143 - 90839 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1803371_6.html
+2024-12-14 16:18:25,627 - Default - SpawnPoolWorker-143 - 90839 - -----------------------------------------------------------
+2024-12-14 16:18:25,627 - Default - SpawnPoolWorker-143 - 90839 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1803371_6.html. Total URLs: 1
+2024-12-14 16:18:25,663 - Default - SpawnPoolWorker-133 - 90829 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1803306_86.html
+2024-12-14 16:18:25,663 - Default - SpawnPoolWorker-133 - 90829 - -----------------------------------------------------------
+2024-12-14 16:18:25,664 - Default - SpawnPoolWorker-133 - 90829 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1803306_86.html. Total URLs: 1
+2024-12-14 16:18:25,678 - Default - SpawnPoolWorker-143 - 90839 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1803371_6.html
+2024-12-14 16:18:25,678 - Default - SpawnPoolWorker-135 - 90831 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1810891_13.shtml
+2024-12-14 16:18:25,679 - Default - SpawnPoolWorker-135 - 90831 - -----------------------------------------------------------
+2024-12-14 16:18:25,679 - Default - SpawnPoolWorker-135 - 90831 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1810891_13.shtml. Total URLs: 1
+2024-12-14 16:18:25,679 - Default - SpawnPoolWorker-143 - 90839 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1803371_6.html (Depth: 1)
+2024-12-14 16:18:25,679 - Default - SpawnPoolWorker-143 - 90839 - New link added to links.json: https://wap.gamersky.com/gl/Content-1803371_6.html. Total links: 1
+2024-12-14 16:18:25,680 - Default - SpawnPoolWorker-143 - 90839 - Error crawling URL: https://wap.gamersky.com/gl/Content-1803371_6.html, Error: list index out of range
+2024-12-14 16:18:25,680 - Default - SpawnPoolWorker-143 - 90839 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1810891_8.shtml
+2024-12-14 16:18:25,680 - Default - SpawnPoolWorker-143 - 90839 - -----------------------------------------------------------
+2024-12-14 16:18:25,680 - Default - SpawnPoolWorker-143 - 90839 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1810891_8.shtml. Total URLs: 1
+2024-12-14 16:18:25,720 - Default - SpawnPoolWorker-136 - 90832 - Success on attempt 1 for https://www.gamersky.com/news/202408/1806534.shtml
+2024-12-14 16:18:25,721 - Default - SpawnPoolWorker-136 - 90832 - Found '黑神话' in full HTML at https://www.gamersky.com/news/202408/1806534.shtml (Depth: 1)
+2024-12-14 16:18:25,721 - Default - SpawnPoolWorker-136 - 90832 - New link added to links.json: https://www.gamersky.com/news/202408/1806534.shtml. Total links: 1
+2024-12-14 16:18:25,721 - Default - SpawnPoolWorker-133 - 90829 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1803306_86.html
+2024-12-14 16:18:25,721 - Default - SpawnPoolWorker-136 - 90832 - Error crawling URL: https://www.gamersky.com/news/202408/1806534.shtml, Error: list index out of range
+2024-12-14 16:18:25,722 - Default - SpawnPoolWorker-133 - 90829 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1803306_86.html (Depth: 1)
+2024-12-14 16:18:25,722 - Default - SpawnPoolWorker-133 - 90829 - New link added to links.json: https://wap.gamersky.com/gl/Content-1803306_86.html. Total links: 1
+2024-12-14 16:18:25,722 - Default - SpawnPoolWorker-133 - 90829 - Error crawling URL: https://wap.gamersky.com/gl/Content-1803306_86.html, Error: list index out of range
+2024-12-14 16:18:25,724 - Default - SpawnPoolWorker-137 - 90833 - Success on attempt 1 for http://club.gamersky.com/activity/861427?club=213
+2024-12-14 16:18:25,725 - Default - SpawnPoolWorker-137 - 90833 - Found '黑神话' in full HTML at http://club.gamersky.com/activity/861427?club=213 (Depth: 1)
+2024-12-14 16:18:25,725 - Default - SpawnPoolWorker-137 - 90833 - New link added to links.json: http://club.gamersky.com/activity/861427?club=213. Total links: 1
+2024-12-14 16:18:25,725 - Default - SpawnPoolWorker-137 - 90833 - Error crawling URL: http://club.gamersky.com/activity/861427?club=213, Error: list index out of range
+2024-12-14 16:18:25,747 - Default - SpawnPoolWorker-139 - 90835 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1810891_47.shtml
+2024-12-14 16:18:25,749 - Default - SpawnPoolWorker-139 - 90835 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1810891_47.shtml (Depth: 1)
+2024-12-14 16:18:25,749 - Default - SpawnPoolWorker-139 - 90835 - New link added to links.json: https://www.gamersky.com/handbook/202409/1810891_47.shtml. Total links: 1
+2024-12-14 16:18:25,750 - Default - SpawnPoolWorker-139 - 90835 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202409|1810891_47.shtml
+2024-12-14 16:18:25,750 - Default - SpawnPoolWorker-139 - 90835 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1810891_47.shtml
+2024-12-14 16:18:25,802 - Default - SpawnPoolWorker-143 - 90839 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1810891_8.shtml
+2024-12-14 16:18:25,804 - Default - SpawnPoolWorker-143 - 90839 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1810891_8.shtml (Depth: 1)
+2024-12-14 16:18:25,805 - Default - SpawnPoolWorker-143 - 90839 - New link added to links.json: https://www.gamersky.com/handbook/202409/1810891_8.shtml. Total links: 1
+2024-12-14 16:18:25,806 - Default - SpawnPoolWorker-143 - 90839 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202409|1810891_8.shtml
+2024-12-14 16:18:25,806 - Default - SpawnPoolWorker-143 - 90839 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1810891_8.shtml
+2024-12-14 16:18:25,806 - Default - SpawnPoolWorker-135 - 90831 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1810891_13.shtml
+2024-12-14 16:18:25,809 - Default - SpawnPoolWorker-135 - 90831 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1810891_13.shtml (Depth: 1)
+2024-12-14 16:18:25,809 - Default - SpawnPoolWorker-135 - 90831 - New link added to links.json: https://www.gamersky.com/handbook/202409/1810891_13.shtml. Total links: 1
+2024-12-14 16:18:25,810 - Default - SpawnPoolWorker-135 - 90831 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202409|1810891_13.shtml
+2024-12-14 16:18:25,810 - Default - SpawnPoolWorker-135 - 90831 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1810891_13.shtml
+2024-12-14 16:18:25,853 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:18:25,853 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:30:32,884 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:30:33,504 - Default - MainProcess - 86026 - Found 10 links containing '第二回隐藏剧情' on https://soso.gamersky.com/cse/search?q=第二回隐藏剧情&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:30:33,505 - Default - MainProcess - 86026 - 🔗 Links fetched: ['https://wap.gamersky.com/gl/Content-1811168.html', 'https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml', 'https://wap.gamersky.com/gl/Content-944614.html', 'https://wap.gamersky.com/sygl/Content-1035235.html', 'https://ol.gamersky.com/z/jx3/201802/1012590.shtml', 'https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap', 'http://tag.gamersky.com/handbook/2618.html', 'https://down.gamersky.com/pc/201708/943964.shtml', 'http://club.gamersky.com/activity/397532?club=163']
+2024-12-14 16:30:35,799 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-1811168.html (Title: 《黑神话悟空》三王子支线任务攻略 如何触发双头鼠隐藏剧情 :: 游民星空 GamerSky.com)
+2024-12-14 16:30:37,225 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1804934_3.shtml (Title: 《黑神话悟空》全流程图文攻略 全剧情流程及物品收集方法分享_第二回-风起黄昏-游民星空 GamerSky.com)
+2024-12-14 16:30:38,448 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202409/1810891_10.shtml (Title: 《黑神话悟空》人物剧情梳理分析 黑神话悟空讲了个什么故事_第二回-疯虎、虎伥-游民星空 GamerSky.com)
+2024-12-14 16:30:40,218 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-944614.html (Title: 《黑暗之魂3》全地图隐藏剧情深度解读_洛斯里克 :: 游民星空 GamerSky.com)
+2024-12-14 16:30:41,525 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/sygl/Content-1035235.html (Title: 逆袭幻想传攻略大全 支线任务、配方及宝物一览
+        :: 游民星空 GamerSky.com)
+2024-12-14 16:30:43,115 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/z/jx3/201802/1012590.shtml (Title: 剑网31380任务戒指获取攻略 任务流程前置详解 _ 游民星空 GamerSky.com)
+2024-12-14 16:30:44,409 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap (Title: 年度资料片“北天药宗”公布 《剑网3》十二周年发布会回顾_ _ 游民星空 GamerSky.com)
+2024-12-14 16:30:45,690 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://tag.gamersky.com/handbook/2618.html (Title: 魔兽争霸3_攻略秘籍_游民星空 Gamersky.com)
+2024-12-14 16:30:47,260 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://down.gamersky.com/pc/201708/943964.shtml (Title: 《英雄传说闪之轨迹》超详细全剧情过程存档_英雄传说：闪之轨迹下载 - 游民星空下载中心)
+2024-12-14 16:30:49,036 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/activity/397532?club=163 (Title: 多年后才知道《拳皇》那些有来历的隐藏人物，全是吸血鬼咬出来的_百家争鸣|游民星空)
+2024-12-14 16:30:49,036 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml']
+2024-12-14 16:30:55,166 - Default - SpawnPoolWorker-155 - 94708 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:30:55,166 - Default - SpawnPoolWorker-155 - 94708 - -----------------------------------------------------------
+2024-12-14 16:30:55,166 - Default - SpawnPoolWorker-154 - 94707 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:30:55,167 - Default - SpawnPoolWorker-155 - 94708 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total URLs: 1
+2024-12-14 16:30:55,167 - Default - SpawnPoolWorker-154 - 94707 - -----------------------------------------------------------
+2024-12-14 16:30:55,167 - Default - SpawnPoolWorker-154 - 94707 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total URLs: 1
+2024-12-14 16:30:55,331 - Default - SpawnPoolWorker-154 - 94707 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:30:55,333 - Default - SpawnPoolWorker-154 - 94707 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1810891_10.shtml (Depth: 1)
+2024-12-14 16:30:55,333 - Default - SpawnPoolWorker-154 - 94707 - New link added to links.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total links: 1
+2024-12-14 16:30:55,334 - Default - SpawnPoolWorker-154 - 94707 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202409|1810891_10.shtml
+2024-12-14 16:30:55,335 - Default - SpawnPoolWorker-154 - 94707 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:30:55,402 - Default - SpawnPoolWorker-155 - 94708 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:30:55,406 - Default - SpawnPoolWorker-155 - 94708 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1804934_3.shtml (Depth: 1)
+2024-12-14 16:30:55,406 - Default - SpawnPoolWorker-155 - 94708 - New link added to links.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total links: 1
+2024-12-14 16:30:55,410 - Default - SpawnPoolWorker-155 - 94708 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1804934_3.shtml
+2024-12-14 16:30:55,411 - Default - SpawnPoolWorker-155 - 94708 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:30:55,455 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:30:55,456 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:31:30,356 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:31:30,873 - Default - MainProcess - 86026 - Found 10 links containing '第二回隐藏剧情' on https://soso.gamersky.com/cse/search?q=第二回隐藏剧情&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:31:30,874 - Default - MainProcess - 86026 - 🔗 Links fetched: ['https://wap.gamersky.com/gl/Content-1811168.html', 'https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml', 'https://wap.gamersky.com/gl/Content-944614.html', 'https://wap.gamersky.com/sygl/Content-1035235.html', 'https://ol.gamersky.com/z/jx3/201802/1012590.shtml', 'https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap', 'http://tag.gamersky.com/handbook/2618.html', 'https://down.gamersky.com/pc/201708/943964.shtml', 'http://club.gamersky.com/activity/397532?club=163']
+2024-12-14 16:31:32,991 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-1811168.html (Title: 《黑神话悟空》三王子支线任务攻略 如何触发双头鼠隐藏剧情 :: 游民星空 GamerSky.com)
+2024-12-14 16:31:34,449 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202408/1804934_3.shtml (Title: 《黑神话悟空》全流程图文攻略 全剧情流程及物品收集方法分享_第二回-风起黄昏-游民星空 GamerSky.com)
+2024-12-14 16:31:35,737 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202409/1810891_10.shtml (Title: 《黑神话悟空》人物剧情梳理分析 黑神话悟空讲了个什么故事_第二回-疯虎、虎伥-游民星空 GamerSky.com)
+2024-12-14 16:31:37,155 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/gl/Content-944614.html (Title: 《黑暗之魂3》全地图隐藏剧情深度解读_洛斯里克 :: 游民星空 GamerSky.com)
+2024-12-14 16:31:38,293 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://wap.gamersky.com/sygl/Content-1035235.html (Title: 逆袭幻想传攻略大全 支线任务、配方及宝物一览
+        :: 游民星空 GamerSky.com)
+2024-12-14 16:31:39,448 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/z/jx3/201802/1012590.shtml (Title: 剑网31380任务戒指获取攻略 任务流程前置详解 _ 游民星空 GamerSky.com)
+2024-12-14 16:31:40,876 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ol.gamersky.com/news/202108/1419365_7.shtml?tag=wap (Title: 年度资料片“北天药宗”公布 《剑网3》十二周年发布会回顾_ _ 游民星空 GamerSky.com)
+2024-12-14 16:31:41,966 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://tag.gamersky.com/handbook/2618.html (Title: 魔兽争霸3_攻略秘籍_游民星空 Gamersky.com)
+2024-12-14 16:31:43,264 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://down.gamersky.com/pc/201708/943964.shtml (Title: 《英雄传说闪之轨迹》超详细全剧情过程存档_英雄传说：闪之轨迹下载 - 游民星空下载中心)
+2024-12-14 16:31:44,651 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/activity/397532?club=163 (Title: 多年后才知道《拳皇》那些有来历的隐藏人物，全是吸血鬼咬出来的_百家争鸣|游民星空)
+2024-12-14 16:31:44,651 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202408/1804934_3.shtml', 'https://www.gamersky.com/handbook/202409/1810891_10.shtml']
+2024-12-14 16:31:51,492 - Default - SpawnPoolWorker-168 - 95053 - Starting crawl for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:31:51,492 - Default - SpawnPoolWorker-168 - 95053 - -----------------------------------------------------------
+2024-12-14 16:31:51,493 - Default - SpawnPoolWorker-168 - 95053 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total URLs: 1
+2024-12-14 16:31:51,507 - Default - SpawnPoolWorker-160 - 95045 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:31:51,507 - Default - SpawnPoolWorker-160 - 95045 - -----------------------------------------------------------
+2024-12-14 16:31:51,508 - Default - SpawnPoolWorker-160 - 95045 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total URLs: 1
+2024-12-14 16:31:51,708 - Default - SpawnPoolWorker-160 - 95045 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:31:51,710 - Default - SpawnPoolWorker-160 - 95045 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1810891_10.shtml (Depth: 1)
+2024-12-14 16:31:51,711 - Default - SpawnPoolWorker-160 - 95045 - New link added to links.json: https://www.gamersky.com/handbook/202409/1810891_10.shtml. Total links: 1
+2024-12-14 16:31:51,712 - Default - SpawnPoolWorker-160 - 95045 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202409|1810891_10.shtml
+2024-12-14 16:31:51,712 - Default - SpawnPoolWorker-160 - 95045 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1810891_10.shtml
+2024-12-14 16:31:51,830 - Default - SpawnPoolWorker-168 - 95053 - Success on attempt 1 for https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:31:51,834 - Default - SpawnPoolWorker-168 - 95053 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202408/1804934_3.shtml (Depth: 1)
+2024-12-14 16:31:51,835 - Default - SpawnPoolWorker-168 - 95053 - New link added to links.json: https://www.gamersky.com/handbook/202408/1804934_3.shtml. Total links: 1
+2024-12-14 16:31:51,839 - Default - SpawnPoolWorker-168 - 95053 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202408|1804934_3.shtml
+2024-12-14 16:31:51,839 - Default - SpawnPoolWorker-168 - 95053 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202408/1804934_3.shtml
+2024-12-14 16:31:51,883 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:31:51,884 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
+2024-12-14 16:32:29,302 - Default - MainProcess - 86026 - 🔍 Fetching related page links...
+2024-12-14 16:32:30,652 - Default - MainProcess - 86026 - Found 10 links containing '黑神话悟空整体剧情' on https://soso.gamersky.com/cse/search?q=黑神话悟空整体剧情&s=3068275339727451251&nsid=1&nsid=1
+2024-12-14 16:32:30,653 - Default - MainProcess - 86026 - 🔗 Links fetched: ['https://www.gamersky.com/handbook/202409/1816994.shtml', 'https://wap.gamersky.com/gl/Content-1804934_2.html', 'https://www.gamersky.com/news/202408/1806534.shtml', 'https://www.gamersky.com/news/1314156_28327/', 'http://club.gamersky.com/m/activity/864780', 'http://club.gamersky.com/m/activity/857775', 'https://app.gamersky.com/db/WukongWiki/detail.html?type=ShadowGod&itemId=80&kNoneMoreButton=true', 'https://ku.gamersky.com/2021/yuan-shen/', 'https://ku.gamersky.com/activity/n/65434172', 'https://app.gamersky.com/db/WukongWiki/detail.html?type=ShadowGod&itemId=188&kNoneMoreButton=true']
+2024-12-14 16:32:32,970 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/handbook/202409/1816994.shtml (Title: 《黑神话悟空》全章节剧情详细解读_第一部分-眼见喜-游民星空 GamerSky.com)
+2024-12-14 16:32:35,325 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://wap.gamersky.com/gl/Content-1804934_2.html (Title: 《黑神话悟空》全流程图文攻略 全剧情流程及物品收集方法分享_第一回火照黑云 :: 游民星空 GamerSky.com)
+2024-12-14 16:32:36,537 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://www.gamersky.com/news/202408/1806534.shtml (Title: 黑神话悟空隐藏结局，整个故事解析。 _ 游民星空 GamerSky.com)
+2024-12-14 16:32:37,617 - Default - MainProcess - 86026 - ⚠️ Failed to fetch title for link: https://www.gamersky.com/news/1314156_28327/
+2024-12-14 16:32:39,028 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/m/activity/864780 (Title: 据我分析，《未竟》已说明后续DLC剧情走向_黑神话：悟空|游民星空)
+2024-12-14 16:32:40,326 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: http://club.gamersky.com/m/activity/857775 (Title: 黑神话悟空全BOSS攻略集-第一回黑风山_黑神话：悟空|游民星空)
+2024-12-14 16:32:41,725 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://app.gamersky.com/db/WukongWiki/detail.html?type=ShadowGod&itemId=80&kNoneMoreButton=true (Title: 《黑神话：悟空》全图鉴)
+2024-12-14 16:32:43,124 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://ku.gamersky.com/2021/yuan-shen/ (Title: 原神_原神下载_中文_攻略_视频_评价_游民星空 Gamersky.com)
+2024-12-14 16:32:44,448 - Default - MainProcess - 86026 - ✅ Relevant link found by websense_agent: https://ku.gamersky.com/activity/n/65434172 (Title: 黑神话：悟空一周目通关了，每关的_游民星空 GamerSky.com)
+2024-12-14 16:32:45,886 - Default - MainProcess - 86026 - ❌ Irrelevant link skipped by websense_agent: https://app.gamersky.com/db/WukongWiki/detail.html?type=ShadowGod&itemId=188&kNoneMoreButton=true (Title: 《黑神话：悟空》全图鉴)
+2024-12-14 16:32:45,886 - Default - MainProcess - 86026 - 📋 Relevant links: ['https://www.gamersky.com/handbook/202409/1816994.shtml', 'https://wap.gamersky.com/gl/Content-1804934_2.html', 'https://www.gamersky.com/news/202408/1806534.shtml', 'https://ku.gamersky.com/activity/n/65434172']
+2024-12-14 16:32:52,264 - Default - SpawnPoolWorker-173 - 95417 - Starting crawl for URL: https://www.gamersky.com/handbook/202409/1816994.shtml
+2024-12-14 16:32:52,264 - Default - SpawnPoolWorker-173 - 95417 - -----------------------------------------------------------
+2024-12-14 16:32:52,265 - Default - SpawnPoolWorker-173 - 95417 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/handbook/202409/1816994.shtml. Total URLs: 1
+2024-12-14 16:32:52,280 - Default - SpawnPoolWorker-177 - 95421 - Starting crawl for URL: https://wap.gamersky.com/gl/Content-1804934_2.html
+2024-12-14 16:32:52,281 - Default - SpawnPoolWorker-177 - 95421 - -----------------------------------------------------------
+2024-12-14 16:32:52,281 - Default - SpawnPoolWorker-178 - 95422 - Starting crawl for URL: https://www.gamersky.com/news/202408/1806534.shtml
+2024-12-14 16:32:52,281 - Default - SpawnPoolWorker-177 - 95421 - New crawled URL added to crawled_urls.json: https://wap.gamersky.com/gl/Content-1804934_2.html. Total URLs: 1
+2024-12-14 16:32:52,281 - Default - SpawnPoolWorker-178 - 95422 - -----------------------------------------------------------
+2024-12-14 16:32:52,281 - Default - SpawnPoolWorker-178 - 95422 - New crawled URL added to crawled_urls.json: https://www.gamersky.com/news/202408/1806534.shtml. Total URLs: 1
+2024-12-14 16:32:52,283 - Default - SpawnPoolWorker-170 - 95414 - Starting crawl for URL: https://ku.gamersky.com/activity/n/65434172
+2024-12-14 16:32:52,283 - Default - SpawnPoolWorker-170 - 95414 - -----------------------------------------------------------
+2024-12-14 16:32:52,283 - Default - SpawnPoolWorker-170 - 95414 - New crawled URL added to crawled_urls.json: https://ku.gamersky.com/activity/n/65434172. Total URLs: 1
+2024-12-14 16:32:52,356 - Default - SpawnPoolWorker-177 - 95421 - Success on attempt 1 for https://wap.gamersky.com/gl/Content-1804934_2.html
+2024-12-14 16:32:52,358 - Default - SpawnPoolWorker-177 - 95421 - Found '黑神话' in full HTML at https://wap.gamersky.com/gl/Content-1804934_2.html (Depth: 1)
+2024-12-14 16:32:52,359 - Default - SpawnPoolWorker-177 - 95421 - New link added to links.json: https://wap.gamersky.com/gl/Content-1804934_2.html. Total links: 1
+2024-12-14 16:32:52,359 - Default - SpawnPoolWorker-177 - 95421 - Error crawling URL: https://wap.gamersky.com/gl/Content-1804934_2.html, Error: list index out of range
+2024-12-14 16:32:52,394 - Default - SpawnPoolWorker-178 - 95422 - Success on attempt 1 for https://www.gamersky.com/news/202408/1806534.shtml
+2024-12-14 16:32:52,394 - Default - SpawnPoolWorker-178 - 95422 - Found '黑神话' in full HTML at https://www.gamersky.com/news/202408/1806534.shtml (Depth: 1)
+2024-12-14 16:32:52,395 - Default - SpawnPoolWorker-178 - 95422 - New link added to links.json: https://www.gamersky.com/news/202408/1806534.shtml. Total links: 1
+2024-12-14 16:32:52,395 - Default - SpawnPoolWorker-178 - 95422 - Error crawling URL: https://www.gamersky.com/news/202408/1806534.shtml, Error: list index out of range
+2024-12-14 16:32:52,417 - Default - SpawnPoolWorker-173 - 95417 - Success on attempt 1 for https://www.gamersky.com/handbook/202409/1816994.shtml
+2024-12-14 16:32:52,419 - Default - SpawnPoolWorker-173 - 95417 - Found '黑神话' in Mid2L_con or Title at https://www.gamersky.com/handbook/202409/1816994.shtml (Depth: 1)
+2024-12-14 16:32:52,419 - Default - SpawnPoolWorker-173 - 95417 - New link added to links.json: https://www.gamersky.com/handbook/202409/1816994.shtml. Total links: 1
+2024-12-14 16:32:52,420 - Default - SpawnPoolWorker-173 - 95417 - Html and text files successfully saved for https=||www.gamersky.com|handbook|202409|1816994.shtml
+2024-12-14 16:32:52,421 - Default - SpawnPoolWorker-173 - 95417 - ⭐️1. Completed crawl and save data for URL: https://www.gamersky.com/handbook/202409/1816994.shtml
+2024-12-14 16:32:52,967 - Default - SpawnPoolWorker-170 - 95414 - Success on attempt 1 for https://ku.gamersky.com/activity/n/65434172
+2024-12-14 16:32:52,968 - Default - SpawnPoolWorker-170 - 95414 - Found '黑神话' in full HTML at https://ku.gamersky.com/activity/n/65434172 (Depth: 1)
+2024-12-14 16:32:52,968 - Default - SpawnPoolWorker-170 - 95414 - New link added to links.json: https://ku.gamersky.com/activity/n/65434172. Total links: 1
+2024-12-14 16:32:52,968 - Default - SpawnPoolWorker-170 - 95414 - Error crawling URL: https://ku.gamersky.com/activity/n/65434172, Error: list index out of range
+2024-12-14 16:32:53,016 - Default - MainProcess - 86026 - ✅ Completed web scraping process.
+2024-12-14 16:32:53,016 - Default - MainProcess - 86026 - ✅ FusionBot response generated successfully.
