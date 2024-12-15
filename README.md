@@ -1,28 +1,64 @@
-# MMGameRAG: Multimodal Retrieval-Augmented Generation System for Game Walkthroughs
+# MMGameRAG
 
-## Introduction
+MMGameRAG is a multimodal Retrieval-Augmented Generation (RAG) system designed for game strategy support, with an emphasis on text-and-image-based responses. The project currently focuses on strategies for 'Black Myth: Wu Kong.'
 
-The MMGameRAG system aims to revolutionize the way gamers access strategies and information, starting with the popular game *Black Myth - Wu Kong*. This system is designed to deliver a more immersive and practical experience by providing answers in the form of both **text** and **images**, such as detailed walkthroughs, maps, and in-game visuals. This goes beyond simple text explanations from regular AI with RAG, offering a richer and more interactive experience for gamers.
+Project repository: [https://github.com/MCCodeAI/MMGameRAG](https://github.com/MCCodeAI/MMGameRAG)
 
-Additionally, MMGameRAG incorporates **search keyword visualization** from global sources, displaying a heat map of popular topics and queries related to the game. This feature helps gamers stay informed on trending strategies, tips, and hidden secrets by understanding what aspects of the game are being discussed and explored worldwide.
+## Team Members
 
-By merging these two core functionalities, MMGameRAG offers a unique blend of **insightful answers** and **data-driven visual aids**, giving players a powerful tool to navigate complex games like *Black Myth - Wu Kong*.
+- Yin Li, 20489800
+- Hongji Li, 50028868
+- Ling Li, 50016504
 
----
+## Project Structure
 
-# MMGameRAG: 多模态游戏攻略检索增强生成系统
+- `index.html`: The main entry point of the project. This file serves as the interface for the system and links all necessary resources for visualization and interaction.
+- `main.js`: Contains JavaScript logic for dynamic interactions and visualizations, including user interface elements.
+- `templates/`: Includes HTML templates used in the system.
+  - `chat.html`: A template for the chatbot interface.
+  - `index.html`: The project’s main entry point.
+  - `mmgameragvis.html`: A template for visualizing game data.
+  - `1212_2135_HOME_4_Class2.html`: A template for search data visualization, showcasing results and trends effectively.
+- `dataset/`: Contains cleaned data from various search engines.
+- `vectorstore/`: Manages embeddings and data storage for retrieval operations.
+- `docs/`: Contains additional documentation and assets, such as walkthroughs and context embeddings.
+- `userlib/`: Custom libraries for extended functionality.
+- `log/`: Stores logs for debugging and performance tracking.
 
-## 简介
+## Prerequisites
 
-MMGameRAG 系统致力于改变玩家获取游戏攻略与信息的方式，并首先应用于热门游戏《黑神话：悟空》。该系统通过生成包含**文本**和**图像**的答案，例如详细的游戏攻略、地图及游戏内画面，为玩家提供更丰富的互动体验，超越了一般的AI RAG系统仅仅依赖文字解释的传统方式。
+1. **Python Environment**: Ensure Python is installed with all required libraries.
+2. **Live Server Extension (for HTML visualization)**: Use VS Code's **Live Server** for real-time updates and testing.
 
-除此之外，MMGameRAG 还整合了来自全球的**搜索关键词可视化**功能，展示与游戏相关的热点话题和查询热力图。这一功能帮助玩家紧跟全球讨论的步伐，了解游戏的热门攻略、技巧及隐藏秘密。
+## How to Run the Project
 
-通过结合这两大核心功能，MMGameRAG 提供了**深度解答**与**数据驱动的视觉辅助**的独特体验，成为玩家探索复杂游戏如《黑神话：悟空》的强大助手。
+1. Clone the repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Launch the project:
+   - Open `index.html` using Live Server in Visual Studio Code.
 
+## Key Features
 
+### Multimodal Q&A System
 
+- Provides both text and image-based responses for comprehensive game strategies.
+- Includes visualizations like maps and walkthrough diagrams.
 
-Install Requirements:
-pip install -r requirements.txt
+### Interactive Visualizations
 
+- Powered by D3.js, the system supports dynamic and user-interactive visualizations to explore game data efficiently.
+
+### Search and Retrieval
+
+- Utilizes a vectorstore backend for efficient data retrieval.
+- Supports keyword-based search with context embeddings.
+
+## Example Use Case
+
+1. Open `index.html` to access the main interface.
+2. Interact with the chatbot to ask questions about specific game strategies.
+3. View dynamic visualizations in real-time, such as location-based hints or heatmaps for popular search keywords.
+
+## Contact
+
+For any questions or further information, please contact: yligt@connect.hkust-gz.edu.cn
