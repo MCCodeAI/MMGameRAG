@@ -4,12 +4,6 @@ MMGameRAG is a multimodal Retrieval-Augmented Generation (RAG) system designed f
 
 Project repository: [https://github.com/MCCodeAI/MMGameRAG](https://github.com/MCCodeAI/MMGameRAG)
 
-## Team Members
-
-- Yin Li, 20489800
-- Hongji Li, 50028868
-- Ling Li, 50016504
-
 ## Project Structure
 
 - `index.html`: The main entry point of the project. This file serves as the interface for the system and links all necessary resources for visualization and interaction.
